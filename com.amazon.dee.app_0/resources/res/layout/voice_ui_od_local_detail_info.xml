@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.legacy.widget.Space android:layout_width="match_parent" android:layout_height="@dimen/voice_ui_od_detail_info_top_margin"/>
+    <TextView android:textSize="@dimen/voice_ui_od_local_card_detail_title_text_size" android:textColor="?android:attr/textColorPrimary" android:id="@+id/businessName" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/rating" android:padding="0dp" android:layout_width="wrap_content" android:layout_height="12dp" android:layout_marginTop="8dp" android:src="@drawable/ic_voice_ui_od_rating_stars_0" android:scaleType="fitStart" android:adjustViewBounds="true" android:contentDescription="@string/voice_ui_od_empty"/>
+        <androidx.legacy.widget.Space android:layout_width="@dimen/voice_ui_od_local_card_list_item_title_rating_star_count_spacing" android:layout_height="wrap_content"/>
+        <TextView android:textSize="@dimen/voice_ui_od_local_card_search_list_item_rating_text_size" android:textColor="?android:attr/textColorSecondary" android:ellipsize="end" android:id="@+id/reviewCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:maxLines="1"/>
+        <androidx.legacy.widget.Space android:layout_width="@dimen/voice_ui_od_local_card_list_item_title_rating_star_count_spacing" android:layout_height="wrap_content"/>
+        <ImageView android:id="@+id/providerLogo" android:layout_width="wrap_content" android:layout_height="16dp" android:layout_marginTop="5dp" android:adjustViewBounds="true" android:tintMode="screen"/>
+    </LinearLayout>
+    <androidx.legacy.widget.Space android:layout_width="match_parent" android:layout_height="@dimen/voice_ui_od_local_detail_rating_address_spacing"/>
+    <TextView android:textSize="@dimen/voice_ui_od_local_card_detail_info_text_size" android:textColor="?android:attr/textColorLink" android:id="@+id/address" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2"/>
+    <androidx.legacy.widget.Space android:layout_width="match_parent" android:layout_height="@dimen/voice_ui_od_local_card_list_item_address_phone_number_spacing"/>
+    <TextView android:textSize="@dimen/voice_ui_od_local_card_detail_info_text_size" android:textColor="?android:attr/textColorLink" android:ellipsize="end" android:id="@+id/phoneNumber" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1"/>
+    <androidx.legacy.widget.Space android:layout_width="match_parent" android:layout_height="@dimen/voice_ui_od_local_detail_address_description_spacing"/>
+    <TextView android:textSize="@dimen/voice_ui_od_local_card_detail_info_text_size" android:textColor="?android:attr/textColorPrimary" android:ellipsize="end" android:id="@+id/openingHours" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1"/>
+    <TextView android:textSize="@dimen/voice_ui_od_local_card_detail_info_text_size" android:textColor="?android:attr/textColorPrimary" android:ellipsize="end" android:id="@+id/description" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1"/>
+    <TextView android:textSize="@dimen/voice_ui_od_local_card_detail_info_text_size" android:textColor="?android:attr/textColorPrimary" android:ellipsize="end" android:id="@+id/distance" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1"/>
+    <androidx.legacy.widget.Space android:layout_width="match_parent" android:layout_height="@dimen/voice_ui_od_local_detail_description_link_spacing"/>
+    <TextView android:textSize="@dimen/voice_ui_od_local_card_detail_linkout_text_size" android:textColor="?android:attr/textColorLink" android:ellipsize="end" android:id="@+id/link" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:drawablePadding="4dp" android:textAllCaps="true" android:drawableEnd="@drawable/ic_voice_ui_od_link"/>
+    <TextView android:textSize="@dimen/voice_ui_od_local_card_search_list_item_rating_text_size" android:textColor="?android:attr/textColorPrimary" android:id="@+id/providerInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/voice_ui_od_merged_provider_info_margin_top" android:maxLines="1"/>
+</LinearLayout>

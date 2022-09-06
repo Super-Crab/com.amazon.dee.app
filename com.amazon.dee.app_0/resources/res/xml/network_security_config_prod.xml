@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true">pitangui.amazon.com
+        </domain>
+        <domain includeSubdomains="true">guiana.amazon.com
+        </domain>
+        <domain includeSubdomains="true">echo.amazon.com
+        </domain>
+        <domain includeSubdomains="true">alexa.amazon.com
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui-dev.aka.amazon.com
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui-dev.integ.amazon.com
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui.aka.amazon.com
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui.integ.amazon.com
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui-gamma.aka.amazon.com
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui-gamma.integ.amazon.com
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui-pre-prod.aka.amazon.com
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui-pre-prod.integ.amazon.com
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui-uk-beta.aka.amazon.com
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui-pico-beta.aka.amazon.com
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui-gb.aka.amazon.com
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui-gb-registration.aka.amazon.com
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui-uk-gamma.aka.amazon.com
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui-pico-gamma.aka.amazon.com
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui-gamma.amazon.co.uk
+        </domain>
+        <domain includeSubdomains="true">alexa.amazon.co.uk
+        </domain>
+        <domain includeSubdomains="true">pico.amazon.com
+        </domain>
+        <domain includeSubdomains="true">pico.amazon.co.uk
+        </domain>
+        <domain includeSubdomains="true">seamus.amazon.co.uk
+        </domain>
+        <domain includeSubdomains="true">layla.amazon.co.uk
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui-de-beta.aka.amazon.com
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui-brodie-beta.aka.amazon.com
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui-de.aka.amazon.com
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui-de-registration.aka.amazon.com
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui-de-gamma.aka.amazon.com
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui-brodie-gamma.aka.amazon.com
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui-gamma.amazon.de
+        </domain>
+        <domain includeSubdomains="true">alexa.amazon.de
+        </domain>
+        <domain includeSubdomains="true">brodie.amazon.com
+        </domain>
+        <domain includeSubdomains="true">brodie.amazon.de
+        </domain>
+        <domain includeSubdomains="true">seamus.amazon.de
+        </domain>
+        <domain includeSubdomains="true">layla.amazon.de
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui-eu.integ.amazon.com
+        </domain>
+        <domain includeSubdomains="true">seamus.amazon.com
+        </domain>
+        <domain includeSubdomains="true">layla.amazon.com
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui-fr.aka.amazon.com
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui-fr-gamma.aka.amazon.com
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui-gamma.amazon.fr
+        </domain>
+        <domain includeSubdomains="true">alexa.amazon.fr
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui-es.aka.amazon.com
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui-es-gamma.aka.amazon.com
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui-gamma.amazon.es
+        </domain>
+        <domain includeSubdomains="true">alexa.amazon.es
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui-in.aka.amazon.com
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui-in-gamma.aka.amazon.com
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui-gamma.amazon.in
+        </domain>
+        <domain includeSubdomains="true">alexa.amazon.in
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui-it.aka.amazon.com
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui-it-gamma.aka.amazon.com
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui-gamma.amazon.it
+        </domain>
+        <domain includeSubdomains="true">alexa.amazon.it
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui-nl.aka.amazon.com
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui-nl-gamma.aka.amazon.com
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui-gamma.amazon.nl
+        </domain>
+        <domain includeSubdomains="true">alexa.amazon.nl
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui-ru.aka.amazon.com
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui-ru-gamma.aka.amazon.com
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui-gamma.amazon.ru
+        </domain>
+        <domain includeSubdomains="true">alexa.amazon.ru
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui-br.aka.amazon.com
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui-br-gamma.aka.amazon.com
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui-gamma.amazon.com.br
+        </domain>
+        <domain includeSubdomains="true">alexa.amazon.com.br
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui-ca.aka.amazon.com
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui-ca-gamma.aka.amazon.com
+        </domain>
+        <domain includeSubdomains="true">alexa.amazon.ca
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui-mx.aka.amazon.com
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui-mx-gamma.aka.amazon.com
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui-gamma.amazon.com.mx
+        </domain>
+        <domain includeSubdomains="true">alexa.amazon.com.mx
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui-cn.aka.amazon.com
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui-cn-gamma.aka.amazon.com
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui-gamma.amazon.ca
+        </domain>
+        <domain includeSubdomains="true">alexa.amazon.cn
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui-au.aka.amazon.com
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui-au-gamma.aka.amazon.com
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui-gamma.amazon.com.au
+        </domain>
+        <domain includeSubdomains="true">alexa.amazon.com.au
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui-id.aka.amazon.com
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui-id-gamma.aka.amazon.com
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui-gamma.amazon.co.id
+        </domain>
+        <domain includeSubdomains="true">alexa.amazon.co.id
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui-jp.aka.amazon.com
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui-jp-gamma.aka.amazon.com
+        </domain>
+        <domain includeSubdomains="true">projectdee-ui-gamma.amazon.co.jp
+        </domain>
+        <domain includeSubdomains="true">alexa.amazon.co.jp
+        </domain>
+        <domain includeSubdomains="true">api.amazonalexa.com
+        </domain>
+        <domain includeSubdomains="true">alexa.fe.gateway.devices.a2z.com
+        </domain>
+        <domain includeSubdomains="true">alexa.eu.gateway.devices.a2z.com
+        </domain>
+        <domain includeSubdomains="true">alexa.na.gateway.devices.a2z.com
+        </domain>
+        <domain includeSubdomains="true">avs-alexa-fe.amazon.com
+        </domain>
+        <domain includeSubdomains="true">avs-alexa-eu.amazon.com
+        </domain>
+        <domain includeSubdomains="true">avs-alexa-na.amazon.com
+        </domain>
+        <domain includeSubdomains="true">avs-alexa-13-fe.amazon.com
+        </domain>
+        <domain includeSubdomains="true">avs-alexa-13-eu.amazon.com
+        </domain>
+        <domain includeSubdomains="true">avs-alexa-13-na.amazon.com
+        </domain>
+    </domain-config>
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system"/>
+        </trust-anchors>
+    </base-config>
+    <debug-overrides>
+        <trust-anchors>
+            <certificates src="user"/>
+        </trust-anchors>
+    </debug-overrides>
+</network-security-config>

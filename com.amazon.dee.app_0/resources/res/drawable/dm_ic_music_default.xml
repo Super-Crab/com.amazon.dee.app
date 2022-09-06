@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="@dimen/nps_album_art_default_image_view" android:width="@dimen/nps_album_art_default_image_view" android:viewportWidth="24" android:viewportHeight="24">
+    <path android:fillColor="?attr/mosaicAction40" android:pathData="M21,3c0-1.217-1.078-2.152-2.283-1.98l-10,1.429C7.732,2.59,7,3.434,7,4.429V5v3.694v8.489C6.686,17.072,6.353,17,6,17 c-1.657,0-3,1.343-3,3s1.343,3,3,3s3-1.343,3-3c0-0.109-0.021-0.213-0.032-0.319L9,19.692V8.409L19,6.98v8.204 C18.686,15.072,18.353,15,18,15c-1.657,0-3,1.343-3,3s1.343,3,3,3s3-1.343,3-3c0-0.082-0.018-0.159-0.024-0.239L21,17.77V6.694 L21,3L21,3L21,3z"/>
+</vector>

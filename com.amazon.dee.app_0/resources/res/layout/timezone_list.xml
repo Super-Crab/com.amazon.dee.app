@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:tag="layout/timezone_list_0" android:background="?attr/mosaicBackground" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/status_banner"/>
+    <com.amazon.alexa.mosaic.view.ListItemLink android:id="@+id/timezone_region" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content" app:clickable="true" app:linkText="@string/time_zone_region_picker_change"/>
+    <com.amazon.alexa.mosaic.view.SectionHeader android:id="@+id/care_communication_heading" android:layout_width="match_parent" android:layout_height="wrap_content" app:text="@string/time_zone_list_header"/>
+    <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@+id/timezone_list" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

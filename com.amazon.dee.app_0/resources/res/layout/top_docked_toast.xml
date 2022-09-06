@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/top_docked_toast_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:background="@color/alexa_setup_primary_button_background_normal" android:layout_width="match_parent" android:layout_height="@dimen/alexa_top_docked_toast_height">
+        <TextView android:textColor="@color/alexa_setup_text_primary" android:id="@+id/top_docked_toast_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/alexa_top_docked_toast_margin" android:layout_marginRight="@dimen/alexa_top_docked_toast_margin" android:text="" android:maxLines="2" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

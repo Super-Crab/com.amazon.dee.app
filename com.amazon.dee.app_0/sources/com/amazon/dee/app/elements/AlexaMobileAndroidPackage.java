@@ -1,0 +1,188 @@
+package com.amazon.dee.app.elements;
+
+import android.app.Activity;
+import com.amazon.alexa.accessorykit.AccessoryModule;
+import com.amazon.alexa.accessorykit.echoauto.SystemInfoModule;
+import com.amazon.alexa.device.api.DeviceInformation;
+import com.amazon.alexa.elements.api.BridgeStatusService;
+import com.amazon.alexa.eventbus.api.EventBus;
+import com.amazon.alexa.eventbus.api.Message;
+import com.amazon.alexa.featureservice.api.FeatureServiceV2;
+import com.amazon.alexa.featureservice.api.PlatformFeatureServiceV2;
+import com.amazon.alexa.handsfree.devices.AMPDInformationProvider;
+import com.amazon.alexa.identity.api.AccountService;
+import com.amazon.alexa.identity.api.IdentityService;
+import com.amazon.alexa.location.LocationProvider;
+import com.amazon.alexa.location.LocationService;
+import com.amazon.alexa.mobilytics.Mobilytics;
+import com.amazon.alexa.mobilytics.event.MobilyticsEventFactory;
+import com.amazon.alexa.photos.PhotosFeatureGuardian;
+import com.amazon.alexa.photos.UploadBundleManager;
+import com.amazon.alexa.photos.api.PhotosChooser;
+import com.amazon.alexa.photos.api.PhotosUploader;
+import com.amazon.alexa.photos.metrics.CloudDriveMetrics;
+import com.amazon.alexa.protocols.environment.EnvironmentService;
+import com.amazon.alexa.protocols.service.api.ComponentRegistry;
+import com.amazon.alexa.protocols.storage.PersistentStorage;
+import com.amazon.alexa.routing.RouteFeatureGroupRegistry;
+import com.amazon.alexa.routing.api.RoutingRegistry;
+import com.amazon.alexa.routing.api.RoutingService;
+import com.amazon.alexa.tasks.api.TaskManager;
+import com.amazon.alexa.voice.elements.VoiceSettingsModule;
+import com.amazon.alexa.voice.model.VoiceService;
+import com.amazon.dee.app.elements.bridges.AccessibilityHelperModule;
+import com.amazon.dee.app.elements.bridges.AlexaDeviceBackgroundImageModule;
+import com.amazon.dee.app.elements.bridges.AlexaEnvironmentModule;
+import com.amazon.dee.app.elements.bridges.DeviceInformationModule;
+import com.amazon.dee.app.elements.bridges.DeviceStateModule;
+import com.amazon.dee.app.elements.bridges.DialogModule;
+import com.amazon.dee.app.elements.bridges.ElementsUtilityModule;
+import com.amazon.dee.app.elements.bridges.EventBusModule;
+import com.amazon.dee.app.elements.bridges.ExternalWebContentModule;
+import com.amazon.dee.app.elements.bridges.FeatureServiceModule;
+import com.amazon.dee.app.elements.bridges.IdentityModule;
+import com.amazon.dee.app.elements.bridges.LocationRequestModule;
+import com.amazon.dee.app.elements.bridges.LoggingModule;
+import com.amazon.dee.app.elements.bridges.MenuSettingsModule;
+import com.amazon.dee.app.elements.bridges.MetricsModule;
+import com.amazon.dee.app.elements.bridges.NativeNavigationModule;
+import com.amazon.dee.app.elements.bridges.NotificationSettingsModule;
+import com.amazon.dee.app.elements.bridges.PermissionModule;
+import com.amazon.dee.app.elements.bridges.PingHandlerModule;
+import com.amazon.dee.app.elements.bridges.TraceModule;
+import com.amazon.dee.app.services.bluetooth.BluetoothService;
+import com.amazon.dee.app.services.security.CertificateReaderService;
+import com.amazon.dee.app.services.testing.TestArgumentsService;
+import com.amazon.dee.app.services.useragent.UserAgentService;
+import com.amazon.dee.app.ui.menu.AlexaMenu;
+import com.amazon.deecomms.nativemodules.AlexaCommsDelegateBridge;
+import com.amazon.deecomms.nativemodules.AssetsStorageBridge;
+import com.amazon.deecomms.nativemodules.CallingManagerBridge;
+import com.amazon.deecomms.nativemodules.CarrierConfigurationBridge;
+import com.amazon.deecomms.nativemodules.CommsConfigurationBridge;
+import com.amazon.deecomms.nativemodules.CommsContactsStoreBridge;
+import com.amazon.deecomms.nativemodules.CommsEventEmitterBridge;
+import com.amazon.deecomms.nativemodules.CommsLocalAddressBookStoreBridge;
+import com.amazon.deecomms.nativemodules.CommsMessagingMediaBridge;
+import com.amazon.deecomms.nativemodules.CommsMetricsLogStorage;
+import com.amazon.deecomms.nativemodules.CommsRoutingBridge;
+import com.amazon.deecomms.nativemodules.ContactsManagerBridge;
+import com.amazon.deecomms.nativemodules.ConversationPersistenceBridge;
+import com.amazon.deecomms.nativemodules.DeviceManagerBridge;
+import com.amazon.deecomms.nativemodules.LocalKeyValueStore;
+import com.amazon.deecomms.nativemodules.MessagingManagerBridge;
+import com.amazon.deecomms.nativemodules.NetworkServiceHelper;
+import com.amazon.deecomms.nativemodules.NotificationFilterBridge;
+import com.amazon.deecomms.nativemodules.imagepicker.PickerModule;
+import com.amazon.latencyinfra.LatencyInfra;
+import com.brentvatne.exoplayer.DefaultReactExoplayerConfig;
+import com.brentvatne.exoplayer.ReactExoplayerConfig;
+import com.brentvatne.exoplayer.ReactExoplayerViewManager;
+import com.dee.app.metrics.MetricsService;
+import com.dee.app.metrics.MetricsServiceV2;
+import com.facebook.react.ReactPackage;
+import com.facebook.react.bridge.NativeModule;
+import com.facebook.react.bridge.ReactApplicationContext;
+import com.facebook.react.uimanager.ViewManager;
+import dagger.Lazy;
+import java.lang.ref.WeakReference;
+import java.util.Arrays;
+import java.util.List;
+/* loaded from: classes12.dex */
+public class AlexaMobileAndroidPackage implements ReactPackage {
+    public static final String NATIVE_MODULES_CREATED_EVENT = "native:modules:created";
+    private static final String STARTUP_PERSISTENT_STORAGE = "startupState";
+    private final AccountService accountService;
+    private final WeakReference<Activity> activity;
+    private final AlexaMenu alexaMenu;
+    private final Lazy<AMPDInformationProvider> ampdInformationProvider;
+    private final BluetoothService bluetoothService;
+    private final BridgeStatusService bridgeStatusService;
+    private final Lazy<CertificateReaderService> certificateReaderService;
+    private final Lazy<CloudDriveMetrics> cloudDriveMetrics;
+    private final CollectionsFactory collectionsFactory;
+    private ReactExoplayerConfig config;
+    private final DeviceInformation deviceInformation;
+    private final EnvironmentService environmentService;
+    private final EventBus eventBus;
+    private final Lazy<EventBus> eventBusLazy;
+    private final RouteFeatureGroupRegistry groupRegistry;
+    private final IdentityService identityService;
+    private final Lazy<IdentityService> identityServiceLazy;
+    private final LatencyInfra latencyInfra;
+    private final LocationProvider locationProvider;
+    private final LocationService locationService;
+    private final MetricsService metricsService;
+    private final MetricsServiceV2 metricsServiceV2;
+    private final Lazy<Mobilytics> mobilytics;
+    private final Lazy<MobilyticsEventFactory> mobilyticsEventFactory;
+    private final PhotosChooser photosChooser;
+    private final Lazy<PhotosFeatureGuardian> photosFeatureGuardianLazy;
+    private final Lazy<PhotosUploader> photosUploader;
+    private final PlatformFeatureServiceV2 platformFeatureServiceV2;
+    private final Lazy<ReactFeatureManager> reactFeatureManager;
+    private final ReactRouteRegistry reactRouteRegistry;
+    private final RoutingRegistry routingRegistry;
+    private final RoutingService routingService;
+    private final PersistentStorage.Factory storageFactory;
+    private final Lazy<TaskManager> taskManagerLazy;
+    private final TestArgumentsService testArguments;
+    private final Lazy<UploadBundleManager> uploadBundleManager;
+    private final UserAgentService userAgentService;
+    private final VoiceService voiceService;
+
+    public AlexaMobileAndroidPackage(CollectionsFactory collectionsFactory, EnvironmentService environmentService, DeviceInformation deviceInformation, RoutingService routingService, IdentityService identityService, AccountService accountService, UserAgentService userAgentService, MetricsService metricsService, MetricsServiceV2 metricsServiceV2, Lazy<Mobilytics> lazy, Lazy<MobilyticsEventFactory> lazy2, LocationService locationService, EventBus eventBus, Lazy<ReactFeatureManager> lazy3, BridgeStatusService bridgeStatusService, VoiceService voiceService, AlexaMenu alexaMenu, RoutingRegistry routingRegistry, RouteFeatureGroupRegistry routeFeatureGroupRegistry, ReactRouteRegistry reactRouteRegistry, LocationProvider locationProvider, PersistentStorage.Factory factory, LatencyInfra latencyInfra, BluetoothService bluetoothService, WeakReference<Activity> weakReference, PhotosChooser photosChooser, Lazy<PhotosUploader> lazy4, Lazy<UploadBundleManager> lazy5, Lazy<EventBus> lazy6, Lazy<TaskManager> lazy7, Lazy<IdentityService> lazy8, Lazy<CertificateReaderService> lazy9, TestArgumentsService testArgumentsService, Lazy<PhotosFeatureGuardian> lazy10, Lazy<AMPDInformationProvider> lazy11, PlatformFeatureServiceV2 platformFeatureServiceV2, Lazy<CloudDriveMetrics> lazy12) {
+        this.collectionsFactory = collectionsFactory;
+        this.environmentService = environmentService;
+        this.deviceInformation = deviceInformation;
+        this.routingService = routingService;
+        this.identityService = identityService;
+        this.accountService = accountService;
+        this.userAgentService = userAgentService;
+        this.metricsService = metricsService;
+        this.metricsServiceV2 = metricsServiceV2;
+        this.mobilytics = lazy;
+        this.mobilyticsEventFactory = lazy2;
+        this.locationService = locationService;
+        this.eventBus = eventBus;
+        this.reactFeatureManager = lazy3;
+        this.bridgeStatusService = bridgeStatusService;
+        this.voiceService = voiceService;
+        this.alexaMenu = alexaMenu;
+        this.routingRegistry = routingRegistry;
+        this.groupRegistry = routeFeatureGroupRegistry;
+        this.reactRouteRegistry = reactRouteRegistry;
+        this.locationProvider = locationProvider;
+        this.storageFactory = factory;
+        this.latencyInfra = latencyInfra;
+        this.bluetoothService = bluetoothService;
+        this.activity = weakReference;
+        this.photosChooser = photosChooser;
+        this.photosUploader = lazy4;
+        this.uploadBundleManager = lazy5;
+        this.eventBusLazy = lazy6;
+        this.taskManagerLazy = lazy7;
+        this.identityServiceLazy = lazy8;
+        this.certificateReaderService = lazy9;
+        this.testArguments = testArgumentsService;
+        this.photosFeatureGuardianLazy = lazy10;
+        this.ampdInformationProvider = lazy11;
+        this.platformFeatureServiceV2 = platformFeatureServiceV2;
+        this.cloudDriveMetrics = lazy12;
+    }
+
+    @Override // com.facebook.react.ReactPackage
+    public List<NativeModule> createNativeModules(ReactApplicationContext reactApplicationContext) {
+        List<NativeModule> asList = Arrays.asList(new AlexaEnvironmentModule(reactApplicationContext, this.collectionsFactory, this.environmentService, this.identityService, this.userAgentService, this.bridgeStatusService, this.eventBus, this.testArguments, this.storageFactory.create(STARTUP_PERSISTENT_STORAGE)), new DeviceInformationModule(reactApplicationContext, this.deviceInformation, this.bluetoothService), new NotificationSettingsModule(reactApplicationContext, this.collectionsFactory), new IdentityModule(reactApplicationContext, this.collectionsFactory, this.identityService, this.accountService, this.routingService, this.eventBus, this.metricsService, this.platformFeatureServiceV2), new VoiceSettingsModule(reactApplicationContext, this.voiceService), new AccessoryModule(reactApplicationContext, this.mobilytics), new SystemInfoModule(reactApplicationContext), new NativeNavigationModule(reactApplicationContext, this.collectionsFactory, this.routingService, this.reactFeatureManager, this.routingRegistry, this.groupRegistry, this.reactRouteRegistry), new MetricsModule(reactApplicationContext, this.metricsService, this.identityService, this.mobilytics, this.mobilyticsEventFactory, this.eventBus, this.latencyInfra), new LoggingModule(reactApplicationContext, this.latencyInfra, this.certificateReaderService), new PingHandlerModule(reactApplicationContext, this.collectionsFactory, this.metricsServiceV2), new AccessibilityHelperModule(reactApplicationContext), new AlexaDeviceBackgroundImageModule(reactApplicationContext, this.collectionsFactory, this.identityServiceLazy, ComponentRegistry.getInstance().getLazy(FeatureServiceV2.class), this.photosChooser, this.photosUploader, this.activity, this.uploadBundleManager, this.eventBusLazy, this.taskManagerLazy, this.photosFeatureGuardianLazy, this.ampdInformationProvider, this.cloudDriveMetrics), new ExternalWebContentModule(reactApplicationContext, this.environmentService), new AlexaCommsDelegateBridge(reactApplicationContext), new ContactsManagerBridge(reactApplicationContext), new DeviceManagerBridge(reactApplicationContext), new MessagingManagerBridge(reactApplicationContext), new CommsContactsStoreBridge(reactApplicationContext), new NetworkServiceHelper(reactApplicationContext), new LocalKeyValueStore(reactApplicationContext), new CommsLocalAddressBookStoreBridge(reactApplicationContext), new CommsMetricsLogStorage(reactApplicationContext), new CommsRoutingBridge(reactApplicationContext), new CommsConfigurationBridge(reactApplicationContext), new AssetsStorageBridge(reactApplicationContext), new CommsEventEmitterBridge(reactApplicationContext), new PickerModule(reactApplicationContext), EventBusModule.create(reactApplicationContext, this.eventBus), new PermissionModule(reactApplicationContext, this.activity), new DeviceStateModule(reactApplicationContext, this.storageFactory), new MenuSettingsModule(reactApplicationContext, this.alexaMenu), new CommsMessagingMediaBridge(reactApplicationContext), new ConversationPersistenceBridge(reactApplicationContext), new NotificationFilterBridge(reactApplicationContext), new CallingManagerBridge(reactApplicationContext), new CarrierConfigurationBridge(reactApplicationContext), new TraceModule(reactApplicationContext), new LocationRequestModule(reactApplicationContext, this.collectionsFactory, this.locationProvider), new ElementsUtilityModule(reactApplicationContext), new FeatureServiceModule(reactApplicationContext, this.platformFeatureServiceV2), new DialogModule(reactApplicationContext));
+        this.eventBus.publish(new Message.Builder().setEventType(NATIVE_MODULES_CREATED_EVENT).build());
+        return asList;
+    }
+
+    @Override // com.facebook.react.ReactPackage
+    public List<ViewManager> createViewManagers(ReactApplicationContext reactApplicationContext) {
+        if (this.config == null) {
+            this.config = new DefaultReactExoplayerConfig(reactApplicationContext);
+        }
+        return Arrays.asList(new ReactExoplayerViewManager(this.config));
+    }
+}

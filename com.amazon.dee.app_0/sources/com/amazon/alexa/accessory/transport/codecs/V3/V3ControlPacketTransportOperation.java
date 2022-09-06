@@ -1,0 +1,157 @@
+package com.amazon.alexa.accessory.transport.codecs.V3;
+
+import com.amazon.alexa.accessory.AccessoryTransport;
+import com.amazon.alexa.accessory.internal.util.Logger;
+import com.amazon.alexa.accessory.internal.util.Preconditions;
+import com.amazon.alexa.accessory.io.DataSink;
+import com.amazon.alexa.accessory.transport.TransportPriority;
+import com.amazon.alexa.accessory.transport.operations.TransportOperation;
+import com.amazon.alexa.drive.entertainment.EntertainmentConstants;
+import java.io.IOException;
+/* loaded from: classes6.dex */
+public final class V3ControlPacketTransportOperation implements TransportOperation {
+    private static final int CONTROL_PACKET_LENGTH_EXTENDER_BIT = 0;
+    private static final int CONTROL_PACKET_SEQUENCE_NUMBER_BITS = 0;
+    public static final int CONTROL_TYPE_ABORT = 2;
+    public static final int CONTROL_TYPE_ACK = 1;
+    public static final int ERROR_ACK_FAIL = 2;
+    public static final int ERROR_LENGTH_INVALID = 4;
+    public static final int ERROR_NO_RESOURCE = 5;
+    public static final int ERROR_SEQUENCE_NUMBER_INVALID = 3;
+    public static final int ERROR_SUCCESS = 0;
+    public static final int ERROR_WRITE_FAIL = 1;
+    private static final int TRANSACTION_TYPE_CONTROL = 3;
+    private final int controlType;
+    private final int errorCode;
+    private final boolean isAuthenticated;
+    private final String key;
+    private final TransportPriority priority;
+    private final int stream;
+    private final int transactionId;
+    private final AccessoryTransport transport;
+
+    /* loaded from: classes6.dex */
+    public static final class Builder {
+        private boolean isStreamSet;
+        private boolean isTransactionIdSet;
+        private String key;
+        private int stream;
+        private int transactionId;
+        private AccessoryTransport transport;
+        private int controlType = 1;
+        private int errorCode = 0;
+        private TransportPriority priority = TransportPriority.HIGH;
+        private boolean isAuthenticated = false;
+
+        Builder() {
+        }
+
+        public Builder authenticated(boolean z) {
+            this.isAuthenticated = z;
+            return this;
+        }
+
+        public V3ControlPacketTransportOperation build() {
+            Preconditions.notNull(this.key, "key");
+            Preconditions.notNull(this.transport, "transport");
+            Preconditions.notNull(this.priority, "priority");
+            Preconditions.precondition(this.isStreamSet, "stream is not set");
+            Preconditions.precondition(this.isTransactionIdSet, "transaction id is not set");
+            Preconditions.precondition(!this.isAuthenticated, "authenticated control packets not yet supported");
+            return new V3ControlPacketTransportOperation(this);
+        }
+
+        public Builder controlType(int i) {
+            this.controlType = i;
+            return this;
+        }
+
+        public Builder errorCode(int i) {
+            this.errorCode = i;
+            return this;
+        }
+
+        public Builder key(String str) {
+            this.key = str;
+            return this;
+        }
+
+        public Builder priority(TransportPriority transportPriority) {
+            this.priority = transportPriority;
+            return this;
+        }
+
+        public Builder stream(int i) {
+            this.stream = i;
+            this.isStreamSet = true;
+            return this;
+        }
+
+        public Builder transactionId(int i) {
+            this.transactionId = i;
+            this.isTransactionIdSet = true;
+            return this;
+        }
+
+        public Builder transport(AccessoryTransport accessoryTransport) {
+            this.transport = accessoryTransport;
+            return this;
+        }
+    }
+
+    public static Builder newBuilder() {
+        return new Builder();
+    }
+
+    @Override // com.amazon.alexa.accessory.transport.operations.TransportOperation
+    public void execute() throws IOException {
+        Logger.d("Writing a control packet v3 with transactionId %d on stream %d %s", Integer.valueOf(this.transactionId), Integer.valueOf(this.stream), this.transport.getAccessory());
+        DataSink dataSink = new DataSink(this.transport.sink());
+        Logger.v("Writing a v3 transport packet {");
+        dataSink.writeBits(this.stream, 4);
+        Logger.v(" - stream=%d", Integer.valueOf(this.stream));
+        dataSink.writeBits(this.transactionId, 4);
+        Logger.v(" - transactionId=%d", Integer.valueOf(this.transactionId));
+        dataSink.writeBits(0, 4);
+        Logger.v(" - sequence=%d", 0);
+        int value = V3TransactionType.CONTROL_PACKET.getValue();
+        dataSink.writeBits(value, 2);
+        Logger.v(" - transactionType=%d", Integer.valueOf(value));
+        int i = this.errorCode == 0 ? 1 : 0;
+        dataSink.writeBit(i);
+        Logger.v(" - acknowledgement=%d", Integer.valueOf(i));
+        dataSink.writeBit(0);
+        Logger.v(" - extendedLength=%d", 0);
+        int i2 = (this.isAuthenticated ? 2 : 0) | 0;
+        dataSink.write(i2);
+        Logger.v(" - featureFlags=%d", Integer.valueOf(i2));
+        dataSink.write(2);
+        Logger.v(" - length=%d", 2);
+        dataSink.write(this.controlType);
+        Logger.v(" - command=%d", Integer.valueOf(this.controlType));
+        dataSink.write(this.errorCode);
+        Logger.v(" - errorCode=%d", Integer.valueOf(this.errorCode));
+        Logger.v(EntertainmentConstants.TCOMM_PAYLOAD_DESERIALIZED_CLOSE);
+    }
+
+    @Override // com.amazon.alexa.accessory.transport.operations.TransportOperation
+    public String getKey() {
+        return this.key;
+    }
+
+    @Override // com.amazon.alexa.accessory.transport.operations.TransportOperation
+    public TransportPriority getPriority() {
+        return this.priority;
+    }
+
+    private V3ControlPacketTransportOperation(Builder builder) {
+        this.transport = builder.transport;
+        this.stream = builder.stream;
+        this.transactionId = builder.transactionId;
+        this.controlType = builder.controlType;
+        this.errorCode = builder.errorCode;
+        this.key = builder.key;
+        this.priority = builder.priority;
+        this.isAuthenticated = builder.isAuthenticated;
+    }
+}

@@ -1,0 +1,152 @@
+{
+  "paginationContext": {
+    "nextToken": "AQICAHh9pBMwu0riZh5K2DZ15684tqjRt37r1p55877glRfbvAEGWTzEjaA+ytMS60IRaLmsAAAApTCBogYJKoZIhvcNAQcGoIGUMIGRAgEAMIGLBgkqhkiG9w0BBwEwHgYJYIZIAWUDBAEuMBEEDOOvOlwYqRNlPfpxuQIBEIBeSivuHUBv9jCEjrA+MYpKGm2MGSgexQfNYPXSCKFydsTl2d58gozmK4xcatD8swx069vWLM24qUEq3Tupl7jqk1Knaijygti3SxM+ljvyoONrOefeh5cqZEB0XFEmCA==",
+    "previousToken": "AQICAHh9pBMwu0riZh5K2DZ15684tqjRt37r1p55877glRfbvAEWARiTSATOelSOFe1pnVHTAAAAdTBzBgkqhkiG9w0BBwagZjBkAgEAMF8GCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMi02q5ThG6dRxgHw+AgEQgDKgzWRmjUmJS32wx1eLwc1kCVYUkABbBjtQcDfSVZcLZ1ICBuPQj/69Yc01/QVm8MENBg=="
+  },
+  "activities": [
+    {
+      "title": "SMART_HOME_DEVICE_STATE_CHANGE",
+      "deviceName": "Device Name",
+      "description": "This is an example description. This is an example description. This is an example description. This is an example description",
+      "category": "OTHER",
+      "iconUrl": "https://m.media-amazon.com/images/G/01/alexa/alexa-icon.png",
+      "localizedDateTime": {
+        "date": "2020-07-07",
+        "time": "02:25"
+      },
+      "utcDateTime": "2020-06-26T02:25:21.758Z"
+    },
+    {
+      "title": "SMART_HOME_DEVICE_STATE_CHANGE",
+      "deviceName": "Living room Living Room Living Room Living Room",
+      "description": "This is an example description",
+      "category": "OTHER",
+      "iconUrl": "https://m.media-amazon.com/images/G/01/alexa/alexa-icon.png",
+      "localizedDateTime": {
+        "date": "2020-07-06",
+        "time": "02:23"
+      },
+      "utcDateTime": "2020-06-26T02:23:16.194Z"
+    },
+    {
+      "title": "SMART_HOME_DEVICE_STATE_CHANGE",
+      "deviceName": "",
+      "description": "This is an example description",
+      "category": "OTHER",
+      "iconUrl": "https://m.media-amazon.com/images/G/01/alexa/alexa-icon.png",
+      "localizedDateTime": {
+        "date": "2020-07-06",
+        "time": "18:01"
+      },
+      "utcDateTime": "2020-06-24T18:01:03.637Z"
+    },
+    {
+      "title": "SMART_HOME_DEVICE_STATE_CHANGE",
+      "deviceName": "",
+      "description": "This is an example description",
+      "category": "OTHER",
+      "iconUrl": "https://m.media-amazon.com/images/G/01/alexa/alexa-icon.png",
+      "localizedDateTime": {
+        "date": "2020-06-24",
+        "time": "17:58"
+      },
+      "utcDateTime": "2020-06-24T17:58:56.987Z"
+    },
+    {
+      "title": "SMART_HOME_DEVICE_STATE_CHANGE",
+      "deviceName": "",
+      "description": "This is an example description",
+      "category": "OTHER",
+      "iconUrl": "https://m.media-amazon.com/images/G/01/alexa/alexa-icon.png",
+      "localizedDateTime": {
+        "date": "2020-06-24",
+        "time": "05:09"
+      },
+      "utcDateTime": "2020-06-24T05:09:08.740Z"
+    },
+    {
+      "title": "SMART_HOME_DEVICE_STATE_CHANGE",
+      "deviceName": "",
+      "description": "This is an example description",
+      "category": "OTHER",
+      "iconUrl": "https://m.media-amazon.com/images/G/01/alexa/alexa-icon.png",
+      "localizedDateTime": {
+        "date": "2020-06-24",
+        "time": "05:06"
+      },
+      "utcDateTime": "2020-06-24T05:06:55.755Z"
+    },
+    {
+      "title": "SMART_HOME_DEVICE_STATE_CHANGE",
+      "deviceName": "",
+      "description": "This is an example description",
+      "category": "OTHER",
+      "iconUrl": "https://m.media-amazon.com/images/G/01/alexa/alexa-icon.png",
+      "localizedDateTime": {
+        "date": "2020-06-21",
+        "time": "06:16"
+      },
+      "utcDateTime": "2020-06-21T06:16:46.816Z"
+    },
+    {
+      "title": "SMART_HOME_DEVICE_STATE_CHANGE",
+      "deviceName": "",
+      "description": "This is an example description",
+      "category": "OTHER",
+      "iconUrl": "https://m.media-amazon.com/images/G/01/alexa/alexa-icon.png",
+      "localizedDateTime": {
+        "date": "2020-06-21",
+        "time": "06:14"
+      },
+      "utcDateTime": "2020-06-21T06:14:43.332Z"
+    },
+    {
+      "title": "SMART_HOME_DEVICE_STATE_CHANGE",
+      "deviceName": "",
+      "description": "This is an example description",
+      "category": "OTHER",
+      "iconUrl": "https://m.media-amazon.com/images/G/01/alexa/alexa-icon.png",
+      "localizedDateTime": {
+        "date": "2020-06-21",
+        "time": "05:56"
+      },
+      "utcDateTime": "2020-06-21T05:56:09.855Z"
+    },
+    {
+      "title": "SMART_HOME_DEVICE_STATE_CHANGE",
+      "deviceName": "",
+      "description": "This is an example description",
+      "category": "OTHER",
+      "iconUrl": "https://m.media-amazon.com/images/G/01/alexa/alexa-icon.png",
+      "localizedDateTime": {
+        "date": "2020-06-21",
+        "time": "05:54"
+      },
+      "utcDateTime": "2020-06-21T05:54:06.216Z"
+    },
+    {
+      "title": "SMART_HOME_DEVICE_STATE_CHANGE",
+      "deviceName": "",
+      "description": "This is an example description",
+      "category": "OTHER",
+      "iconUrl": "https://m.media-amazon.com/images/G/01/alexa/alexa-icon.png",
+      "localizedDateTime": {
+        "date": "2020-06-21",
+        "time": "05:19"
+      },
+      "utcDateTime": "2020-06-21T05:19:51.029Z"
+    },
+    {
+      "title": "SMART_HOME_DEVICE_STATE_CHANGE",
+      "deviceName": "",
+      "description": "This is an example description",
+      "category": "OTHER",
+      "iconUrl": "https://m.media-amazon.com/images/G/01/alexa/alexa-icon.png",
+      "localizedDateTime": {
+        "date": "2020-06-21",
+        "time": "05:17"
+      },
+      "utcDateTime": "2020-06-21T05:17:46.735Z"
+    }
+  ]
+}

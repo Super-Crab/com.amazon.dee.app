@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:maxLevel="1">
+        <shape>
+            <corners android:radius="@dimen/text_ui_od_input_text_box_corner_radius_v2"/>
+            <solid android:color="?attr/textUiInputBarBackgroundColor"/>
+            <stroke android:width="@dimen/text_ui_od_input_text_box_stroke_width_v2" android:color="@color/neutral30"/>
+        </shape>
+    </item>
+    <item android:maxLevel="2">
+        <layer-list>
+            <item>
+                <shape android:layout_height="match_parent">
+                    <corners android:radius="@dimen/text_ui_od_input_text_box_corner_radius_v2"/>
+                    <gradient android:startColor="@color/action20" android:endColor="@color/action40" android:angle="0"/>
+                </shape>
+            </item>
+            <item android:left="@dimen/text_ui_od_input_text_box_stroke_width_v2" android:top="@dimen/text_ui_od_input_text_box_stroke_width_v2" android:right="@dimen/text_ui_od_input_text_box_stroke_width_v2" android:bottom="@dimen/text_ui_od_input_text_box_stroke_width_v2">
+                <shape>
+                    <corners android:radius="@dimen/text_ui_od_input_text_box_corner_inner_radius_v2"/>
+                    <solid android:color="?attr/textUiInputBarBackgroundColor"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</level-list>

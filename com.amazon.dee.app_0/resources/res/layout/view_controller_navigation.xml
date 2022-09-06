@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="?attr/mosaicBackground" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:orientation="vertical" android:id="@+id/dm_navigation_normal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/dm_banner_network_connection"/>
+        <com.amazon.alexa.drive.view.DriveModeSingleLineView android:id="@+id/navigation_home" android:background="@drawable/entertainment_list_item_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:dm_single_line_image_icon="@drawable/ic_dm_home" app:dm_single_line_text="@string/nav_home"/>
+        <com.amazon.alexa.drive.view.DriveModeSingleLineView android:id="@+id/navigation_work" android:background="@drawable/entertainment_list_item_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:dm_single_line_image_icon="@drawable/ic_dm_work" app:dm_single_line_text="@string/nav_work"/>
+        <com.amazon.alexa.font.FontTextView android:gravity="start|center_vertical" android:id="@+id/dm_saved_location_text" android:background="?attr/mosaicNeutral50" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dm_navigation_card_divider_height" android:text="@string/nav_saved_locations" android:singleLine="true" android:textAllCaps="true" android:textAlignment="viewStart" android:paddingStart="@dimen/dm_common_padding_left_right" app:fontName="6" style="@style/TextLabel"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/nav_saved_locations_feed" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <include android:id="@+id/dm_navigation_empty_location" layout="@layout/dm_navigation_empty_location"/>
+        <include layout="@layout/dm_navigation_loading"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

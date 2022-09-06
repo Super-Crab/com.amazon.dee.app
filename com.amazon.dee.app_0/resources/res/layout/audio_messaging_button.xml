@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="bottom|center_horizontal" android:background="@drawable/conversation_mic_layer" android:focusable="true" android:clickable="true" android:clipChildren="false" android:layout_width="@dimen/thread_mic_button_size" android:layout_height="@dimen/thread_mic_button_size" android:scaleType="center">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/mic_button_animating_layout" android:background="@drawable/conversation_mic_layer" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerHorizontal="true"/>
+    <ImageView android:id="@+id/mic_button" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_microphone_on_alpha_48dp" android:scaleType="center" android:layout_alignParentBottom="true" android:contentDescription="@string/mic_content_desc"/>
+</RelativeLayout>

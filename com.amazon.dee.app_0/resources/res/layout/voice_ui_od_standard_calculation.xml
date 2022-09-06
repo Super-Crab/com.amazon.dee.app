@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/standardCalculationLayout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="568">
+    <android.widget.Space android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="166"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="402">
+        <include layout="@layout/voice_ui_od_standard_calculation_text"/>
+    </FrameLayout>
+</LinearLayout>

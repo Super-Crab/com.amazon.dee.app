@@ -1,0 +1,88 @@
+{
+  "cards": [
+    {
+      "id":"amzn1.alexa.carealert.execution.7ced37bc-35ab-43e8-94ab-3dc27f6d06a9",
+      "category": "CARE_ALERT",
+      "type": "FIRST_ACTIVITY_DETECTED",
+      "deviceName": "Bedroom Echo",
+      "localizedDateTime": {
+        "date": "June 8",
+        "time": "6:25 PM PST"
+      },
+      "timeStamp": "2020-06-08T11:25:55.991Z",
+      "localizedTitle": "No activity detected",
+      "actions" : [
+        {
+          "actionType": "INTERNAL_ROUTE",
+          "localizedTitle": "Call",
+          "route": "call/todo/still/need/to/figure/out"
+        },
+        {
+          "route": "call/todo/still/need/to/figure/out",
+          "localizedTitle": "Drop In",
+          "actionType": "INTERNAL_ROUTE"
+        }
+      ]
+    },
+    {
+      "id":"amzn1.alexa.caretip.a0450fa6-2e38-49db-bf83-28ad0494af28",
+      "category": "CARE_TIP",
+      "type": "EMERGENCY_CONTACT_SETUP_NEEDED",
+      "localizedTitle": "Notifications can help you care for Mom",
+      "localizedDescription": "Set up notifications to know about Mom's activities'",
+      "actions" : [
+        {
+          "localizedTitle": "Set Up",
+          "actionType": "EXTERNAL_LINK",
+          "linkUrl" : "https://amazon.com/learn-more.html"
+        },
+        {
+          "route": "settings/emergencyContact",
+          "localizedTitle": "Setup now",
+          "actionType": "INTERNAL_ROUTE"
+        }
+      ],
+      "iconAltText": "Emergency setup image",
+      "iconUrl": "https://amazon.com/emergency-setup.png"
+    },
+    {
+      "id":"amzn1.alexa.caretip.8ced37bc-35ab-43e8-94ab-3dc27f6d222",
+      "category": "CARE_TIP",
+      "type": "EMERGENCY_CONTACT_SETUP_NEEDED",
+      "localizedTitle": "Setup Mom's emergency contacts.",
+      "localizedDescription": "Alexa will contact emergency contacts if she hears Mom say, 'Alexa, I need help.'",
+      "actions" : [
+        {
+          "localizedTitle": "Learn more",
+          "actionType": "EXTERNAL_LINK",
+          "linkUrl" : "https://amazon.com/learn-more.html"
+        },
+        {
+          "route": "settings/emergencyContact",
+          "localizedTitle": "Setup now",
+          "actionType": "INTERNAL_ROUTE"
+        }
+      ],
+      "iconAltText": "Emergency setup image",
+      "iconUrl": "https://amazon.com/emergency-setup.png"
+    },
+
+    {
+      "id":"amzn1.alexa.caretip.29334d6b-2efe-4798-bd0c-cfef3ecd4153",
+      "category": "CARE_TIP",
+      "type": "EMERGENCY_CONTACT_SETUP_NEEDED",
+      "localizedTitle": "Confirm Timezone",
+      "localizedDescription": "Confirm Mom's time zone for accurate activity and alerts",
+      "actions" : [
+        {
+          "localizedTitle": "Setup Now",
+          "actionType": "EXTERNAL_LINK",
+          "linkUrl" : "https://amazon.com/learn-more.html"
+        }
+      ],
+      "iconAltText": "Emergency setup image",
+      "iconUrl": "https://amazon.com/emergency-setup.png"
+    }
+  ]
+}
+

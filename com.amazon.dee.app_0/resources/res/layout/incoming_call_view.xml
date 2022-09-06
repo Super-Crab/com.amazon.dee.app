@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/audio_call_background_color" android:baselineAligned="false" style="@style/viewLayout">
+    <include android:id="@+id/call_screen_header" layout="@layout/audio_call_header_layout"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="@integer/call_participant_information_weight">
+        <include android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/call_participant_information"/>
+    </LinearLayout>
+    <LinearLayout android:baselineAligned="false" style="@style/FloatingActionButtonGroup">
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="@integer/call_button_weight" layout="@layout/reject_call_button"/>
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="@integer/call_button_weight" layout="@layout/accept_call_button"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,127 @@
+package com.amazon.alexa.entertainment.devicepicker;
+
+import android.content.Context;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import androidx.annotation.NonNull;
+import com.amazon.alexa.entertainment.devicepicker.DevicePickerViewController;
+import com.amazon.alexa.eventbus.api.EventBus;
+import com.amazon.alexa.eventbus.api.Message;
+import com.amazon.alexa.eventbus.api.Subscriber;
+import com.amazon.alexa.protocols.service.api.ComponentRegistry;
+import com.amazon.alexa.routing.api.RoutingService;
+import com.amazon.alexa.viewmanagement.api.ViewController;
+import com.amazon.dee.app.elements.ElementsRouteKeys;
+import com.android.tools.r8.GeneratedOutlineSupport1;
+import com.facebook.react.ReactInstanceManager;
+import com.facebook.react.ReactRootView;
+import java.util.UUID;
+/* loaded from: classes7.dex */
+public class DevicePickerViewController implements ViewController {
+    private static final String TAG = "DevicePickerViewController";
+    ReactRootView devicePickerView;
+    public EventBus eventBus;
+    Handler mainHandler = new Handler(Looper.getMainLooper());
+    ReactInstanceManager reactInstanceManager;
+    Subscriber subscriber;
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    /* renamed from: com.amazon.alexa.entertainment.devicepicker.DevicePickerViewController$1  reason: invalid class name */
+    /* loaded from: classes7.dex */
+    public class AnonymousClass1 implements Subscriber {
+        RoutingService routingService;
+        private UUID uuid = UUID.randomUUID();
+
+        AnonymousClass1() {
+        }
+
+        public RoutingService getRoutingService() {
+            if (this.routingService == null) {
+                this.routingService = (RoutingService) GeneratedOutlineSupport1.outline20(RoutingService.class);
+            }
+            return this.routingService;
+        }
+
+        @Override // com.amazon.alexa.eventbus.api.Subscriber
+        public UUID getUUID() {
+            return this.uuid;
+        }
+
+        public /* synthetic */ void lambda$onMessageReceived$0$DevicePickerViewController$1() {
+            this.routingService.navigateBackward();
+        }
+
+        @Override // com.amazon.alexa.eventbus.api.Subscriber
+        public void onMessageReceived(@NonNull Message message) {
+            this.routingService = getRoutingService();
+            if (this.routingService.getCurrentRoute().getRoute().getName().equals("universal-device-picker")) {
+                DevicePickerViewController.this.mainHandler.post(new Runnable() { // from class: com.amazon.alexa.entertainment.devicepicker.-$$Lambda$DevicePickerViewController$1$vvyij-UU05cUHLLx8nF7H8GGB24
+                    @Override // java.lang.Runnable
+                    public final void run() {
+                        DevicePickerViewController.AnonymousClass1.this.lambda$onMessageReceived$0$DevicePickerViewController$1();
+                    }
+                });
+            }
+        }
+
+        @Override // com.amazon.alexa.eventbus.api.Subscriber
+        public boolean supportsMessage(@NonNull Message message) {
+            return message.getEventType().equals("close::universalDevicePicker");
+        }
+    }
+
+    public DevicePickerViewController(ReactInstanceManager reactInstanceManager) {
+        this.reactInstanceManager = reactInstanceManager;
+    }
+
+    private synchronized EventBus getEventBus() {
+        if (this.eventBus == null) {
+            this.eventBus = (EventBus) ComponentRegistry.getInstance().get(EventBus.class).get();
+        }
+        return this.eventBus;
+    }
+
+    public Subscriber getSubscriber() {
+        if (this.subscriber == null) {
+            this.subscriber = new AnonymousClass1();
+        }
+        return this.subscriber;
+    }
+
+    @Override // com.amazon.alexa.viewmanagement.api.ViewController
+    @NonNull
+    public String getTitle(@NonNull Context context) {
+        return "";
+    }
+
+    @Override // com.amazon.alexa.viewmanagement.api.ViewController
+    @NonNull
+    public View makeView(@NonNull LayoutInflater layoutInflater, @NonNull ViewGroup viewGroup) {
+        this.devicePickerView = new ReactRootView(viewGroup.getContext());
+        return this.devicePickerView;
+    }
+
+    @Override // com.amazon.alexa.viewmanagement.api.ViewController
+    public void onAttach(@NonNull View view) {
+        this.subscriber = getSubscriber();
+        this.eventBus = getEventBus();
+        this.eventBus.subscribe(this.subscriber);
+        Bundle bundle = new Bundle();
+        bundle.putString("fullViewName", "channels-entertainment/device-picker");
+        bundle.putString(ElementsRouteKeys.THEME, "dark");
+        try {
+            this.devicePickerView.startReactApplication(this.reactInstanceManager, "ElementsDevicePickerComponent", bundle);
+        } catch (AssertionError unused) {
+        }
+    }
+
+    @Override // com.amazon.alexa.viewmanagement.api.ViewController
+    public void onDetach(@NonNull View view) {
+        this.devicePickerView.unmountReactApplication();
+        this.eventBus.unsubscribe(getSubscriber().getUUID());
+    }
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="amazon_customer_service">Service client Amazon</string>
+    <string name="dialog_close">Fermer</string>
+    <string name="dialog_confirm_end">Arrêter de partager votre écran ?</string>
+    <string name="dialog_confirm_end_accept">Arrêter le partage</string>
+    <string name="dialog_confirm_end_decline">Annuler</string>
+    <string name="dialog_ended_agent">Le service client a mis fin au partage d\'écran. Vous ne partagez plus votre écran.</string>
+    <string name="dialog_ended_customer">Vous ne partagez plus votre écran avec le service client Amazon</string>
+    <string name="dialog_ended_error">Quelque chose s\'est mal passé et le partage d\'écran s\'est terminé. Vous ne partagez plus votre écran.</string>
+    <string name="dialog_ended_inactivity">Le partage d\'écran s\'est terminé en raison de votre inactivité. Vous ne partagez plus votre écran.</string>
+    <string name="dialog_request_resume">Le service client souhaite reprendre le partage d\'écran avec vous.</string>
+    <string name="dialog_request_resume_accept">Accepter</string>
+    <string name="dialog_request_resume_decline">Refuser</string>
+    <string name="menu_end">Fin du partage d\'écran</string>
+    <string name="message_agent_paused">Le service client a interrompu le partage d\'écran</string>
+    <string name="notification_auto_ended">Le partage d\'écran s\'est terminé en raison de votre inactivité</string>
+    <string name="overflow_menu">Menu</string>
+    <string name="pause_button">Pause</string>
+    <string name="permission_request_3p_notification">Le service client Amazon souhaite faire un partage d’écran. Ouvrez l\'application pour vous connecter.</string>
+    <string name="primer_continue">Continuer</string>
+    <string name="primer_header">Partagez votre écran avec le service client Amazon afin que nous puissions mieux vous aider</string>
+    <string name="primer_subheader">En partageant votre écran, vous permettez à notre partenaire du service client de consulter vos informations. Soyez assurés que,</string>
+    <string name="resume_button">Reprendre</string>
+    <string name="status_connected">ACTIF</string>
+    <string name="status_connecting">DÉPART…</string>
+    <string name="status_ending">FIN…</string>
+    <string name="status_header">Partage d\'écran</string>
+    <string name="status_paused">SUSPENDU</string>
+    <string name="vox_supported_country">FR</string>
+    <string name="vox_supported_language">fr</string>
+</resources>

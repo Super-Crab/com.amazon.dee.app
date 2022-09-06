@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/settings_toolbar" layout="@layout/settings_toolbar"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textColor="@android:color/black" android:id="@+id/device" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/alexa_settings_activity_information_device"/>
+        <TextView android:textColor="@android:color/black" android:id="@+id/os" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/alexa_settings_activity_information_os"/>
+        <TextView android:textColor="@android:color/black" android:id="@+id/device_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/alexa_settings_activity_information_device_id" android:textIsSelectable="true"/>
+    </LinearLayout>
+</LinearLayout>

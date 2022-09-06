@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:baselineAligned="false" style="@style/viewLayout">
+    <include android:id="@+id/call_screen_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/videocall_toolbar_top_margin" layout="@layout/video_calling_toolbar"/>
+    <include android:id="@+id/call_screen_header_left" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginStart="@dimen/videocall_toolbar_start_margin" layout="@layout/video_calling_toolbar"/>
+    <include android:layout_gravity="end" android:id="@+id/call_screen_header_right" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginEnd="@dimen/videocall_toolbar_end_margin" layout="@layout/video_calling_toolbar"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:layout_gravity="center" android:id="@+id/call_participant_information" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/call_participant_information"/>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="bottom" android:id="@+id/call_button_layout" android:layout_marginBottom="@dimen/six_spacing" android:baselineAligned="false" style="@style/TwoRowFloatingActionButtonGroup">
+        <LinearLayout android:layout_marginBottom="@dimen/six_spacing" android:baselineAligned="false" style="@style/FloatingActionButtonGroup">
+            <include android:id="@+id/toggle_video_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="@integer/call_button_weight" layout="@layout/toggle_video_button"/>
+            <include android:id="@+id/speaker_call_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="@integer/call_button_weight" layout="@layout/speaker_call_button"/>
+            <include android:id="@+id/mic_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="@integer/call_button_weight" layout="@layout/microphone_call_button"/>
+        </LinearLayout>
+        <include android:id="@+id/end_call_button" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/end_call_button"/>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="end|bottom" android:orientation="vertical" android:id="@+id/call_button_layout_left" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="@dimen/landscape_left_call_buttons_margin_top" android:layout_marginBottom="@dimen/landscape_left_call_buttons_margin_bottom" android:weightSum="4" android:layout_marginEnd="@dimen/landscape_left_call_buttons_margin_end" style="@style/FloatingActionButtonGroup">
+        <include android:id="@+id/toggle_video_button" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="@integer/call_button_weight" layout="@layout/toggle_video_button"/>
+        <include android:id="@+id/speaker_call_button" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="@integer/call_button_weight" layout="@layout/speaker_call_button"/>
+        <include android:id="@+id/mic_button" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="@integer/call_button_weight" layout="@layout/microphone_call_button"/>
+        <include android:id="@+id/end_call_button" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="@integer/call_button_weight" layout="@layout/end_call_button"/>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="start|center_vertical" android:orientation="vertical" android:id="@+id/call_button_layout_right" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="@dimen/landscape_right_call_buttons_margin_top" android:layout_marginBottom="@dimen/landscape_right_call_buttons_margin_bottom" android:weightSum="4" android:layout_marginStart="@dimen/landscape_right_call_buttons_margin_start" style="@style/FloatingActionButtonGroup">
+        <include android:id="@+id/toggle_video_button" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="@integer/call_button_weight" layout="@layout/toggle_video_button"/>
+        <include android:id="@+id/speaker_call_button" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="@integer/call_button_weight" layout="@layout/speaker_call_button"/>
+        <include android:id="@+id/mic_call_button" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="@integer/call_button_weight" layout="@layout/microphone_call_button"/>
+        <include android:id="@+id/end_call_button" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="@integer/call_button_weight" layout="@layout/end_call_button"/>
+    </LinearLayout>
+</FrameLayout>

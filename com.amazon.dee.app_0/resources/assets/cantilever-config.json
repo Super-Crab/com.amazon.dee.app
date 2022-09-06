@@ -1,0 +1,14 @@
+{
+    "urls": {
+        "NA": "https://digprjsurvey.amazon.com",
+        "EU": "https://digprjsurvey.amazon.co.uk",
+        "JP": "https://digprjsurvey.amazon.co.jp",
+        "CN": "https://digprjsurvey.amazon.cn"
+    },
+    "hosts": {
+        "NA": "digprjsurvey.amazon.com",
+        "EU": "digprjsurvey.amazon.co.uk",
+        "JP": "digprjsurvey.amazon.co.jp",
+        "CN": "digprjsurvey.amazon.cn"
+    }
+}

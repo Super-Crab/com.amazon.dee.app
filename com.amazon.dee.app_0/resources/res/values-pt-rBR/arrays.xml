@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="default_pill_hints">
+        <item>Reproduzir sons para dormir</item>
+        <item>Avisar</item>
+        <item>Quais são as minhas notificações?</item>
+        <item>Parar a música</item>
+        <item>Conte-me uma piada</item>
+        <item>Qual é a pergunta do dia?</item>
+        <item>Boa noite</item>
+        <item>Parar</item>
+        <item>Tocar música</item>
+        <item>Bom dia</item>
+        <item>Próxima música</item>
+        <item>Reproduzir</item>
+        <item>Onde está o meu pedido?</item>
+        <item>Pausar a música</item>
+        <item>Toque jazz</item>
+        <item>Vigie minha casa</item>
+        <item>Como você está?</item>
+        <item>Ajuste o alarme para amanhã às 7 da manhã</item>
+        <item>O que é a luz amarela?</item>
+        <item>Qual é a previsão do tempo hoje?</item>
+        <item>Cancelar meu timer</item>
+        <item>Inicie meu dia</item>
+        <item>Adicionar maçãs à minha lista de compras</item>
+        <item>Qual é a temperatura lá fora?</item>
+        <item>Quais são as notícias?</item>
+    </array>
+    <array name="new_user_messages">
+        <item>Olá. Adivinha quem acabou de aprender como escrever? Envie uma mensagem para mim para que eu conte uma piada ou acenda as luzes. Se preferir, pesquise no aplicativo coisas como suas listas e configurações.</item>
+        <item>A propósito, escrever para mim é parte de uma amostra pública. Por isso, eu ainda estou pegando o jeito.</item>
+    </array>
+    <array name="voice_ui_od_permissions_primer_rationale_list_items">
+        <item>Permitir que a Alexa escute suas solicitações</item>
+        <item>Fazer chamadas e enviar mensagens para amigos e familiares</item>
+        <item>Controlar dispositivos de Casa Inteligente</item>
+        <item>Obter resultados relevantes de local, tráfego e previsão do tempo</item>
+    </array>
+    <array name="voice_ui_od_scrim_hints">
+        <item>“Qual é a previsão do tempo?”</item>
+        <item>“Como está o trânsito?”</item>
+        <item>“Quantas milhas tem em 10 quilômetros?”</item>
+        <item>“Qual é a conversão do dólar para o euro?”</item>
+        <item>“Quais filmes estão em cartaz perto de mim?”</item>
+        <item>“Quais filmes estarão em cartaz amanhã?”</item>
+        <item>“Quais filmes de ficção científica estão em cartaz?”</item>
+        <item>“Quantas calorias tem um ovo?”</item>
+        <item>“Qual a distância para a Lua?”</item>
+        <item>“Que horas são em Tóquio?”</item>
+        <item>“Pergunte à Wikipédia sobre o Jornada nas Estrelas”</item>
+        <item>“Adicione leite à minha lista de compras.”</item>
+        <item>“O que tenho na minha lista de tarefas?”</item>
+        <item>“Encontre o mercado mais perto.”</item>
+        <item>“Onde fica a piscina mais perto?”</item>
+        <item>“Quais cafeterias estão mais perto?”</item>
+        <item>“Qual é a pizzaria que está mais perto?”</item>
+        <item>“Qual é a farmácia mais perto?”</item>
+        <item>“Qual é a previsão do tempo para hoje?”</item>
+        <item>“Vai chover amanhã?”</item>
+        <item>“Precisarei de um guarda-chuva hoje?”</item>
+        <item>“Qual é a previsão do tempo para Londres?”</item>
+    </array>
+</resources>

@@ -1,0 +1,15 @@
+package com.amazon.whisperjoin.provisioning.security;
+
+import com.amazon.whisperjoin.provisioning.constants.BluetoothConstants;
+import java.util.Arrays;
+import java.util.List;
+import java.util.UUID;
+/* loaded from: classes13.dex */
+public class SecurityConstants {
+    public static final List<UUID> NON_ENCRYPTED_CHARACTERISTICS = Arrays.asList(BluetoothConstants.DEVICE_MANUFACTURER_NAME_UUID, BluetoothConstants.DEVICE_MODEL_NUMBER_UUID, BluetoothConstants.DEVICE_SERIAL_NUMBER_UUID, BluetoothConstants.DEVICE_HARDWARE_REVISION_UUID, BluetoothConstants.DEVICE_FIRMWARE_REVISION_UUID, BluetoothConstants.REFRESH_REGISTRATION_STATE_REQ_UUID, BluetoothConstants.REFRESH_REGISTRATION_STATE_RESP_UUID, BluetoothConstants.REGISTER_WITH_CBL_RESP_UUID, BluetoothConstants.ECDH_PUBLIC_KEY_EXCHANGE_REQ_UUID, BluetoothConstants.ENCRYPTION_CAPABILITIES_UUID, BluetoothConstants.ECDH_PUBLIC_KEY_EXCHANGE_RESP_UUID, BluetoothConstants.ECDH_PUBLIC_KEY_EXCHANGE_RESP_DATA_UUID, BluetoothConstants.SCAN_WIFI_NETWORKS_REQ_UUID, BluetoothConstants.SCAN_WIFI_NETWORKS_RESP_UUID, BluetoothConstants.SCAN_WIFI_NETWORKS_RESULTS_READY_UUID, BluetoothConstants.REFRESH_VISIBLE_NETWORK_LIST_REQUEST_UUID, BluetoothConstants.REFRESH_VISIBLE_NETWORK_LIST_STATUS_UUID, BluetoothConstants.NUM_VISIBLE_NETWORKS_UUID, BluetoothConstants.GET_VISIBLE_WIFI_NETWORK_INDEX_RESP_UUID, BluetoothConstants.REFRESH_CONFIGURED_NETWORK_LIST_REQ_UUID, BluetoothConstants.REFRESH_CONFIGURED_NETWORK_LIST_RESP_UUID, BluetoothConstants.NUM_CONFIGURED_NETWORKS_UUID, BluetoothConstants.GET_CONFIGURED_WIFI_NETWORK_INDEX_RESP_UUID, BluetoothConstants.REFRESH_WIFI_CONNECTION_STATE_REQ_UUID, BluetoothConstants.REFRESH_WIFI_CONNECTION_STATE_RESP_UUID, BluetoothConstants.SAVE_WIFI_NETWORK_RESP_UUID, BluetoothConstants.CONNECT_TO_CONFIGURED_NETWORK_RESP_UUID, BluetoothConstants.REMOVE_CONFIGURED_NETWORK_RESP_UUID, BluetoothConstants.STOP_PROVISIONING_REQ_UUID, BluetoothConstants.STOP_PROVISIONING_RESP_UUID);
+
+    /* loaded from: classes13.dex */
+    public enum SecuritySchemes {
+        ECDHE_NISTP256_WITH_AES128_GCM
+    }
+}

@@ -1,0 +1,47 @@
+package com.amazon.alexa.voice.ui.onedesign.tta.metrics;
+
+import androidx.annotation.NonNull;
+import com.amazon.alexa.voice.ui.tta.metrics.TtaEvent;
+/* loaded from: classes11.dex */
+public enum TtaUiEvent implements TtaEvent {
+    TYPING_SCREEN_VISIBLE("TTA_TYPING_SCREEN_VISIBLE"),
+    MESSAGE_SENT("TTA_MESSAGE_SENT"),
+    SWITCHED_TO_SCRIM("TTA_SWITCHED_TO_SCRIM"),
+    VOX_TTA_IN_CHAT_LINK_TAPPED("VOX_TTA_IN_CHAT_LINK_TAPPED"),
+    VOX_TTA_IN_CHAT_LINK_GENERATED("VOX_TTA_IN_CHAT_LINK_GENERATED"),
+    RESPONSE_MESSAGE_RENDER("RESPONSE_MESSAGE_RENDER"),
+    VOX_SIMBA_INCHAT_SHOWN("VOX_SIMBA_INCHAT_SHOWN"),
+    VOX_SIMBA_HINT_SHOWN("VOX_SIMBA_HINT_SHOWN"),
+    VOX_SIMBA_SUGGESTION_SHOWN("VOX_SIMBA_SUGGESTION_SHOWN"),
+    VOX_SIMBA_ITEM_SELECTED("VOX_SIMBA_ITEM_SELECTED"),
+    HINT_RESULT_TAPPED("SIMBA_HINT_RESULT_TAPPED"),
+    LINK_RESULT_TAPPED("SIMBA_LINK_RESULT_TAPPED"),
+    SUGGESTION_TAPPED("SIMBA_SUGGESTION_TAPPED"),
+    PILL_TAPPED("SIMBA_PILL_TAPPED"),
+    PILL_SHOWN("SIMBA_PILL_SHOWN"),
+    SHOW_MORE_DISPLAYED("SHOW_MORE_DISPLAYED"),
+    VOX_SIMBA_SHOW_MORE_TAPPED("VOX_SIMBA_SHOW_MORE_TAPPED"),
+    VOX_CHARS_BEFORE_SUGGESTIONS("VOX_CHARS_BEFORE_SUGGESTIONS"),
+    VOX_SIMBA_SUGGESTION_SELECTED_INDEX("VOX_SIMBA_SUGGESTION_SELECTED_INDEX"),
+    VOX_SIMBA_RESULT_SELECTED_INDEX("VOX_SIMBA_RESULT_SELECTED_INDEX"),
+    VOX_TTA_LOCAL_PILL_SELECTED("VOX_TTA_LOCAL_PILL_SELECTED"),
+    VOX_TTA_LOCAL_PILL_SHOWN("VOX_TTA_LOCAL_PILL_SHOWN");
+    
+    private final String name;
+
+    TtaUiEvent(@NonNull String str) {
+        this.name = str;
+    }
+
+    @Override // com.amazon.alexa.voice.ui.tta.metrics.TtaEvent
+    @NonNull
+    public String getName() {
+        return this.name;
+    }
+
+    @Override // java.lang.Enum
+    @NonNull
+    public String toString() {
+        return this.name;
+    }
+}

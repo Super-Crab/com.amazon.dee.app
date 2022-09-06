@@ -1,0 +1,7 @@
+[
+  {
+    "type": "AlexaInterface",
+    "interface": "Alexa.IOComponents",
+    "version": "1.4"
+  }
+]

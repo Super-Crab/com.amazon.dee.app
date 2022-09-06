@@ -1,0 +1,16 @@
+{
+  "errorCode": null,
+  "errorDescription": null,
+  "response": {
+    "frictiveDomains": [
+      "AlexaMayday"
+    ],
+    "frictivePrompts": [
+      {
+        "namespace": "AlexaMayday",
+        "promptId": "NoAnswerFound"
+      }
+    ]
+  },
+  "statusCode": 200
+}

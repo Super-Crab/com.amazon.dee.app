@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/standardCalculationLayout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/voice_ui_od_standard_image_content_spacing" layout="@layout/voice_ui_od_standard_calculation_text"/>
+</LinearLayout>

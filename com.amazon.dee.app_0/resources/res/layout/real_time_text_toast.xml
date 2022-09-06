@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rtt_toast" style="@style/rtt_toast_linear_layout">
+    <com.amazon.alexa.font.FontTextView android:id="@+id/rtt_toast_text" android:text="@string/rtt_unavailable" android:maxLines="1" android:textDirection="anyRtl" android:layoutDirection="locale" style="@style/rtt_toast_text"/>
+</LinearLayout>

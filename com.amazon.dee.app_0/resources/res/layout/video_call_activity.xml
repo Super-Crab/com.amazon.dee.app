@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:gravity="center" android:id="@+id/remoteViewContainer" android:background="@color/video_call_remote_view_background" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:gravity="center" android:id="@+id/selfViewContainer" android:background="@color/video_call_self_view_background" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="true">
+        <ImageView android:id="@+id/toggle_camera" android:background="@android:color/transparent" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_camera_switch_default_dark_36dp" android:contentDescription="@string/toggle_camera_switch"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/scrim" android:background="@color/scrim_background" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.6"/>
+    <FrameLayout android:id="@+id/calling_view_wrapper" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</merge>

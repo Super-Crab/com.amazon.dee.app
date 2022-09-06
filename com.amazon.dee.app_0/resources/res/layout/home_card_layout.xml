@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:background="?attr/mosaicBackground" android:clickable="false" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="@dimen/icon_width" android:layout_height="@dimen/icon_width" android:layout_marginStart="@dimen/icon_text_padding" android:layout_marginEnd="@dimen/icon_text_padding">
+        <ImageView android:id="@+id/icon" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/icon_run" android:scaleType="fitCenter" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.amazon.alexa.font.FontTextView android:textSize="@dimen/text_size_body" android:textColor="?attr/mosaicNeutral10" android:ellipsize="end" android:orientation="vertical" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/home_card_text_margin" android:maxLines="2"/>
+        <com.amazon.alexa.font.FontTextView android:textSize="@dimen/text_size_caption" android:textColor="?attr/mosaicNeutral30" android:ellipsize="end" android:orientation="vertical" android:id="@+id/subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/card_description_margin" android:layout_marginBottom="@dimen/home_card_text_margin" android:maxLines="2"/>
+    </LinearLayout>
+</LinearLayout>

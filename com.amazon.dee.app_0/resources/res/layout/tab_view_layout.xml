@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/tab_layout" android:background="?attr/mosaicBackground" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/header" layout="@layout/header"/>
+    <com.google.android.material.tabs.TabLayout android:id="@+id/tab_view_layout" android:layout_width="match_parent" android:layout_height="@dimen/tab_height" android:textAllCaps="false" android:layout_marginHorizontal="@dimen/padding_default" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@+id/header" app:tabBackground="@drawable/tab_indicator_selector" app:tabGravity="0" app:tabIndicator="@android:color/transparent" app:tabMode="1" app:tabSelectedTextColor="?attr/mosaicNeutral10" app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget" app:tabTextColor="?attr/mosaicNeutral20"/>
+    <include android:id="@+id/banner_layout" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/tab_view_layout" layout="@layout/banner"/>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/tabs" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/banner_layout">
+        <include android:id="@+id/landing_page_tab" android:visibility="gone" layout="@layout/landing_page_tab"/>
+        <include android:id="@+id/landing_page_big_font_tab" android:visibility="gone" layout="@layout/landing_page_big_font_tab"/>
+        <include android:id="@+id/empty_workouts_tab" android:visibility="gone" layout="@layout/empty_workout_history_layout"/>
+        <include android:id="@+id/workouts_tab" android:visibility="gone" layout="@layout/workout_history_layout"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

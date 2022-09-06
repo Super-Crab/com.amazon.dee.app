@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:tag="layout/comms_share_setup_link_view_0" android:background="?attr/mosaicBackground" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.amazon.alexa.font.FontTextView android:textColor="?attr/mosaicNeutral10" android:textColorLink="?attr/mosaicNeutral30" android:id="@+id/comms_setup_instruct_message" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Mosaic.View.InstructionalTemplate.Body"/>
+    <com.amazon.alexa.mosaic.view.NumberedListText android:id="@+id/comms_setup_instruct_step1" android:tag="binding_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/large_margin" app:numberText="1"/>
+    <com.amazon.alexa.mosaic.view.NumberedListText android:id="@+id/comms_setup_instruct_step2" android:tag="binding_3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/large_margin" app:numberText="2"/>
+</LinearLayout>

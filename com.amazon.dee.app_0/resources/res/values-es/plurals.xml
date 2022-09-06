@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accessory_service_notification_content_active_sessions">
+        <item quantity="one">%1$d conectado</item>
+        <item quantity="other">%1$d conectados</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">Avanzar %d segundo</item>
+        <item quantity="other">Avanzar %d segundos</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">Retroceder %d segundo</item>
+        <item quantity="other">Retroceder %d segundos</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_days">
+        <item quantity="one">mañana</item>
+        <item quantity="other">dentro de %d días</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_hours">
+        <item quantity="one">dentro de 1 hora</item>
+        <item quantity="other">dentro de %d horas</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_minutes">
+        <item quantity="one">dentro de 1 minuto</item>
+        <item quantity="other">dentro de %d minutos</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_seconds">
+        <item quantity="one">dentro de 1 segundo</item>
+        <item quantity="other">dentro de %d segundos</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_days_ago">
+        <item quantity="one">Ayer</item>
+        <item quantity="other">hace %d días</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_hours_ago">
+        <item quantity="one">hace 1 hora</item>
+        <item quantity="other">hace %d horas</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_minutes_ago">
+        <item quantity="one">hace 1 minuto</item>
+        <item quantity="other">hace %d minutos</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_seconds_ago">
+        <item quantity="one">hace 1 segundo</item>
+        <item quantity="other">hace %d segundos</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_hours">
+        <item quantity="one">1 hora</item>
+        <item quantity="other">%d horas</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_minutes">
+        <item quantity="one">1 minuto</item>
+        <item quantity="other">%d minutos</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_seconds">
+        <item quantity="one">1 segundo</item>
+        <item quantity="other">%d segundos</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_days">
+        <item quantity="one">mañana</item>
+        <item quantity="other">dentro de %d días</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_hours">
+        <item quantity="one">dentro de 1 hora</item>
+        <item quantity="other">dentro de %d  horas</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_minutes">
+        <item quantity="one">dentro de 1 minuto</item>
+        <item quantity="other">dentro de %d minutos</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_seconds">
+        <item quantity="one">dentro de 1 segundo</item>
+        <item quantity="other">dentro de %d segundos</item>
+    </plurals>
+    <plurals name="joda_time_android_num_days_ago">
+        <item quantity="one">Ayer</item>
+        <item quantity="other">Hace %d días</item>
+    </plurals>
+    <plurals name="joda_time_android_num_hours_ago">
+        <item quantity="one">Hace 1 hora</item>
+        <item quantity="other">Hace %d horas</item>
+    </plurals>
+    <plurals name="joda_time_android_num_minutes_ago">
+        <item quantity="one">Hace 1 minuto</item>
+        <item quantity="other">Hace %d minutos</item>
+    </plurals>
+    <plurals name="joda_time_android_num_seconds_ago">
+        <item quantity="one">Hace 1 segundo</item>
+        <item quantity="other">Hace %d segundos</item>
+    </plurals>
+    <plurals name="notifications_new_announcements">
+        <item quantity="one">%d comunicado nuevo</item>
+        <item quantity="other">%d comunicados nuevos</item>
+    </plurals>
+    <plurals name="notifications_new_messages">
+        <item quantity="one">%d mensaje nuevo</item>
+        <item quantity="other">%d mensajes nuevos</item>
+    </plurals>
+    <plurals name="unread_message_count">
+        <item quantity="one">%d mensaje no leído.</item>
+        <item quantity="other">%d mensajes no leídos.</item>
+    </plurals>
+    <plurals name="voice_ui_od_traffic_route">
+        <item quantity="one">por %1$s (%2$s)</item>
+        <item quantity="other">por %1$s y %2$s (%3$s)</item>
+    </plurals>
+    <plurals name="voice_ui_od_travel_time_distance_route">
+        <item quantity="one">Por %1$s</item>
+        <item quantity="other">Por %1$s y %2$s</item>
+    </plurals>
+    <plurals name="workout_history_list_secondary_text_cal">
+        <item quantity="one">%d cal</item>
+        <item quantity="other">%d cal</item>
+    </plurals>
+    <plurals name="workout_history_list_secondary_text_step">
+        <item quantity="one">%d paso</item>
+        <item quantity="other">%d pasos</item>
+    </plurals>
+</resources>

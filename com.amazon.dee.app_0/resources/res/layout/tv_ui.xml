@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/tv_scrim" android:layout_width="640dp" android:layout_height="640dp" android:layout_marginLeft="-320dp" android:layout_marginTop="-320dp" android:layout_marginRight="-320dp" android:layout_marginBottom="-320dp" android:src="@drawable/tv_ui_scrim" android:layout_alignParentBottom="true" android:rotation="45" android:importantForAccessibility="no" android:layout_alignParentEnd="true"/>
+    <RelativeLayout android:id="@+id/tv_ui" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="24dp" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true">
+        <FrameLayout android:id="@+id/virtual_remote_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:layout_centerHorizontal="true">
+            <ImageView android:id="@+id/virtual_remote_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:adjustViewBounds="true" android:maxWidth="150dp" android:maxHeight="150dp" android:alpha="0.9" android:importantForAccessibility="no"/>
+        </FrameLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/hold_for_options" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/virtual_remote_container" android:layout_centerHorizontal="true">
+            <TextView android:textAppearance="@style/TextAppearance.Amazon.FireTV.HoldForOptions" android:textSize="12sp" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hold_back_for_options_pre"/>
+            <ImageView android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="4dp" android:layout_marginRight="4dp" android:src="@drawable/back_button" android:scaleType="centerInside" android:adjustViewBounds="true"/>
+            <TextView android:textAppearance="@style/TextAppearance.Amazon.FireTV.HoldForOptions" android:textSize="12sp" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hold_back_for_options_post"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

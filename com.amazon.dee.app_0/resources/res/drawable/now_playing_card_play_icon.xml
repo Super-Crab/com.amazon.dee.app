@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="@dimen/now_playing_card_pause_icon_width" android:width="@dimen/now_playing_card_pause_icon_width" android:viewportWidth="24" android:viewportHeight="24">
+    <path android:fillColor="?attr/mosaicAction40" android:pathData="M12,1C5.925,1,1,5.925,1,12s4.925,11,11,11s11-4.925,11-11S18.075,1,12,1z M18.479,12.955l-9,4.922 C9.33,17.959,9.165,18,9,18c-0.177,0-0.353-0.047-0.51-0.14C8.186,17.68,8,17.354,8,17V7c0-0.355,0.188-0.684,0.496-0.863 c0.307-0.18,0.687-0.182,0.996-0.008l9,5.077c0.316,0.179,0.511,0.515,0.509,0.877C18.998,12.447,18.799,12.78,18.479,12.955z"/>
+</vector>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/bar_button_bg_enabled"/>
+    <item>
+        <inset android:drawable="@drawable/ic_loading_spinner" android:insetLeft="5sp" android:insetRight="5sp" android:insetTop="3sp" android:insetBottom="4.5sp"/>
+    </item>
+</layer-list>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="?attr/mosaicBackground" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" app:layout_constraintWidth_percent="0.85">
+        <ImageView android:id="@+id/controlIcon" android:layout_width="@dimen/mosaic_view_confirmation_icon_width" android:layout_height="@dimen/mosaic_view_confirmation_icon_height"/>
+        <com.amazon.alexa.font.FontTextView android:id="@+id/headlineText" app:fontName="6" style="@style/Mosaic.View.Confirmation.Headline"/>
+        <com.amazon.alexa.font.FontTextView android:id="@+id/bodyText" style="@style/Mosaic.View.Confirmation.Body"/>
+        <com.amazon.alexa.font.FontTextView android:id="@+id/linkText" style="@style/Mosaic.View.Confirmation.Link"/>
+        <com.amazon.alexa.font.FontTextView android:id="@+id/hintText" style="@style/Mosaic.View.Confirmation.Hint"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

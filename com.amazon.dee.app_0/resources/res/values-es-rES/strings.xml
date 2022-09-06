@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="amazon_customer_service">Servicio de atención al cliente de Amazon</string>
+    <string name="dialog_close">Cerrar</string>
+    <string name="dialog_confirm_end">¿Dejar de compartir la pantalla?</string>
+    <string name="dialog_confirm_end_accept">Dejar de compartir</string>
+    <string name="dialog_confirm_end_decline">Cancelar</string>
+    <string name="dialog_ended_agent">El servicio de atención al cliente ha finalizado el uso compartido de pantalla. Ya no estás compartiendo la pantalla.</string>
+    <string name="dialog_ended_customer">Dejarás de compartir la pantalla con el servicio de atención al cliente de Amazon</string>
+    <string name="dialog_ended_error">Se ha producido un problema y ha finalizado el uso compartido de la pantalla. Ya no estás compartiendo la pantalla.</string>
+    <string name="dialog_ended_inactivity">El uso compartido de pantalla ha finalizado debido a la inactividad. Ya no estás compartiendo la pantalla.</string>
+    <string name="dialog_request_resume">El servicio de atención al cliente quiere reanudar el uso compartido de pantalla contigo.</string>
+    <string name="dialog_request_resume_accept">Aceptar</string>
+    <string name="dialog_request_resume_decline">Rechazar</string>
+    <string name="menu_end">Finalizar el uso compartido de pantalla</string>
+    <string name="message_agent_paused">El servicio de atención al cliente ha puesto en pausa el uso compartido de pantalla</string>
+    <string name="notification_auto_ended">El uso compartido de pantalla ha finalizado debido a la inactividad</string>
+    <string name="overflow_menu">Menú</string>
+    <string name="pause_button">Pausa</string>
+    <string name="permission_request_3p_notification">El Servicio de atención al cliente de Amazon quiere compartir pantalla. Abre la aplicación para conectarte.</string>
+    <string name="primer_continue">Continuar</string>
+    <string name="primer_header">Comparte tu pantalla con el servicio de atención al cliente de Amazon para que podamos ayudarte mejor</string>
+    <string name="primer_subheader">Al compartir la pantalla, permites que nuestro afiliado del servicio de atención al cliente vea tu información. Ten la seguridad de que,</string>
+    <string name="resume_button">Reanudar</string>
+    <string name="status_connected">ACTIVO</string>
+    <string name="status_connecting">INICIANDO…</string>
+    <string name="status_ending">FINALIZANDO…</string>
+    <string name="status_header">Uso compartido de pantalla</string>
+    <string name="status_paused">EN PAUSA</string>
+    <string name="vox_supported_country">ES</string>
+    <string name="vox_supported_language">es</string>
+</resources>

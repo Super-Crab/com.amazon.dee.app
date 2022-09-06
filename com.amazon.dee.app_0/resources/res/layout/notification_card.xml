@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/notification_card_layout" android:tag="layout/notification_card_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView android:id="@+id/notification_card" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/card_margin" app:cardCornerRadius="8dp">
+        <RelativeLayout android:padding="@dimen/card_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:id="@+id/notification_card_title_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.95" android:layout_marginEnd="@dimen/card_margin">
+                    <com.amazon.alexa.font.FontTextView android:textSize="@dimen/extra_small_text" android:textColor="@color/white" android:layout_gravity="center" android:id="@+id/notification_card_header" android:tag="binding_2" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <com.amazon.alexa.font.FontTextView android:textColor="@color/white" android:ellipsize="end" android:id="@+id/notification_card_title" android:tag="binding_3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:maxLines="3" app:fontName="6" style="@style/TextAppearance.Mosaic.Body_04"/>
+                    <com.amazon.alexa.font.FontTextView android:textColor="@color/white" android:ellipsize="end" android:id="@+id/notification_card_body" android:tag="binding_4" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" style="@style/TextAppearance.Mosaic.Body"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/notification_overflow_menu" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.05">
+                    <ImageView android:id="@+id/biloba_overflow_menu" android:tag="binding_5" android:background="@drawable/ic_overflow_24dp" android:padding="@dimen/mosaic_button_padding" android:layout_width="@dimen/overflow_menu_width" android:layout_height="@dimen/overflow_menu_width" android:tint="?attr/mosaicNeutral10" android:contentDescription="@string/bottom_sheet_dismiss" android:alpha="0.6"/>
+                </LinearLayout>
+            </LinearLayout>
+            <Button android:textStyle="bold" android:id="@+id/notification_call_button" android:tag="binding_6" android:layout_width="wrap_content" android:layout_height="@dimen/pill_button_height" android:layout_marginTop="@dimen/pill_button_margin" android:layout_below="@+id/notification_card_title_container" android:layout_alignParentBottom="true" android:layout_alignParentStart="true" style="@style/PillButton.Mosaic.Card"/>
+            <Button android:textStyle="bold" android:id="@+id/notification_drop_in_button" android:tag="binding_7" android:layout_width="wrap_content" android:layout_height="@dimen/pill_button_height" android:layout_marginTop="@dimen/pill_button_margin" android:layout_below="@+id/notification_card_title_container" android:layout_alignParentBottom="true" android:layout_toEndOf="@+id/notification_call_button" style="@style/PillButtonBorderless.Mosaic.Card"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.recyclerview.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android" android:scrollbarStyle="outsideOverlay" android:id="@+id/movieListContent" android:paddingBottom="@dimen/voice_ui_od_content_speech_control_height" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:importantForAccessibility="no" android:paddingStart="@dimen/voice_ui_od_movie_list_marginStart" android:paddingEnd="@dimen/voice_ui_od_movie_list_marginEnd"/>

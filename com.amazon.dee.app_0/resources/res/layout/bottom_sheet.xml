@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/bottom_sheet_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.amazon.alexa.mosaic.view.ListItem android:id="@+id/bottom_sheet_menu_dismiss" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:primaryText="@string/bottom_sheet_dismiss"/>
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/bottom_sheet_cancel" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/small_margin" android:contentDescription="@string/close_button_description" app:layout_constraintBottom_toTopOf="@+id/bottom_sheet_menu_dismiss" app:layout_constraintEnd_toEndOf="0">
+        <RelativeLayout android:id="@+id/spacing_view" android:focusable="false" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <ImageView android:background="@drawable/ic_cancel_24dp" android:focusable="false" android:layout_width="24dp" android:layout_height="24dp" android:layout_alignEnd="@+id/spacing_view"/>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

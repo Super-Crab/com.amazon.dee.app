@@ -1,0 +1,1190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="908958311" android:versionName="2.2.466191.0" android:compileSdkVersion="30" android:compileSdkVersionCodename="11" package="com.amazon.dee.app" platformBuildVersionCode="30" platformBuildVersionName="11">
+    <uses-sdk android:minSdkVersion="26" android:targetSdkVersion="30"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-permission android:name="android.permission.INTERNET" android:required="true"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" android:required="false"/>
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION"/>
+    <uses-permission android:name="android.permission.BLUETOOTH" android:required="false"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.amazon.identity.permission.GENERIC_IPC"/>
+    <uses-permission android:name="com.amazon.dcp.settings.permission.READ_SETTINGS"/>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"/>
+    <uses-permission android:name="amazon.speech.permission.CONNECT_WITH_SIM"/>
+    <uses-permission android:name="com.amazon.deecomms.permission"/>
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="false"/>
+    <uses-feature android:name="android.hardware.bluetooth" android:required="false"/>
+    <permission android:name="amazon.permission.ALEXA_LISTEN" android:protectionLevel="signatureOrSystem"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" android:required="false"/>
+    <permission android:name="com.amazon.alexa.feature.permission.WRITE" android:protectionLevel="signature"/>
+    <permission android:name="com.amazon.alexa.feature.permission.READ" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <uses-permission android:name="amazon.permission.COLLECT_METRICS"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <queries>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE"/>
+        </intent>
+        <package android:name="com.google.android.apps.maps"/>
+        <package android:name="com.waze"/>
+        <package android:name="com.magiear.handsfree.assistant"/>
+        <package android:name="com.quicinc.voice.activation"/>
+        <package android:name="com.motorola.motoalexa"/>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE"/>
+        </intent>
+        <intent>
+            <action android:name="com.amazon.identity.action.BOOTSTRAP_SSO"/>
+        </intent>
+        <intent>
+            <action android:name="com.amazon.dcp.sso.action.session.users.changed"/>
+        </intent>
+        <package android:name="com.sony.songpal.mdr"/>
+        <package android:name="jp.co.audiotechnica.connect"/>
+        <package android:name="com.bose.monet"/>
+        <package android:name="com.bose.bosemusic"/>
+        <package android:name="com.oceanwing.soundcore"/>
+        <package android:name="jbl.stc.com"/>
+        <package android:name="com.harman.hkheadphone"/>
+        <package android:name="com.ihome.ama"/>
+        <package android:name="com.sennheiser.control"/>
+        <package android:name="com.eposaudio.eposconnect"/>
+        <package android:name="com.cchip.cchipamaota"/>
+        <package android:name="com.mynextbase.connect"/>
+        <package android:name="com.panasonic.audioconnect"/>
+        <package android:name="com.panasonic.technicsaudioconnect"/>
+        <package android:name="com.bang_olufsen.OneApp"/>
+        <package android:name="com.sugrsugr.ivyapp.sugrsmartivy"/>
+        <package android:name="com.jaybirdsport.audio"/>
+        <package android:name="com.jabra.moments"/>
+        <package android:name="com.hualai.WyzeCam"/>
+        <package android:name="com.beyerdynamic.android"/>
+        <package android:name="com.cedarelectronics.smartsight"/>
+        <package android:name="com.iveco.easyway"/>
+        <intent>
+            <action android:name="android.intent.action.MAIN"/>
+            <category android:name="android.intent.category.LAUNCHER"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.MAIN"/>
+            <category android:name="android.intent.category.LAUNCHER"/>
+        </intent>
+    </queries>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-feature android:name="android.hardware.screen.landscape" android:required="false"/>
+    <permission android:name="com.amazon.alexa.voice.handsfree.SETUP_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.ANSWER_PHONE_CALLS"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_MMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="com.amazon.permission.ENABLE_KEYGUARD_FLAGS"/>
+    <uses-permission android:name="android.permission.MANAGE_OWN_CALLS"/>
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT"/>
+    <uses-feature android:name="com.fireos.sdk.alexa_modeswitch_manager" android:required="false" android:version="2"/>
+    <uses-permission android:name="com.amazon.alexa.permission.MODE_SWITCH"/>
+    <uses-permission android:name="amazon.speech.permission.SEND_DATA_TO_ALEXA"/>
+    <uses-permission android:name="amazon.speech.sim.comms.readAccess"/>
+    <permission android:label="commsPermission" android:name="com.amazon.deecomms.permission" android:protectionLevel="signature"/>
+    <permission android:label="CallDataReadAccess" android:name="com.amazon.comms.calling.readAccess" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.amazon.identity.permission.CAN_CALL_MAP_INFORMATION_PROVIDER" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.amazon.identity.auth.device.perm.AUTH_SDK" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.amazon.dcp.sso.permission.account.changed" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.amazon.dcp.sso.permission.AmazonAccountPropertyService.property.changed" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.amazon.identity.permission.CALL_AMAZON_DEVICE_INFORMATION_PROVIDER" android:protectionLevel="signatureOrSystem"/>
+    <uses-permission android:name="com.amazon.dcp.metrics.permission.METRICS_PERMISSION"/>
+    <uses-permission android:name="com.amazon.dcp.config.permission.DYN_CONFIG_VALUES_UPDATED"/>
+    <uses-permission android:name="com.amazon.identity.auth.device.perm.AUTH_SDK"/>
+    <uses-permission android:name="com.amazon.dcp.sso.permission.USE_DEVICE_CREDENTIALS"/>
+    <uses-permission android:name="com.amazon.dcp.sso.permission.account.changed"/>
+    <uses-permission android:name="com.amazon.dcp.sso.permission.MANAGE_COR_PFM"/>
+    <uses-permission android:name="com.amazon.dcp.sso.permission.CUSTOMER_ATTRIBUTE_SERVICE"/>
+    <uses-permission android:name="com.amazon.identity.permission.CAN_CALL_MAP_INFORMATION_PROVIDER"/>
+    <uses-permission android:name="com.amazon.dcp.sso.permission.AmazonAccountPropertyService.property.changed"/>
+    <uses-permission android:name="com.amazon.identity.permission.CALL_AMAZON_DEVICE_INFORMATION_PROVIDER"/>
+    <permission android:name="com.amazon.appmanager.preload.permission.READ_PRELOAD_DEVICE_INFO_PROVIDER" android:protectionLevel="signatureOrSystem"/>
+    <uses-permission android:name="com.amazon.appmanager.preload.permission.READ_PRELOAD_DEVICE_INFO_PROVIDER"/>
+    <uses-permission android:name="com.amazon.rtcsc.permission.RTCSC"/>
+    <permission android:label="System permission for RTCSC Service" android:name="com.amazon.rtcsc.permission.RTCSC" android:protectionLevel="signatureOrSystem"/>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"/>
+    <uses-permission android:name="amazon.permission.PRIVACY_MODE"/>
+    <uses-permission android:name="amazon.speech.permission.SEND_ALEXA_DIRECTIVE"/>
+    <uses-permission android:name="com.amazon.device.environment.permission.SWITCH_STAGE"/>
+    <uses-permission android:name="android.permission.REQUEST_COMPANION_RUN_IN_BACKGROUND"/>
+    <uses-permission android:name="android.permission.REQUEST_COMPANION_USE_DATA_IN_BACKGROUND"/>
+    <uses-permission android:name="com.amazon.alexa.accessory.ACCESSORY_BROADCAST_PERMISSION"/>
+    <permission android:name="com.amazon.alexa.accessory.ACCESSORY_BROADCAST_PERMISSION" android:protectionLevel="signature"/>
+    <uses-feature android:name="android.software.companion_device_setup" android:required="false"/>
+    <permission android:name="com.amazon.alexa.handsfree.protocols.permission.DATA_SYNC" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.amazon.alexa.handsfree.protocols.permission.DATA_SYNC"/>
+    <uses-permission android:name="amazon.speech.permission.ACCESS_WAKEWORD"/>
+    <uses-permission android:name="com.amazon.alexa.accessory.notificationpublisher.notificationlistener"/>
+    <permission android:name="com.amazon.alexa.accessory.notificationpublisher.notificationlistener" android:protectionLevel="signature"/>
+    <permission android:name="com.amazon.alexa.externalnotifications.directivelistener" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.amazon.alexa.externalnotifications.directivelistener"/>
+    <uses-permission android:name="com.amazon.permission.ASP_PERMISSION"/>
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+    <uses-permission android:name="com.amazon.vizzini.PLAY_TTS"/>
+    <uses-permission android:name="com.amazon.settings.permission.ALEXA_SETTINGS_CONSUMER"/>
+    <uses-feature android:name="com.fireos.sdk.amazon_audio_manager" android:required="false"/>
+    <uses-feature android:name="com.fireos.sdk.mapclientlib" android:required="false"/>
+    <uses-permission android:name="com.amazon.alexa.externalmediaplayer.permission.WAKE_UP"/>
+    <permission android:label="@string/amazon_avs_external_media_player_connection_label" android:name="com.amazon.alexa.externalmediaplayer.permission.WAKE_UP" android:protectionLevel="signature" android:description="@string/amazon_avs_external_media_player_permission_description"/>
+    <permission android:name="com.amazon.alexa.alertsca.events.AlertEvent"/>
+    <uses-permission android:name="com.amazon.alexa.alertsca.events.AlertEvent"/>
+    <uses-permission android:name="com.amazon.alexa.multimodal.settings.permission.READ_VALUE"/>
+    <uses-permission android:name="com.amazon.alexa.multimodal.settings.permission.WRITE_VALUE"/>
+    <uses-permission android:name="com.amazon.alexa.multimodal.permission.SDK_API_GATEWAY"/>
+    <permission android:label="WhiteListPolicyUpdate" android:name="com.amazon.whisperjoin.deviceprovisioningservice.WhiteListPolicyUpdate.Permission" android:protectionLevel="signature"/>
+    <permission android:label="ArcusSettingsUpdate" android:name="com.amazon.whisperjoin.deviceprovisioningservice.ArcusUpdate.Permission" android:protectionLevel="signature"/>
+    <permission android:name="com.amazon.whisperjoin.deviceprovisioningservice.FFSServiceAction.permission" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.amazon.whisperjoin.deviceprovisioningservice.WhiteListPolicyUpdate.Permission"/>
+    <uses-permission android:name="com.amazon.whisperjoin.deviceprovisioningservice.ArcusUpdate.Permission"/>
+    <uses-permission android:name="com.amazon.whisperjoin.deviceprovisioningservice.FFSServiceAction.permission"/>
+    <permission android:name="com.amazon.alexa.handsfree.voiceappreporter.READ_PERMISSION" android:protectionLevel="signature"/>
+    <permission android:name="com.amazon.alexa.handsfree.latencyreporter.LATENCY_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.amazon.alexa.handsfree.latencyreporter.LATENCY_PERMISSION"/>
+    <uses-permission android:name="com.amazon.alexa.handsfree.metrics.IPC_METRIC_PERMISSION"/>
+    <uses-permission android:name="com.amazon.alexa.ALEXA_AUDIO_PROVIDER_ACTION_PERMISSION"/>
+    <uses-permission android:name="com.magiear.handsfree.permission.USE_ASSISTANT_SERVICE"/>
+    <uses-permission android:name="com.quicinc.voice.activation.UVR_ENROLLMENT_SERVICE_PERMISSION"/>
+    <uses-permission android:name="com.quicinc.voice.activation.UVR_SETTINGS_SERVICE_PERMISSION"/>
+    <uses-permission android:name="com.quicinc.voice.activation.VERSION_INFO_PERMISSION"/>
+    <uses-permission android:name="com.quicinc.voice.activation.WAKEWORD_SETTINGS_SERVICE_PERMISSION"/>
+    <uses-permission android:name="com.quicinc.voice.activation.PACKAGE_CHANGED_PERMISSION"/>
+    <uses-permission android:name="com.quicinc.voice.activation.PERMISSION_ACTIVITY_PERMISSION"/>
+    <application android:theme="@style/AppTheme" android:label="@string/alexa_app_name" android:icon="@mipmap/ic_app_alexa" android:name="com.amazon.dee.app.framework.AlexaApplication" android:allowBackup="false" android:hardwareAccelerated="true" android:supportsRtl="true" android:multiArch="true" android:networkSecurityConfig="@xml/network_security_config_prod" android:appComponentFactory="androidx">
+        <activity android:theme="@style/Theme.Alexa.Splash" android:label="@string/alexa_app_name" android:name="com.amazon.dee.app.ui.main.MainActivity" android:exported="true" android:launchMode="singleTask" android:configChanges="screenSize|screenLayout|orientation|keyboardHidden" android:windowSoftInputMode="adjustResize" android:resizeableActivity="false"/>
+        <activity-alias android:label="@string/alexa_app_name" android:name="com.amazon.dee.app.UbiquityLinks" android:targetActivity="com.amazon.dee.app.ui.main.MainActivity" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https"/>
+                <data android:host="alexa-skills.amazon.com"/>
+                <data android:host="alexa-skills.amazon.ca"/>
+                <data android:host="alexa-skills.amazon.com.mx"/>
+                <data android:host="alexa-skills.amazon.com.br"/>
+                <data android:host="alexa-skills.amazon.co.uk"/>
+                <data android:host="alexa-skills.amazon.de"/>
+                <data android:host="alexa-skills.amazon.fr"/>
+                <data android:host="alexa-skills.amazon.it"/>
+                <data android:host="alexa-skills.amazon.es"/>
+                <data android:host="alexa-skills.amazon.in"/>
+                <data android:host="alexa-skills.amazon.co.jp"/>
+                <data android:host="alexa-skills.amazon.com.au"/>
+                <data android:pathPattern="/apis/custom/skills/.*"/>
+                <data android:pathPattern="/apis/kitchen/.*"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:label="@string/alexa_app_name" android:name="com.amazon.dee.webapp.activity.AlexaWebAppActivity" android:exported="true" android:targetActivity="com.amazon.dee.app.ui.main.MainActivity" android:windowSoftInputMode="adjustPan" android:resizeableActivity="false">
+            <intent-filter>
+                <action android:name="com.amazon.intent.action.VKICK"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:label="@string/alexa_app_name" android:name="com.amazon.dee.app.Launcher" android:targetActivity="com.amazon.dee.app.ui.main.MainActivity" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.amazon.intent.action.VKICK"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="echo.amazon.com"/>
+                <data android:host="alexa.amazon.com"/>
+                <data android:host="layla.amazon.com"/>
+                <data android:host="pitangui.amazon.com"/>
+                <data android:host="alexa.amazon.co.uk"/>
+                <data android:host="pico.amazon.co.uk"/>
+                <data android:host="seamus.amazon.co.uk"/>
+                <data android:host="layla.amazon.co.uk"/>
+                <data android:host="alexa.amazon.de"/>
+                <data android:host="brodie.amazon.de"/>
+                <data android:host="seamus.amazon.de"/>
+                <data android:host="layla.amazon.de"/>
+                <data android:host="alexa.amazon.in"/>
+                <data android:host="alexa.amazon.fr"/>
+                <data android:host="alexa.amazon.it"/>
+                <data android:host="alexa.amazon.nl"/>
+                <data android:host="alexa.amazon.ca"/>
+                <data android:host="alexa.amazon.com.mx"/>
+                <data android:host="alexa.amazon.com.br"/>
+                <data android:host="alexa.amazon.co.jp"/>
+                <data android:host="alexa.amazon.com.au"/>
+                <data android:host="alexa.amazon.es"/>
+                <data android:pathPattern="/"/>
+                <data android:pathPattern="/spa.*"/>
+                <data android:pathPattern="/api/skill/link/.*"/>
+                <data android:pathPattern="/routines/shared/.*"/>
+                <data android:pathPattern="/routines/featured/.*"/>
+                <data android:pathPattern="/gp/r.html"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.amazon.dee.ENDPOINT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+        </activity-alias>
+        <meta-data android:name="com.here.android.maps.appid" android:value="gp3nkhEL3Kyly4niP0yj"/>
+        <meta-data android:name="com.here.android.maps.apptoken" android:value="K2VkWABN_aH0Wsy4LMpZmQ"/>
+        <meta-data android:name="com.here.android.maps.license.key" android:value="FYQ/OyaLyMk3rNmJOuXgdB5SbhpgU5p0/vxH56/FPAhD0aCV60m7s2moS3UN/JIc0TN+qdYhBCw06oZOL+/XcCwMZUNDQWemxeirwle2aU2m3Vfoc2vINd2Q6vdHUjO80LfCXdbLAJ6ovh7AxKYbhvyi3hTq0jd1X9m2Kw6sH7GzjmJKCCi/arptkFyROaxrSSAar2l1KTkxzqa/q48VjAhZYGdnp9VCSrBbpMBuEIYC4V6KLk7HHn1NULFt80WySICsiazOis/T+8xBfdz/4MFIQUxnPj1ZLPdszHVRzMBA6J96nDzTK9CZIky7opPdC/6h2M//5eCAOoZ1N2raTTx9AxFXuCicnSAlO+Q+dqZmtDBh5lrpzCSpJcfpGA6vhDJy/Kbcxtivvt55IMYmiRksFZ4380O+QA8tI/O9i5Qca4hfOphzRT8cXV3Ak+KzjKkbYacRMVptI1WYpuRrhkpzHdZ19WTQV+ApIjCAk6rUVSM9kCGmzPBH9EHtbnUQnX8JUpdUSSViuCk5vccyGQiYRazhanxXJOOWoRAZ51YH9L5WYnmWKiihuXV02grodM3JDeZDF1C1/0NW8JE9gKvn6er/eltMORyaLPNsr5hN1Ml3f8VV3kr1wh3VMSV01MrZMmRNWJ/dxR3Q0uCZTyDRiblfF4aIeglzp4i8AeE="/>
+        <meta-data android:name="amazon_3d_icon" android:value="icon_doppler:icon_doppler.scene"/>
+        <meta-data android:name="MAPIsolateApplication" android:value="true"/>
+        <meta-data android:name="MAPEnvironment" android:value="@string/MAP_ENVIRONMENT"/>
+        <meta-data android:name="App_Device_Type_For_Central_Device_Type_A1MPSLFC7L5AFK" android:value="A2TF17PFR55MTB"/>
+        <meta-data android:name="MAPDeviceType" android:value="A2TF17PFR55MTB"/>
+        <activity android:theme="@style/Theme.Alexa.Voice.Activity" android:label="@string/ask_alexa" android:icon="@drawable/voice_ingress" android:name="com.amazon.alexa.voice.ui.VoiceActivity" android:taskAffinity=".alexaftue" android:clearTaskOnLaunch="true" android:excludeFromRecents="true" android:launchMode="singleTask">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="com.amazon.alexa.intent.action.REQUEST_REQUIRED_PERMISSIONS"/>
+            </intent-filter>
+        </activity>
+        <activity-alias android:name="com.amazon.dee.app.voice.AlexaShortcutActivity" android:targetActivity="com.amazon.alexa.voice.ui.VoiceActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="amazon.intent.action.ALEXA_LISTEN"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:name="com.amazon.alexa.voice.VoiceCommandActivity" android:targetActivity="com.amazon.alexa.voice.ui.VoiceActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VOICE_COMMAND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="com.android.systemui.action_assist_icon" android:resource="@drawable/ic_voice_ui_ingress"/>
+        </activity-alias>
+        <activity-alias android:name="com.amazon.alexa.voice.VoiceHandsFreeSearchActivity" android:targetActivity="com.amazon.alexa.voice.ui.VoiceActivity">
+            <intent-filter>
+                <action android:name="android.speech.action.VOICE_SEARCH_HANDS_FREE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.speech.action.WEB_SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="com.android.systemui.action_assist_icon" android:resource="@drawable/ic_voice_ui_ingress"/>
+        </activity-alias>
+        <activity-alias android:name="com.amazon.alexa.voice.AlexaShortcutActivity" android:targetActivity="com.amazon.alexa.voice.ui.VoiceActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="amazon.intent.action.ALEXA_LISTEN"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:label="@string/alexa" android:icon="@drawable/voice_ingress" android:name="com.amazon.dee.app.ui.voice.LaunchAlexaActivity" android:targetActivity="com.amazon.alexa.voice.ui.VoiceActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="amazon.intent.action.ALEXA_LISTEN"/>
+            </intent-filter>
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.ASSIST"/>
+            </intent-filter>
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="amazon.intent.action.ALEXA_LISTEN_PUSHBUTTON"/>
+            </intent-filter>
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="amazon.intent.action.ALEXA_LISTEN_ENROLLMENT"/>
+            </intent-filter>
+            <meta-data android:name="com.android.systemui.action_assist_icon" android:resource="@drawable/ic_voice_ui_ingress"/>
+        </activity-alias>
+        <activity android:icon="@drawable/voice_ingress" android:name="com.amazon.alexa.voice.ui.CreateShortcutActivity" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.Alexa" android:name="com.amazon.dee.app.ui.clouddrive.AlexaDeviceBackgroundImageActivity" android:exported="false" android:launchMode="singleTask" android:configChanges="screenSize|orientation|keyboardHidden|keyboard" android:windowSoftInputMode="adjustPan" android:resizeableActivity="false"/>
+        <activity android:theme="@style/Theme.Alexa.External" android:name="com.amazon.dee.app.ui.external.ExternalUIActivity" android:exported="false" android:configChanges="screenSize|screenLayout|orientation|keyboardHidden" android:windowSoftInputMode="adjustResize" android:resizeableActivity="false">
+            <intent-filter>
+                <action android:name="com.amazon.dee.external.ExternalUIActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.Alexa" android:name="com.amazon.dee.app.ui.video.VideoActivity" android:exported="false" android:configChanges="screenSize|orientation" android:windowSoftInputMode="adjustPan" android:resizeableActivity="false"/>
+        <activity android:name="com.amazon.alexa.crashreporting.IntentionalCrashActivity" android:exported="true"/>
+        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" android:exported="false" android:resizeableActivity="false"/>
+        <service android:name="com.amazon.whisperjoin.deviceprovisioningservice.service.FFSBackgroundProvisioningServiceBinder" android:exported="false">
+            <intent-filter>
+                <action android:name="com.amazon.whisperjoin.deviceprovisioningservice.BindService"/>
+            </intent-filter>
+        </service>
+        <enable-feature android:name="com.amazon.device.messaging" android:required="false"/>
+        <service android:name="com.amazon.whisperjoin.deviceprovisioningservice.service.whitelist.FFSWhiteListJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:name="com.amazon.dee.app.framework.ApplicationUpgradeReceiver" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.amazon.dee.app.services.messaging.FirebaseMessageHandler">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <uses-library android:name="com.amazon.device.settings.sdk.internal" android:required="false"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <meta-data android:name="com.bugsnag.android.API_KEY" android:value="23453493ba50cc7c9aaedc9800c180da"/>
+        <meta-data android:name="com.bugsnag.android.DETECT_NDK_CRASHES" android:value="true"/>
+        <meta-data android:name="com.here.sdk.access_key_id" android:value="7jl5Phuq6ENKbP33dExKzw"/>
+        <meta-data android:name="com.here.sdk.access_key_secret" android:value="s3Lwgzl7v13SXqZCbe0F6e15xIQYn9-Y0Cg8gTFLh8_tZwQzXZlzQTXf-TIuMa8ymNGNe_W6X35xXrdib4FXoQ"/>
+        <service android:name="com.amazon.dee.app.services.tcomm.TCommService" android:exported="false" android:stopWithTask="true"/>
+        <service android:name="com.amazon.alexa.entertainment.capabilityServiceAgent.AlexaMobilePushCapabilityServiceAgent" android:exported="false">
+            <meta-data android:name="alexa_capability_service_version" android:value="1.0.0"/>
+            <intent-filter>
+                <action android:name="com.amazon.alexa.ACTION_PROCESS_DIRECTIVE"/>
+                <category android:name="com.amazon.alexa.CATEGORY_CAPABILITY_AGENT"/>
+            </intent-filter>
+        </service>
+        <provider android:name="com.amazon.alexa.feature.FeatureFlagContentProvider" android:readPermission="com.amazon.alexa.feature.permission.READ" android:writePermission="com.amazon.alexa.feature.permission.WRITE" android:enabled="true" android:exported="false" android:process=":feature" android:authorities="com.amazon.dee.app.alexa.feature"/>
+        <service android:name="com.amazon.alexa.fitness.service.AlexaFitnessCapabilityAgentService" android:exported="false">
+            <meta-data android:name="alexa_capability_service_version" android:value="1.0.0"/>
+            <intent-filter>
+                <action android:name="com.amazon.alexa.ACTION_PROCESS_DIRECTIVE"/>
+                <category android:name="com.amazon.alexa.CATEGORY_CAPABILITY_AGENT"/>
+            </intent-filter>
+        </service>
+        <activity android:theme="@style/amahc_debug_theme" android:name="com.amazon.alexa.redesign.debug.DebugMenuActivity" android:launchMode="singleTop"/>
+        <receiver android:name="com.amazon.alexa.location.GeofenceTriggerReceiver" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="com.amazon.alexa.location.ACTION_GEOFENCE_TRIGGER"/>
+                <action android:name="com.amazon.alexa.location.ACTION_NATIVE_LOCATION_REPORT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.amazon.alexa.location.RebootBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.amazon.alexa.location.GeofenceRestoreJobIntentService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.amazon.alexa.location.GeofenceTriggerIntentService"/>
+        <service android:name="com.amazon.alexa.location.phase3.sensor.SensorIntentService" android:enabled="true" android:exported="true"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.amazon.alexa.sendtoapp.notification.SendToAppNotificationsActivity" android:exported="true" android:stateNotNeeded="true" android:excludeFromRecents="true" android:noHistory="true">
+            <intent-filter>
+                <action android:name="com.amazon.intent.action.SEND_TO_APP_NOTIFICATIONS_CREATE_ACTION"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="content"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.amazon.intent.action.SEND_TO_APP_NOTIFICATIONS_DELETE_ACTION"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="content"/>
+            </intent-filter>
+        </activity>
+        <service android:name="com.amazon.alexa.sensor.location.LocationSensorService" android:enabled="true" android:exported="true" android:foregroundServiceType="location">
+            <intent-filter>
+                <action android:name="com.amazon.alexa.sensor.location.action.RUN_SENSOR_SERVICE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.amazon.alexa.sensor.location.action.RUN_SENSOR_SERVICE_ON_FOREGROUND"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.amazon.alexa.sensor.ACTION_LOCATION_REPORT"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.amazon.alexa.sensor.location.LocationIntakeService" android:exported="true">
+            <intent-filter>
+                <action android:name="com.amazon.alexa.sensor.ACTION_LOCATION_REPORT"/>
+            </intent-filter>
+        </service>
+        <activity android:name="com.amazon.alexa.sharing.activity.ShareSheetActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="alexa" android:host="social" android:path="/share/external"/>
+            </intent-filter>
+        </activity>
+        <receiver android:name="com.amazon.alexa.sharing.broadcast.ShareSheetIntentBroadcastReceiver"/>
+        <provider android:name="com.amazon.alexa.sharing.media.picker.GenericFileProvider" android:exported="false" android:authorities="com.amazon.dee.app.sharing.media.picker" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_provider_paths"/>
+        </provider>
+        <service android:name="com.amazon.alexa.smarthomecameras.capabilityagent.LiveViewCapabilityAgentService" android:enabled="true" android:exported="true">
+            <meta-data android:name="alexa_capability_service_version" android:value="1.0.0"/>
+            <intent-filter>
+                <action android:name="com.amazon.alexa.ACTION_PROCESS_DIRECTIVE"/>
+                <category android:name="com.amazon.alexa.CATEGORY_CAPABILITY_AGENT"/>
+            </intent-filter>
+        </service>
+        <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:name="com.amazon.alexa.smarthomecameras.view.LiveViewActivity" android:launchMode="standard" android:screenOrientation="landscape" android:configChanges="screenSize|orientation"/>
+        <activity android:name="com.amazon.alexa.smarthomecameras.view.SmartAlertEventActivity" android:launchMode="standard" android:screenOrientation="sensor" android:configChanges="screenSize|orientation"/>
+        <service android:name="com.amazon.alexa.smarthomecameras.service.ALVUIService" android:exported="true">
+            <meta-data android:name="sessionDomain" android:value="SmartHome-LiveView"/>
+            <intent-filter>
+                <action android:name="com.amazon.rtcsessioncontroller.ACTION_START_APPCLIENT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.amazon.alexa.smarthomecameras.service.liveview.ui.stop"/>
+            </intent-filter>
+        </service>
+        <activity android:theme="@style/Theme.Alexa.Voice.Activity" android:name="com.amazon.alexa.voice.ftue.VoiceFtueActivity"/>
+        <activity android:theme="@style/Theme.Alexa.Voice.Activity" android:name="com.amazon.alexa.voice.wakeword.WakewordPermissionRequestActivity"/>
+        <receiver android:name="com.amazon.alexa.voice.metrics.VoiceMetricsBroadcastReceiver" android:exported="false">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="amazon.alexa.intent.action.REPORT_METRIC"/>
+            </intent-filter>
+        </receiver>
+        <provider android:name="com.amazon.alexa.voice.handsfree.features.UvrEnrollmentStatusProvider" android:enabled="true" android:exported="true" android:process=":alexa" android:authorities="@string/uvrEnrollmentStatusProviderId"/>
+        <activity android:theme="@style/Theme.Alexa.Voice.Activity" android:name="com.amazon.alexa.voice.handsfree.HandsFreePermissionsActivity" android:exported="false" android:configChanges="screenSize|screenLayout|orientation|keyboardHidden">
+            <intent-filter>
+                <action android:name="amazon.intent.action.HANDSFREE_PERMISSONS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.Alexa.Voice.Activity" android:name="com.amazon.alexa.voice.handsfree.decider.setup.HandsFreeIntroActivity" android:exported="false" android:launchMode="singleTask" android:configChanges="orientation|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Alexa.Voice.Activity" android:name="com.amazon.alexa.voice.handsfree.decider.setup.SinglePermissionsActivity" android:exported="false" android:launchMode="singleTask" android:configChanges="orientation|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Alexa.Voice.Activity" android:name="com.amazon.alexa.voice.handsfree.decider.setup.LanguageSelectorActivity" android:exported="false" android:launchMode="singleTask" android:configChanges="orientation|keyboardHidden">
+            <intent-filter>
+                <action android:name="com.amazon.alexa.handsfree.DYNAMICLANGUAGESWITCHING"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.Alexa.Voice.Activity" android:name="com.amazon.alexa.voice.handsfree.settings.VoiceAppInstallExplainerActivity" android:exported="false" android:configChanges="orientation|keyboardHidden"/>
+        <activity android:theme="@style/Theme.Alexa.Voice.Activity" android:name="com.amazon.alexa.voice.handsfree.settings.QSEducationActivity" android:exported="true" android:configChanges="orientation|keyboardHidden">
+            <intent-filter>
+                <action android:name="com.amazon.alexa.handsfree.QUICK_SETTINGS_EDUCATION"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <receiver android:name="com.amazon.alexa.voice.handsfree.initialization.receivers.InitializationBootCompleteReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.amazon.alexa.voice.handsfree.metrics.permission.PermissionCheckReceiver" android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.amazon.alexa.voice.handsfree.metrics.permission.PartnerPermissionCheckReceiver" android:enabled="true">
+            <intent-filter>
+                <action android:name="com.quicinc.voice.activation.action.PACKAGE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.amazon.alexa.voice.handsfree.decider.SetupFlowExecutionService" android:exported="false"/>
+        <service android:name="com.amazon.alexa.voice.handsfree.metrics.permission.PermissionCheckJobIntentService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+        <meta-data android:name="setup_notification_icon" android:resource="@drawable/alexa_icon"/>
+        <activity android:theme="@android:style/Theme.NoDisplay" android:name="com.amazon.alexa.voice.handsfree.initialization.InitializationActivity" android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="com.amazon.alexa.handsfree.INITIALIZE_HANDSFREE_COMPONENTS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:name="com.amazon.alexa.voice.handsfree.initialization.InitializationService">
+            <intent-filter>
+                <action android:name="com.amazon.alexa.handsfree.INITIALIZE_HANDSFREE_COMPONENTS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <service android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:label="@string/alexa_handsfree_label" android:icon="@drawable/ic_amazon_alexa_handsfree" android:name="com.amazon.alexa.handsfree.settings.quicksettings.AlexaQuickSettingService" android:permission="android.permission.BIND_QUICK_SETTINGS_TILE" android:enabled="false" android:exported="true">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
+        </service>
+        <activity android:label="@string/alexa_handsfree_enable_title" android:name="com.amazon.alexa.handsfree.settings.handsfreesettings.AlexaSettingsLauncherActivity" android:enabled="false">
+            <intent-filter>
+                <action android:name="com.amazon.alexa.handsfree.SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="alexa" android:host="handsfree" android:path="/settings"/>
+            </intent-filter>
+            <meta-data android:name="com.android.settings.category" android:value="com.android.settings.category.ia.homepage"/>
+            <meta-data android:name="com.android.settings.title" android:resource="@string/alexa_settings_activity_name"/>
+            <meta-data android:name="com.android.settings.icon" android:resource="@drawable/ic_amazon_alexa_handsfree"/>
+        </activity>
+        <activity-alias android:name="com.amazon.alexa.handsfree.settings.handsfreesettings.AlexaQuickSettingsLauncherActivity" android:targetActivity="com.amazon.alexa.handsfree.settings.handsfreesettings.AlexaSettingsLauncherActivity">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE_PREFERENCES"/>
+            </intent-filter>
+            <meta-data android:name="com.android.settings.title" android:resource="@string/alexa_settings_activity_name"/>
+            <meta-data android:name="com.android.settings.icon" android:resource="@drawable/ic_amazon_alexa_handsfree"/>
+        </activity-alias>
+        <receiver android:name="com.amazon.alexa.handsfree.notification.receivers.UtteranceReceiver" android:enabled="false" android:exported="true">
+            <intent-filter>
+                <action android:name="com.amazon.alexa.handsfree.REPORT_ALEXA_CONNECTION_FAILURE"/>
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:name="com.amazon.alexa.enrollment.ui.introduction.EnrollmentIntroductionActivity" android:configChanges="screenSize|keyboardHidden|locale">
+            <intent-filter>
+                <action android:name="com.amazon.alexa.enrollment.START_VOICE_TRAINING"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:name="com.amazon.alexa.enrollment.ui.training.EnrollmentTrainingActivity" android:configChanges="screenSize|orientation|keyboardHidden|locale"/>
+        <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:name="com.amazon.alexa.enrollment.ui.complete.EnrollmentCompleteActivity" android:configChanges="screenSize|orientation|keyboardHidden|locale"/>
+        <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:name="com.amazon.alexa.enrollment.ui.terms.EnrollmentTermsActivity" android:configChanges="screenSize|orientation|keyboardHidden|locale"/>
+        <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:name="com.amazon.alexa.enrollment.ui.kidsenrollment.KidsEnrollmentIntroductionActivity" android:configChanges="screenSize|orientation|keyboardHidden|locale">
+            <intent-filter>
+                <action android:name="com.amazon.alexa.enrollment.START_VOICE_TRAINING"/>
+                <action android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:name="com.amazon.alexa.enrollment.ui.privacySettings.EnrollmentPrivacyTermsActivity" android:configChanges="screenSize|orientation|keyboardHidden|locale"/>
+        <receiver android:label="@string/quick_actions_preview" android:name="com.amazon.alexa.widget.QuickActionsWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/quick_actions_widget_info"/>
+        </receiver>
+        <provider android:name="com.amazon.alexa.mobilytics.lifecycle.LifecycleSpy" android:exported="false" android:multiprocess="true" android:authorities="com.amazon.dee.app.mobilytics.lifecycle"/>
+        <meta-data android:name="communications-toggle" android:value="true"/>
+        <activity android:theme="@style/EmptyDialogTheme" android:name="com.amazon.deecomms.calling.ui.DirectiveReceiverActivity" android:permission="amazon.speech.permission.SEND_ALEXA_DIRECTIVE" android:excludeFromRecents="true" android:launchMode="singleInstance" android:configChanges="screenSize|orientation" android:noHistory="true" android:resizeableActivity="false">
+            <intent-filter>
+                <action android:name="com.amazon.speech.SipClient_BeginCall"/>
+                <action android:name="com.amazon.speech.SipClient_EndCall"/>
+                <action android:name="com.amazon.speech.SipClient_RingCall"/>
+                <action android:name="com.amazon.speech.SipClient_IgnoreCall"/>
+                <action android:name="com.amazon.speech.SipClient_AcceptCall"/>
+                <action android:name="com.amazon.speech.KnightContacts_ListDefaultContactsEmptyVoxel"/>
+                <action android:name="com.amazon.speech.KnightContacts_ListActiveContactsEmptyVoxel"/>
+                <action android:name="com.amazon.speech.SipClient_SetCallMediaState"/>
+                <category android:name="amazon.speech.TABLET_MODE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/CallActivityTheme" android:name="com.amazon.deecomms.calling.ui.CallActivity" android:taskAffinity=":CallActivity" android:excludeFromRecents="true" android:launchMode="singleInstance" android:configChanges="screenSize|uiMode|orientation" android:windowSoftInputMode="adjustResize" android:resizeableActivity="false"/>
+        <activity android:theme="@style/CallActivityTheme" android:name="com.amazon.deecomms.calling.ui.NewCallActivity" android:taskAffinity=":CallActivity" android:excludeFromRecents="true" android:launchMode="singleInstance" android:configChanges="screenSize|uiMode|orientation" android:windowSoftInputMode="adjustResize" android:resizeableActivity="false"/>
+        <activity android:theme="@style/EmptyDialogTheme" android:label="Test" android:name="com.amazon.deecomms.calling.ui.COBOWarningActivity" android:taskAffinity=":CallActivity" android:excludeFromRecents="true" android:configChanges="screenSize|orientation" android:windowSoftInputMode="adjustResize" android:noHistory="true" android:resizeableActivity="false"/>
+        <activity android:theme="@style/EmptyDialogTheme" android:label="SIPRegistrationErrorDialogActivity" android:name="com.amazon.deecomms.calling.ui.SIPRegistrationErrorDialogActivity" android:taskAffinity=":CallActivity" android:excludeFromRecents="true" android:configChanges="screenSize|orientation" android:windowSoftInputMode="adjustResize" android:noHistory="true" android:resizeableActivity="false"/>
+        <activity android:theme="@style/NativeCallActivityTheme" android:name="com.amazon.deecomms.calling.ui.NativeCallActivity" android:taskAffinity=":NativeCallActivity" android:excludeFromRecents="true" android:launchMode="singleInstance" android:configChanges="screenSize|orientation"/>
+        <activity android:theme="@style/DefaultAppTheme" android:name="com.amazon.deecomms.calling.ui.CallPermissionActivity" android:taskAffinity=":CallActivity" android:excludeFromRecents="true" android:launchMode="singleInstance" android:configChanges="screenSize|orientation" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/EmptyDialogTheme" android:name="com.amazon.deecomms.calling.ui.CallingInitiationActivity" android:taskAffinity=":CallActivity" android:excludeFromRecents="true" android:launchMode="singleInstance" android:configChanges="screenSize|orientation" android:windowSoftInputMode="adjustResize" android:noHistory="true" android:resizeableActivity="false"/>
+        <activity android:theme="@style/DefaultAppTheme" android:name="com.amazon.deecomms.sharing.ShareSheetActivity" android:excludeFromRecents="true" android:launchMode="singleTop" android:configChanges="screenSize|screenLayout|orientation|keyboardHidden" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/DefaultAppTheme" android:name="com.amazon.deecomms.oobe.OOBEActivity" android:launchMode="singleTop"/>
+        <provider android:name="com.amazon.deecomms.common.util.provider.GenericFileProvider" android:exported="false" android:authorities="@string/genericFileProviderAuthoritiesId" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_provider_paths"/>
+        </provider>
+        <provider android:name="com.amazon.deecomms.contacts.database.provider.ContactsProvider" android:exported="false" android:authorities="@string/contactsProviderAuthoritiesId"/>
+        <provider android:name="com.amazon.deecomms.calling.controller.CallingContentProvider" android:readPermission="com.amazon.comms.calling.readAccess" android:enabled="true" android:exported="true" android:authorities="@string/callingProviderAuthoritiesId"/>
+        <receiver android:name="com.amazon.deecomms.remoteConfig.ConfigurationSyncReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.amazon.deecomms.receiver.CONFIG_SYNC_ACTION"/>
+                <action android:name="com.amazon.deecomms.receiver.ACTION_RETRY_SYNC"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.amazon.deecomms.remoteConfig.ConfigurationSyncService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false">
+            <intent-filter>
+                <action android:name="com.amazon.remoteconfig.demo.action.SYNC_CONFIG"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.amazon.deecomms.calling.telecom.TelecomConnectionService" android:permission="android.permission.BIND_TELECOM_CONNECTION_SERVICE">
+            <intent-filter>
+                <action android:name="android.telecom.ConnectionService"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.amazon.deecomms.common.service.DeviceCallingAndroidService" android:exported="false"/>
+        <service android:name="com.amazon.deecomms.common.service.IncomingPushAndroidService" android:exported="false"/>
+        <service android:name="com.amazon.deecomms.contacts.operations.ContactsOperationsService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+        <service android:name="com.amazon.deecomms.calling.ui.InitiateCallService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+        <provider android:name="com.amazon.deecomms.messaging.provider.MessagingContentProvider" android:exported="false" android:authorities="@string/messagingProviderAuthoritiesId"/>
+        <service android:name="com.amazon.deecomms.messaging.sync.MessageReadStatusMarkerService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+        <service android:name="com.amazon.deecomms.messaging.service.AudioDownloadService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+        <receiver android:name="com.amazon.deecomms.notifications.CommsDefaultPushHandler" android:exported="false">
+            <intent-filter>
+                <action android:name="com.amazon.deecomms.receiver.COMMS_BROADCAST_NOTIFICATION"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.amazon.deecomms.notifications.NotificationDismissedReceiver" android:exported="false"/>
+        <receiver android:name="com.amazon.deecomms.notifications.DirectReplyTextMessageNotification" android:exported="false"/>
+        <receiver android:name="com.amazon.deecomms.notifications.DirectReplyAnnouncementNotification" android:exported="false"/>
+        <receiver android:name="com.amazon.deecomms.notifications.NotificationActivatedReceiver" android:exported="false"/>
+        <receiver android:name="com.amazon.deecomms.common.receiver.UserSwitchReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.USER_BACKGROUND"/>
+                <action android:name="android.intent.action.USER_FOREGROUND"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.amazon.deecomms.calling.incallcommands.RingServiceBroadcastReceiver" android:enabled="true" android:exported="false">
+            <intent-filter>
+                <action android:name="com.amazon.deecomms.alexa.HALLO_EVENT_ACTION"/>
+                <action android:name="com.amazon.deecomms.alexa.CALL_TYPE_EVENT_ACTION"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.amazon.deecomms.conversation.ConversationNotificationReceiver" android:enabled="true" android:exported="false">
+            <intent-filter>
+                <action android:name="com.amazon.deecomms.notifications.CLICK_ACTION"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.amazon.deecomms.calling.service.MediaButtonService" android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.amazon.deecomms.notifications.service.CreateNotificationService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+        <service android:name="com.amazon.deecomms.messaging.sync.ConversationDeleteService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+        <service android:name="com.amazon.deecomms.messaging.sync.TranscriptionUpdateService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+        <service android:name="com.amazon.deecomms.contacts.presence.ContactPresenceService" android:exported="false"/>
+        <service android:name="com.amazon.deecomms.alexa.CommsCapabilityAgent" android:exported="false">
+            <meta-data android:name="alexa_capability_service_version" android:value="1.0.0"/>
+            <intent-filter>
+                <action android:name="com.amazon.alexa.ACTION_PROCESS_DIRECTIVE"/>
+                <category android:name="com.amazon.alexa.CATEGORY_CAPABILITY_AGENT"/>
+            </intent-filter>
+        </service>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <activity android:theme="@style/TransparentActivityTheme" android:name="com.amazon.identity.auth.device.activity.GetAuthenticatorResultsActivity"/>
+        <uses-library android:name="com.amazon.client.metrics.api" android:required="false"/>
+        <activity android:label="Amazon AuthPortal" android:name="com.amazon.identity.auth.device.AuthPortalUIActivity" android:permission="com.amazon.identity.auth.device.perm.AUTH_SDK" android:exported="true" android:launchMode="singleTop" android:configChanges="fontScale|keyboardHidden|locale|mnc|mcc" android:allowTaskReparenting="true"/>
+        <activity android:label="Amazon Auth Challenge" android:name="com.amazon.identity.auth.device.activity.AuthChallengeHandleActivity" android:permission="com.amazon.identity.auth.device.perm.AUTH_SDK" android:exported="true" android:configChanges="fontScale|keyboardHidden|locale|mnc|mcc"/>
+        <activity android:label="Sign up and enroll" android:name="com.amazon.identity.auth.device.activity.ActorSignUpAndEnrollActivity" android:permission="com.amazon.identity.auth.device.perm.AUTH_SDK" android:exported="true" android:configChanges="fontScale|keyboardHidden|locale|mnc|mcc"/>
+        <activity android:label="Enroll actor UI" android:name="com.amazon.identity.auth.device.activity.ActorEnrollActivity" android:permission="com.amazon.identity.auth.device.perm.AUTH_SDK" android:exported="true" android:configChanges="fontScale|keyboardHidden|locale|mnc|mcc"/>
+        <service android:name="com.amazon.identity.auth.device.bootstrapSSO.BootstrapSSOService" android:enabled="false" android:exported="true">
+            <intent-filter>
+                <action android:name="com.amazon.identity.action.BOOTSTRAP_SSO"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.amazon.identity.auth.device.storage.DirtyDataSyncingService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.amazon.identity.action.SYNC_DIRTY_DATA"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.amazon.identity.auth.device.storage.DatabaseCleaner.DatabaseCleaningService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.amazon.identity.action.CLEAN_DATA"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.amazon.identity.auth.device.storage.LambortishClock.ChangeTimestampsBroadcastReceiver" android:enabled="false" android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.TIME_SET"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.amazon.identity.auth.accounts.SessionUserChangedToAccountForPackageChangedAdpater" android:exported="false">
+            <intent-filter>
+                <action android:name="com.amazon.dcp.sso.action.session.users.changed"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.amazon.rtcsc.capabilityagent.avs.RtcscCapabilityAgentServiceAVS" android:exported="true">
+            <meta-data android:name="alexa_capability_service_version" android:value="1.0.0"/>
+            <intent-filter>
+                <action android:name="com.amazon.alexa.ACTION_PROCESS_DIRECTIVE"/>
+                <category android:name="com.amazon.alexa.CATEGORY_CAPABILITY_AGENT"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.amazon.rtcsc.service.RtcscService" android:permission="com.amazon.rtcsc.permission.RTCSC" android:exported="true">
+            <intent-filter>
+                <action android:name="com.amazon.rtcsessioncontroller.ACTION_BIND_TO_RTCSC_SERVICE"/>
+            </intent-filter>
+        </service>
+        <provider android:name="com.imagepicker.ImagePickerProvider" android:exported="false" android:authorities="com.amazon.dee.app.imagepickerprovider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/imagepicker_provider_paths"/>
+        </provider>
+        <provider android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider" android:exported="false" android:authorities="com.amazon.dee.app.fileprovider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_provider_paths"/>
+        </provider>
+        <service android:name="com.amazon.communication.AndroidTCommService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.amazon.communication.TCOMM"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.amazon.communication.NosNotificationReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.amazon.intent.action.NOS_DATA_TRANSFER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.amazon.communication.heartbeat.HeartbeatBroadcastReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.amazon.intent.action.NOS_DATA_TRANSFER"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.amazon.communication.remotesetting.ConfigurationSyncService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false">
+            <intent-filter>
+                <action android:name="com.amazon.communication.remotesetting.action.SYNC_CONFIG"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.amazon.communication.remotesetting.StageSwitchService" android:exported="false"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.amazon.tarazed.activity.TarazedPrimerActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <provider android:name="com.amazon.tarazed.init.TarazedInitProvider" android:exported="false" android:authorities="com.amazon.dee.app.init.TarazedInitProvider"/>
+        <service android:name="com.amazon.tarazed.sessionmanager.TarazedSessionAndroidService" android:exported="true" android:foregroundServiceType="mediaProjection">
+            <meta-data android:name="sessionDomain" android:value="com.amazon.dee.app.MaydayScreenSharing"/>
+            <intent-filter>
+                <action android:name="com.amazon.rtcsessioncontroller.ACTION_START_APPCLIENT"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.amazon.tarazed.sessionmanager.SessionClientCacheService" android:exported="false"/>
+        <receiver android:name="com.amazon.tarazed.receiver.ToggleQAModeReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.tarazed.TOGGLE_QA_MODE"/>
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@style/TarazedNoDisplay" android:name="com.amazon.tarazed.core.webrtc.android.TarazedMediaProjectionActivity" android:excludeFromRecents="true" android:configChanges="screenSize|orientation"/>
+        <receiver android:name="com.amazon.alexa.accessory.AccessoryReceiver" android:enabled="true" android:exported="true" android:process="@string/accessory_process">
+            <intent-filter>
+                <action android:name="android.bluetooth.device.action.ACL_CONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.amazon.alexa.accessory.AccessoryService" android:enabled="true" android:exported="false" android:process="@string/accessory_process"/>
+        <service android:name="com.amazon.alexa.accessory.kota.KotaJobSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false" android:process="@string/accessory_process"/>
+        <activity android:theme="@style/Theme.Accessories.Invisible.Activity" android:name="com.amazon.alexa.accessory.internal.bluetooth.DefaultCompanionDeviceModule.RequestCompanionDeviceActivity" android:process="@string/accessory_process" android:excludeFromRecents="true" android:autoRemoveFromRecents="true"/>
+        <receiver android:name="com.amazon.alexa.accessory.avsclient.media.UnnamedMediaPlayerActionReceiver" android:exported="false" android:process="@string/accessory_process">
+            <intent-filter>
+                <action android:name="com.amazon.alexa.intent.action.UNKNOWN_MEDIA_PLAYER_MEDIA_PLAY_ACTION"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.amazon.alexa.intent.action.UNKNOWN_MEDIA_PLAYER_MEDIA_PAUSE_ACTION"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.amazon.alexa.intent.action.UNKNOWN_MEDIA_PLAYER_MEDIA_PREVIOUS_ACTION"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.amazon.alexa.intent.action.UNKNOWN_MEDIA_PLAYER_MEDIA_NEXT_ACTION"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.amazon.alexa.handsfree.protocols.sync.DataSyncService" android:permission="com.amazon.alexa.handsfree.protocols.permission.DATA_SYNC" android:exported="true"/>
+        <service android:name="com.amazon.leaderselection.LeaderSelectionService" android:enabled="false" android:exported="false" android:process=":alexa_leaderselection">
+            <intent-filter>
+                <action android:name="com.amazon.leaderselection.ACTION_SELECT"/>
+                <category android:name="com.amazon.leaderselection.CATEGORY_LEADER_SELECTION"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.amazon.alexa.accessoryservice.service.AlexaAccessoryService" android:exported="false" android:process="@string/accessory_process"/>
+        <receiver android:name="com.amazon.alexa.accessorykit.inputevents.InputEventsBroadcastReceiver" android:enabled="true" android:exported="false">
+            <intent-filter>
+                <action android:name="com.amazon.alexa.accessory.inputevent.triggered"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.amazon.alexa.accessorykit.interprocess.PhoneStateBroadcastReceiver" android:enabled="true" android:exported="false" android:process="@string/accessory_process">
+            <intent-filter>
+                <action android:name="state_update"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.amazon.alexa.accessorykit.interprocess.identity.PersonBroadcastReceiver" android:enabled="true" android:exported="false" android:process="@string/accessory_process">
+            <intent-filter>
+                <action android:name="com.amazon.alexa.accessorykit.action.personchanged"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.amazon.alexa.accessorykit.interprocess.InterprocessPrivacyModeReceiver" android:enabled="true" android:exported="false">
+            <intent-filter>
+                <action android:name="com.amazon.alexa.accessorykit.action.privacymode.status"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.amazon.alexa.accessorykit.interprocess.mobilytics.MobilyticsDeviceBroadcastReceiver" android:enabled="true" android:exported="false" android:process="@string/accessory_process">
+            <intent-filter>
+                <action android:name="com.amazon.alexa.accessorykit.action.mobilyticsdevicechanged"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.amazon.alexa.accessorykit.interprocess.environment.EnvironmentServiceReceiver" android:enabled="true" android:exported="false" android:process="@string/accessory_process">
+            <intent-filter>
+                <action android:name="com.amazon.alexa.accessorykit.environment.environmentService"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="amazon.speech.device_capability" android:resource="@raw/device_capabilities"/>
+        <receiver android:name="com.amazon.alexa.accessory.speechapi.csm.ambient_sound.AmbientSoundDirectiveReceiver" android:enabled="true" android:exported="true" android:process="@string/accessory_process">
+            <intent-filter>
+                <action android:name="com.amazon.speech.Alexa.AudioSignal.ActiveNoiseControl_SetAmbientSoundProcessingMode"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.amazon.alexa.accessory.speechapi.csm.reportstate.CsmReportAccessoryStateDirectiveReceiver" android:enabled="true" android:exported="true" android:process="@string/accessory_process">
+            <intent-filter>
+                <action android:name="com.amazon.speech.Alexa.IOComponents_ReportAccessoryState"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.amazon.alexa.accessory.frames.gesture.GestureBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.alexa.accessory.inputevent.triggered"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.amazon.alexa.accessory.frames.service.DirectiveReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="com.amazon.alexa.accessory.notificationpublisher.directive.routed"/>
+            </intent-filter>
+        </receiver>
+        <service android:label="@string/zion_nls_service_label" android:name="com.amazon.alexa.accessory.notificationpublisher.notificationlistener.PhoneNotificationListenerService" android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" android:process=":alexa_accessory_nls">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.amazon.alexa.accessory.notificationpublisher.announcewithcontent.AnnounceWithContentCapabilityAgentService">
+            <meta-data android:name="alexa_capability_service_version" android:value="1.0.0"/>
+            <intent-filter>
+                <action android:name="com.amazon.alexa.ACTION_PROCESS_DIRECTIVE"/>
+                <category android:name="com.amazon.alexa.CATEGORY_CAPABILITY_AGENT"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.amazon.alexa.externalnotifications.capability.ExternalNotificationCapabilityAgentService" android:enabled="false">
+            <meta-data android:name="alexa_capability_service_version" android:value="1.0.0"/>
+            <intent-filter>
+                <action android:name="com.amazon.alexa.ACTION_PROCESS_DIRECTIVE"/>
+                <category android:name="com.amazon.alexa.CATEGORY_CAPABILITY_AGENT"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.amazon.alexa.accessory.notificationpublisher.consumption.GestureBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.alexa.accessory.inputevent.triggered"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.amazon.alexa.accessory.speechapi.voicesdk.capabilityagent.AmbientSoundCapabilityAgentService" android:exported="false" android:process="@string/accessory_process">
+            <meta-data android:name="alexa_capability_service_version" android:value="1.0.0"/>
+            <intent-filter>
+                <action android:name="com.amazon.alexa.ACTION_PROCESS_DIRECTIVE"/>
+                <category android:name="com.amazon.alexa.CATEGORY_CAPABILITY_AGENT"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.amazon.alexa.accessory.speechapi.voicesdk.capabilityagent.ReportAccessoryStateCapabilityAgentService" android:exported="false" android:process="@string/accessory_process">
+            <meta-data android:name="alexa_capability_service_version" android:value="1.0.0"/>
+            <intent-filter>
+                <action android:name="com.amazon.alexa.ACTION_PROCESS_DIRECTIVE"/>
+                <category android:name="com.amazon.alexa.CATEGORY_CAPABILITY_AGENT"/>
+            </intent-filter>
+        </service>
+        <provider android:name="com.amazon.alexa.auto.navigation.PreferredNavigationAppSettingContentProvider" android:exported="false" android:process=":alexa" android:authorities="@string/preferredNavAppContentProviderAuthoritiesId"/>
+        <uses-library android:name="com.amazon.asp" android:required="false"/>
+        <service android:name="com.amazon.alexa.auth.map.MAPProxyService" android:exported="false" android:process=":alexa_authservice"/>
+        <provider android:name="com.amazon.alexa.wakeword.pryon.WakeWordModelContentProvider" android:enabled="true" android:exported="false" android:process=":alexa" android:authorities="com.amazon.dee.app.pryon.wakeword.model"/>
+        <service android:name="com.amazon.alexa.comms.mediaInsights.service.TracePublisherService" android:exported="false" android:process=":TracePublisherService">
+            <intent-filter>
+                <action android:name="com.amazon.alexa.comms.mediaInsights.service.actions.BIND"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="com.amazon.leaderselection.registration" android:resource="@raw/leader_selection_registration"/>
+        <service android:label="@string/amazon_avs_label_alexaservice" android:name="com.amazon.alexa.AlexaService" android:enabled="false" android:exported="false" android:process=":alexa" android:foregroundServiceType="location"/>
+        <service android:label="@string/amazon_avs_label_alexa_audio_provider_service" android:name="com.amazon.alexa.AlexaAudioProviderManagerService" android:enabled="false" android:exported="true" android:process=":alexa"/>
+        <service android:name="com.amazon.alexa.system.UserInactivityAuthority.UserInactivityReportingJob" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="true" android:process=":alexa"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.amazon.alexa.client.alexaservice.ui.ShowOverLockScreenActivity" android:exported="false" android:process=":alexa" android:stateNotNeeded="true" android:excludeFromRecents="true" android:noHistory="true" android:showWhenLocked="true" android:turnScreenOn="true">
+            <intent-filter>
+                <action android:name="com.amazon.intent.action.SHOW_OVER_LOCK_SCREEN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.amazon.alexa.client.alexaservice.ui.UnlockDeviceActivity" android:exported="false" android:process=":alexa" android:stateNotNeeded="true" android:excludeFromRecents="true" android:noHistory="true"/>
+        <receiver android:name="com.amazon.alexa.client.alexaservice.metrics.client.MetricsBroadcastReceiver" android:exported="false" android:process=":alexa">
+            <intent-filter>
+                <action android:name="com.amazon.alexa.intent.action.REPORT_VOICE_INTERACTION_METRIC_EVENT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.amazon.alexa.intent.action.REPORT_GENERIC_METRIC_EVENT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.amazon.alexa.client.alexaservice.externalmediaplayer.ExternalMediaPlayerBroadcastReceiver" android:enabled="true" android:exported="true" android:process=":alexa">
+            <intent-filter>
+                <action android:name="com.amazon.alexa.externalmediaplayer.CONNECT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.amazon.alexa.client.alexaservice.notifications.AlexaNotificationManager.DismissNotificationReceiver" android:enabled="true" android:exported="true" android:process=":alexa">
+            <intent-filter>
+                <action android:name="com.amazon.alexa.intent.action.NOTIFICATION_ACTION_TAKEN"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.amazon.alexa.alertsca.AlertsCapabilityAgentService" android:exported="true">
+            <meta-data android:name="alexa_capability_service_version" android:value="1.0.0"/>
+            <intent-filter>
+                <action android:name="com.amazon.alexa.ACTION_PROCESS_DIRECTIVE"/>
+                <category android:name="com.amazon.alexa.CATEGORY_CAPABILITY_AGENT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.amazon.alexa.alertsca.intent.action.LOG_OUT"/>
+                <action android:name="com.amazon.alexa.alertsca.intent.action.WAKE_UP"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.amazon.alexa.alertsca.AlertReschedulingBootCompletedReceiver" android:directBootAware="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.amazon.alexa.alertsca.AlertsEnabledReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.alexa.alertsca.intent.action.UPDATE_TIMERS_AND_ALARMS_AVAILABILITY"/>
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:name="com.amazon.alexa.alertsca.alertdisplay.AlertsDisplayActivity" android:launchMode="singleInstance" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.Alexa.VoiceUi.Activity" android:label="@string/ask_alexa" android:icon="@drawable/voice_ingress" android:name="com.amazon.alexa.voiceui.AlexaUIActivity" android:exported="false" android:process=":alexa" android:taskAffinity=".alexaui" android:clearTaskOnLaunch="true" android:excludeFromRecents="true" android:launchMode="singleTask" android:noHistory="false" android:showOnLockScreen="true" android:turnScreenOn="true">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="amazon.intent.action.SHOW_ALEXA_VOICE_UI"/>
+                <action android:name="amazon.intent.action.PRELOAD_ALEXA_VOICE_UI"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.Alexa.Tta.Activity" android:label="@string/type_to_alexa" android:icon="@drawable/voice_ingress" android:name="com.amazon.alexa.voice.tta.TtaActivity" android:process=":alexa" android:taskAffinity=".alexatypeui" android:clearTaskOnLaunch="true" android:excludeFromRecents="true" android:launchMode="singleTask" android:windowSoftInputMode="stateVisible" android:noHistory="false">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="amazon.intent.action.SHOW_ALEXA_TYPE_UI"/>
+            </intent-filter>
+        </activity>
+        <service android:name="com.amazon.alexa.voice.tta.simba.SimbaServiceClient" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:name="amazon.alexa.locale.AlexaLocaleHelper">
+            <intent-filter>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.amazon.alexa.presence.service.AlexaBeaconDetectorService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:name="com.amazon.alexa.presence.receiver.BeaconReceiver" android:enabled="true"/>
+        <receiver android:name="com.amazon.alexa.presence.service.receivers.PresenceForegroundServiceReceiver" android:enabled="true" android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.amazon.alexa.presence.service.receivers.PresenceSuggestOnClickReceiver" android:enabled="true" android:exported="false">
+            <intent-filter>
+                <action android:name="com.amazon.alexa.intent.action.PRESENCE_SUGGEST_OPENED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.amazon.alexa.presence.service.receivers.PresenceSuggestOnCancelReceiver" android:enabled="true" android:exported="false">
+            <intent-filter>
+                <action android:name="com.amazon.alexa.intent.action.PRESENCE_SUGGEST_DISMISSED"/>
+            </intent-filter>
+        </receiver>
+        <service android:label="Alexa Presence Features" android:name="com.amazon.alexa.presence.service.PresenceForegroundService" android:enabled="true" android:exported="false" android:process=":AlexaPresenceForegroundService"/>
+        <service android:name="com.amazon.alexa.presence.service.PresenceJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+        <service android:name="com.amazon.whisperjoin.deviceprovisioningservice.arcus.FFSArcusSyncJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.amazon.alexa.fitness.view.notification.FitnessNotificationService"/>
+        <receiver android:name="com.amazon.photos.discovery.internal.receiver.MediaScannerReceiver" android:enabled="false">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_SCANNER_FINISHED"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.hardware.action.NEW_PICTURE"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.hardware.action.NEW_VIDEO"/>
+                <data android:mimeType="video/*"/>
+            </intent-filter>
+        </receiver>
+        <provider android:name="com.amazon.alexa.handsfree.voiceappreporter.VoiceAppEventContentProvider" android:readPermission="com.amazon.alexa.handsfree.voiceappreporter.READ_PERMISSION" android:exported="true" android:authorities="@string/voiceAppEventContentProviderAuthoritiesId"/>
+        <receiver android:name="com.amazon.alexa.handsfree.voiceappreporter.receivers.VoiceAppEventReceiver"/>
+        <receiver android:name="com.amazon.alexa.handsfree.metrics.interprocess.InterProcessMetricsReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.alexa.handsfree.intent.action.REPORT_IPC_METRIC"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.amazon.alexa.handsfree.latencyreporter.LatencyReceiver" android:permission="com.amazon.alexa.handsfree.latencyreporter.LATENCY_PERMISSION" android:exported="true">
+            <intent-filter>
+                <action android:name="com.amazon.alexa.handsfree.intent.action.REPORT_LATENCY_DATA_EVENT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.amazon.alexa.handsfree.latencyreporter.AlexaUIEventReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.amazon.alexa.intent.action.PUBLISH_UI_EVENT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.amazon.alexa.handsfree.metrics.FirstStartupMetricJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.amazon.alexa.handsfree.voiceappreporter.services.VoiceAppEventReporterService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+        <service android:name="com.amazon.alexa.handsfree.latencyreporter.LatencyJobIntentService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+        <service android:name="com.amazon.alexa.handsfree.metrics.interprocess.InterProcessMetricReportingJobIntentService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+        <service android:name="com.amazon.alexa.handsfree.quebec.audio.UtteranceReceiverService" android:exported="true" android:process=":alexa"/>
+        <receiver android:name="com.amazon.alexa.handsfree.notification.NotificationDismissReceiver" android:exported="false"/>
+        <receiver android:name="com.amazon.alexa.handsfree.notification.receivers.TimeBasedReceiver"/>
+        <receiver android:name="com.amazon.alexa.handsfree.notification.receivers.KillSwitchReceiver"/>
+        <receiver android:name="com.amazon.alexa.handsfree.notification.receivers.NotificationStateChangeReceiver">
+            <intent-filter>
+                <action android:name="android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.amazon.alexa.handsfree.notification.receivers.QuickSettingsReceiver"/>
+        <receiver android:name="com.amazon.alexa.handsfree.notification.receivers.PermissionReceiver"/>
+        <receiver android:name="com.amazon.alexa.handsfree.notification.receivers.EnableHandsFreeReceiver"/>
+        <receiver android:name="com.amazon.alexa.handsfree.notification.receivers.EnableHandsFreeNotificationClickReceiver"/>
+        <receiver android:name="com.amazon.alexa.handsfree.notification.receivers.LanguageSwitchingReceiver"/>
+        <service android:name="com.amazon.alexa.handsfree.notification.services.KillSwitchNotifierService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+        <service android:name="com.amazon.alexa.handsfree.notification.services.TimeBasedNotifierService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+        <service android:name="com.amazon.alexa.handsfree.notification.services.UtteranceNotifierService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+        <service android:name="com.amazon.alexa.handsfree.notification.services.QuickSettingsNotifierService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+        <service android:name="com.amazon.alexa.handsfree.notification.services.PermissionNotifierService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+        <service android:name="com.amazon.alexa.handsfree.notification.services.EnableHandsFreeNotifierService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+        <service android:name="com.amazon.alexa.handsfree.notification.services.EnableHandsFreeService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+        <service android:name="com.amazon.alexa.handsfree.notification.services.LanguageSwitchingNotifierService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+        <receiver android:name="com.amazon.alexa.voice.handsfree.mike.vesper.notifications.NotificationDismissReceiver"/>
+        <receiver android:name="com.amazon.alexa.voice.handsfree.mike.vesper.notifications.receivers.AppDownloadTimeBasedReceiver"/>
+        <service android:name="com.amazon.alexa.voice.handsfree.mike.vesper.notifications.services.AppDownloadNotifierService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.amazon.alexa.handsfree.audio.metro.MetroAudioReaderService" android:process=":alexa">
+            <intent-filter>
+                <action android:name="com.magiear.handsfree.action.WAKEWORDARRIVED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.magiear.handsfree.action.WAKEWORDDETECTED"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.amazon.alexa.handsfree.settings.locale.LocaleChangeService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+        <activity android:label="@string/alexa_settings_activity_name" android:name="com.amazon.alexa.handsfree.settings.handsfreesettings.AlexaSettingsActivity"/>
+        <activity android:label="@string/alexa_rwl_activity_name" android:name="com.amazon.alexa.handsfree.settings.handsfreesettings.lockscreen.RespondWhileLockedActivity" android:parentActivityName="com.amazon.alexa.handsfree.settings.handsfreesettings.AlexaSettingsActivity"/>
+        <activity android:label="@string/alexa_settings_activity_name" android:name="com.amazon.alexa.handsfree.settings.handsfreesettings.AlexaSettingsLicensesActivity" android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="com.amazon.alexa.handsfree.LICENSES"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/alexa_settings_activity_name" android:name="com.amazon.alexa.handsfree.settings.handsfreesettings.DeviceInformationActivity" android:launchMode="singleInstance"/>
+        <receiver android:name="com.amazon.alexa.handsfree.settings.ProfileDeletionReceiver" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="com.amazon.alexa.handsfree.DELETEPROFILE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.amazon.alexa.handsfree.uservoicerecognition.ui.EnrollmentActivity" android:exported="false" android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="com.amazon.alexa.handsfree.UVR"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:name="com.amazon.alexa.handsfree.uservoicerecognition.ui.primer.EnrollmentTermsActivity" android:configChanges="screenSize|orientation|keyboardHidden|locale"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.amazon.alexa.handsfree.uservoicerecognition.ui.primer.privacy.EnrollmentPrivacyTermsActivity"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.amazon.alexa.handsfree.uservoicerecognition.ui.LockScreenSettingActivity"/>
+        <receiver android:name="com.amazon.alexa.handsfree.quebec.AppChangeReceiver">
+            <intent-filter>
+                <action android:name="com.quicinc.voice.activation.action.PACKAGE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.amazon.alexa.handsfree.settings.voxsettings.VoxSettingsSetRetryAttemptReceiver" android:enabled="true"/>
+        <service android:name="com.amazon.alexa.handsfree.settings.voxsettings.VoxSettingsJobIntentService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+        <provider android:name="com.amazon.alexa.wakeword.speakerverification.profile.SpeakerVerificationProfileProvider" android:enabled="true" android:exported="false" android:process=":alexa" android:authorities="@string/speakerVerificationProfileProviderId"/>
+        <provider android:name="com.amazon.alexa.wakeword.speakerverification.model.SpeakerVerificationModelContentProvider" android:enabled="true" android:exported="false" android:process=":alexa" android:authorities="@string/speakerVerificationModelProviderId"/>
+        <receiver android:name="com.amazon.alexa.wakeword.speakerverification.profile.retry.ProfileGenerationRetryReceiver" android:exported="false"/>
+        <receiver android:name="com.amazon.alexa.wakeword.speakerverification.mlis.UtterancesUploadToMlisReceiver"/>
+        <receiver android:name="com.amazon.alexa.wakeword.speakerverification.profile.appupdate.AppUpdateBroadcastReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.amazon.alexa.wakeword.speakerverification.model.SpeakerVerificationModelDownloadReceiver" android:enabled="true" android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.amazon.alexa.wakeword.speakerverification.profile.retry.ProfileGenerationRetryJobIntentService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+        <service android:name="com.amazon.alexa.wakeword.speakerverification.mlis.UtterancesUploadToMlisJobIntentService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+        <service android:name="com.amazon.alexa.wakeword.speakerverification.profile.appupdate.AppUpdateService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+        <service android:name="com.amazon.alexa.wakeword.speakerverification.model.SpeakerVerificationModelDownloadJobIntentService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+        <service android:name="com.amazon.alexa.handsfree.settings.metro.alexaservice.MetroAlexaAudioProviderService" android:permission="com.amazon.alexa.ALEXA_AUDIO_PROVIDER_SERVICE_PERMISSION" android:exported="true">
+            <intent-filter>
+                <action android:name="com.amazon.alexa.ACTION_UPDATE_SETTINGS"/>
+                <category android:name="com.amazon.alexa.CATEGORY_ALEXA_AUDIO_PROVIDER_SERVICE"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.amazon.alexa.handsfree.uservoicerecognition.edgesv.speakeridcheck.SpeakerIDCheckJobIntentService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+        <receiver android:name="com.amazon.alexa.handsfree.uservoicerecognition.edgesv.speakeridcheck.SpeakerIDCheckReceiver" android:enabled="true" android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.amazon.alexa.handsfree.settings.quebec.alexaservice.QuebecAlexaAudioProviderService" android:permission="com.amazon.alexa.ALEXA_AUDIO_PROVIDER_SERVICE_PERMISSION" android:exported="true">
+            <intent-filter>
+                <action android:name="com.amazon.alexa.ACTION_UPDATE_SETTINGS"/>
+                <category android:name="com.amazon.alexa.CATEGORY_ALEXA_AUDIO_PROVIDER_SERVICE"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.amazon.alexa.handsfree.storage.metrics.ProcessMetricsCacheService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+        <service android:name="com.amazon.alexa.handsfree.storage.metrics.CacheMetricsService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+        <service android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" android:exported="false">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <provider android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer" android:exported="false" android:multiprocess="true" android:authorities="com.amazon.dee.app.lifecycle-process"/>
+        <activity android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity" android:enabled="false" android:exported="false" android:process=":playcore_missing_splits_activity" android:stateNotNeeded="true" android:launchMode="singleInstance"/>
+        <activity android:theme="@style/Theme.PlayCore.Transparent" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:exported="false" android:stateNotNeeded="true"/>
+        <service android:name="com.google.android.play.core.assetpacks.AssetPackExtractionService" android:enabled="false" android:exported="true">
+            <meta-data android:name="com.google.android.play.core.assetpacks.versionCode" android:value="11003"/>
+        </service>
+        <service android:name="com.google.android.play.core.assetpacks.ExtractionForegroundService" android:enabled="false" android:exported="false"/>
+        <service android:name="com.google.firebase.components.ComponentDiscoveryService" android:exported="false" android:directBootAware="true">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <receiver android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.firebase.messaging.FirebaseMessagingService" android:exported="false">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name="androidx.room.MultiInstanceInvalidationService" android:exported="false" android:directBootAware="true"/>
+        <provider android:name="androidx.work.impl.WorkManagerInitializer" android:exported="false" android:multiprocess="true" android:authorities="com.amazon.dee.app.workmanager-init" android:directBootAware="false"/>
+        <service android:name="androidx.work.impl.background.systemalarm.SystemAlarmService" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:directBootAware="false"/>
+        <service android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:directBootAware="false"/>
+        <service android:name="androidx.work.impl.foreground.SystemForegroundService" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:directBootAware="false"/>
+        <receiver android:name="androidx.work.impl.utils.ForceStopRunnable.BroadcastReceiver" android:enabled="true" android:exported="false" android:directBootAware="false"/>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy.BatteryChargingProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy.BatteryNotLowProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy.StorageNotLowProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy.NetworkStateProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <provider android:name="com.google.firebase.provider.FirebaseInitProvider" android:exported="false" android:authorities="com.amazon.dee.app.firebaseinitprovider" android:initOrder="100"/>
+        <service android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+        <receiver android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" android:exported="false"/>
+        <meta-data android:name="com.bugsnag.android.BUILD_UUID" android:value="8e329427-dd65-469e-a2df-6838e7d1d537"/>
+    </application>
+</manifest>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accessory_service_notification_content_active_sessions">
+        <item quantity="zero">لا يوجد</item>
+        <item quantity="one">تم توصيل جهاز %1$d</item>
+        <item quantity="two">تم توصيل جهاز %1$d</item>
+        <item quantity="few">تم توصيل جهاز %1$d</item>
+        <item quantity="many">تم توصيل جهاز %1$d</item>
+        <item quantity="other">تم توصيل جهاز %1$d</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="zero">تقديم سريع للفيديو بمقدار %d ثانية</item>
+        <item quantity="one">تقديم سريع للفيديو بمقدار ثانية واحدة (%d)</item>
+        <item quantity="two">تقديم سريع للفيديو بمقدار ثانيتَين (%d)</item>
+        <item quantity="few">تقديم سريع للفيديو بمقدار %d ثوانٍ</item>
+        <item quantity="many">تقديم سريع للفيديو بمقدار %d ثانية</item>
+        <item quantity="other">تقديم سريع للفيديو بمقدار %d ثانية</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="zero">ترجيع الفيديو بمقدار %d ثانية</item>
+        <item quantity="one">ترجيع الفيديو بمقدار ثانية واحدة (%d)</item>
+        <item quantity="two">ترجيع الفيديو بمقدار ثانيتَين (%d)</item>
+        <item quantity="few">ترجيع الفيديو بمقدار %d ثوانٍ</item>
+        <item quantity="many">ترجيع الفيديو بمقدار %d ثانية</item>
+        <item quantity="other">ترجيع الفيديو بمقدار %d ثانية</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_days">
+        <item quantity="one">غدًا</item>
+        <item quantity="other">في %d يوم</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_hours">
+        <item quantity="one">في ساعة واحدة</item>
+        <item quantity="other">في %d ساعة</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_minutes">
+        <item quantity="one">في دقيقة واحدة</item>
+        <item quantity="other">في %d دقيقة</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_seconds">
+        <item quantity="one">في ثانية واحدة</item>
+        <item quantity="other">في %d ثانية</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_days_ago">
+        <item quantity="one">أمس</item>
+        <item quantity="other">قبل %d يوم</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_hours_ago">
+        <item quantity="one">قبل ساعة واحدة</item>
+        <item quantity="other">قبل %d ساعة</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_minutes_ago">
+        <item quantity="one">قبل دقيقة واحدة</item>
+        <item quantity="other">قبل %d دقيقة</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_seconds_ago">
+        <item quantity="one">قبل ثانية واحدة</item>
+        <item quantity="other">قبل %d ثانية</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_hours">
+        <item quantity="one">ساعة واحدة</item>
+        <item quantity="other">%d من الساعات</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_minutes">
+        <item quantity="one">دقيقة واحدة</item>
+        <item quantity="other">%d من الدقائق</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_seconds">
+        <item quantity="one">ثانية واحدة</item>
+        <item quantity="other">%d من الثواني</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_days">
+        <item quantity="one">غدًا</item>
+        <item quantity="other">في %d يوم</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_hours">
+        <item quantity="one">في ساعة واحدة</item>
+        <item quantity="other">في %d ساعة</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_minutes">
+        <item quantity="one">في دقيقة واحدة</item>
+        <item quantity="other">في %d دقيقة</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_seconds">
+        <item quantity="one">في ثانية واحدة</item>
+        <item quantity="other">في %d ثانية</item>
+    </plurals>
+    <plurals name="joda_time_android_num_days_ago">
+        <item quantity="one">أمس</item>
+        <item quantity="other">قبل %d يوم</item>
+    </plurals>
+    <plurals name="joda_time_android_num_hours_ago">
+        <item quantity="one">قبل ساعة واحدة</item>
+        <item quantity="other">قبل %d ساعة</item>
+    </plurals>
+    <plurals name="joda_time_android_num_minutes_ago">
+        <item quantity="one">قبل دقيقة واحدة</item>
+        <item quantity="other">قبل %d دقيقة</item>
+    </plurals>
+    <plurals name="joda_time_android_num_seconds_ago">
+        <item quantity="one">قبل ثانية واحدة</item>
+        <item quantity="other">قبل %d ثانية</item>
+    </plurals>
+    <plurals name="notifications_new_announcements">
+        <item quantity="zero">%d تنبيهات جديدة</item>
+        <item quantity="one">تنبيه جديد</item>
+        <item quantity="two">تنبيهين جديدين</item>
+        <item quantity="few">%d تنبيهات جديدة</item>
+        <item quantity="many">%d تنبيه جديد</item>
+        <item quantity="other">%d تنبيه جديد</item>
+    </plurals>
+    <plurals name="notifications_new_messages">
+        <item quantity="zero">%d رسائل جديدة</item>
+        <item quantity="one">رسالة جديدة</item>
+        <item quantity="two">رسالتين جديدتين</item>
+        <item quantity="few">%d رسائل جديدة</item>
+        <item quantity="many">%d رسالة جديدة</item>
+        <item quantity="other">%d رسالة جديدة</item>
+    </plurals>
+    <plurals name="unread_message_count">
+        <item quantity="zero">%d رسائل غير مقروءة.</item>
+        <item quantity="one">رسالة غير مقروءة.</item>
+        <item quantity="two">رسالتين غير مقروئتين.</item>
+        <item quantity="few">%d رسائل غير مقروءة.</item>
+        <item quantity="many">%d رسالة غير مقروءة.</item>
+        <item quantity="other">%d رسالة غير مقروءة.</item>
+    </plurals>
+    <plurals name="voice_ui_od_traffic_route">
+        <item quantity="zero">عبر %1$s و%2$s (%3$s)</item>
+        <item quantity="one">عبر %1$s (%2$s)</item>
+        <item quantity="two">عبر %1$s و%2$s (%3$s)</item>
+        <item quantity="few">عبر %1$s و%2$s (%3$s)</item>
+        <item quantity="many">عبر %1$s و%2$s (%3$s)</item>
+        <item quantity="other">عبر %1$s و%2$s (%3$s)</item>
+    </plurals>
+    <plurals name="voice_ui_od_travel_time_distance_route">
+        <item quantity="zero">عبر %1$s و%2$s</item>
+        <item quantity="one">عبر %1$s</item>
+        <item quantity="two">عبر %1$s و%2$s</item>
+        <item quantity="few">عبر %1$s و%2$s</item>
+        <item quantity="many">عبر %1$s و%2$s</item>
+        <item quantity="other">عبر %1$s و%2$s</item>
+    </plurals>
+    <plurals name="workout_history_list_secondary_text_cal">
+        <item quantity="zero">%d من السعرات الحرارية</item>
+        <item quantity="one">%d سعر حراري</item>
+        <item quantity="two">%d من السعرات الحرارية</item>
+        <item quantity="few">%d من السعرات الحرارية</item>
+        <item quantity="many">%d من السعرات الحرارية</item>
+        <item quantity="other">%d من السعرات الحرارية</item>
+    </plurals>
+    <plurals name="workout_history_list_secondary_text_step">
+        <item quantity="zero">%d من الخطوات</item>
+        <item quantity="one">خطوة واحدة</item>
+        <item quantity="two">%d من الخطوات</item>
+        <item quantity="few">%d من الخطوات</item>
+        <item quantity="many">%d من الخطوات</item>
+        <item quantity="other">%d من الخطوات</item>
+    </plurals>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:key="@string/alexa_preference_key">
+    <PreferenceCategory android:key="@string/main_category_key"/>
+    <Preference android:title="@string/alexa_settings_activity_summary_content" android:selectable="false" android:key="@string/alexa_settings_activity_summary_key" android:singleLineTitle="false"/>
+    <SwitchPreference android:title="@string/alexa_handsfree_enable_title" android:key="@string/alexa_handsfree_enable_key" android:defaultValue="true"/>
+    <Preference android:title="@string/enable_uvr" android:key="@string/enable_uvr_key" android:summary="@string/enable_uvr_summary"/>
+    <Preference android:title="@string/alexa_respond_while_locked" android:key="@string/alexa_handsfree_show_on_lock_screen_key" android:summary="@string/alexa_respond_while_locked_summary"/>
+    <SwitchPreference android:title="@string/alexa_handsfree_show_on_lock_screen_title" android:key="@string/alexa_handsfree_show_on_lock_screen_key_deprecated" android:summary="@string/alexa_handsfree_show_lockscreen_summary" android:defaultValue="true" android:singleLineTitle="false"/>
+    <Preference android:title="@string/disable_uvr" android:key="@string/disable_uvr_key" android:summary="@string/disable_uvr_summary"/>
+    <PreferenceCategory android:title="@string/alexa_settings_other_category_title" android:key="@string/other_category_key">
+        <Preference android:title="@string/alexa_settings_other_legal_notice_title" android:key="@string/legal_notice_key">
+            <intent android:action="com.amazon.alexa.handsfree.LICENSES"/>
+        </Preference>
+        <Preference android:key="@string/alexa_settings_vendor_settings_key" android:singleLineTitle="false"/>
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="default_pill_hints">
+        <item>Schlafgeräusche abspielen</item>
+        <item>Eine Ankündigung machen</item>
+        <item>Welche Benachrichtigungen habe ich?</item>
+        <item>Musik anhalten</item>
+        <item>Erzähl mir einen Witz</item>
+        <item>Was ist die Frage des Tages?</item>
+        <item>Gute Nacht</item>
+        <item>Anhalten</item>
+        <item>Musik abspielen</item>
+        <item>Guten Morgen</item>
+        <item>Nächster Song bitte</item>
+        <item>Wiedergabe</item>
+        <item>Wo ist mein Paket?</item>
+        <item>Musik pausieren</item>
+        <item>Jazz spielen</item>
+        <item>Bewache bitte mein Zuhause</item>
+        <item>Wie geht es dir?</item>
+        <item>Stell den Wecker für morgen um 7</item>
+        <item>Was bedeutet das gelbe Licht?</item>
+        <item>Wie ist das Wetter heute?</item>
+        <item>Timer abbrechen</item>
+        <item>Starte meinen Tag</item>
+        <item>Setz Äpfel auf die Einkaufsliste</item>
+        <item>Wie ist die Außentemperatur?</item>
+        <item>Was ist in den Nachrichten?</item>
+    </array>
+    <array name="new_user_messages">
+        <item>Hallo! Rate mal, wer gerade Tippen gelernt hat! Schreib mir einfach eine Nachricht, dass ich einen Witz erzählen oder das Licht einschalten soll. Oder durchsuche die App, beispielsweise nach deinen Listen und Einstellungen.</item>
+        <item>Übrigens ist das Schreiben mit mir Teil einer öffentlichen Vorabversion, ich habe den Dreh also noch nicht ganz raus!</item>
+    </array>
+    <array name="voice_ui_od_permissions_primer_rationale_list_items">
+        <item>Alexa erlauben Ihre Anfragen zu hören</item>
+        <item>Ihre Freunde und Familienmitglieder anrufen und ihnen Nachrichten schicken</item>
+        <item>Ihre Smart Home-Geräte steuern</item>
+        <item>Standortrelevante Suchergebnisse erhalten</item>
+    </array>
+    <array name="voice_ui_od_scrim_hints">
+        <item>„Wie ist das Wetter?“</item>
+        <item>„Wie ist der Verkehr?“</item>
+        <item>„Wie viele Meilen sind 10 Kilometer?“</item>
+        <item>„Wie ist der Wechselkurs von Dollar zu Euro?“</item>
+        <item>„Welche Filme laufen in den Kinos in meiner Nähe?“</item>
+        <item>„Welche Filme laufen morgen im Kino?“</item>
+        <item>„Welche Scifi-Filme laufen gerade im Kino?“</item>
+        <item>„Wie viele Kalorien hat ein Ei?“</item>
+        <item>„Wie weit ist der Mond entfernt?“</item>
+        <item>„Wie viel Uhr ist es in Tokio?“</item>
+        <item>„In Wikipedia nach Star Trek suchen“</item>
+        <item>„Milch zu meiner Einkaufsliste hinzufügen“</item>
+        <item>„Was steht auf meiner To-do-Liste?“</item>
+        <item>„Finde den nächstgelegenen Lebensmittelladen“</item>
+        <item>„Wo ist das nächstgelegene Schwimmbad?“</item>
+        <item>„Zeig mir die nächstgelegenen Cafés“</item>
+        <item>„Welche ist die nächstgelegene Pizzeria?“</item>
+        <item>„Zeig mir die nächstgelegene Apotheke“</item>
+        <item>„Zeig mir wie das Wetter heute wird“</item>
+        <item>„Wird es morgen regnen?“</item>
+        <item>„Werde ich heute einen Regenschirm brauchen?“</item>
+        <item>„Wie ist das Wetter in London?“</item>
+    </array>
+</resources>

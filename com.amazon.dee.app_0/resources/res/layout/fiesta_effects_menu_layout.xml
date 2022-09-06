@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:focusable="true" android:fitsSystemWindows="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:backgroundDimEnabled="false">
+    <LinearLayout android:orientation="vertical" android:focusable="true" android:fitsSystemWindows="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/back_layout" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageButton android:id="@+id/effects_back_imageview" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:src="@drawable/ic_back_alpha_24dp_bitmap" android:contentDescription="@string/effects_menu_back" app:layout_anchorGravity="0x51" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+            <com.amazon.alexa.font.FontTextView android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@+id/effects_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/effect" android:textAlignment="center"/>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@+id/effects_recycler_view" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/device_targeting_list_header_bottom_margin"/>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

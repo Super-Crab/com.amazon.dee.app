@@ -1,0 +1,6 @@
+// Specific settings to switch to BETA stage. The rest should remain as defaults
+{
+  "ir-master.domain":"test",
+  "ir-master.realm":"USAmazon",
+  "Setting.InternalTestTrustSslHosts": true
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/audio_call_background_color" android:baselineAligned="false" style="@style/viewLayout">
+    <include android:id="@+id/call_screen_header" layout="@layout/audio_call_header_layout"/>
+    <LinearLayout android:id="@+id/main_calling_view" android:background="@color/audio_call_background_color" android:baselineAligned="false" style="@style/viewLayout">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="@integer/call_participant_information_weight">
+            <include android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/call_participant_information"/>
+        </LinearLayout>
+        <View android:id="@+id/empty_view" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="@dimen/call_layout_empty_view_height" android:layout_weight="@integer/call_layout_empty_weight"/>
+        <LinearLayout android:baselineAligned="false" style="@style/TwoRowFloatingActionButtonGroup">
+            <LinearLayout android:layout_marginBottom="@dimen/six_spacing" android:baselineAligned="false" style="@style/FloatingActionButtonGroup">
+                <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="@integer/call_button_weight" layout="@layout/speaker_call_button"/>
+                <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="@integer/call_button_weight" layout="@layout/dial_pad_toggle"/>
+                <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="@integer/call_button_weight" layout="@layout/microphone_call_button"/>
+            </LinearLayout>
+            <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/end_call_button"/>
+        </LinearLayout>
+    </LinearLayout>
+    <include android:id="@+id/dial_pad_view" android:visibility="gone" layout="@layout/dial_pad"/>
+</LinearLayout>

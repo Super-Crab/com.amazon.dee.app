@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <fraction name="emergency_helpline_disabled_opacity">30%</fraction>
+    <fraction name="emergency_helpline_enabled_opacity">100%</fraction>
+    <fraction name="entertainment_list_load_animation_end_alpha">50%</fraction>
+    <fraction name="entertainment_list_load_animation_start_alpha">100%</fraction>
+    <fraction name="entertainment_list_title_letter_spacing">0.15</fraction>
+    <fraction name="media_error_top_margin">0.0704</fraction>
+    <fraction name="nps_album_art_height">0.1831</fraction>
+    <fraction name="nps_scale_animation_end">100%</fraction>
+    <fraction name="nps_scale_animation_pivot">50%</fraction>
+    <fraction name="nps_scale_animation_start">85%</fraction>
+    <fraction name="nps_top_margin">0.0282</fraction>
+    <fraction name="uvr_vertical_translation_screen_width_ratio">8%</fraction>
+</resources>

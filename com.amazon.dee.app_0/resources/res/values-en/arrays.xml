@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="default_pill_hints">
+        <item>Play Sleep Sounds</item>
+        <item>Make an announcement</item>
+        <item>What are my notifications?</item>
+        <item>Stop music</item>
+        <item>Tell me a joke</item>
+        <item>What is the question of the day?</item>
+        <item>Goodnight</item>
+        <item>Stop</item>
+        <item>Play music</item>
+        <item>Good morning</item>
+        <item>Next song please</item>
+        <item>Play</item>
+        <item>Where is my parcel?</item>
+        <item>Pause music</item>
+        <item>Play jazz</item>
+        <item>Guard my home please</item>
+        <item>How are you?</item>
+        <item>Set alarm for tomorrow at 7 a.m.</item>
+        <item>What is the yellow light?</item>
+        <item>What is the weather like today?</item>
+        <item>Cancel my timer</item>
+        <item>Start my day</item>
+        <item>Add apples to my Shopping List</item>
+        <item>What is the temperature outside?</item>
+        <item>What is the news?</item>
+    </array>
+    <array name="new_user_messages">
+        <item>Hello! Guess who just learnt how to type? Message me if you want me to tell a joke or switch on the lights. Search the app for things like your lists and settings.</item>
+        <item>By the way, typing with me is part of a public preview, so I&apos;m still getting the hang of it!</item>
+    </array>
+    <array name="voice_ui_od_permissions_primer_rationale_list_items">
+        <item>Allow Alexa to hear your requests</item>
+        <item>Call and message friends and family</item>
+        <item>Control smart home devices</item>
+        <item>Get location-relevant results</item>
+    </array>
+    <array name="voice_ui_od_scrim_hints">
+        <item>“What’s the weather?”</item>
+        <item>“How’s the traffic?”</item>
+        <item>“How many miles is a 10k?”</item>
+        <item>“What’s the dollar to euro exchange rate?”</item>
+        <item>“What films are playing nearby?”</item>
+        <item>“What films are playing tomorrow?”</item>
+        <item>“What sci-fi films are playing?”</item>
+        <item>“How many calories are in an egg?”</item>
+        <item>“How far is the moon?”</item>
+        <item>“What time is it in Tokyo?”</item>
+        <item>“Ask Wikipedia about Star Trek”</item>
+        <item>“Add milk to my shopping list”</item>
+        <item>“What’s on my to-do list?”</item>
+        <item>“Find the nearest grocery store”</item>
+        <item>“Where’s the nearest swimming pool?”</item>
+        <item>“Show me nearby cafes”</item>
+        <item>“What’s the nearest pizzeria?”</item>
+        <item>“Show me the nearest pharmacy”</item>
+        <item>“Show me today’s weather”</item>
+        <item>“Will it rain tomorrow?”</item>
+        <item>“Will I need an umbrella today?”</item>
+        <item>“How’s the weather in London?”</item>
+    </array>
+</resources>

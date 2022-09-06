@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/historyItem" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="?attr/mosaicBackground">
+    <LinearLayout android:orientation="vertical" android:id="@+id/listItem" android:layout_width="match_parent" android:layout_height="@dimen/workout_history_row_height" android:layout_marginStart="@dimen/icon_text_padding" android:layout_marginEnd="@dimen/icon_text_padding" app:layout_constraintTop_toTopOf="0">
+        <com.amazon.alexa.font.FontTextView android:textSize="@dimen/text_size_body" android:textColor="?attr/mosaicNeutral10" android:layout_gravity="start" android:id="@+id/primaryText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/icon_top_padding" android:maxLines="1"/>
+        <com.amazon.alexa.font.FontTextView android:textSize="@dimen/text_size_caption" android:textColor="?attr/mosaicNeutral20" android:layout_gravity="start" android:id="@+id/secondaryText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginEnd="@dimen/icon_bottom_padding"/>
+        <View android:id="@+id/spacing" android:layout_width="match_parent" android:layout_height="@dimen/icon_bottom_padding"/>
+        <View android:id="@+id/divider" android:background="?attr/mosaicNeutral10" android:layout_width="match_parent" android:layout_height="1dp" android:alpha="0.1"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,351 @@
+{
+  "amaSupportedDevices": [
+    {
+      "deviceTypeId": "A303PJF6ISQ7IC",
+      "supportedInitiationTypes" : [
+        "WAKE_WORD",
+        "TAP_TO_TALK",
+        "SERVER"
+      ],
+      "supportedWakeWords" : [
+        "alexa"
+      ]
+    },
+    {
+      "deviceTypeId": "A1388YOZ88W373",
+      "supportedInitiationTypes" : [
+        "WAKE_WORD",
+        "TAP_TO_TALK"
+      ],
+      "supportedWakeWords" : [
+        "alexa"
+      ]
+    },
+    {
+      "deviceTypeId": "AS8OPU4NNXJI8",
+      "supportedInitiationTypes" : [
+        "WAKE_WORD",
+        "TAP_TO_TALK"
+      ],
+      "supportedWakeWords" : [
+        "alexa"
+      ]
+    },
+    {
+      "deviceTypeId": "ALWUIN0P635PT",
+      "supportedInitiationTypes" : [
+        "WAKE_WORD",
+        "TAP_TO_TALK"
+      ],
+      "supportedWakeWords" : [
+        "alexa"
+      ]
+    },
+    {
+      "deviceTypeId": "AE9FIEPOC6D9B",
+      "supportedInitiationTypes" : [
+        "WAKE_WORD",
+        "TAP_TO_TALK"
+      ],
+      "supportedWakeWords" : [
+        "alexa"
+      ]
+    },
+    {
+      "deviceTypeId": "A16MZVIFVHX6P6",
+      "supportedInitiationTypes" : [
+        "WAKE_WORD",
+        "TAP_TO_TALK"
+      ],
+      "supportedWakeWords" : [
+        "alexa"
+      ]
+    },
+    {
+      "deviceTypeId": "A3IYPH06PH1HRA",
+      "supportedInitiationTypes" : [
+        "WAKE_WORD",
+        "TAP_TO_TALK"
+      ],
+      "supportedWakeWords" : [
+        "alexa"
+      ]
+    },
+    {
+      "deviceTypeId": "A3HND3J60V1OXX",
+      "supportedInitiationTypes" : [
+        "TAP_TO_TALK"
+      ],
+      "supportedWakeWords" : [
+      ]
+    },
+    {
+      "deviceTypeId": "A2VPNZDOLH0WPF",
+      "supportedInitiationTypes" : [
+        "WAKE_WORD",
+        "TAP_TO_TALK"
+      ],
+      "supportedWakeWords" : [
+        "alexa"
+      ]
+    },
+    {
+      "deviceTypeId": "AO50AHDYKXRFG",
+      "supportedInitiationTypes" : [
+        "WAKE_WORD",
+        "TAP_TO_TALK"
+      ],
+      "supportedWakeWords" : [
+        "alexa"
+      ]
+    },
+    {
+      "deviceTypeId": "A2YGUDBX0O7S89",
+      "supportedInitiationTypes" : [
+        "WAKE_WORD",
+        "TAP_TO_TALK"
+      ],
+      "supportedWakeWords" : [
+        "alexa"
+      ]
+    },
+    {
+      "deviceTypeId": "A2E0XJJQRBRTOB",
+      "supportedInitiationTypes" : [
+        "WAKE_WORD",
+        "TAP_TO_TALK"
+      ],
+      "supportedWakeWords" : [
+        "alexa"
+      ]
+    },
+    {
+      "deviceTypeId": "A2QDHDQIWC2LTG",
+      "supportedInitiationTypes" : [
+        "WAKE_WORD",
+        "SERVER",
+        "TAP_TO_TALK"
+      ],
+      "supportedWakeWords" : [
+        "alexa"
+      ]
+    },
+    {
+      "deviceTypeId": "A31PMVIWCRNTX2",
+      "supportedInitiationTypes" : [
+        "WAKE_WORD",
+        "SERVER",
+        "TAP_TO_TALK"
+      ],
+      "supportedWakeWords" : [
+        "alexa"
+      ]
+    },
+    {
+      "deviceTypeId": "A3HVREY4JWAZ6K",
+      "supportedInitiationTypes" : [
+        "WAKE_WORD",
+        "SERVER",
+        "TAP_TO_TALK"
+      ],
+      "supportedWakeWords" : [
+        "alexa"
+      ]
+    },
+    {
+      "deviceTypeId": "A15QWUTQ6FSMYX",
+      "supportedInitiationTypes" : [
+        "WAKE_WORD",
+        "SERVER",
+        "TAP_TO_TALK"
+      ],
+      "supportedWakeWords" : [
+        "alexa"
+      ]
+    },
+    {
+      "deviceTypeId": "AMP8VWQX57E7M",
+      "supportedInitiationTypes" : [
+        "WAKE_WORD"
+      ],
+      "supportedWakeWords" : [
+        "alexa"
+      ]
+    },
+    {
+      "deviceTypeId": "A79UIOED8DL44",
+      "supportedInitiationTypes" : [
+        "WAKE_WORD"
+      ],
+      "supportedWakeWords" : [
+        "alexa"
+      ]
+    },
+    {
+      "deviceTypeId": "A2JRB6RHJL4WBV",
+      "supportedInitiationTypes" : [
+        "WAKE_WORD"
+      ],
+      "supportedWakeWords" : [
+        "alexa"
+      ]
+    },
+    {
+      "deviceTypeId": "AZ5955N2JHWHY",
+      "supportedInitiationTypes" : [
+        "WAKE_WORD"
+      ],
+      "supportedWakeWords" : [
+        "alexa"
+      ]
+    },
+    {
+      "deviceTypeId": "AYHO3NTIQQ04G",
+      "supportedInitiationTypes" : [
+        "WAKE_WORD"
+      ],
+      "supportedWakeWords" : [
+        "alexa"
+      ]
+    },
+    {
+      "deviceTypeId": "A2GMZW2W3J397Y",
+      "supportedInitiationTypes" : [
+        "WAKE_WORD"
+      ],
+      "supportedWakeWords" : [
+        "alexa"
+      ]
+    },
+    {
+      "deviceTypeId": "A5D8NAIZGQG1G",
+      "supportedInitiationTypes" : [
+        "WAKE_WORD"
+      ],
+      "supportedWakeWords" : [
+        "alexa"
+      ]
+    },
+    {
+      "deviceTypeId": "A1W2YILXTG9HA7",
+      "supportedInitiationTypes" : [
+        "WAKE_WORD"
+      ],
+      "supportedWakeWords" : [
+        "alexa"
+      ]
+    },
+    {
+      "deviceTypeId": "A3MVZMTHXJOGWY",
+      "supportedInitiationTypes" : [
+        "WAKE_WORD",
+        "TAP_TO_TALK"
+      ],
+      "supportedWakeWords" : [
+        "alexa"
+      ]
+    },
+    {
+      "deviceTypeId": "A1DZ2BZSZ3M8U0",
+      "supportedInitiationTypes" : [
+        "WAKE_WORD",
+        "TAP_TO_TALK"
+      ],
+      "supportedWakeWords" : [
+        "alexa"
+      ]
+    },
+    {
+      "deviceTypeId": "A29H62YNPQ16RZ",
+      "supportedInitiationTypes" : [
+        "TAP_TO_TALK"
+      ],
+      "supportedWakeWords" : [
+      ]
+    },
+    {
+      "deviceTypeId": "A1QD2EWU796JN3",
+      "supportedInitiationTypes" : [
+        "TAP_TO_TALK"
+      ],
+      "supportedWakeWords" : [
+      ]
+    },
+    {
+      "deviceTypeId": "A1MWUYAUWWHED3",
+      "supportedInitiationTypes" : [
+        "WAKE_WORD",
+        "TAP_TO_TALK"
+      ],
+      "supportedWakeWords" : [
+        "alexa"
+      ]
+    },
+    {
+      "deviceTypeId": "A3GIWPEY4MAXQ1",
+      "supportedInitiationTypes" : [
+        "WAKE_WORD",
+        "TAP_TO_TALK"
+      ],
+      "supportedWakeWords" : [
+        "alexa"
+      ]
+    },
+    {
+      "deviceTypeId": "A2B398LRL6N9OS",
+      "supportedInitiationTypes" : [
+        "WAKE_WORD",
+        "TAP_TO_TALK"
+      ],
+      "supportedWakeWords" : [
+        "alexa"
+      ]
+    },
+    {
+      "deviceTypeId": "AGRYTA9CY46NL",
+      "supportedInitiationTypes" : [
+        "WAKE_WORD",
+        "TAP_TO_TALK"
+      ],
+      "supportedWakeWords" : [
+        "alexa"
+      ]
+    },
+    {
+      "deviceTypeId": "A25K5HFRFA8CE9",
+      "supportedInitiationTypes" : [
+        "WAKE_WORD"
+      ],
+      "supportedWakeWords" : [
+        "alexa"
+      ]
+    },
+    {
+      "deviceTypeId": "A3PYHIV170UK8O",
+      "supportedInitiationTypes" : [
+        "WAKE_WORD"
+      ],
+      "supportedWakeWords" : [
+        "alexa"
+      ]
+    },
+    {
+      "deviceTypeId": "A1LV8UW24C69FT",
+      "supportedInitiationTypes" : [
+        "WAKE_WORD"
+      ],
+      "supportedWakeWords" : [
+        "alexa"
+      ]
+    },
+    {
+      "deviceTypeId": "A2MY0PDIIXPI96",
+      "supportedInitiationTypes" : [
+        "WAKE_WORD"
+      ],
+      "supportedWakeWords" : [
+        "alexa"
+      ]
+    }
+  ]
+}

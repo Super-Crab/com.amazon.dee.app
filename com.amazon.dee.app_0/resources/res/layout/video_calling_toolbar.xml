@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto" android:gravity="top" android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.amazon.deecomms.common.ui.CommsTextView android:textSize="@dimen/video_toolbar_textsize" android:textColor="@color/videocall_toolbar_text" android:layout_gravity="center" android:id="@+id/screen_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/alexa_call" custom:typeface="@string/amazon_ember_regular"/>
+</FrameLayout>

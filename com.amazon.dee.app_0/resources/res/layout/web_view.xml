@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.dee.app.ui.web.AlexaWebView xmlns:android="http://schemas.android.com/apk/res/android" android:nextFocusLeft="@+id/toolbar_icon_layout" android:nextFocusDown="@+id/tab_home" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="false"/>

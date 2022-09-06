@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/customToastContainer" android:background="?attr/mosaicAction20" android:paddingLeft="@dimen/custom_toast_horizontal_padding" android:paddingTop="@dimen/custom_toast_vertical_padding" android:paddingRight="@dimen/custom_toast_horizontal_padding" android:paddingBottom="@dimen/custom_toast_vertical_padding" android:layout_width="match_parent" android:layout_height="@dimen/custom_toast_height">
+    <com.amazon.alexa.font.FontTextView android:textSize="@dimen/text_size_secondary" android:textColor="@android:color/white" android:id="@+id/errorTextView" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="2" android:fontFamily="amazon-ember-regular"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_active="false" android:state_pressed="false" android:drawable="@drawable/btn_drop_in_disabled_light_32dp"/>
+    <item android:state_active="false" android:state_pressed="true" android:drawable="@drawable/btn_drop_in_disabled_pressed_light_32dp"/>
+    <item android:state_active="true" android:state_pressed="false" android:drawable="@drawable/btn_drop_in_active_light_32dp"/>
+    <item android:state_active="true" android:state_pressed="true" android:drawable="@drawable/btn_drop_in_active_pressed_light_32dp"/>
+</selector>

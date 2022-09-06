@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@+id/left_guideline" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.1266"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/todayContainer" android:focusable="true" android:layout_width="@dimen/voice_ui_od_current_weather_maininfo_width" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/voice_ui_od_content_default_double_margin" app:layout_constraintStart_toStartOf="@+id/left_guideline">
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/voice_ui_od_current_weather"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/image" android:focusable="true" android:layout_width="@dimen/voice_ui_od_current_weather_image_width" android:layout_height="@dimen/voice_ui_od_current_weather_image_height" android:scaleType="fitCenter" android:layout_marginStart="@dimen/voice_ui_od_content_default_double_margin" app:layout_constraintStart_toEndOf="@+id/todayContainer"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

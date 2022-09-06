@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:fillViewport="true" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.amazon.deecomms.common.ui.CommsTextView android:id="@+id/oobe_phone_verified_title" android:paddingTop="@dimen/oobe_title_padding_top" android:paddingBottom="35dp" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/AlexaComms.large"/>
+            <com.amazon.deecomms.common.ui.CommsTextView android:id="@+id/oobe_phone_verified_content" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1" style="@style/AlexaComms.xsmall"/>
+        </LinearLayout>
+    </ScrollView>
+    <com.amazon.deecomms.common.ui.CommsButton android:id="@+id/oobe_phone_verified_continue_btn" android:layout_height="wrap_content" android:text="@string/action_continue" android:textAllCaps="true" style="@style/AlexaCommsButton.Primary.Right"/>
+</LinearLayout>

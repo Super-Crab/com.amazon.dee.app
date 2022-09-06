@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" style="@style/FloatingActionButtonWrapper">
+    <ImageButton android:id="@+id/acceptVideoCallButton" android:background="@drawable/fiesta_selector_call_ans" android:src="@drawable/fiesta_ic_video_on" android:contentDescription="@string/answer_button_description" style="@style/FloatingActionButton"/>
+</RelativeLayout>

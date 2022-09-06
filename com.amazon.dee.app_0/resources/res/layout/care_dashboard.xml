@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:tag="layout/care_dashboard_0" android:background="?attr/mosaicBackground" android:layout_width="match_parent" android:layout_height="match_parent" android:importantForAccessibility="yes">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/dashboard_refresh_container" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentTop="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.amazon.alexa.font.FontTextView android:textColor="?attr/mosaicNeutral10" android:gravity="center" android:id="@+id/care_contact_name" android:tag="binding_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/large_margin" app:fontName="6" style="@style/TextAppearance.Mosaic.Title_04"/>
+                <com.amazon.alexa.mosaic.view.SectionHeader android:id="@+id/comms_panel_header" android:tag="binding_3" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <LinearLayout android:gravity="center_horizontal" android:id="@+id/comms_panel" android:tag="binding_4" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/large_margin" android:layout_marginBottom="@dimen/large_margin">
+                    <com.amazon.alexa.mosaic.view.RoundImageButtonView android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" app:iconSrc="@drawable/ic_mosaic_drop_in_request" app:primaryText="@string/drop_in"/>
+                    <com.amazon.alexa.mosaic.view.RoundImageButtonView android:tag="binding_6" android:layout_width="wrap_content" android:layout_height="wrap_content" app:iconSrc="@drawable/ic_mosaic_call" app:primaryText="@string/call"/>
+                    <com.amazon.alexa.mosaic.view.RoundImageButtonView android:tag="binding_7" android:layout_width="wrap_content" android:layout_height="wrap_content" app:iconSrc="@drawable/ic_mosaic_chat" app:primaryText="@string/biloba_message"/>
+                    <com.amazon.alexa.mosaic.view.RoundImageButtonView android:id="@+id/assist_button" android:tag="binding_8" android:layout_width="wrap_content" android:layout_height="wrap_content" app:iconSrc="@drawable/ic_remote_assist" app:primaryText="@string/assist"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:id="@+id/care_cards_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/large_margin">
+                    <androidx.recyclerview.widget.RecyclerView android:id="@+id/dashboard_cards" android:layout_width="match_parent" android:layout_height="match_parent" android:nestedScrollingEnabled="false"/>
+                </LinearLayout>
+                <com.amazon.alexa.mosaic.view.SectionHeader android:id="@+id/circle_of_support_header" android:tag="binding_9" android:layout_width="match_parent" android:layout_height="wrap_content" app:text="@string/your_circle_of_support"/>
+                <com.amazon.alexa.mosaic.view.ListItemLink android:id="@+id/cg_admin_ingress" android:tag="binding_10" android:layout_width="match_parent" android:layout_height="wrap_content" app:clickable="true" app:linkText="@string/view" app:primaryTextMaxLines="@integer/max_lines_mosaic_list_item_link_primaryText" app:secondaryText="@string/circle_host" app:secondaryTextMaxLines="@integer/max_lines_mosaic_list_item_link_secondaryText"/>
+                <View style="@style/mosaic_list_item_divider"/>
+                <com.amazon.alexa.font.FontTextView android:textColor="?attr/mosaicAction10" android:id="@+id/view_your_circle_members_link" android:tag="binding_11" android:padding="@dimen/small_margin" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/small_margin" android:text="@string/view_your_circle_members" style="@style/TextAppearance.Mosaic.Body"/>
+                <com.amazon.alexa.mosaic.view.SectionHeader android:id="@+id/recent_title" android:tag="binding_12" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <RelativeLayout android:id="@+id/activity_panel" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ViewSwitcher android:id="@+id/switcher" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <androidx.recyclerview.widget.RecyclerView android:id="@+id/dashboard_activities_list_view" android:background="?attr/mosaicBackground" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never" android:nestedScrollingEnabled="false"/>
+                    </ViewSwitcher>
+                </RelativeLayout>
+                <View style="@style/mosaic_list_item_divider"/>
+                <com.amazon.alexa.font.FontTextView android:textColor="?attr/mosaicAction10" android:id="@+id/all_recent_activities_link" android:tag="binding_13" android:padding="@dimen/small_margin" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/small_margin" android:text="@string/recent_activities_all" style="@style/TextAppearance.Mosaic.Body"/>
+                <com.amazon.alexa.mosaic.view.SectionHeader android:id="@+id/manage_title" android:layout_width="match_parent" android:layout_height="wrap_content" app:text="@string/alexa_together_section"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/medium_margin">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                        <com.amazon.alexa.mosaic.view.AlertBannerButtonView android:layout_gravity="center_vertical" android:id="@+id/top_left_button" android:tag="binding_14" android:layout_weight="1" app:alertVisible="false" style="@style/Button.Mosaic.Card.Alert"/>
+                        <com.amazon.alexa.mosaic.view.AlertBannerButtonView android:layout_gravity="center_vertical" android:id="@+id/top_right_button" android:tag="binding_15" android:layout_weight="1" app:alertVisible="false" style="@style/Button.Mosaic.Card.Alert"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:tag="binding_16" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                        <com.amazon.alexa.mosaic.view.AlertBannerButtonView android:layout_gravity="center_vertical" android:id="@+id/bottom_left_button" android:tag="binding_17" android:layout_weight="1" app:alertText="@string/emergency_contact_button_finish_comms_setup" style="@style/Button.Mosaic.Card.Alert"/>
+                        <com.amazon.alexa.mosaic.view.AlertBannerButtonView android:layout_gravity="center_vertical" android:id="@+id/bottom_right_button" android:tag="binding_18" android:layout_weight="1" app:alertVisible="false" app:buttonText="@string/care_settings" app:iconSrc="@drawable/ic_mosaic_settings" style="@style/Button.Mosaic.Card.Alert"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/large_margin">
+                    <com.amazon.alexa.font.FontTextView android:textColor="?attr/mosaicNeutral10" android:gravity="center" android:id="@+id/timezone_dashboard" android:tag="binding_19" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/TextAppearance.Mosaic.Secondary"/>
+                    <com.amazon.alexa.font.FontTextView android:textColor="?attr/mosaicAction10" android:gravity="center" android:id="@+id/change_timezone_dashboard" android:tag="binding_20" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/TextAppearance.Mosaic.Secondary"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <com.amazon.alexa.mosaic.view.ErrorView android:id="@+id/error_view" android:tag="binding_21" android:layout_width="match_parent" android:layout_height="match_parent" app:bodyText="@string/error_care_hub_body" app:headlineText="@string/error_care_hub_headline" app:iconSrc="@drawable/ic_alexa_together" app:iconTint="?attr/mosaicNeutral10" app:linkText="@string/error_tap_to_retry"/>
+    <include android:id="@+id/loading_view" layout="@layout/loading_view"/>
+    <include layout="@layout/status_banner"/>
+</FrameLayout>

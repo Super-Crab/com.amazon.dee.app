@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingTop="@dimen/voice_ui_od_traffic_route_padding" android:paddingBottom="@dimen/voice_ui_od_traffic_route_padding" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/voice_ui_od_content_item_padding" android:paddingEnd="@dimen/voice_ui_od_content_item_padding">
+    <LinearLayout android:orientation="vertical" android:id="@+id/route_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toStartOf="@+id/indicator">
+        <TextView android:textSize="@dimen/voice_ui_od_traffic_primary_route_text_size" android:textColor="?android:attr/textColorPrimary" android:ellipsize="end" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1"/>
+        <TextView android:textSize="@dimen/voice_ui_od_font_subhead_size" android:textColor="?android:attr/textColorPrimary" android:ellipsize="end" android:id="@+id/subTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/voice_ui_od_traffic_route_subtitle_margin_top" android:maxLines="3"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/indicator" android:layout_width="@dimen/voice_ui_od_traffic_indicator_size" android:layout_height="@dimen/voice_ui_od_traffic_indicator_size" android:layout_alignBottom="@+id/route_container" android:layout_marginStart="@dimen/voice_ui_od_traffic_route_indicator_margin_start" android:layout_alignParentEnd="true"/>
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.amazon.alexa.font.FontTextView android:textColor="?attr/mosaicNeutral10" android:id="@+id/circleBullet" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:text="@string/circle_bullet" style="@style/TextAppearance.Mosaic.Body"/>
+    <com.amazon.alexa.font.FontTextView android:textColor="?attr/mosaicNeutral10" android:textColorLink="?attr/mosaicNeutral30" android:id="@+id/primaryText" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/TextAppearance.Mosaic.Body"/>
+</LinearLayout>

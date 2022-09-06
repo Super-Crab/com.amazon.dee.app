@@ -1,0 +1,95 @@
+{
+  "statusCode": 200,
+  "suggestions": [
+    {
+      "actionData": "v2/devices-channel",
+      "actionType": "APP_PAGE",
+      "description": null,
+      "domainId": "smart-home",
+      "featuresGatedBy": null,
+      "resultId": "smart-home:b14e6470-f92a-4cc5-9bda-c78b7ef8be15",
+      "title": "Karthick's k_u_3"
+    },
+    {
+      "actionData": "v2/lists/namedlists/7961c189-a564-4e8b-a224-f6c089d3ce6b",
+      "actionType": "APP_PAGE",
+      "description": null,
+      "domainId": "named-list",
+      "featuresGatedBy": null,
+      "resultId": "named-list:7961c189-a564-4e8b-a224-f6c089d3ce6b",
+      "title": "vocation"
+    },
+    {
+      "actionData": "v2/lists/namedlists/YW16bjEuYWNjb3VudC5BRUxSSzU2UFlRNFRNRFpISzRFS1ZXTFpLV0tRLVRBU0s=",
+      "actionType": "APP_PAGE",
+      "description": null,
+      "domainId": "named-list",
+      "featuresGatedBy": null,
+      "resultId": "named-list:YW16bjEuYWNjb3VudC5BRUxSSzU2UFlRNFRNRFpISzRFS1ZXTFpLV0tRLVRBU0s=:en-US",
+      "title": "To Do"
+    },
+    {
+      "actionData": null,
+      "actionType": "UTTERANCE",
+      "description": null,
+      "domainId": "activity-history",
+      "featuresGatedBy": null,
+      "resultId": "TextClient:1.0/2021/08/24/08/69a62671d8c34a67a6971098dfc3bf7a/39:12::TNIH_2V.0592487d-4882-4448-be7a-a042b2d9f832ZXV/1629794357866",
+      "title": "Hello"
+    },
+    {
+      "actionData": "v2/lists/namedlists/YW16bjEuYWNjb3VudC5BRUxSSzU2UFlRNFRNRFpISzRFS1ZXTFpLV0tRLVNIT1BQSU5HX0lURU0=",
+      "actionType": "APP_PAGE",
+      "description": null,
+      "domainId": "named-list",
+      "featuresGatedBy": null,
+      "resultId": "named-list:YW16bjEuYWNjb3VudC5BRUxSSzU2UFlRNFRNRFpISzRFS1ZXTFpLV0tRLVNIT1BQSU5HX0lURU0=:en-US",
+      "title": "Shopping"
+    },
+    {
+      "actionData": null,
+      "actionType": "UTTERANCE",
+      "description": null,
+      "domainId": "activity-history",
+      "featuresGatedBy": null,
+      "resultId": "TextClient:1.0/2021/08/24/18/69a62671d8c34a67a6971098dfc3bf7a/33:13::TNIH_2V.213cc822-a259-45dc-a984-41bc77674b40ZXV/1629829998156",
+      "title": "knock knock"
+    },
+    {
+      "actionData": null,
+      "actionType": "UTTERANCE",
+      "description": null,
+      "domainId": "activity-history",
+      "featuresGatedBy": null,
+      "resultId": "TextClient:1.0/2021/08/24/08/69a62671d8c34a67a6971098dfc3bf7a/39:12::TNIH_2V.0592487d-4882-4448-be7a-a042b2d9f832ZXV/1629794352858",
+      "title": "Hello"
+    },
+    {
+      "actionData": null,
+      "actionType": "UTTERANCE",
+      "description": null,
+      "domainId": "activity-history",
+      "featuresGatedBy": null,
+      "resultId": "Alexa3P:1.0/2021/08/24/19/69a62671d8c34a67a6971098dfc3bf7a/23:38::TNIH_2V.3796ac2e-620f-42e5-91dc-f836aa326502ZXV/0_1629833019507",
+      "title": "no"
+    },
+    {
+      "actionData": null,
+      "actionType": "UTTERANCE",
+      "description": null,
+      "domainId": "activity-history",
+      "featuresGatedBy": null,
+      "resultId": "TextClient:1.0/2021/08/24/08/69a62671d8c34a67a6971098dfc3bf7a/39:29::TNIH_2V.850eaf6e-1aa2-485a-a7cc-15d20a44b899ZXV/1629794370524",
+      "title": "Weather in Detroit"
+    },
+    {
+      "actionData": null,
+      "actionType": "UTTERANCE",
+      "description": null,
+      "domainId": "activity-history",
+      "featuresGatedBy": null,
+      "resultId": "Alexa3P:1.0/2021/08/24/19/69a62671d8c34a67a6971098dfc3bf7a/26:04::TNIH_2V.766af46f-dc61-473c-8775-2a756aab6958ZXV/0_1629833165291",
+      "title": "no"
+    }
+  ]
+}

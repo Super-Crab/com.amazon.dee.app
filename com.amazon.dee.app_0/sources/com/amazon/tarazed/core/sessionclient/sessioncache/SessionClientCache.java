@@ -1,0 +1,23 @@
+package com.amazon.tarazed.core.sessionclient.sessioncache;
+
+import com.amazon.alexa.client.metrics.kinesis.session.client.AppDefaultSessionClient;
+import com.amazon.tarazed.core.sessionclient.model.createcredentials.CreateCredentialsResponse;
+import kotlin.Metadata;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+/* compiled from: SessionClientCache.kt */
+@Metadata(bv = {1, 0, 3}, d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\bf\u0018\u00002\u00020\u0001J\b\u0010\u0002\u001a\u00020\u0003H&J\n\u0010\u0004\u001a\u0004\u0018\u00010\u0005H&J\u0012\u0010\u0006\u001a\u0004\u0018\u00010\u00072\u0006\u0010\b\u001a\u00020\u0005H&J\u0010\u0010\t\u001a\u00020\u00032\u0006\u0010\n\u001a\u00020\u0005H&J\u0018\u0010\u000b\u001a\u00020\u00032\u0006\u0010\b\u001a\u00020\u00052\u0006\u0010\f\u001a\u00020\u0007H&¨\u0006\r"}, d2 = {"Lcom/amazon/tarazed/core/sessionclient/sessioncache/SessionClientCache;", "", "clearLaunchRequest", "", "getLaunchRequest", "", "getSessionCredentials", "Lcom/amazon/tarazed/core/sessionclient/model/createcredentials/CreateCredentialsResponse;", AppDefaultSessionClient.CRASH_REPORTER_SESSION_ID_KEY, "putLaunchRequest", Post23SessionClientCache.LAUNCH_REQUEST_CACHE, "putSessionCredentials", Post23SessionClientCache.CACHE_DIR, "TarazedMobileCore_release"}, k = 1, mv = {1, 1, 16})
+/* loaded from: classes13.dex */
+public interface SessionClientCache {
+    void clearLaunchRequest();
+
+    @Nullable
+    String getLaunchRequest();
+
+    @Nullable
+    CreateCredentialsResponse getSessionCredentials(@NotNull String str);
+
+    void putLaunchRequest(@NotNull String str);
+
+    void putSessionCredentials(@NotNull String str, @NotNull CreateCredentialsResponse createCredentialsResponse);
+}

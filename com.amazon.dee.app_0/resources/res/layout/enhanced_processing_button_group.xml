@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:padding="@dimen/callui_margin" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.amazon.deecomms.common.ui.CommsButton android:id="@+id/enableButton" android:layout_width="match_parent" android:layout_marginBottom="36dp" android:text="@string/group_calling_enhanced_processing_setting_enable" android:textAlignment="center" style="@style/Callui.Button.Primary"/>
+    <com.amazon.deecomms.common.ui.CommsButton android:id="@+id/declineButton" android:layout_width="match_parent" android:layout_marginBottom="18dp" android:text="@string/group_calling_enhanced_processing_setting_later" android:textAlignment="center" style="@style/Callui.Button.Borderless"/>
+</LinearLayout>

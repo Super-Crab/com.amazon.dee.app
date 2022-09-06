@@ -1,0 +1,81 @@
+{
+    "handsFreeSetupProperties": {
+        "disabledState": {
+            "handsFree": [
+            ]
+        },
+        "notificationsConfig": {
+            "frequencyConfig": [
+                {
+                    "type": "timeBased",
+                    "intervals": [0, 345600000, 345600000, 345600000, 518400000, 518400000]
+                },
+                {
+                    "type": "killSwitch",
+                    "intervals": [5000000, 1000000]
+                },
+                {
+                    "type": "quickSettings",
+                    "intervals": [172800000, 432000000]
+                },
+                {
+                    "type": "alexaQvaUpdateTransition",
+                    "intervals": [0]
+                }
+            ],
+            "utteranceConfig": [
+                {
+                    "type": "utteranceBased",
+                    "limits": {
+                        "minHoursBeforeNextUtterance": 72,
+                        "maxDaysAfterFirstUtterance": 30,
+                        "maxCount": 6
+                    }
+                },
+                {
+                    "type": "voiceProfile",
+                    "limits": {
+                        "minHoursBeforeNextUtterance": 72,
+                        "maxDaysAfterFirstUtterance": 30,
+                        "maxCount": 6
+                    }
+                },
+                {
+                    "type": "voiceProfileOnLockScreen",
+                    "limits": {
+                        "minHoursBeforeNextUtterance": 72,
+                        "maxDaysAfterFirstUtterance": 30,
+                        "maxCount": 6
+                    }
+                },
+                {
+                    "type": "showOnLockscreen",
+                    "limits": {
+                        "minHoursBeforeNextUtterance": 72,
+                        "maxDaysAfterFirstUtterance": 30,
+                        "maxCount": 6
+                    }
+                }
+            ],
+            "maxAllowedNotificationsBeforeTerms": 2
+        },
+        "confidenceLevel": 10,
+        "minimumSupportedAlexaAppVersion": 830166710,
+        "minimumSupportedLocalAppVersion": {
+            "localAppVersions" : {
+                "dspAppVersion": 0,
+                "falcoVersion": 0
+            }
+        },
+        "minimumSupportedAlexaAppVersionForDSP": [
+            {
+                "localAppVersions" : {
+                    "dspAppVersion": 20201,
+                    "falcoVersion": 1005
+                },
+                "voxAppVersion": 844147310
+            }
+        ]
+    },
+    "version": 1.2
+}

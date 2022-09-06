@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/contact_details_head_margin_top" android:layout_marginStart="@dimen/contact_details_margin_start" android:layout_marginEnd="@dimen/contact_details_margin_end">
+    <com.amazon.deecomms.common.ui.CommsTextView android:textAppearance="?android:attr/textAppearanceLarge" android:textSize="@dimen/contact_card_email_address_text_size" android:textColor="@color/contact_card_text_grey" android:id="@+id/user_info_line_one" android:layout_width="match_parent" android:layout_height="wrap_content" custom:typeface="@string/amazon_ember_regular"/>
+    <com.amazon.deecomms.common.ui.CommsTextView android:textSize="@dimen/contact_details_setting_description_text_size" android:textColor="@color/contact_card_text_black" android:id="@+id/user_info_line_two" android:layout_width="match_parent" android:layout_height="wrap_content" custom:typeface="@string/amazon_ember_regular"/>
+    <View android:id="@+id/contact_card_email_info_divider" style="@style/contactInfoDividerStyle"/>
+</LinearLayout>

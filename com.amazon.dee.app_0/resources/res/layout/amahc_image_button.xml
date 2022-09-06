@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="end|center_vertical" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageButton android:gravity="end|center_vertical" android:id="@+id/image_button" android:background="@android:color/transparent" android:clickable="false" android:duplicateParentState="true" android:layout_width="@dimen/amahc_width_medium" android:layout_height="@dimen/amahc_height_medium" android:scaleType="fitCenter" android:contentDescription="@string/amahc_button_talkback"/>
+</LinearLayout>

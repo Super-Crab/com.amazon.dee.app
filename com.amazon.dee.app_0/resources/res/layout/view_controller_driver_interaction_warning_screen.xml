@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/fragment_driver_interaction_warning_screen" android:background="?attr/mosaicBackground" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="top|center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="top|center_horizontal" android:id="@+id/warning_logo" android:layout_width="@dimen/dm_warning_logo_height" android:layout_height="@dimen/dm_warning_logo_width" android:src="@drawable/dm_ic_warning"/>
+        <com.amazon.alexa.font.FontTextView android:gravity="center_horizontal" android:id="@+id/dm_warning_title" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dm_warning_title_margin_top" android:layout_marginHorizontal="@dimen/dm_warning_description_margin_horizontal" app:fontName="6" style="@style/TextHeadline2"/>
+        <TextView android:textSize="@dimen/dm_warning_description_text_size" android:textColor="?attr/mosaicNeutral10" android:gravity="center_horizontal" android:id="@+id/dm_warning_description" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dm_warning_description_margin_top" android:layout_marginHorizontal="@dimen/dm_warning_description_margin_horizontal"/>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="@dimen/dm_warning_button_margin" android:layout_marginRight="@dimen/dm_warning_button_margin" android:layout_marginBottom="@dimen/dm_warning_button_margin" android:layout_weight="1">
+        <Button android:textSize="@dimen/dm_warning_description_text_size" android:textColor="?attr/mosaicNeutral10" android:layout_gravity="bottom" android:id="@+id/passenger_confirm_button" android:background="@drawable/dm_warning_page_button_background" android:layout_width="match_parent" android:layout_height="@dimen/dm_warning_button_height"/>
+    </LinearLayout>
+</LinearLayout>

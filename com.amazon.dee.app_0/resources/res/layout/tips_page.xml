@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:tag="layout/tips_page_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/tips_page_container" android:tag="binding_1" android:background="?attr/mosaicBackground" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/tips_page" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <com.amazon.alexa.mosaic.view.ErrorView android:id="@+id/error_view" android:tag="binding_2" android:layout_width="match_parent" android:layout_height="match_parent" app:bodyText="@string/error_tips_body" app:headlineText="@string/error_tips_headline" app:iconSrc="@drawable/ic_alexa" app:iconTint="?attr/mosaicNeutral10" app:linkText="@string/error_tap_to_retry"/>
+    <include android:id="@+id/loading_view" layout="@layout/loading_view"/>
+    <include layout="@layout/status_banner"/>
+</FrameLayout>

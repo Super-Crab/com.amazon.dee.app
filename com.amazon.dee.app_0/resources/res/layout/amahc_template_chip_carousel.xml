@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+    <Space android:id="@+id/hero_space" android:layout_width="match_parent" android:layout_height="@dimen/amahc_margin_large_22"/>
+    <RelativeLayout android:id="@+id/slot0wrapper" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/slot0" android:paddingBottom="@dimen/amahc_margin_medium" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAlignment="textStart" android:paddingStart="@dimen/amahc_margin_large" android:paddingEnd="0dp"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/slot1" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/amahc_margin_medium"/>
+</LinearLayout>

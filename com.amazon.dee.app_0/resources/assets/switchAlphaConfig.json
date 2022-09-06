@@ -1,0 +1,6 @@
+// Specific settings to switch to ALPHA stage. The rest should remain as defaults
+{
+  "ir-master.domain":"alpha",
+  "ir-master.realm":"USAmazon",
+  "Setting.InternalTestTrustSslHosts": true
+}

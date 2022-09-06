@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:baselineAligned="false" style="@style/viewLayout">
+    <include layout="@layout/video_calling_toolbar"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="@integer/call_participant_information_weight">
+        <include android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/call_participant_information"/>
+    </LinearLayout>
+    <View android:id="@+id/empty_view" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="@dimen/call_layout_empty_view_height" android:layout_weight="@integer/call_layout_empty_weight"/>
+    <LinearLayout android:baselineAligned="false" style="@style/FloatingActionButtonGroup">
+        <include android:id="@+id/end_call_button_layout" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="@integer/call_button_weight" layout="@layout/end_call_button"/>
+    </LinearLayout>
+</LinearLayout>

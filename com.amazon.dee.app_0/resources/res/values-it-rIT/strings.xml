@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="amazon_customer_service">Servizio clienti Amazon</string>
+    <string name="dialog_close">Chiudi</string>
+    <string name="dialog_confirm_end">Interrompere la condivisione dello schermo?</string>
+    <string name="dialog_confirm_end_accept">Interrompi condivisione</string>
+    <string name="dialog_confirm_end_decline">Annulla</string>
+    <string name="dialog_ended_agent">Il Servizio clienti ha terminato la condivisione dello schermo. Non stai più condividendo lo schermo.</string>
+    <string name="dialog_ended_customer">Non stai più condividendo lo schermo con il Servizio clienti Amazon</string>
+    <string name="dialog_ended_error">Si è verificato un problema e la condivisione dello schermo è terminata. Non stai più condividendo lo schermo.</string>
+    <string name="dialog_ended_inactivity">Condivisione dello schermo terminata per inattività. Non stai più condividendo lo schermo.</string>
+    <string name="dialog_request_resume">Il Servizio clienti desidera riprendere la condivisione dello schermo con te.</string>
+    <string name="dialog_request_resume_accept">Accetta</string>
+    <string name="dialog_request_resume_decline">Rifiuta</string>
+    <string name="menu_end">Termina condivisione schermo</string>
+    <string name="message_agent_paused">Il servizio clienti ha sospeso la condivisione dello schermo</string>
+    <string name="notification_auto_ended">Condivisione dello schermo terminata per inattività</string>
+    <string name="overflow_menu">Menu</string>
+    <string name="pause_button">Pausa</string>
+    <string name="permission_request_3p_notification">Il Servizio clienti Amazon desidera condividere lo schermo. Apri l\'app per connetterti.</string>
+    <string name="primer_continue">Continua</string>
+    <string name="primer_header">Condividi lo schermo con il Servizio clienti Amazon per consentirci di aiutarti meglio</string>
+    <string name="primer_subheader">Condividendo lo schermo, consenti al nostro affiliato del Servizio clienti di visualizzare le tue informazioni. Ti assicuriamo che:</string>
+    <string name="resume_button">Riprendi</string>
+    <string name="status_connected">ATTIVO</string>
+    <string name="status_connecting">AVVIO…</string>
+    <string name="status_ending">FINE…</string>
+    <string name="status_header">Condivisione schermo</string>
+    <string name="status_paused">IN PAUSA</string>
+    <string name="vox_supported_country">IT</string>
+    <string name="vox_supported_language">it</string>
+</resources>

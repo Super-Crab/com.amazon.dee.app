@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android" android:insetLeft="@dimen/nps_title_ms" android:insetRight="@dimen/nps_title_ms">
+    <shape android:shape="rectangle">
+        <size android:height="@dimen/entertainment_landing_page_recycler_view_divider_height" android:width="@dimen/entertainment_landing_page_recycler_view_divider_height"/>
+        <solid android:color="?attr/mosaicNeutral50"/>
+    </shape>
+</inset>

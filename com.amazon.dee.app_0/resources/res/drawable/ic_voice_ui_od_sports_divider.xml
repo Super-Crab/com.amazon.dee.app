@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="@dimen/voice_ui_od_sports_team_divider_height" android:width="@dimen/voice_ui_od_sports_team_divider_width" android:alpha="0.5" android:viewportWidth="24" android:viewportHeight="75">
+    <path android:pathData="M23.5,0.5 L0.5,95.5" android:strokeColor="?android:attr/textColorPrimary" android:strokeWidth="1"/>
+</vector>

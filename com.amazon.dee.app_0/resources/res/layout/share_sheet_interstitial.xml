@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:id="@+id/share_sheet_interstitial" android:background="@color/fiesta_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/progress_dots" android:background="@drawable/progress_dots_white" android:visibility="gone" android:layout_width="@dimen/share_sheet_loading_image_dimensions" android:layout_height="@dimen/share_sheet_loading_image_dimensions"/>
+</LinearLayout>

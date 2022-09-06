@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/card_background_base" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/amahc_text_size_caption" android:gravity="center" android:id="@+id/remove_card_button" android:visibility="invisible" android:layout_width="@dimen/amahc_width_large_80" android:layout_height="match_parent" android:text="@string/amahc_remove_card" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+        <FrameLayout android:id="@+id/card_foreground_base" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:layout_gravity="center" android:id="@+id/utterence_status_layout" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+    <com.amazon.alexa.font.FontTextView android:textSize="12sp" android:textColor="@color/txt_background" android:gravity="center" android:layout_gravity="center" android:id="@+id/utterence_status" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontName="8"/>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto" android:gravity="center" android:orientation="horizontal" android:background="@drawable/selector_messaging_drop_in_background" android:layout_width="match_parent" android:layout_height="@dimen/thread_messaging_drop_in_bar_height">
+    <ImageView android:id="@+id/thread_action_bar_drop_in" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_messaging_thread_drop_in" android:contentDescription="@string/thread_messaging_drop_in_description"/>
+    <com.amazon.deecomms.common.ui.CommsTextView android:textSize="@dimen/thread_messaging_drop_in_bar_text" android:textColor="@drawable/selector_messaging_drop_in_text" android:id="@+id/drop_in_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/thread_messaging_drop_in_text" android:layout_marginStart="@dimen/thread_messaging_drop_in_text_margin_start" custom:typeface="@string/amazon_ember_medium"/>
+</LinearLayout>

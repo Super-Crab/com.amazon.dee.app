@@ -1,0 +1,1211 @@
+{
+  "COMMS": {
+    "com.whatsapp": {
+      "whiteRules": [
+        {
+          "pattern": {
+            "isGroupConversation": "^false",
+            "title": "^([^():]+(?:\\s[^():]+)*)(?:\\s\\(\\d+ messages\\))?(?::\\s)?$",
+            "text": "^(.+)$"
+          },
+          "output": {
+            "groupIdentifierFlag": {
+              "where": "isGroupConversation",
+              "group": 0
+            },
+            "message": {
+              "where": "text",
+              "group": 1
+            },
+            "contact": {
+              "where": "title",
+              "group": 1
+            }
+          },
+          "type": "COMMS",
+          "subType": "DirectMessage"
+        },
+        {
+          "pattern": {
+            "isGroupConversation": "^false",
+            "title": "^(\\+\\d{1,3}\\s\\(\\d{3}\\)\\s\\d{3}-\\d{4})(?:\\s\\(\\d+ messages\\))?(?::\\s)?$",
+            "text": "^(.+)$"
+          },
+          "output": {
+            "groupIdentifierFlag": {
+              "where": "isGroupConversation",
+              "group": 0
+            },
+            "message": {
+              "where": "text",
+              "group": 1
+            },
+            "contact": {
+              "where": "title",
+              "group": 1
+            }
+          },
+          "type": "COMMS",
+          "subType": "DirectMessage"
+        },
+        {
+          "pattern": {
+            "isGroupConversation": "^true$",
+            "title": "^(.+)?\\s(?:\\(\\d+ messages\\))?(?::\\s)(.+)?$",
+            "text": "^(.+)$"
+          },
+          "output": {
+            "groupIdentifierFlag": {
+              "where": "isGroupConversation",
+              "group": 0
+            },
+            "message": {
+              "where": "text",
+              "group": 1
+            },
+            "groupName": {
+              "where": "title",
+              "group": 1
+            },
+            "contact": {
+              "where": "title",
+              "group": 2
+            }
+          },
+          "type": "COMMS",
+          "subType": "GroupMessage"
+        },
+        {
+          "pattern": {
+            "isGroupConversation": "^true$",
+            "title": "^(.+)(?::\\s)(.+)?$",
+            "text": "^(.+)$"
+          },
+          "output": {
+            "groupIdentifierFlag": {
+              "where": "isGroupConversation",
+              "group": 0
+            },
+            "message": {
+              "where": "text",
+              "group": 1
+            },
+            "groupName": {
+              "where": "title",
+              "group": 1
+            },
+            "contact": {
+              "where": "title",
+              "group": 2
+            }
+          },
+          "type": "COMMS",
+          "subType": "GroupMessage"
+        }
+      ],
+      "blackRules": [
+        {
+          "notificationId": "^\\d\\|com.whatsapp\\|\\d+\\|\\d+-\\d+@g.us\\|\\d+$"
+        },
+        {
+          "notificationId": "^\\d\\|com.whatsapp\\|\\d+\\|null\\|\\d+$"
+        },
+        {
+          "text": "^$"
+        },
+        {
+          "isGroupConversation": "^false$",
+          "title": "^You$"
+        },
+        {
+          "isGroupConversation": "^true$",
+          "title": "^(.+)(?::\\s)You$"
+        }
+      ],
+      "replaceRule": {
+        "contact": {
+          "replaceUnmatchedRule": "(^([^():]+(?:\\s[^():]+)*)(?:\\s\\(\\d+ messages\\))?(?::\\s)?$)|(^(\\+\\d{1,3}\\s\\(\\d{3}\\)\\s\\d{3}-\\d{4})(?:\\s\\(\\d+ messages\\))?(?::\\s)?$)",
+          "replaceValue": "one of your contacts"
+        }
+      },
+      "groupMessageRenderRules": {
+        "unnamedGroupWithPhoneNumber": "group",
+        "unnamedGroupWithContactsShort": "group with %s",
+        "unnamedGroupWithContactsLong": "group with %s and %s",
+        "namedGroup": "%s",
+        "useLongFormatForContactsRender": true
+      }
+    },
+    "com.facebook.orca": {
+      "whiteRules": [
+        {
+          "pattern": {
+            "title": "^(.+)$",
+            "text": "^(.+)$",
+            "notificationId": "^\\d\\|com.facebook.orca\\|\\d+\\|ONE_TO_ONE:\\d+:\\d+\\|\\d+$"
+          },
+          "output": {
+            "message": {
+              "where": "text",
+              "group": 1
+            },
+            "contact": {
+              "where": "title",
+              "group": 1
+            },
+            "notificationId": {
+              "where": "notificationId",
+              "group": 0
+            }
+          },
+          "type": "COMMS",
+          "subType": "DirectMessage"
+        },
+        {
+          "pattern": {
+            "title": "^(.+)$",
+            "text": "^(.+)(?::\\s)(.+)?$",
+            "notificationId": "^\\d\\|com.facebook.orca\\|\\d+\\|GROUP:\\d+\\|\\d+$"
+          },
+          "output": {
+            "groupName": {
+              "where": "title",
+              "group": 1
+            },
+            "message": {
+              "where": "text",
+              "group": 2
+            },
+            "contact": {
+              "where": "text",
+              "group": 1
+            },
+            "notificationId": {
+              "where": "notificationId",
+              "group": 0
+            }
+          },
+          "type": "COMMS",
+          "subType": "GroupMessage"
+        },
+        {
+          "pattern": {
+            "text": "^(.+)$",
+            "title": "^(.+)(?::\\s)(.+)?$",
+            "notificationId": "^\\d\\|com.facebook.orca\\|\\d+\\|GROUP:\\d+\\|\\d+$"
+          },
+          "output": {
+            "groupName": {
+              "where": "title",
+              "group": 1
+            },
+            "message": {
+              "where": "text",
+              "group": 0
+            },
+            "contact": {
+              "where": "title",
+              "group": 2
+            },
+            "notificationId": {
+              "where": "notificationId",
+              "group": 0
+            }
+          },
+          "type": "COMMS",
+          "subType": "GroupMessage"
+        },
+        {
+          "pattern": {
+            "title": "^(.+)$",
+            "text": "^(.+)(?::\\s)(.+)?$",
+            "notificationId": "^\\d\\|com.facebook.orca\\|\\d+\\|SMS:\\d+\\|\\d+$"
+          },
+          "output": {
+            "groupName": {
+              "where": "title",
+              "group": 1
+            },
+            "message": {
+              "where": "text",
+              "group": 2
+            },
+            "contact": {
+              "where": "text",
+              "group": 1
+            },
+            "notificationId": {
+              "where": "notificationId",
+              "group": 0
+            }
+          },
+          "type": "COMMS",
+          "subType": "GroupMessage"
+        },
+        {
+          "pattern": {
+            "title": "^(.+)$",
+            "text": "^(.+)$",
+            "notificationId": "^\\d\\|com.facebook.orca\\|\\d+\\|SMS:\\d+\\|\\d+$"
+          },
+          "output": {
+            "message": {
+              "where": "text",
+              "group": 1
+            },
+            "contact": {
+              "where": "title",
+              "group": 1
+            },
+            "notificationId": {
+              "where": "notificationId",
+              "group": 0
+            }
+          },
+          "type": "COMMS",
+          "subType": "DirectMessage"
+        },
+        {
+          "pattern": {
+            "title": "^(.+)$",
+            "text": "^(.+)$",
+            "category": "^msg$"
+          },
+          "output": {
+            "message": {
+              "where": "text",
+              "group": 1
+            },
+            "contact": {
+              "where": "title",
+              "group": 1
+            },
+            "category": {
+              "where": "category",
+              "group": 0
+            }
+          },
+          "type": "COMMS",
+          "subType": "DirectMessage"
+        }
+      ],
+      "blackRules": [
+        {
+          "notificationId": "^\\d\\|com.facebook.orca\\|\\d+\\|\\d+\\|\\d+$"
+        },
+        {
+          "notificationId": "^\\d\\|com.facebook.orca\\|\\d+\\|null\\|\\d+$"
+        },
+        {
+          "notificationId": "^\\d\\|com.facebook.orca\\|\\d+\\|ranker_group\\|\\d+\\|ranker_group$"
+        },
+        {
+          "text": "^(.+)named the group(.+)$",
+          "notificationId": "^\\d\\|com.facebook.orca\\|\\d+\\|GROUP:\\d+\\|\\d+$"
+        },
+        {
+          "text": "^(.+)removed the group name.$",
+          "notificationId": "^\\d\\|com.facebook.orca\\|\\d+\\|GROUP:\\d+\\|\\d+$"
+        },
+        {
+          "text": "^$"
+        }
+      ],
+      "replaceRule": {
+        "contact": {
+          "replaceUnmatchedRule": "^(.+)$",
+          "replaceValue": "one of your contacts"
+        }
+      },
+      "groupMessageRenderRules": {
+        "unnamedGroupWithPhoneNumber": "group",
+        "unnamedGroupWithContactsShort": "group with %s",
+        "unnamedGroupWithContactsLong": "group with %s and %s",
+        "namedGroup": "%s",
+        "useLongFormatForContactsRender": true
+      }
+    },
+    "com.google.android.talk": {
+      "whiteRules": [
+        {
+          "pattern": {
+            "isGroupConversation": "^false",
+            "title": "^(.+)$",
+            "text": "^(.+)$",
+            "notificationId": "^\\d\\|com.google.android.talk\\|\\d+\\|com.google.android.talk:\\d:[^|:.]+\\|\\d+$"
+          },
+          "output": {
+            "groupIdentifierFlag": {
+              "where": "isGroupConversation",
+              "group": 0
+            },
+            "message": {
+              "where": "text",
+              "group": 1
+            },
+            "contact": {
+              "where": "title",
+              "group": 1
+            },
+            "notificationId": {
+              "where": "notificationId",
+              "group": 0
+            }
+          },
+          "type": "COMMS",
+          "subType": "DirectMessage"
+        },
+        {
+          "pattern": {
+            "isGroupConversation": "^false",
+            "title": "^(.+)$",
+            "text": "^(.+)$",
+            "category": "^msg$"
+          },
+          "output": {
+            "groupIdentifierFlag": {
+              "where": "isGroupConversation",
+              "group": 0
+            },
+            "message": {
+              "where": "text",
+              "group": 1
+            },
+            "contact": {
+              "where": "title",
+              "group": 1
+            },
+            "category": {
+              "where": "category",
+              "group": 0
+            }
+          },
+          "type": "COMMS",
+          "subType": "DirectMessage"
+        },
+        {
+          "pattern": {
+            "isGroupConversation": "^true$",
+            "title": "^(.+)(?::\\s)(.+)?$",
+            "text": "^(.+)$",
+            "notificationId": "^\\d\\|com.google.android.talk\\|\\d+\\|com.google.android.talk:\\d:[^|:.]+\\|\\d+$"
+          },
+          "output": {
+            "groupIdentifierFlag": {
+              "where": "isGroupConversation",
+              "group": 0
+            },
+            "message": {
+              "where": "text",
+              "group": 1
+            },
+            "groupName": {
+              "where": "title",
+              "group": 1
+            },
+            "contact": {
+              "where": "title",
+              "group": 2
+            },
+            "notificationId": {
+              "where": "notificationId",
+              "group": 0
+            }
+          },
+          "type": "COMMS",
+          "subType": "GroupMessage"
+        },
+        {
+          "pattern": {
+            "isGroupConversation": "^true$",
+            "title": "^(.+)(?::\\s)(.+)?$",
+            "text": "^(.+)$",
+            "category": "^msg$"
+          },
+          "output": {
+            "groupIdentifierFlag": {
+              "where": "isGroupConversation",
+              "group": 0
+            },
+            "message": {
+              "where": "text",
+              "group": 1
+            },
+            "groupName": {
+              "where": "title",
+              "group": 1
+            },
+            "contact": {
+              "where": "title",
+              "group": 2
+            },
+            "category": {
+              "where": "category",
+              "group": 0
+            }
+          },
+          "type": "COMMS",
+          "subType": "GroupMessage"
+        }
+      ],
+      "blackRules": [
+        {
+          "notificationId": "^\\d\\|com.google.android.talk\\|\\d+\\|com.google.android.talk:\\d\\|\\d+$"
+        },
+        {
+          "notificationId": "^\\d\\|com.google.android.talk\\|\\d+\\|com.google.android.talk:hangouts_ring_notification\\|\\d+$"
+        },
+        {
+          "isGroupConversation": "^false",
+          "title": "^([^:,]+(?:,\\s[^:,]+)*):\\s[^:,]+(?:\\s[^:,]+)*$",
+          "notificationId": "^\\d\\|com.google.android.talk\\|\\d+\\|com.google.android.talk:\\d:[^|:.]+\\|\\d+$"
+        },
+        {
+          "text": "^$"
+        },
+        {
+          "text": "^(.+)cleared this Hangout's name$"
+        },
+        {
+          "text": "^(.+)renamed this Hangout to(.+)$"
+        }
+      ],
+      "replaceRule": {
+        "contact": {
+          "replaceUnmatchedRule": "^(.+)$",
+          "replaceValue": "one of your contacts"
+        }
+      },
+      "groupMessageRenderRules": {
+        "unnamedGroupWithPhoneNumber": "group",
+        "unnamedGroupWithContactsShort": "group with %s",
+        "unnamedGroupWithContactsLong": "group with %s and %s",
+        "namedGroup": "%s",
+        "useLongFormatForContactsRender": true
+      }
+    },
+    "com.google.android.apps.messaging": {
+      "whiteRules": [
+        {
+          "pattern": {
+            "isGroupConversation": "^false",
+            "title": "^(.+)$",
+            "text": "^(.+)$",
+            "notificationId": "^\\d\\|com.google.android.apps.messaging\\|\\d+\\|com.google.android.apps.messaging:sms:\\d+\\|\\d+$"
+          },
+          "output": {
+            "groupIdentifierFlag": {
+              "where": "isGroupConversation",
+              "group": 0
+            },
+            "message": {
+              "where": "text",
+              "group": 1
+            },
+            "contact": {
+              "where": "title",
+              "group": 1
+            },
+            "notificationId": {
+              "where": "notificationId",
+              "group": 0
+            }
+          },
+          "type": "COMMS",
+          "subType": "DirectMessage"
+        },
+        {
+          "pattern": {
+            "isGroupConversation": "^false",
+            "title": "^(.+)$",
+            "text": "^(.+)$",
+            "category": "^msg$"
+          },
+          "output": {
+            "groupIdentifierFlag": {
+              "where": "isGroupConversation",
+              "group": 0
+            },
+            "message": {
+              "where": "text",
+              "group": 1
+            },
+            "contact": {
+              "where": "title",
+              "group": 1
+            },
+            "category": {
+              "where": "category",
+              "group": 0
+            }
+          },
+          "type": "COMMS",
+          "subType": "DirectMessage"
+        },
+        {
+          "pattern": {
+            "isGroupConversation": "^true$",
+            "title": "^(.+)(?::\\s)(.+)?$",
+            "text": "^(.+)$",
+            "notificationId": "^\\d\\|com.google.android.apps.messaging\\|\\d+\\|com.google.android.apps.messaging:sms:\\d+\\|\\d+$"
+          },
+          "output": {
+            "groupIdentifierFlag": {
+              "where": "isGroupConversation",
+              "group": 0
+            },
+            "message": {
+              "where": "text",
+              "group": 1
+            },
+            "groupName": {
+              "where": "title",
+              "group": 1
+            },
+            "contact": {
+              "where": "title",
+              "group": 2
+            },
+            "notificationId": {
+              "where": "notificationId",
+              "group": 0
+            }
+          },
+          "type": "COMMS",
+          "subType": "GroupMessage"
+        },
+        {
+          "pattern": {
+            "isGroupConversation": "^true$",
+            "title": "^(.+)(?::\\s)(.+)?$",
+            "text": "^(.+)$",
+            "category": "^msg$"
+          },
+          "output": {
+            "groupIdentifierFlag": {
+              "where": "isGroupConversation",
+              "group": 0
+            },
+            "message": {
+              "where": "text",
+              "group": 1
+            },
+            "groupName": {
+              "where": "title",
+              "group": 1
+            },
+            "contact": {
+              "where": "title",
+              "group": 2
+            },
+            "category": {
+              "where": "category",
+              "group": 0
+            }
+          },
+          "type": "COMMS",
+          "subType": "GroupMessage"
+        }
+      ],
+      "blackRules": [
+        {
+          "notificationId": "^\\d\\|com.google.android.apps.messaging\\|\\d+\\|com.google.android.apps.messaging:sms\\|\\d+$"
+        },
+        {
+          "isGroupConversation": "^false",
+          "title": "^([^:,]+(?:,\\s[^:,]+)+):\\s([^:,]+(?:\\s[^:,]+)*)$",
+          "notificationId": "^\\d\\|com.google.android.apps.messaging\\|\\d+\\|com.google.android.apps.messaging:sms:\\d+\\|\\d+$"
+        },
+        {
+          "text": "^$"
+        }
+      ],
+      "replaceRule": {
+        "contact": {
+          "replaceUnmatchedRule": "^(.+)$",
+          "replaceValue": "one of your contacts"
+        }
+      },
+      "groupMessageRenderRules": {
+        "unnamedGroupWithPhoneNumber": "group",
+        "unnamedGroupWithContactsShort": "group with %s",
+        "unnamedGroupWithContactsLong": "group with %s and %s",
+        "namedGroup": "%s",
+        "useLongFormatForContactsRender": true
+      }
+    },
+    "com.samsung.android.messaging": {
+      "whiteRules": [
+        {
+          "pattern": {
+            "title": "^(?:.+)(?::\\s)(.+)?$",
+            "text": "^(.+)$",
+            "subText": "^(.+)\\(\\d\\)$",
+            "notificationId": "^\\d\\|com.samsung.android.messaging\\|\\d+\\|com.samsung.android.messaging:(msg|MESSAGE_RECEIVED):\\d+\\|\\d+$"
+          },
+          "output": {
+            "message": {
+              "where": "text",
+              "group": 1
+            },
+            "groupName": {
+              "where": "subText",
+              "group": 1
+            },
+            "contact": {
+              "where": "title",
+              "group": 1
+            },
+            "notificationId": {
+              "where": "notificationId",
+              "group": 0
+            }
+          },
+          "type": "COMMS",
+          "subType": "GroupMessage"
+        },
+        {
+          "pattern": {
+            "title": "^(\\+\\d+)(?:\\(\\d+\\))?$",
+            "text": "^(.+)$",
+            "subText": "^(.+)\\(\\d\\)$",
+            "notificationId": "^\\d\\|com.samsung.android.messaging\\|\\d+\\|com.samsung.android.messaging:(msg|MESSAGE_RECEIVED):\\d+\\|\\d+$"
+          },
+          "output": {
+            "message": {
+              "where": "text",
+              "group": 1
+            },
+            "groupName": {
+              "where": "subText",
+              "group": 1
+            },
+            "contact": {
+              "where": "title",
+              "group": 1
+            },
+            "notificationId": {
+              "where": "notificationId",
+              "group": 0
+            }
+          },
+          "type": "COMMS",
+          "subType": "GroupMessage"
+        },
+        {
+          "pattern": {
+            "title": "^(\\+\\d+)(?:\\(\\d+\\))?$",
+            "text": "^(.+)$",
+            "subText": "^(.+)\\(\\d\\)$",
+            "category": "^msg$"
+          },
+          "output": {
+            "message": {
+              "where": "text",
+              "group": 1
+            },
+            "groupName": {
+              "where": "subText",
+              "group": 1
+            },
+            "contact": {
+              "where": "title",
+              "group": 1
+            },
+            "category": {
+              "where": "category",
+              "group": 0
+            }
+          },
+          "type": "COMMS",
+          "subType": "GroupMessage"
+        },
+        {
+          "pattern": {
+            "title": "^([^():]+(?:\\s[^():]+)*)(?:\\(\\d+\\))?$",
+            "text": "^(.+)$",
+            "subText": "^(.+)\\(\\d\\)$",
+            "notificationId": "^\\d\\|com.samsung.android.messaging\\|\\d+\\|com.samsung.android.messaging:(msg|MESSAGE_RECEIVED):\\d+\\|\\d+$"
+          },
+          "output": {
+            "message": {
+              "where": "text",
+              "group": 1
+            },
+            "groupName": {
+              "where": "subText",
+              "group": 1
+            },
+            "contact": {
+              "where": "title",
+              "group": 1
+            },
+            "notificationId": {
+              "where": "notificationId",
+              "group": 0
+            }
+          },
+          "type": "COMMS",
+          "subType": "GroupMessage"
+        },
+        {
+          "pattern": {
+            "title": "^([^():]+(?:\\s[^():]+)*)(?:\\(\\d+\\))?$",
+            "text": "^(.+)$",
+            "subText": "^(.+)\\(\\d\\)$",
+            "category": "^msg$"
+          },
+          "output": {
+            "message": {
+              "where": "text",
+              "group": 1
+            },
+            "groupName": {
+              "where": "subText",
+              "group": 1
+            },
+            "contact": {
+              "where": "title",
+              "group": 1
+            },
+            "category": {
+              "where": "category",
+              "group": 0
+            }
+          },
+          "type": "COMMS",
+          "subType": "GroupMessage"
+        },
+        {
+          "pattern": {
+            "title": "^(\\+\\d+)(?:\\(\\d+\\))?$",
+            "text": "^(.+)$",
+            "notificationId": "^\\d\\|com.samsung.android.messaging\\|\\d+\\|com.samsung.android.messaging:(msg|MESSAGE_RECEIVED):\\d+\\|\\d+$"
+          },
+          "output": {
+            "message": {
+              "where": "text",
+              "group": 1
+            },
+            "contact": {
+              "where": "title",
+              "group": 1
+            },
+            "notificationId": {
+              "where": "notificationId",
+              "group": 0
+            }
+          },
+          "type": "COMMS",
+          "subType": "DirectMessage"
+        },
+        {
+          "pattern": {
+            "title": "^(\\+\\d+)(?:\\(\\d+\\))?$",
+            "text": "^(.+)$",
+            "category": "^msg$"
+          },
+          "output": {
+            "message": {
+              "where": "text",
+              "group": 1
+            },
+            "contact": {
+              "where": "title",
+              "group": 1
+            },
+            "category": {
+              "where": "category",
+              "group": 0
+            }
+          },
+          "type": "COMMS",
+          "subType": "DirectMessage"
+        },
+        {
+          "pattern": {
+            "title": "^([^():]+(?:\\s[^():]+)*)(?:\\(\\d+\\))?$",
+            "text": "^(.+)$",
+            "notificationId": "^\\d\\|com.samsung.android.messaging\\|\\d+\\|com.samsung.android.messaging:(msg|MESSAGE_RECEIVED):\\d+\\|\\d+$"
+          },
+          "output": {
+            "message": {
+              "where": "text",
+              "group": 1
+            },
+            "contact": {
+              "where": "title",
+              "group": 1
+            },
+            "notificationId": {
+              "where": "notificationId",
+              "group": 0
+            }
+          },
+          "type": "COMMS",
+          "subType": "DirectMessage"
+        },
+        {
+          "pattern": {
+            "title": "^([^():]+(?:\\s[^():]+)*)(?:\\(\\d+\\))?$",
+            "text": "^(.+)$",
+            "category": "^msg$"
+          },
+          "output": {
+            "message": {
+              "where": "text",
+              "group": 1
+            },
+            "contact": {
+              "where": "title",
+              "group": 1
+            },
+            "category": {
+              "where": "category",
+              "group": 0
+            }
+          },
+          "type": "COMMS",
+          "subType": "DirectMessage"
+        }
+      ],
+      "blackRules": [
+        {
+          "text": "^$"
+        },
+        {
+          "appVersionName": "^10.\\d+.\\d+.\\d+$",
+          "title": "^Me$",
+          "notificationStyle": "^android.app.Notification\\$MessagingStyle$"
+        }
+      ],
+      "replaceRule": {
+        "contact": {
+          "replaceUnmatchedRule": "(^([^():]+(?:\\s[^():]+)*)(?:\\(\\d+\\))?$)|(^(\\+\\d+)(?:\\(\\d+\\))?$)|(^(?:.+)(?::\\s)(.+)?$)",
+          "replaceValue": "one of your contacts"
+        }
+      },
+      "groupMessageRenderRules": {
+        "unnamedGroupWithPhoneNumber": "group",
+        "unnamedGroupWithContactsShort": "group with %s",
+        "unnamedGroupWithContactsLong": "group with %s and %s",
+        "namedGroup": "%s",
+        "useLongFormatForContactsRender": true
+      }
+    },
+    "com.amazon.dee.app": {
+      "whiteRules": [
+        {
+          "pattern": {
+            "title": "^(.+)$",
+            "text": "^(.+)$"
+          },
+          "output": {
+            "message": {
+              "where": "text",
+              "group": 1
+            },
+            "contact": {
+              "where": "title",
+              "group": 1
+            }
+          },
+          "type": "COMMS",
+          "subType": "DirectMessage"
+        }
+      ],
+      "blackRules": [
+        {
+          "groupKey": "^((?!notifications.group.messages).)+$"
+        }
+      ]
+    },
+    "com.oneplus.mms": {
+      "whiteRules": [
+        {
+          "pattern": {
+            "title": "^([^,]+):\\s+(.+)$",
+            "text": "^(.+)$",
+            "notificationId": "^\\d\\|com.oneplus.mms\\|\\d+\\|com.oneplus.mms:sNms::\\d+\\|\\d+$"
+          },
+          "output": {
+            "message": {
+              "where": "text",
+              "group": 1
+            },
+            "contact": {
+              "where": "title",
+              "group": 2
+            },
+            "notificationId": {
+              "where": "notificationId",
+              "group": 0
+            }
+          },
+          "type": "COMMS",
+          "subType": "DirectMessage"
+        },
+        {
+          "pattern": {
+            "title": "^(.+,\\s.+):\\s(.+)$",
+            "text": "^(.+)$",
+            "notificationId": "^\\d\\|com.oneplus.mms\\|\\d+\\|com.oneplus.mms:sNms::\\d+\\|\\d+$"
+          },
+          "output": {
+            "message": {
+              "where": "text",
+              "group": 1
+            },
+            "groupName": {
+              "where": "title",
+              "group": 1
+            },
+            "contact": {
+              "where": "title",
+              "group": 2
+            },
+            "notificationId": {
+              "where": "notificationId",
+              "group": 0
+            }
+          },
+          "type": "COMMS",
+          "subType": "GroupMessage"
+        }
+      ],
+      "groupMessageRenderRules": {
+        "unnamedGroupWithPhoneNumber": "group",
+        "unnamedGroupWithContactsShort": "group with %s",
+        "unnamedGroupWithContactsLong": "group with %s and %s",
+        "namedGroup": "%s",
+        "useLongFormatForContactsRender": true
+      }
+    }
+  },
+  "CUSTOM_GENERIC": {
+    "com.google.android.calendar": {
+      "whiteRules": [
+        {
+          "pattern": {
+            "title": "^((?!\\(No title\\)).)*$",
+            "bigText": "^(.*)\\n(.*)$"
+          },
+          "output": {
+            "time": {
+              "where": "bigText",
+              "group": 1
+            },
+            "location": {
+              "where": "bigText",
+              "group": 2
+            },
+            "eventTitle": {
+              "where": "title",
+              "group": 0
+            }
+          },
+          "type": "OTHER",
+          "subType": "CustomGeneric",
+          "appCategory": "Calendar"
+        },
+        {
+          "pattern": {
+            "title": "^((?!\\(No title\\)).)*$",
+            "bigText": "^(.+)$"
+          },
+          "output": {
+            "time": {
+              "where": "bigText",
+              "group": 0
+            },
+            "eventTitle": {
+              "where": "title",
+              "group": 0
+            }
+          },
+          "type": "OTHER",
+          "subType": "CustomGeneric",
+          "appCategory": "Calendar"
+        },
+        {
+          "pattern": {
+            "bigText": "^(.*)\\n(.*)$"
+          },
+          "output": {
+            "time": {
+              "where": "bigText",
+              "group": 1
+            },
+            "location": {
+              "where": "bigText",
+              "group": 2
+            }
+          },
+          "type": "OTHER",
+          "subType": "CustomGeneric",
+          "appCategory": "Calendar"
+        },
+        {
+          "pattern": {
+            "bigText": "^(.+)$"
+          },
+          "output": {
+            "time": {
+              "where": "bigText",
+              "group": 0
+            }
+          },
+          "type": "OTHER",
+          "subType": "CustomGeneric",
+          "appCategory": "Calendar"
+        }
+      ],
+      "replaceRule": {
+        "location": [
+          {
+            "replaceMatchedRule": "(https?|ftp|file):\\/\\/[-a-zA-Z0-9+&@#\\/%?=~_|!:,.;]*[-a-zA-Z0-9+&@#\\/%=~_|]",
+            "fullyMatchedReplaceValue": "a web link",
+            "partialMatchedReplaceValue": "a web link"
+          },
+          {
+            "replaceMatchedRule": "\\S+\\.(edu|com|co|gov|org|ai|ly|gl|net|aws|uk|de|in|us)((\\.|\\/)\\S+)?",
+            "fullyMatchedReplaceValue": "a web link",
+            "partialMatchedReplaceValue": "a web link"
+          },
+          {
+            "replaceMatchedRule": "(\\+?1[-. ]?)?\\(?([0-9]{3})\\)?(-|\\.| )([0-9]{3})(-|\\.| )?([0-9]{4})((,|;)+[0-9]*(#|\\*)?)?|(\\+1[-. ]?)([0-9]{3})([0-9]{3})([0-9]{4})((,|;)+[0-9]*(#|\\*)?)?|(\\+?1[-. ]?)?\\(([0-9]{3})\\)(-|\\.|)([0-9]{3})(-|\\.| )?([0-9]{4})((,|;)+[0-9]*(#|\\*)?)?",
+            "fullyMatchedReplaceValue": "a phone number",
+            "partialMatchedReplaceValue": "a phone number"
+          }
+        ]
+      },
+      "replaceNumberWithDigits": ["location"]
+    },
+    "com.samsung.android.calendar": {
+      "whiteRules": [
+        {
+          "pattern": {
+            "bigText": "^(.*)\\n(.*)$",
+            "title": "^(.+)$"
+          },
+          "output": {
+            "time": {
+              "where": "bigText",
+              "group": 1
+            },
+            "location": {
+              "where": "bigText",
+              "group": 2
+            },
+            "eventTitle": {
+              "where": "title",
+              "group": 0
+            }
+          },
+          "type": "OTHER",
+          "subType": "CustomGeneric",
+          "appCategory": "Calendar"
+        },
+        {
+          "pattern": {
+            "bigText": "^(.+)$",
+            "title": "^(.+)$"
+          },
+          "output": {
+            "time": {
+              "where": "bigText",
+              "group": 0
+            },
+            "eventTitle": {
+              "where": "title",
+              "group": 0
+            }
+          },
+          "type": "OTHER",
+          "subType": "CustomGeneric",
+          "appCategory": "Calendar"
+        },
+        {
+          "pattern": {
+            "notificationStyle": "^android.app.Notification\\$InboxStyle$",
+            "title": "^\\d+\\sevents$",
+            "inboxTextLines": "^(.+)$"
+          },
+          "output": {
+            "notificationStyle": {
+              "where": "notificationStyle",
+              "group": 0
+            },
+            "inboxTextLines": {
+              "where": "inboxTextLines",
+              "group": 0
+            }
+          },
+          "type": "OTHER",
+          "subType": "CustomGeneric",
+          "appCategory": "Calendar"
+        }
+      ],
+      "replaceRule": {
+        "location": [
+          {
+            "replaceMatchedRule": "(https?|ftp|file):\\/\\/[-a-zA-Z0-9+&@#\\/%?=~_|!:,.;]*[-a-zA-Z0-9+&@#\\/%=~_|]",
+            "fullyMatchedReplaceValue": "a web link",
+            "partialMatchedReplaceValue": "a web link"
+          },
+          {
+            "replaceMatchedRule": "\\S+\\.(edu|com|co|gov|org|ai|ly|gl|net|aws)((\\.|\\/)\\S+)?",
+            "fullyMatchedReplaceValue": "a web link",
+            "partialMatchedReplaceValue": "a web link"
+          },
+          {
+            "replaceMatchedRule": "(\\+?1[-. ]?)?\\(?([0-9]{3})\\)?(-|\\.| )([0-9]{3})(-|\\.| )?([0-9]{4})((,|;)+[0-9]*(#|\\*)?)?|(\\+1[-. ]?)([0-9]{3})([0-9]{3})([0-9]{4})((,|;)+[0-9]*(#|\\*)?)?|(\\+?1[-. ]?)?\\(([0-9]{3})\\)(-|\\.|)([0-9]{3})(-|\\.| )?([0-9]{4})((,|;)+[0-9]*(#|\\*)?)?",
+            "fullyMatchedReplaceValue": "a phone number",
+            "partialMatchedReplaceValue": "a phone number"
+          }
+        ],
+        "time": {
+          "replaceMatchedRule": "^Today|Tomorrow$",
+          "fullyMatchedReplaceValue": "Coming Up"
+        }
+      },
+      "replaceNumberWithDigits": ["location"]
+    },
+    "com.google.android.gm": {
+      "whiteRules": [
+        {
+          "pattern": {
+            "bigText": "^(.*)\\n(\\n|.)*$"
+          },
+          "output": {
+            "mailDetails": {
+              "where": "bigText",
+              "group": 0
+            }
+          },
+          "type": "OTHER",
+          "subType": "CustomGeneric",
+          "appCategory": "Email"
+        }
+      ]
+    },
+    "com.samsung.android.email.provider": {
+      "whiteRules": [
+        {
+          "pattern": {
+            "bigText": "^(.*)\\n(\\n|.)*$"
+          },
+          "output": {
+            "mailDetails": {
+              "where": "bigText",
+              "group": 0
+            }
+          },
+          "type": "OTHER",
+          "subType": "CustomGeneric",
+          "appCategory": "Email"
+        }
+      ]
+    }
+  }
+}

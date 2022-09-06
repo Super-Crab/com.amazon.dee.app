@@ -1,0 +1,314 @@
+[
+  {
+    "manufacture": "Amazon",
+    "devices": [
+      {
+        "deviceType": "A303PJF6ISQ7IC",
+        "deviceName": "Muffin"
+      },
+      {
+        "deviceType": "A1388YOZ88W373",
+        "deviceName": "Marion"
+      },
+      {
+        "deviceType": "A13W6HQIHKEN3Z",
+        "deviceName": "Muffin 2nd gen"
+      }
+    ]
+  },
+  {
+    "manufacture": "iOttie",
+    "devices": [
+      {
+        "deviceType": "A2E0XJJQRBRTOB",
+        "deviceName": "iOttie EOTC"
+      },
+      {
+        "deviceType": "AN6VVHNJTIB2C",
+        "deviceName": "iOttie OttoConnect"
+      },
+      {
+        "deviceType": "A2GNTHUBGR73P3",
+        "deviceName": "iOttie OttoConnect"
+      },
+      {
+        "deviceType": "A79UIOED8DL44",
+        "deviceName": "iOttie EOTC+"
+      },
+      {
+        "deviceType": "AMP8VWQX57E7M",
+        "deviceName": "iOttie EOTC+"
+      },
+      {
+        "deviceType": "AZ5955N2JHWHY",
+        "deviceName": "iOttie Aivo Connect"
+      },
+      {
+        "deviceType": "A2JRB6RHJL4WBV",
+        "deviceName": "iOttie Aivo Connect"
+      }
+    ]
+  },
+  {
+    "manufacture": "Nextbase",
+    "devices": [
+      {
+        "deviceType": "A5D8NAIZGQG1G",
+        "deviceName": "Nextbase"
+      },
+      {
+        "deviceType": "A1W2YILXTG9HA7",
+        "deviceName": "Nextbase"
+      },
+      {
+        "deviceType": "A2GMZW2W3J397Y",
+        "deviceName": "Nextbase Dash Cam 622GW"
+      },
+      {
+        "deviceType": "AYHO3NTIQQ04G",
+        "deviceName": "Nextbase Dash Cam 622GW"
+      }
+    ]
+  },
+  {
+    "manufacture": "G&Y",
+    "devices": [
+      {
+        "deviceType": "A1U7SU9LUIP9JR",
+        "deviceName": "G&Y Car Adapter GP_A262"
+      },
+      {
+        "deviceType": "AH3GCKH7U7VL7",
+        "deviceName": "G&Y Car Adapter GP_A262"
+      }
+    ]
+  },
+  {
+    "manufacture": "JVC Kenwood",
+    "devices": [
+      {
+        "deviceType": "A1JH75TG883AZZ",
+        "deviceName": "KDC-X304"
+      },
+      {
+        "deviceType": "A3QUIG19NEU3GW",
+        "deviceName": "KD-T910BTS"
+      },
+      {
+        "deviceType": "ASBPZ7CAFNVVW",
+        "deviceName": "KD-TD91BTS"
+      },
+      {
+        "deviceType": "A1V7WERR6J2PLY",
+        "deviceName": "KD-T915BTS"
+      },
+      {
+        "deviceType": "A335WS07CENX8K",
+        "deviceName": "KD-T91MBS"
+      },
+      {
+        "deviceType": "A2VZTXPLBA6U0M",
+        "deviceName": "KD-DB912BT"
+      },
+      {
+        "deviceType": "A1RK4M9K7FZZA8",
+        "deviceName": "KD-X370BTS"
+      },
+      {
+        "deviceType": "A39JTN791KIU86",
+        "deviceName": "KD-X37MBS"
+      },
+      {
+        "deviceType": "AAUH9KMK9IWV1",
+        "deviceName": "KD-X470BHS"
+      },
+      {
+        "deviceType": "A19VUBUHBHGZ2",
+        "deviceName": "KD-X472DBT"
+      },
+      {
+        "deviceType": "A2HCLB2LAHMG1N",
+        "deviceName": "KD-T710BT"
+      },
+      {
+        "deviceType": "A2FA3459THYEI0",
+        "deviceName": "KD-TD71BT"
+      },
+      {
+        "deviceType": "A23PCLTVCTNRFY",
+        "deviceName": "KD-SR86BT"
+      },
+      {
+        "deviceType": "AIGP3SR7ECVVR",
+        "deviceName": "KD-T812BT"
+      },
+      {
+        "deviceType": "AHOH3VAWKLZQ4",
+        "deviceName": "KD-X372BT"
+      },
+      {
+        "deviceType": "A1OLFOZX4BKQ6W",
+        "deviceName": "KW-R940BTS"
+      },
+      {
+        "deviceType": "A1JUDQNIS76QHO",
+        "deviceName": "KW-X840BTS"
+      },
+      {
+        "deviceType": "A33WHI6WAPXJV3",
+        "deviceName": "KMR-D378BT"
+      },
+      {
+        "deviceType": "A7AD8Z5XSY46E",
+        "deviceName": "KDC-BT378U"
+      },
+      {
+        "deviceType": "ARS0PWVO6KRHO",
+        "deviceName": "KDC-BT34"
+      },
+      {
+        "deviceType": "A33N52UW383EG9",
+        "deviceName": "KDC-BT778HD"
+      },
+      {
+        "deviceType": "A2C49MQWP4U09E",
+        "deviceName": "KDC-BT640U"
+      },
+      {
+        "deviceType": "A165MFJDIBD9Y6",
+        "deviceName": "KDC-BT740DAB"
+      },
+      {
+        "deviceType": "A3GME53Y82A4HL",
+        "deviceName": "U381BT"
+      },
+      {
+        "deviceType": "A37WFFEUUJAQA",
+        "deviceName": "KMM-BT728HD"
+      },
+      {
+        "deviceType": "A26P9LRTOM8C5",
+        "deviceName": "KMR-M328BT"
+      },
+      {
+        "deviceType": "A3EF8SVEG3I7EU",
+        "deviceName": "KMM-BT328U"
+      },
+      {
+        "deviceType": "A2O7GO8FOHBLG4",
+        "deviceName": "KMM-BT506DAB"
+      },
+      {
+        "deviceType": "A28G79J3XCAO2N",
+        "deviceName": "KMR-M506DAB"
+      },
+      {
+        "deviceType": "AYNCW3VOTFBNO",
+        "deviceName": "KMM-BT306"
+      },
+      {
+        "deviceType": "AWU5XJ8VRIVZC",
+        "deviceName": "KMM-BT206"
+      },
+      {
+        "deviceType": "A1DBRC8BHBJGV6",
+        "deviceName": "U341BT"
+      },
+      {
+        "deviceType": "A3QWUE55XDKD64",
+        "deviceName": "DPX504BT"
+      },
+      {
+        "deviceType": "A2UQTKURFIX5DE",
+        "deviceName": "DPX560BT"
+      },
+      {
+        "deviceType": "AF9FIN3XGEUUH",
+        "deviceName": "DPX304MBT"
+      },
+      {
+        "deviceType": "A2HPAOCM2XSVF3",
+        "deviceName": "DPX-7200DAB"
+      },
+      {
+        "deviceType": "A2ITDC5VHEDZPX",
+        "deviceName": "DPX-5200BT"
+      },
+      {
+        "deviceType": "A22UVWDN1QQEPJ",
+        "deviceName": "DPX-M3200BT"
+      },
+      {
+        "deviceType": "A13USWI7J6RTMD",
+        "deviceName": "DPX-U750BT"
+      },
+      {
+        "deviceType": "AB8TC0XG9NZ0I",
+        "deviceName": "KDC-BT360U"
+      },
+      {
+        "deviceType": "A28UQIQ9I0WMWR",
+        "deviceName": "KMM-BT260U"
+      },
+      {
+        "deviceType": "A1JH75TG883AZZ",
+        "deviceName": "KDC-X304"
+      },
+      {
+        "deviceType": "A1SGMQSKY39D1L",
+        "deviceName": "KDC-X704"
+      },
+      {
+        "deviceType": "A1E9YD739UZTHF",
+        "deviceName": "KMM-X704"
+      },
+      {
+        "deviceType": "A1VZQ17UR4A3KC",
+        "deviceName": "DPX794BH"
+      },
+      {
+        "deviceType": "A1DKF3G8WDMU5X",
+        "deviceName": "DPX594BT"
+      }
+    ]
+  },
+  {
+    "manufacture": "Pioneer",
+    "devices": [
+      {
+        "deviceType": "A11IJI5DYEZP04",
+        "deviceName": "NP1 Dash Cam Beta"
+      },
+      {
+        "deviceType": "AYZTJRE7WC7VF",
+        "deviceName": "NP1 Dash Cam Prod"
+      }
+    ]
+  },
+  {
+    "manufacture": "Sugr",
+    "devices": [
+      {
+        "deviceType": "A1JQW38EKZK61G",
+        "deviceName": "Iveco Alexa Mic Beta"
+      },
+      {
+        "deviceType": "A9IK0B70XSA52",
+        "deviceName": "Iveco Alexa Mic Prod"
+      }
+    ]
+  },
+  {
+    "manufacture": "mBrain",
+    "devices": [
+      {
+        "deviceType": "A2E9RJBQYIK9SC",
+        "deviceName": "mBrain LTE Dash Cam Beta"
+      },
+      {
+        "deviceType": "A2NSYQPDMWPDWL",
+        "deviceName": "mBrain LTE Dash Cam Prod"
+      }
+    ]
+  }
+]

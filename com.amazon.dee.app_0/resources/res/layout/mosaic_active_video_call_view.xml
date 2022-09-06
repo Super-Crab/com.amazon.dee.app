@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" android:fitsSystemWindows="true" android:baselineAligned="false" android:contentDescription="@string/video_call_accessibility_label" style="@style/viewLayout">
+    <include android:id="@+id/call_screen_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/videocall_toolbar_top_margin" layout="@layout/fiesta_video_calling_toolbar"/>
+    <include android:id="@+id/call_screen_header_left" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginStart="@dimen/videocall_toolbar_start_margin" layout="@layout/fiesta_video_calling_toolbar"/>
+    <include android:layout_gravity="end" android:id="@+id/call_screen_header_right" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginEnd="@dimen/videocall_toolbar_end_margin" layout="@layout/fiesta_video_calling_toolbar"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:layout_gravity="center" android:id="@+id/call_participant_information" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/fiesta_call_participant_information"/>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/call_controls_layout" android:visibility="visible" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/rtt_group_portrait" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:layout_marginBottom="8dp">
+            <include android:id="@+id/rtt_incall" layout="@layout/mosaic_rtt_section"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/call_button_layout" android:baselineAligned="false" style="@style/TwoRowFloatingActionButtonGroup">
+            <LinearLayout android:layout_marginBottom="@dimen/six_spacing" android:baselineAligned="false" style="@style/FloatingActionButtonGroup">
+                <include android:id="@+id/effect_button_wrapper" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="@integer/call_button_weight" layout="@layout/fiesta_effect_menu_button"/>
+                <include android:id="@+id/mpu_togglecam" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="@integer/call_button_weight" layout="@layout/fiesta_toggle_camera_button"/>
+                <include android:id="@+id/storytime_button" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="@integer/call_button_weight" layout="@layout/fiesta_storytime_button"/>
+            </LinearLayout>
+            <LinearLayout android:layout_marginBottom="@dimen/six_spacing" android:baselineAligned="false" style="@style/FloatingActionButtonGroup">
+                <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="@integer/call_button_weight" layout="@layout/mosaic_toggle_video_button"/>
+                <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="@integer/call_button_weight" layout="@layout/mosaic_end_call_button"/>
+                <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="@integer/call_button_weight" layout="@layout/mosaic_microphone_call_button"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@+id/reactions_layout_menu" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/fiesta_reactions_menu_button"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/call_controls_layout_left" android:visibility="invisible" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="end|bottom" android:orientation="horizontal" android:id="@+id/reactions_layout_menu_landscape_left" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <include layout="@layout/fiesta_reactions_menu_button"/>
+        </LinearLayout>
+        <androidx.legacy.widget.Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="25"/>
+        <LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@+id/rtt_group_left" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:layout_marginBottom="8dp" android:layout_weight="35">
+            <include android:id="@+id/rtt_incall" layout="@layout/mosaic_rtt_section"/>
+        </LinearLayout>
+        <androidx.legacy.widget.Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="25"/>
+        <LinearLayout android:gravity="end" android:layout_gravity="end|bottom" android:orientation="horizontal" android:id="@+id/call_button_layout_left" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="@dimen/landscape_left_call_buttons_margin_top" android:layout_marginBottom="@dimen/landscape_left_call_buttons_margin_bottom" android:layout_marginEnd="@dimen/landscape_left_call_buttons_margin_end" style="@style/FloatingActionButtonGroup">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="@dimen/landscape_left_call_buttons_margin_top" android:layout_marginBottom="@dimen/landscape_left_call_buttons_margin_bottom" style="@style/FloatingActionButtonGroup">
+                <include android:id="@+id/effect_button_wrapper" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="@integer/call_button_weight" layout="@layout/fiesta_effect_menu_button"/>
+                <include android:id="@+id/mpu_togglecam" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="@integer/call_button_weight" layout="@layout/fiesta_toggle_camera_button"/>
+                <include android:id="@+id/storytime_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="@integer/call_button_weight" layout="@layout/fiesta_storytime_button"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="@dimen/landscape_left_call_buttons_margin_top" android:layout_marginBottom="@dimen/landscape_left_call_buttons_margin_bottom" android:layout_marginStart="0dp" android:layout_marginEnd="0dp" style="@style/FloatingActionButtonGroup">
+                <include android:id="@+id/mic_call_button" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="@integer/call_button_weight" layout="@layout/mosaic_microphone_call_button"/>
+                <include android:id="@+id/end_call_button" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="@integer/call_button_weight" layout="@layout/mosaic_end_call_button"/>
+                <include android:id="@+id/toggle_video_button" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="@integer/call_button_weight" layout="@layout/mosaic_toggle_video_button"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="end" android:orientation="horizontal" android:id="@+id/call_controls_layout_right" android:visibility="invisible" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="start|top" android:orientation="horizontal" android:id="@+id/reactions_layout_menu_landscape_right" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <include layout="@layout/fiesta_reactions_menu_button"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/call_button_layout_right" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="@dimen/landscape_right_call_buttons_margin_top" android:layout_marginBottom="@dimen/landscape_right_call_buttons_margin_bottom" android:layout_marginStart="@dimen/landscape_right_call_buttons_margin_start" style="@style/FloatingActionButtonGroup">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="@dimen/landscape_right_call_buttons_margin_top" android:layout_marginBottom="@dimen/landscape_right_call_buttons_margin_bottom" android:layout_marginStart="0dp" style="@style/FloatingActionButtonGroup">
+                <include android:id="@+id/toggle_video_button" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="@integer/call_button_weight" layout="@layout/mosaic_toggle_video_button"/>
+                <include android:id="@+id/end_call_button" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="@integer/call_button_weight" layout="@layout/mosaic_end_call_button"/>
+                <include android:id="@+id/mic_call_button" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="@integer/call_button_weight" layout="@layout/mosaic_microphone_call_button"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="@dimen/landscape_right_call_buttons_margin_top" android:layout_marginBottom="@dimen/landscape_right_call_buttons_margin_bottom" android:layout_marginStart="0dp" style="@style/FloatingActionButtonGroup">
+                <include android:id="@+id/effect_button_wrapper" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="@integer/call_button_weight" layout="@layout/fiesta_effect_menu_button"/>
+                <include android:id="@+id/mpu_togglecam" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="@integer/call_button_weight" layout="@layout/fiesta_toggle_camera_button"/>
+                <include android:id="@+id/storytime_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="@integer/call_button_weight" layout="@layout/fiesta_storytime_button"/>
+            </LinearLayout>
+        </LinearLayout>
+        <androidx.legacy.widget.Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="25"/>
+        <LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@+id/rtt_group_right" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:layout_marginBottom="8dp" android:layout_weight="35">
+            <include android:id="@+id/rtt_incall" layout="@layout/mosaic_rtt_section"/>
+        </LinearLayout>
+        <androidx.legacy.widget.Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="25"/>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

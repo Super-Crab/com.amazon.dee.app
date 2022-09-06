@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/send_to_app_card" android:background="?attr/mosaicBackground" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="@dimen/s2a_card_height">
+        <ImageView android:id="@+id/send_to_app_card_icon" android:layout_width="@dimen/s2a_icon_size" android:layout_height="@dimen/s2a_icon_size" android:scaleType="fitCenter" android:layout_marginStart="@dimen/s2a_large_margin" android:layout_marginEnd="@dimen/s2a_large_margin"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/s2a_large_margin" android:layout_toEndOf="@+id/send_to_app_card_icon">
+            <TextView android:textSize="@dimen/s2a_title_text_size" android:textStyle="bold" android:textColor="?attr/mosaicNeutral10" android:ellipsize="end" android:id="@+id/send_to_app_card_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="@integer/s2a_title_line_limit"/>
+            <TextView android:textSize="@dimen/s2a_subtitle_text_size" android:textColor="?attr/mosaicNeutral20" android:ellipsize="end" android:id="@+id/send_to_app_card_subtitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/s2a_subtitle_margin_top" android:maxLines="@integer/s2a_subtitle_line_limit" android:singleLine="false"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

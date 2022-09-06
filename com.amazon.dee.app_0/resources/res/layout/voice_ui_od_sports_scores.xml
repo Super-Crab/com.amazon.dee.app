@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.alexa.voice.ui.onedesign.widget.ContentLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/layout" android:layout_width="match_parent" android:layout_height="match_parent" style="?attr/voiceOdContentWindowStyle">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.amazon.alexa.voice.ui.onedesign.widget.background.CardLayout android:id="@+id/cardLayout" style="?attr/voiceOdCardStyle">
+            <LinearLayout android:scrollbarStyle="outsideOverlay" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+                <include layout="@layout/voice_ui_od_header"/>
+                <androidx.core.widget.NestedScrollView android:scrollbarStyle="outsideOverlay" android:id="@+id/scrollView" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:layout_marginStart="@dimen/voice_ui_od_content_default_double_margin" android:layout_marginEnd="@dimen/voice_ui_od_content_default_double_margin">
+                    <include layout="@layout/voice_ui_od_sports_scores_content"/>
+                </androidx.core.widget.NestedScrollView>
+            </LinearLayout>
+        </com.amazon.alexa.voice.ui.onedesign.widget.background.CardLayout>
+        <com.amazon.alexa.voice.ui.onedesign.speech.SpeechControlView android:layout_gravity="bottom" android:id="@+id/control" android:layout_width="match_parent" android:layout_height="?attr/voiceOdSpeechControlHeight"/>
+    </FrameLayout>
+</com.amazon.alexa.voice.ui.onedesign.widget.ContentLayout>

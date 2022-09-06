@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="?attr/mosaicBackground" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/dm_banner_network_connection"/>
+    <androidx.core.widget.NestedScrollView android:background="?attr/mosaicBackground" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dm_feed_layout_margin" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/drive_mode_feed" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <include layout="@layout/dm_vui_item_landing_page"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toTopOf="0">
+        <include android:id="@+id/stats" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@+id/divider" app:layout_constraintTop_toTopOf="0" layout="@layout/stats_big_font"/>
+        <View android:id="@+id/divider" android:background="?attr/mosaicNeutral10" android:layout_width="match_parent" android:layout_height="1dp" android:alpha="0.1" android:layout_marginStart="@dimen/close_button_start_margin" android:layout_marginEnd="@dimen/close_button_start_margin" app:layout_constraintBottom_toTopOf="@+id/details" app:layout_constraintTop_toBottomOf="@+id/stats"/>
+        <include android:id="@+id/details" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" layout="@layout/other_data_table"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

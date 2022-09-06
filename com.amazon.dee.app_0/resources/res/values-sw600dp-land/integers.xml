@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="voice_ui_od_movie_list_card_number">5</integer>
+    <integer name="voice_ui_od_scrim_chrome_open_duration">500</integer>
+    <integer name="voice_ui_od_scrim_overlay_open_duration">166</integer>
+    <integer name="voice_ui_scrim_chrome_open_duration">500</integer>
+    <integer name="voice_ui_scrim_overlay_open_duration">166</integer>
+</resources>

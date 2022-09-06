@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.amazon.alexa.font.FontTextView android:textSize="@dimen/text_size_caption" android:textStyle="bold" android:textColor="?attr/mosaicNeutral20" android:id="@+id/section_header_textView" android:background="?attr/mosaicNeutral50" android:paddingTop="@dimen/section_header_padding" android:paddingBottom="@dimen/section_header_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAllCaps="true" android:paddingStart="@dimen/icon_text_padding" android:paddingEnd="@dimen/icon_text_padding" android:letterSpacing="0.2"/>
+</LinearLayout>

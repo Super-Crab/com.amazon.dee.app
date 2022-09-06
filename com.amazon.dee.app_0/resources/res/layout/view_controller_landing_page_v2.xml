@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="?attr/mosaicBackground" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/nav_bar_divider" android:background="@color/neutral50" android:visibility="visible" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <androidx.core.widget.NestedScrollView android:background="?attr/mosaicBackground" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:layout_below="@+id/nav_bar_divider">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <include layout="@layout/dm_hint_and_network_connection_banner"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/drive_mode_feed" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="8dp" android:layout_below="@+id/hint_and_network_connection_layout"/>
+            <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@+id/dm_voice_ingress_image" android:layout_width="70dp" android:layout_height="70dp" android:layout_marginRight="@dimen/dm_feed_layout_margin" android:layout_marginBottom="@dimen/dm_feed_layout_margin" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" app:backgroundTint="?attr/mosaicAction40" app:srcCompat="@drawable/dm_ic_alexa"/>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+INTEL_ANDROID:
+All the tags below are case sensitive and must be specified in lower case.
+In case of ambiguous elements or properties, session will use default properties.
+Short description of the tags/elements is as follows:-
+
+'rtc': Top level tag.
+'encoder' : Sub tag under 'rtc' for specifying encoder configurations:
+  'gop_interval'  : Indicates the number of pictures(frames). Default is 29 'P' and 1 'I' frame
+  'target_bitrate': Specifiy the target bit-rate, as a percentage of max_bitrate. Default is 95%
+  'max_bitrate'   : Max bitrate depending on resolution (bits per sec). Default depends on setting from app
+                    This is encoder setting during initial config and gets updated based on network (setrates)
+  'max_framesize' : Max frame size in bytes. Default - we dont configure this
+  'target_usage'  : Used to configire target usage (quility vs speed) parameter. Values range
+                     is [1…7]. 1 means the best quality. 7 means the best speed. Default - we dont configure this
+  'initial_qp'    : Initial QP value. Default value is populated from QP table based on bitrate being used
+  'min_qp'        : Min QP Value. Default value is populated from QP table based on bitrate being used
+  'max_qp'        : Max QP value. Default value is populated from QP table based on bitrate being used
+
+ 'dynamic_res' : Dynamic resolution adaptation table.
+  NOTE:
+  1. You can have at MOST 10 levels.
+  2. Must be sorted in decreasing pixel_num.
+
+  'enable'     : Toggle usage of the feature. If set to false, then all other contents can be ignored.
+  'rolling_window': Duration(in milliseconds) of the rolling window used to calculate bitrate, loss_rate and rtt.
+  'pixel_num'  : Width * Height
+  'bitrate'    : Estimated target video bitrate setting(in bps) based on network bandwidth.
+  'loss_rate'  : Loss rate in percent = 100 * fraction_lost/ 255. Range from 0-100.
+                 The fraction of RTP data packets from source SSRC_n lost since the previous SR or RR packet was sent.
+                 This fraction is defined to be the number of packets lost divided by the number of packets expected.
+  'rtt'        : Round trip time(in ms).
+
+  video downgrade:
+  'min_bitrate' + 'max_loss_rate' + 'max_rtt': bitrate(averaged over rolling window) < min_bitrate && loss rate(averaged over the rolling window) >= max_loss_rate OR
+                                               bitrate(averaged over rolling window) < min_bitrate && rtt(averaged over rolling window) > max_rtt
+  video upgrade:
+  'max_bitrate' + 'min_loss_rate' + 'min_rtt': bitrate(averaged over rolling window) > max_bitrate && loss rate(averaged over the rolling window) <= min_loss_rate AND
+                                               bitrate(averaged over rolling window) > max_bitrate && rtt(averaged over rolling window) < min_rtt
+
+'network_stats' : Sub tag under 'rtc' for specifying rolling window for new stats level:
+  'window'  : Duration(in milliseconds) of the rolling window used to calculate the average network bandwidth as used in the new stats level. 0 disables.
+-->
+
+<rtc>
+  <encoder></encoder>
+
+  <!-- scaling factors: 1.0-->
+  <dynamic_res enable="true" rolling_window="3000">
+    <!-- Scaling factor 1.0, resolution 1280x720 fps [30,30]-->
+    <level pixel_num="921600" min_bitrate="1000000" max_bitrate="2500000" min_loss_rate="1" max_loss_rate="4" min_rtt="175" max_rtt="250" min_fps="30" max_fps="30" />
+    <!-- Scaling factor 1.0, resolution 1280x720 fps [24, 24]-->
+    <level pixel_num="921600" min_bitrate="750000" max_bitrate="1000000" min_loss_rate="1" max_loss_rate="4" min_rtt="175" max_rtt="250" min_fps="24" max_fps="24" />
+    <!-- Scaling factor 0.75, resolution 960*540 fps [24, 24]-->
+    <level pixel_num="518400" min_bitrate="500000" max_bitrate="750000" min_loss_rate="1" max_loss_rate="4" min_rtt="175" max_rtt="250" min_fps="24" max_fps="24" />
+    <!-- Scaling factor 0.75, resolution 960*540 fps [15, 15]-->
+    <level pixel_num="518400" min_bitrate="250000" max_bitrate="500000" min_loss_rate="1" max_loss_rate="4" min_rtt="175" max_rtt="250" min_fps="15" max_fps="15" />
+    <!-- Scaling factor 0.5, resolution 640*360 fps [15, 15]-->
+    <level pixel_num="230400" min_bitrate="100000" max_bitrate="250000" min_loss_rate="1" max_loss_rate="4" min_rtt="175" max_rtt="250" min_fps="15" max_fps="15" />
+    <!-- Scaling factor 0.25, resolution 320*180 fps [15, 15]-->
+    <level pixel_num="57600" min_bitrate="100" max_bitrate="100000" min_loss_rate="1" max_loss_rate="4" min_rtt="175" max_rtt="250" min_fps="15" max_fps="15" />
+  </dynamic_res>
+
+  <network_stats window="3000" />
+</rtc>
+

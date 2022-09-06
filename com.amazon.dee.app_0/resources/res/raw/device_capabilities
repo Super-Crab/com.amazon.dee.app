@@ -1,0 +1,17 @@
+[
+  {
+    "type": "AlexaInterface",
+    "interface": "Alexa.AudioSignal.ActiveNoiseControl",
+    "version": "1.0"
+  },
+  {
+    "type": "AlexaInterface",
+    "interface": "Alexa.IOComponents",
+    "version": "1.4"
+  },
+  {
+    "type": "AlexaInterface",
+    "interface": "AccessoryKit",
+    "version": "0.1"
+  }
+]

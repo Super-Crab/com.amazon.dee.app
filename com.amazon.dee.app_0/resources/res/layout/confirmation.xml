@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:tag="layout/confirmation_0" android:background="?attr/mosaicBackground" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/status_banner"/>
+    <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" app:layout_constraintWidth_percent="0.85">
+        <ImageView android:id="@+id/control_icon" android:tag="binding_1" android:layout_width="@dimen/mosaic_view_confirmation_icon_width" android:layout_height="@dimen/mosaic_view_confirmation_icon_height"/>
+        <com.amazon.alexa.font.FontTextView android:id="@+id/headline_text" android:tag="binding_2" app:fontName="6" style="@style/Mosaic.View.Confirmation.Headline"/>
+        <com.amazon.alexa.font.FontTextView android:id="@+id/body_text" android:tag="binding_3" style="@style/Mosaic.View.Confirmation.Body"/>
+        <com.amazon.alexa.font.FontTextView android:id="@+id/link_text" android:tag="binding_4" style="@style/Mosaic.View.Confirmation.Link"/>
+        <com.amazon.alexa.font.FontTextView android:textColor="?attr/mosaicNeutral10" android:textColorLink="?attr/mosaicNeutral30" android:id="@+id/hyperlink_text" android:tag="binding_5" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Mosaic.View.Confirmation.Body"/>
+        <com.amazon.alexa.font.FontTextView android:id="@+id/hint_text" android:tag="binding_6" style="@style/Mosaic.View.Confirmation.Hint"/>
+    </LinearLayout>
+    <Button android:id="@+id/ok_button" android:tag="binding_7" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" app:layout_constraintBottom_toBottomOf="0" style="@style/mosaic_button"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

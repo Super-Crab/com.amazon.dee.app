@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/landing_page_single_icon_grid" android:layout_width="match_parent" android:layout_height="178dp" android:layout_margin="8dp" android:foreground="?android:attr/selectableItemBackground" android:elevation="0dp" app:cardBackgroundColor="@color/neutral60" app:cardCornerRadius="20dp">
+    <RelativeLayout android:orientation="vertical" android:id="@+id/card_linear_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/dm_feed_layout_margin">
+        <com.amazon.alexa.font.FontTextView android:textSize="@dimen/dm_card_title_text_size" android:textColor="?attr/mosaicNeutral10" android:ellipsize="end" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" app:fontName="16"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_below="@+id/title">
+            <com.amazon.alexa.font.FontTextView android:textSize="18sp" android:textColor="?attr/mosaicNeutral20" android:id="@+id/subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4dp" app:fontName="16"/>
+            <com.amazon.alexa.font.FontTextView android:textSize="18sp" android:textColor="?attr/mosaicNeutral10" android:id="@+id/subtitle_addendum" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontName="16"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/single_icon" android:layout_width="40dp" android:layout_height="40dp" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

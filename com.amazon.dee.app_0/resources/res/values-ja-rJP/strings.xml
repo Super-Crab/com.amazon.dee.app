@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="amazon_customer_service">Amazonカスタマーサービス</string>
+    <string name="dialog_close">閉じる</string>
+    <string name="dialog_confirm_end">画面の共有を停止しますか?</string>
+    <string name="dialog_confirm_end_accept">共有を停止する</string>
+    <string name="dialog_confirm_end_decline">キャンセル</string>
+    <string name="dialog_ended_agent">カスタマーサービスは画面共有を終了しました。画面を共有していません。</string>
+    <string name="dialog_ended_customer">もう画面をAmazonカスタマーサービスと共有していません。</string>
+    <string name="dialog_ended_error">エラーが発生したため、画面共有が終了しました。画面を共有していません。</string>
+    <string name="dialog_ended_inactivity">動きがなかったため、画面共有は終了しました。画面を共有していません。</string>
+    <string name="dialog_request_resume">カスタマーサービスが、お客様との画面共有の再開を希望しています。</string>
+    <string name="dialog_request_resume_accept">承認</string>
+    <string name="dialog_request_resume_decline">拒否</string>
+    <string name="menu_end">画面共有を終了する</string>
+    <string name="message_agent_paused">カスタマーサービスが画面共有を一時停止しました</string>
+    <string name="notification_auto_ended">動きがなかったため、画面共有は終了しました</string>
+    <string name="overflow_menu">メニュー</string>
+    <string name="pause_button">一時停止</string>
+    <string name="permission_request_3p_notification">Amazonカスタマーサービスでは、画面共有を希望しています。アプリを開いて接続してください。</string>
+    <string name="primer_continue">続行</string>
+    <string name="primer_header">Amazonカスタマーサービスと画面を共有すると、よりよいサポートが受けられます。</string>
+    <string name="primer_subheader">画面を共有することで、Amazonのカスタマーサービスアソシエイトがお客様の情報を表示できるようになります。ご安心ください。</string>
+    <string name="resume_button">再開</string>
+    <string name="status_connected">動作中</string>
+    <string name="status_connecting">開始中…</string>
+    <string name="status_ending">終了中…</string>
+    <string name="status_header">画面共有</string>
+    <string name="status_paused">一時停止</string>
+</resources>

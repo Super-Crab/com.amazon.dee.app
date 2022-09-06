@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="quick_action_circle_height">24dp</dimen>
+    <dimen name="quick_action_circle_width">24dp</dimen>
+    <dimen name="quick_action_item_icon_margin">3dp</dimen>
+    <dimen name="quick_action_item_label_text_size">10sp</dimen>
+    <dimen name="quick_action_item_padding">2dp</dimen>
+    <dimen name="widget_background_radius">8dp</dimen>
+    <dimen name="widget_height">20dp</dimen>
+    <dimen name="widget_width">220dp</dimen>
+</resources>

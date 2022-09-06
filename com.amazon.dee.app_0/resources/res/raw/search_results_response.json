@@ -1,0 +1,27 @@
+{
+  "statusCode": 200,
+  "searchQuery": {
+      "queryId": "test:7961c189-a564-4e8b-a224-f6c089d3ce6b",
+      "queryText": "test"
+  },
+  "searchResults": [
+    {
+      "actionData": "v2/devices-channel",
+      "actionType": "APP_PAGE",
+      "description": null,
+      "domainId": "smart-home",
+      "category": "pill_result",
+      "resultId": "smart-home:b14e6470-f92a-4cc5-9bda-c78b7ef8be15",
+      "title": "Karthick's k_u_3"
+    },
+    {
+      "actionData": null,
+      "actionType": "UTTERANCE",
+      "description": null,
+      "category": "search_result",
+      "domainId": "activity-history",
+      "resultId": "TextClient:1.0/2021/08/24/08/69a62671d8c34a67a6971098dfc3bf7a/39:29::TNIH_2V.850eaf6e-1aa2-485a-a7cc-15d20a44b899ZXV/1629794370524",
+      "title": "Weather in Detroit"
+    }
+  ]
+}

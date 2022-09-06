@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="match_parent" android:minWidth="@dimen/voice_ui_od_content_default_double_margin">
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/voice_ui_od_close" style="?attr/voiceOdCloseStyle"/>
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/back" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/voice_ui_od_back_button_description" style="?attr/voiceOdBackStyle"/>
+</FrameLayout>

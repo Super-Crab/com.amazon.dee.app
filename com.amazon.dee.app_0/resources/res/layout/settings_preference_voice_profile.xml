@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:baselineAligned="false">
+    <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="@dimen/alexa_settings_preference_voice_profile_margin" android:layout_weight="1">
+        <TextView android:textSize="@dimen/alexa_settings_preference_title_text_size" android:ellipsize="marquee" android:id="@android:id/title" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/alexa_voice_profile" android:singleLine="true"/>
+        <TextView android:textSize="@dimen/alexa_settings_preference_summary_text_size" android:textColor="@color/alexa_setup_active" android:id="@+id/manage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/alexa_voice_profile_manage" android:layout_alignBottom="@android:id/title" android:layout_alignParentEnd="true"/>
+        <TextView android:textSize="@dimen/alexa_settings_preference_summary_text_size" android:textColor="@color/alexa_setup_text_secondary" android:id="@android:id/summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/alexa_voice_profile_summary" android:layout_below="@android:id/title" android:layout_toStartOf="@+id/manage" android:layout_alignStart="@android:id/title"/>
+    </RelativeLayout>
+</LinearLayout>

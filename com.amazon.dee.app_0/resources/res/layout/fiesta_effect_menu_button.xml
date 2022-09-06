@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" style="@style/FloatingActionButtonWrapper">
+    <ImageButton android:id="@+id/effectMenuButton" android:background="@drawable/fiesta_selector_effect_menu_button_background" android:src="@drawable/ic_effects_48dp" android:contentDescription="@string/effects_menu_content_description" style="@style/FloatingActionButton"/>
+</RelativeLayout>

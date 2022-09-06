@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.alexa.voice.ui.onedesign.widget.ContentLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/layout" android:layout_width="match_parent" android:layout_height="match_parent" style="?attr/voiceOdContentWindowStyle">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.amazon.alexa.voice.ui.onedesign.widget.background.CardLayout android:id="@+id/cardLayout" app:gradientBottomColor="@color/voice_ui_od_gradient_background_mask_bottom" app:gradientTopColor="@color/voice_ui_od_gradient_background_mask_top" style="?attr/voiceOdCardStyle">
+            <androidx.core.widget.NestedScrollView android:scrollbarStyle="outsideOverlay" android:id="@+id/scrollView" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <include layout="@layout/voice_ui_od_header"/>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/voice_ui_od_content_item_padding" android:paddingEnd="@dimen/voice_ui_od_content_item_padding">
+                        <ImageView android:id="@+id/icon" android:layout_width="@dimen/voice_ui_od_calendar_no_event_card_image_width" android:layout_height="@dimen/voice_ui_od_calendar_no_event_card_image_width" android:layout_marginTop="@dimen/voice_ui_od_calendar_no_event_card_image_marginTop" android:layout_marginBottom="@dimen/voice_ui_od_content_default_double_margin" android:scaleType="fitStart" android:contentDescription="@string/voice_ui_od_empty"/>
+                        <TextView android:textSize="@dimen/voice_ui_od_font_title_size" android:textColor="?android:attr/textColorPrimary" android:gravity="center_horizontal" android:id="@+id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/voice_ui_od_content_default_margin" android:layout_marginBottom="@dimen/voice_ui_od_content_default_margin"/>
+                        <TextView android:textSize="@dimen/voice_ui_od_font_page_size" android:textColor="?android:attr/textColorPrimary" android:gravity="center" android:id="@+id/userHint" android:padding="@dimen/voice_ui_od_content_default_margin" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        <include android:visibility="gone" layout="@layout/voice_ui_od_list_manage_button"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </com.amazon.alexa.voice.ui.onedesign.widget.background.CardLayout>
+        <com.amazon.alexa.voice.ui.onedesign.speech.SpeechControlView android:layout_gravity="bottom" android:id="@+id/control" android:layout_width="match_parent" android:layout_height="?attr/voiceOdSpeechControlHeight"/>
+    </FrameLayout>
+</com.amazon.alexa.voice.ui.onedesign.widget.ContentLayout>

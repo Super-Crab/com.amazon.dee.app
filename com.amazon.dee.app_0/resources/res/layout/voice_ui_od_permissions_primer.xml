@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="?attr/layout_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" style="?attr/voiceOdContentStyle">
+        <ScrollView android:scrollbarStyle="outsideOverlay" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/animation" android:background="?attr/actionButtonColor" android:layout_width="match_parent" android:layout_height="248dp" android:scaleType="fitCenter" android:contentDescription="@string/voice_ui_od_empty"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="16dp" android:layout_marginEnd="16dp">
+                    <TextView android:textSize="24sp" android:textColor="?android:attr/textColorPrimary" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:textAlignment="viewStart"/>
+                    <TextView android:textSize="16sp" android:textColor="?android:attr/textColorPrimary" android:id="@+id/rationale" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:textAlignment="viewStart"/>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/permissions_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0">
+            <Button android:textSize="15sp" android:textColor="?attr/accent_icon_color_light" android:gravity="center" android:id="@+id/later" android:background="@android:color/transparent" android:layout_width="0dp" android:layout_height="42dp" android:layout_marginTop="16dp" android:layout_marginBottom="16dp" android:layout_weight="1" android:textAllCaps="true" android:layout_marginStart="16dp" android:layout_marginEnd="8dp" style="?android:attr/borderlessButtonStyle"/>
+            <Button android:textSize="15sp" android:textColor="?android:attr/textColorPrimary" android:gravity="center" android:id="@+id/allow" android:background="@drawable/voice_ui_moasic_primary_button_background" android:layout_width="0dp" android:layout_height="42dp" android:layout_marginTop="16dp" android:layout_marginBottom="16dp" android:layout_weight="1" android:textAllCaps="true" android:layout_marginStart="8dp" android:layout_marginEnd="16dp" style="?android:attr/borderlessButtonStyle"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

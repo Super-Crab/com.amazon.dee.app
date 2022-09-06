@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/single_icon_row" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="88dp" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:layout_marginBottom="1dp" android:foreground="?android:attr/selectableItemBackground" android:elevation="0dp" app:cardBackgroundColor="@color/neutral60" app:cardCornerRadius="14dp">
+    <RelativeLayout android:orientation="vertical" android:id="@+id/card_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/dm_feed_layout_margin">
+        <ImageView android:id="@+id/single_icon" android:layout_width="40dp" android:layout_height="40dp" android:layout_centerVertical="true"/>
+        <com.amazon.alexa.font.FontTextView android:textSize="@dimen/dm_card_title_text_size" android:textColor="?attr/mosaicNeutral10" android:ellipsize="end" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dm_feed_layout_margin" android:layout_centerVertical="true" android:layout_toEndOf="@+id/single_icon" app:fontName="16"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

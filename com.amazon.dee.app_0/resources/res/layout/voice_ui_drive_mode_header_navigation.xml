@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="@dimen/voice_ui_drive_mode_header_margin_top" android:layout_marginStart="@dimen/voice_ui_drive_mode_header_margin_start">
+    <FrameLayout android:layout_gravity="center_vertical" android:id="@+id/close" android:layout_width="wrap_content" android:layout_height="@dimen/voice_ui_drive_mode_local_card_navigation_icon_container_width">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/voice_ui_drive_mode_local_card_navigation_icon_width" android:layout_height="@dimen/voice_ui_drive_mode_local_card_navigation_icon_width" android:contentDescription="@string/voice_ui_od_close" style="?attr/voiceOdCloseStyle"/>
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center_vertical" android:id="@+id/back" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/voice_ui_drive_mode_local_card_navigation_icon_container_width">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/voice_ui_drive_mode_local_card_navigation_icon_width" android:layout_height="@dimen/voice_ui_drive_mode_local_card_navigation_icon_width" android:contentDescription="@string/voice_ui_od_back_button_description" style="?attr/voiceOdBackStyle"/>
+    </FrameLayout>
+</FrameLayout>

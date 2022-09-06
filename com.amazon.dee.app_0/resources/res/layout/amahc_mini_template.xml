@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:elevation="@dimen/amahc_elevation_medium">
+    <View android:id="@+id/pulse_overlay" android:background="@android:color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:layout_gravity="start|center_vertical" android:orientation="vertical" android:id="@+id/slot0" android:focusable="true" android:clickable="true" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/amahc_margin_large_22" android:layout_marginBottom="@dimen/amahc_margin_large_22" android:layout_weight="1" android:paddingStart="@dimen/amahc_padding_small" android:paddingEnd="@dimen/amahc_padding_small"/>
+    <LinearLayout android:layout_gravity="end|center_vertical" android:orientation="horizontal" android:id="@+id/slot1" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:paddingStart="0dp" android:paddingEnd="@dimen/amahc_margin_large"/>
+</LinearLayout>

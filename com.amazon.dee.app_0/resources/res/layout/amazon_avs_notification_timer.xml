@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="left" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/amazon_avs_notification_max_height">
+    <TextView android:textStyle="bold" android:id="@+id/amazon_avs_timer_name" android:layout_width="match_parent" android:layout_height="18dp" android:text="@string/amazon_avs_timer_label" style="@style/AlexaTheme.Notification.AlertBody"/>
+    <include layout="@layout/amazon_avs_notification_chronometer"/>
+</LinearLayout>

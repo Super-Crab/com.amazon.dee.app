@@ -1,0 +1,11 @@
+package com.amazonaws.services.iot.model;
+
+import com.amazonaws.AmazonServiceException;
+/* loaded from: classes13.dex */
+public class CertificateConflictException extends AmazonServiceException {
+    private static final long serialVersionUID = 1;
+
+    public CertificateConflictException(String str) {
+        super(str);
+    }
+}

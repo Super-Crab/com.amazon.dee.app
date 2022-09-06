@@ -1,0 +1,938 @@
+{
+    "description": "This is the defaults config file for ARCUS in Android. See com.amazon.deecomms.remoteConfig.ArcusConfig for more information.",
+    "segments": [
+        {
+            "_desc": "Baseline",
+            "_rules": {},
+            "segment": {
+                "ACMS": {
+                    "Endpoint": "https://alexa-comms-mobile-service-na.amazon.com",
+                    "Endpoints": {
+                        "Alpha": "https://alexa-mobile-service-na-alpha.integ.amazon.com",
+                        "Beta": "https://alexa-mobile-service-na-beta.integ.amazon.com",
+                        "Gamma": "alexa-comms-mobile-service-na-gamma.amazon.com",
+                        "NOTE": "DO NOT USE. Use Endpoint and target using segment instead",
+                        "PFM": {
+                            "AE": "https://alexa-comms-mobile-service.amazon.com",
+                            "AU": "https://alexa-comms-mobile-service.amazon.com",
+                            "BR": "https://alexa-comms-mobile-service.amazon.com",
+                            "CA": "https://alexa-comms-mobile-service.amazon.com",
+                            "CN": "https://alexa-comms-mobile-service.amazon.com",
+                            "DE": "https://alexa-comms-mobile-service.amazon.com",
+                            "Default": "https://alexa-comms-mobile-service.amazon.com",
+                            "ES": "https://alexa-comms-mobile-service.amazon.com",
+                            "FR": "https://alexa-comms-mobile-service.amazon.com",
+                            "GB": "https://alexa-comms-mobile-service.amazon.com",
+                            "ID": "https://alexa-comms-mobile-service.amazon.com",
+                            "IN": "https://alexa-comms-mobile-service.amazon.com",
+                            "IT": "https://alexa-comms-mobile-service.amazon.com",
+                            "JP": "https://alexa-comms-mobile-service.amazon.com",
+                            "MX": "https://alexa-comms-mobile-service.amazon.com",
+                            "NL": "https://alexa-comms-mobile-service.amazon.com",
+                            "RU": "https://alexa-comms-mobile-service.amazon.com",
+                            "SA": "https://alexa-comms-mobile-service.amazon.com",
+                            "TR": "https://alexa-comms-mobile-service.amazon.com",
+                            "US": "https://alexa-comms-mobile-service.amazon.com"
+                        },
+                        "Prod": "https://alexa-comms-mobile-service-na.amazon.com"
+                    },
+                    "RefreshTimeSec": {
+                        "GetContacts": "300",
+                        "GetIdentity": "500",
+                        "NOTE": "DO NOT USE. Deprecated and replaced below"
+                    },
+                    "TimeoutsSec": {
+                        "ContactsImport": "60",
+                        "ContactsUpdate": 60,
+                        "CreateAccount": "15",
+                        "CreateAuthToken": "10",
+                        "CreateEndpoints": "45",
+                        "CreateEndpointsV2": "45",
+                        "Default": "10",
+                        "DeleteContacts": "60",
+                        "DeleteConversation": "35",
+                        "GetAccounts": "15",
+                        "GetCommsIdentitiesForHomeGroupID": "40",
+                        "GetContacts": "60",
+                        "GetContactsCount": "60",
+                        "GetConversationMessages": "35",
+                        "GetConversations": "35",
+                        "GetIdentityPreference": "35",
+                        "GetIdentityV2": "20",
+                        "GetOrCreateContact": "40",
+                        "GetPreferenceForContact": "35",
+                        "MarkMessagesRead": "35",
+                        "ProvisionCommsUser": "11",
+                        "SendMessages": "35",
+                        "SetBlockStatusForContact": "60",
+                        "SetGroupName": "40",
+                        "UpdateIdentity": "10",
+                        "UpdateIdentityPreference": "35",
+                        "UpdatePreferenceForContact": "35"
+                    }
+                },
+                "Access": {
+                    "CommsPfmBlacklist": "",
+                    "CallerIdSettingAccess": "US,CA,GB",
+                    "CoboAccess": "US,CA,GB"
+                },
+                "CallRating": {
+                    "MaxScreenDurationSeconds": 10,
+                    "MinCallDurationSeconds": 10,
+                    "ShowPerCallFrequency": 5
+                },
+                "Contacts": {
+                    "DefaultContactFieldsMaxLength": "200",
+                    "DownloadBatchSize": 2000,
+                    "MaxConcurrentUpload": "2",
+                    "NameMaxLength": "35",
+                    "PhoneNumberMaxLength": "25",
+                    "PresenceRefreshIntervalSec": 300,
+                    "PresenceRequestIntervalLimitSec": 60,
+                    "RefreshIntervalSec": "300",
+                    "UpdateBatchSize": 100,
+                    "UploadBatchSize": "100",
+                    "UploadMaxRetries": "3",
+                    "UpsyncCeiling": 10000
+                },
+                "Cookies": {
+                    "RefreshTimeoutSec": "5"
+                },
+                "Sharing": {
+                    "MaxRetryCount": {
+                        "AndroidSDK": "3",
+                        "SetupAccount": "3",
+                        "FindRootFolder": "3",
+                        "FindChildFolder": "3",
+                        "CreateFolder": "3",
+                        "Download": "3",
+                        "Upload": "3",
+                        "GetNode": "3"
+                    },
+                    "Photos": {
+                        "url": "https://www.amazon.com/photos/groups"
+                    },
+                    "Picker": {
+                        "iCloudSmartAlbums": "PhotoStream,Videos,Generic,Panoramas,Favorites,Timelapses,RecentlyAdded,Bursts,SlomoVideos,UserLibrary,SelfPortraits,Screenshots,DepthEffect,LivePhotos",
+                        "mediaType": "photo",
+                        "maxFileSizeMB": 120,
+                        "maxAllowedSelection": 1
+                    }
+                },
+                "DUI": {
+                    "Endpoints": {
+                        "PFM": {
+                            "AE": "https://dynamic-ui-service-na.amazon.com",
+                            "AU": "https://dynamic-ui-service-fe.amazon.com",
+                            "BR": "https://dynamic-ui-service-na.amazon.com",
+                            "CA": "https://dynamic-ui-service-na.amazon.com",
+                            "CN": "https://dynamic-ui-service-na.amazon.com",
+                            "DE": "https://dynamic-ui-service-eu.amazon.com",
+                            "Default": "https://dynamic-ui-service-na.amazon.com",
+                            "ES": "https://dynamic-ui-service-eu.amazon.com",
+                            "FR": "https://dynamic-ui-service-eu.amazon.com",
+                            "GB": "https://dynamic-ui-service-eu.amazon.com",
+                            "ID": "https://dynamic-ui-service-na.amazon.com",
+                            "IN": "https://dynamic-ui-service-eu.amazon.com",
+                            "IT": "https://dynamic-ui-service-eu.amazon.com",
+                            "JP": "https://dynamic-ui-service-fe.amazon.com",
+                            "MX": "https://dynamic-ui-service-na.amazon.com",
+                            "NL": "https://dynamic-ui-service-eu.amazon.com",
+                            "RU": "https://dynamic-ui-service-na.amazon.com",
+                            "SA": "https://dynamic-ui-service-na.amazon.com",
+                            "TR": "https://dynamic-ui-service-na.amazon.com",
+                            "US": "https://dynamic-ui-service-na.amazon.com"
+                        }
+                    }
+                },
+                "ExternalUrls": {
+                    "FAQ": {
+                        "CommsLearnMoreNode": "GDPR73MCWELTY9JU",
+                        "FAQsLearnMoreNode": "201602230",
+                        "PFM": {
+                            "AE": "https://www.amazon.com/gp/help/customer/display.html?nodeId=201602230",
+                            "AU": "https://www.amazon.com/gp/help/customer/display.html?nodeId=201602230",
+                            "BR": "https://www.amazon.com/gp/help/customer/display.html?nodeId=201602230",
+                            "CA": "https://www.amazon.ca/gp/help/customer/display.html?nodeId=201602230",
+                            "CN": "https://www.amazon.com/gp/help/customer/display.html?nodeId=201602230",
+                            "DE": "https://www.amazon.de/gp/help/customer/display.html?nodeId=201602230",
+                            "Default": "https://www.amazon.com/gp/help/customer/display.html?nodeId=201602230",
+                            "ES": "https://www.amazon.com/gp/help/customer/display.html?nodeId=201602230",
+                            "FR": "https://www.amazon.fr/gp/help/customer/display.html?nodeId=201602230",
+                            "GB": "https://www.amazon.co.uk/gp/help/customer/display.html?nodeId=201602230",
+                            "ID": "https://www.amazon.com/gp/help/customer/display.html?nodeId=201602230",
+                            "IN": "https://www.amazon.in/gp/help/customer/display.html?nodeId=201602230",
+                            "IT": "https://www.amazon.com/gp/help/customer/display.html?nodeId=201602230",
+                            "JP": "https://www.amazon.co.jp/gp/help/customer/display.html?nodeId=201602230",
+                            "MX": "https://www.amazon.com.mx/gp/help/customer/display.html?nodeId=201602230",
+                            "NL": "https://www.amazon.com/gp/help/customer/display.html?nodeId=201602230",
+                            "RU": "https://www.amazon.com/gp/help/customer/display.html?nodeId=201602230",
+                            "SA": "https://www.amazon.com/gp/help/customer/display.html?nodeId=201602230",
+                            "TR": "https://www.amazon.com/gp/help/customer/display.html?nodeId=201602230",
+                            "US": "https://www.amazon.com/gp/help/customer/display.html?nodeId=201602230"
+                        }
+                    },
+                    "TermsOfUse": {
+                        "PFM": {
+                            "AE": "https://www.amazon.com/gp/help/customer/display.html?nodeId=201566380",
+                            "AU": "https://www.amazon.com/gp/help/customer/display.html?nodeId=201566380",
+                            "BR": "https://www.amazon.com/gp/help/customer/display.html?nodeId=201566380",
+                            "CA": "https://www.amazon.ca/gp/help/customer/display.html?nodeId=201566380",
+                            "CN": "https://www.amazon.com/gp/help/customer/display.html?nodeId=201566380",
+                            "DE": "https://www.amazon.de/gp/help/customer/display.html?nodeId=201566380",
+                            "Default": "https://www.amazon.com/gp/help/customer/display.html?nodeId=201566380",
+                            "ES": "https://www.amazon.com/gp/help/customer/display.html?nodeId=201566380",
+                            "FR": "https://www.amazon.fr/gp/help/customer/display.html?nodeId=201566380",
+                            "GB": "https://www.amazon.co.uk/gp/help/customer/display.html?nodeId=201566380",
+                            "ID": "https://www.amazon.com/gp/help/customer/display.html?nodeId=201566380",
+                            "IN": "https://www.amazon.in/gp/help/customer/display.html?nodeId=201566380",
+                            "IT": "https://www.amazon.com/gp/help/customer/display.html?nodeId=201566380",
+                            "JP": "https://www.amazon.co.jp/gp/help/customer/display.html?nodeId=201566380",
+                            "MX": "https://www.amazon.com.mx/gp/help/customer/display.html?nodeId=201566380",
+                            "NL": "https://www.amazon.com/gp/help/customer/display.html?nodeId=201566380",
+                            "RU": "https://www.amazon.com/gp/help/customer/display.html?nodeId=201566380",
+                            "SA": "https://www.amazon.com/gp/help/customer/display.html?nodeId=201566380",
+                            "TR": "https://www.amazon.com/gp/help/customer/display.html?nodeId=201566380",
+                            "US": "https://www.amazon.com/gp/help/customer/display.html?nodeId=201566380"
+                        }
+                    },
+                    "EnhancedProcessingLearnMore": {
+                        "Path": "/gp/help/customer/display.html?nodeId=G4H5AA5J7JHMX399",
+                        "PFM": {
+                            "AU": "https://www.amazon.com.au/gp/help/customer/display.html?nodeId=G4H5AA5J7JHMX399",
+                            "BR": "https://www.amazon.com.br/gp/help/customer/display.html?nodeId=G4H5AA5J7JHMX399",
+                            "CA": "https://www.amazon.ca/gp/help/customer/display.html?nodeId=G4H5AA5J7JHMX399",
+                            "DE": "https://www.amazon.de/gp/help/customer/display.html?nodeId=G4H5AA5J7JHMX399",
+                            "Default": "https://www.amazon.com/gp/help/customer/display.html?nodeId=G4H5AA5J7JHMX399",
+                            "GB": "https://www.amazon.co.uk/gp/help/customer/display.html?nodeId=G4H5AA5J7JHMX399",
+                            "IN": "https://www.amazon.in/gp/help/customer/display.html?nodeId=G4H5AA5J7JHMX399",
+                            "IT": "https://www.amazon.it/gp/help/customer/display.html?nodeId=G4H5AA5J7JHMX399",
+                            "JP": "https://www.amazon.jp/gp/help/customer/display.html?nodeId=G4H5AA5J7JHMX399",
+                            "MX": "https://www.amazon.com.mx/gp/help/customer/display.html?nodeId=G4H5AA5J7JHMX399",
+                            "US": "https://www.amazon.com/gp/help/customer/display.html?nodeId=G4H5AA5J7JHMX399",
+
+                            "NOTE" : "Using the default for the below PFMs. Can be updated once we get help content specific to those PFMs",
+                            "AE": "https://www.amazon.com/gp/help/customer/display.html?nodeId=G4H5AA5J7JHMX399",
+                            "CN": "https://www.amazon.com/gp/help/customer/display.html?nodeId=G4H5AA5J7JHMX399",
+                            "ES": "https://www.amazon.com/gp/help/customer/display.html?nodeId=G4H5AA5J7JHMX399",
+                            "FR": "https://www.amazon.com/gp/help/customer/display.html?nodeId=G4H5AA5J7JHMX399",
+                            "ID": "https://www.amazon.com/gp/help/customer/display.html?nodeId=G4H5AA5J7JHMX399",
+                            "NL": "https://www.amazon.com/gp/help/customer/display.html?nodeId=G4H5AA5J7JHMX399",
+                            "RU": "https://www.amazon.com/gp/help/customer/display.html?nodeId=G4H5AA5J7JHMX399",
+                            "SA": "https://www.amazon.com/gp/help/customer/display.html?nodeId=G4H5AA5J7JHMX399",
+                            "TR": "https://www.amazon.com/gp/help/customer/display.html?nodeId=G4H5AA5J7JHMX399"
+                        }
+                    },
+                    "ConditionsOfUse": {
+                        "PFM": {
+                            "AE": "https://www.amazon.com/gp/help/customer/display.html?nodeId=201909000",
+                            "AU": "https://www.amazon.com/gp/help/customer/display.html?nodeId=201909000",
+                            "BR": "https://www.amazon.com.br/gp/help/customer/display.html?nodeId=201909000",
+                            "CA": "https://www.amazon.ca/gp/help/customer/display.html?nodeId=201909000",
+                            "CN": "https://www.amazon.com/gp/help/customer/display.html?nodeId=201909000",
+                            "DE": "https://www.amazon.de/gp/help/customer/display.html?nodeId=201909000",
+                            "Default": "https://www.amazon.com/gp/help/customer/display.html?nodeId=201909000",
+                            "ES": "https://www.amazon.es/gp/help/customer/display.html?nodeId=201909000",
+                            "FR": "https://www.amazon.fr/gp/help/customer/display.html?nodeId=201909000",
+                            "GB": "https://www.amazon.co.uk/gp/help/customer/display.html?nodeId=201909000",
+                            "ID": "https://www.amazon.com/gp/help/customer/display.html?nodeId=201909000",
+                            "IN": "https://www.amazon.in/gp/help/customer/display.html?nodeId=201909000",
+                            "IT": "https://www.amazon.it/gp/help/customer/display.html?nodeId=201909000",
+                            "JP": "https://www.amazon.co.jp/gp/help/customer/display.html?nodeId=201909000",
+                            "MX": "https://www.amazon.com.mx/gp/help/customer/display.html?nodeId=201909000",
+                            "NL": "https://www.amazon.com/gp/help/customer/display.html?nodeId=201909000",
+                            "RU": "https://www.amazon.com/gp/help/customer/display.html?nodeId=201909000",
+                            "SA": "https://www.amazon.com/gp/help/customer/display.html?nodeId=201909000",
+                            "TR": "https://www.amazon.com/gp/help/customer/display.html?nodeId=201909000",
+                            "US": "https://www.amazon.com/gp/help/customer/display.html?nodeId=201909000"
+                        }
+                    }
+                },
+                "HomeGroup": {
+                    "RefreshIntervalSec": "300"
+                },
+                "Identity": {
+                    "FirstNameMaxLength": "24",
+                    "LastNameMaxLength": "25",
+                    "RefreshIntervalSec": "300"
+                },
+                "MediaStorage": {
+                    "Endpoint": "https://project-wink-mss-na.amazon.com",
+                    "Endpoints": {
+                        "Alpha": "https://alexacomms-relay-na-alpha.integ.amazon.com/api",
+                        "Beta": "https://alexa-msg-service.integ.amazon.com/api",
+                        "Gamma": "https://acs-relay-preprod.amazon.com/api",
+                        "NOTE": "DO NOT USE. Use Endpoint and target using segment instead",
+                        "PFM": {
+                            "AE": "https://project-wink-mss-na.amazon.com",
+                            "AU": "https://project-wink-mss-fe.amazon.com",
+                            "BR": "https://project-wink-mss-na.amazon.com",
+                            "CA": "https://project-wink-mss-na.amazon.com",
+                            "CN": "https://project-wink-mss-na.amazon.com",
+                            "DE": "https://project-wink-mss-eu.amazon.com",
+                            "Default": "https://project-wink-mss-na.amazon.com",
+                            "ES": "https://project-wink-mss-eu.amazon.com",
+                            "FR": "https://project-wink-mss-eu.amazon.com",
+                            "GB": "https://project-wink-mss-eu.amazon.com",
+                            "ID": "https://project-wink-mss-na.amazon.com",
+                            "IN": "https://project-wink-mss-eu.amazon.com",
+                            "IT": "https://project-wink-mss-eu.amazon.com",
+                            "JP": "https://project-wink-mss-fe.amazon.com",
+                            "MX": "https://project-wink-mss-na.amazon.com",
+                            "NL": "https://project-wink-mss-eu.amazon.com",
+                            "RU": "https://project-wink-mss-na.amazon.com",
+                            "SA": "https://project-wink-mss-na.amazon.com",
+                            "TR": "https://project-wink-mss-na.amazon.com",
+                            "US": "https://project-wink-mss-na.amazon.com"
+                        },
+                        "Prod": "https://acs-relay.amazon.com/api"
+                    },
+                    "Message": {
+                        "TimeoutsSec": {
+                            "Default": "30"
+                        },
+                        "Endpoints": {
+                            "PFM": {
+                                "AE": "https://project-wink-mss-na.amazon.com",
+                                "AU": "https://project-wink-mss-na.amazon.com",
+                                "BR": "https://project-wink-mss-na.amazon.com",
+                                "CA": "https://project-wink-mss-na.amazon.com",
+                                "CN": "https://project-wink-mss-na.amazon.com",
+                                "DE": "https://project-wink-mss-na.amazon.com",
+                                "Default": "https://project-wink-mss-na.amazon.com",
+                                "ES": "https://project-wink-mss-na.amazon.com",
+                                "FR": "https://project-wink-mss-na.amazon.com",
+                                "GB": "https://project-wink-mss-na.amazon.com",
+                                "ID": "https://project-wink-mss-na.amazon.com",
+                                "IN": "https://project-wink-mss-na.amazon.com",
+                                "IT": "https://project-wink-mss-na.amazon.com",
+                                "JP": "https://project-wink-mss-na.amazon.com",
+                                "MX": "https://project-wink-mss-na.amazon.com",
+                                "NL": "https://project-wink-mss-na.amazon.com",
+                                "RU": "https://project-wink-mss-na.amazon.com",
+                                "SA": "https://project-wink-mss-na.amazon.com",
+                                "TR": "https://project-wink-mss-na.amazon.com",
+                                "US": "https://project-wink-mss-na.amazon.com"
+                            }
+                        }
+                    },
+                    "Announcement": {
+                        "TimeoutsSec": {
+                            "Default": "30"
+                        },
+                        "Endpoints": {
+                            "DataRegion": {
+                                "NA": "https://project-wink-mss-na.amazon.com",
+                                "EU": "https://project-wink-mss-eu.amazon.com",
+                                "FE": "https://project-wink-mss-fe.amazon.com"
+                            },
+                            "PFM": {
+                                "AE": "https://project-wink-mss-na.amazon.com",
+                                "AU": "https://project-wink-mss-fe.amazon.com",
+                                "BR": "https://project-wink-mss-na.amazon.com",
+                                "CA": "https://project-wink-mss-na.amazon.com",
+                                "CN": "https://project-wink-mss-na.amazon.com",
+                                "DE": "https://project-wink-mss-eu.amazon.com",
+                                "Default": "https://project-wink-mss-na.amazon.com",
+                                "ES": "https://project-wink-mss-eu.amazon.com",
+                                "FR": "https://project-wink-mss-eu.amazon.com",
+                                "GB": "https://project-wink-mss-eu.amazon.com",
+                                "ID": "https://project-wink-mss-na.amazon.com",
+                                "IN": "https://project-wink-mss-eu.amazon.com",
+                                "IT": "https://project-wink-mss-eu.amazon.com",
+                                "JP": "https://project-wink-mss-fe.amazon.com",
+                                "MX": "https://project-wink-mss-na.amazon.com",
+                                "NL": "https://project-wink-mss-eu.amazon.com",
+                                "RU": "https://project-wink-mss-na.amazon.com",
+                                "SA": "https://project-wink-mss-na.amazon.com",
+                                "TR": "https://project-wink-mss-na.amazon.com",
+                                "US": "https://project-wink-mss-na.amazon.com"
+                            }
+                        }
+                    },
+                    "SoundEffects": {
+                        "Endpoints": {
+                            "PFM": {
+                                "AE": "https://d1wrfc5s2zhef4.cloudfront.net/assets/",
+                                "AU": "https://d1wrfc5s2zhef4.cloudfront.net/assets/",
+                                "BR": "https://d1wrfc5s2zhef4.cloudfront.net/assets/",
+                                "CA": "https://d1wrfc5s2zhef4.cloudfront.net/assets/",
+                                "CN": "https://d1wrfc5s2zhef4.cloudfront.net/assets/",
+                                "DE": "https://d1wrfc5s2zhef4.cloudfront.net/assets/",
+                                "Default": "https://d1wrfc5s2zhef4.cloudfront.net/assets/",
+                                "ES": "https://d1wrfc5s2zhef4.cloudfront.net/assets/",
+                                "FR": "https://d1wrfc5s2zhef4.cloudfront.net/assets/",
+                                "GB": "https://d1wrfc5s2zhef4.cloudfront.net/assets/",
+                                "ID": "https://d1wrfc5s2zhef4.cloudfront.net/assets/",
+                                "IN": "https://d1wrfc5s2zhef4.cloudfront.net/assets/",
+                                "IT": "https://d1wrfc5s2zhef4.cloudfront.net/assets/",
+                                "JP": "https://d1wrfc5s2zhef4.cloudfront.net/assets/",
+                                "MX": "https://d1wrfc5s2zhef4.cloudfront.net/assets/",
+                                "NL": "https://d1wrfc5s2zhef4.cloudfront.net/assets/",
+                                "RU": "https://d1wrfc5s2zhef4.cloudfront.net/assets/",
+                                "SA": "https://d1wrfc5s2zhef4.cloudfront.net/assets/",
+                                "TR": "https://d1wrfc5s2zhef4.cloudfront.net/assets/",
+                                "US": "https://d1wrfc5s2zhef4.cloudfront.net/assets/"
+                            }
+                        },
+                        "TimeoutsSec": {
+                            "Default": "30"
+                        }
+                    }
+                },
+                "Messages": {
+                    "AudioContentCacheSizeMB": 200,
+                    "AudioMessageTimeLimitSec": 45,
+                    "FetchBatchSize": "100",
+                    "TranscriptionTimeout": 45,
+                    "AmazonPhotosLoginLink": "https://www.amazon.com/photos/groups/"
+                },
+                "Notifications": {
+                    "EPMS": {
+                        "RetryTimeoutSec": "60"
+                    }
+                },
+                "Presence": {
+                    "RefreshIntervalSec": {
+                        "GetActiveContacts": 300,
+                        "GetDevices": 300
+                    }
+                },
+                "SIPProxy": {
+                    "Endpoint": "sips:prod.amcs-tachyon.com:443",
+                    "Endpoints": {
+                        "Alpha": "sips:alpha.amcs-tachyon.com",
+                        "Beta": "sips:test.amcs-tachyon.com",
+                        "Gamma": "sips:gamma.amcs-tachyon.com",
+                        "NOTE": "DO NOT USE. Use Endpoint and target using segment instead",
+                        "PFM": {
+                            "AE": "sips:prod.amcs-tachyon.com:443",
+                            "AU": "sips:prod.amcs-tachyon.com:443",
+                            "BR": "sips:prod.amcs-tachyon.com:443",
+                            "CA": "sips:prod.amcs-tachyon.com:443",
+                            "CN": "sips:prod.amcs-tachyon.com:443",
+                            "DE": "sips:prod.amcs-tachyon.com:443",
+                            "Default": "sips:prod.amcs-tachyon.com:443",
+                            "ES": "sips:prod.amcs-tachyon.com:443",
+                            "FR": "sips:prod.amcs-tachyon.com:443",
+                            "GB": "sips:prod.amcs-tachyon.com:443",
+                            "ID": "sips:prod.amcs-tachyon.com:443",
+                            "IN": "sips:prod.amcs-tachyon.com:443",
+                            "IT": "sips:prod.amcs-tachyon.com:443",
+                            "JP": "sips:prod.amcs-tachyon.com:443",
+                            "MX": "sips:prod.amcs-tachyon.com:443",
+                            "NL": "sips:prod.amcs-tachyon.com:443",
+                            "RU": "sips:prod.amcs-tachyon.com:443",
+                            "SA": "sips:prod.amcs-tachyon.com:443",
+                            "TR": "sips:prod.amcs-tachyon.com:443",
+                            "US": "sips:prod.amcs-tachyon.com:443"
+                        },
+                        "Prod": "sips:prod.amcs-tachyon.com"
+                    },
+                    "PstnUriFormats": {
+                        "PFM": {
+                            "AE": "sips:PHONE_NUMBER@amcs-tachyon.com;user=phone",
+                            "AU": "sips:PHONE_NUMBER@amcs-tachyon.com;user=phone",
+                            "BR": "sips:PHONE_NUMBER@amcs-tachyon.com;user=phone",
+                            "CA": "sips:PHONE_NUMBER@amcs-tachyon.com;user=phone",
+                            "CN": "sips:PHONE_NUMBER@amcs-tachyon.com;user=phone",
+                            "DE": "sips:PHONE_NUMBER@amcs-tachyon.com;user=phone",
+                            "Default": "sips:PHONE_NUMBER@amcs-tachyon.com;user=phone",
+                            "ES": "sips:PHONE_NUMBER@amcs-tachyon.com;user=phone",
+                            "FR": "sips:PHONE_NUMBER@amcs-tachyon.com;user=phone",
+                            "GB": "sips:PHONE_NUMBER@amcs-tachyon.com;user=phone",
+                            "ID": "sips:PHONE_NUMBER@amcs-tachyon.com;user=phone",
+                            "IN": "sips:PHONE_NUMBER@amcs-tachyon.com;user=phone",
+                            "IT": "sips:PHONE_NUMBER@amcs-tachyon.com;user=phone",
+                            "JP": "sips:PHONE_NUMBER@amcs-tachyon.com;user=phone",
+                            "MX": "sips:PHONE_NUMBER@amcs-tachyon.com;user=phone",
+                            "NL": "sips:PHONE_NUMBER@amcs-tachyon.com;user=phone",
+                            "RU": "sips:PHONE_NUMBER@amcs-tachyon.com;user=phone",
+                            "SA": "sips:PHONE_NUMBER@amcs-tachyon.com;user=phone",
+                            "TR": "sips:PHONE_NUMBER@amcs-tachyon.com;user=phone",
+                            "US": "sips:PHONE_NUMBER@amcs-tachyon.com;user=phone"
+                        }
+                    },
+                    "Registration": {
+                        "FirstRetryIntervalSec": "0",
+                        "RetryIntervalSec": "20",
+                        "RetryRandomIntervalSec": "10",
+                        "TimeoutSec": "3600"
+                    }
+                },
+                "Telemetry": {
+                    "BatchSize": 30,
+                    "IntervalSec": 60,
+                    "SamplingIntervalSec": 5,
+                    "SendingIntervalSec": 60
+                },
+                "TranscriptionConsent": {
+                    "PFMs" : "DE,JP"
+                }
+            }
+        },
+        {
+            "_desc": "Android",
+            "_rules": {},
+            "segment": {
+                "ACMS": {
+                    "Endpoints": {
+                        "Alpha": "alexa-mobile-service-na-alpha.integ.amazon.com",
+                        "Beta": "alexa-mobile-service-na-beta.integ.amazon.com",
+                        "Gamma": "alexa-comms-mobile-service-na-gamma.amazon.com",
+                        "Prod": "alexa-mobile-service-na-preview.amazon.com"
+                    }
+                },
+                "MediaStorage": {
+                    "Endpoints": {
+                        "Alpha": "alexacomms-relay-na-alpha.integ.amazon.com",
+                        "Beta": "alexa-msg-service.integ.amazon.com",
+                        "Gamma": "acs-relay-preprod.amazon.com",
+                        "Prod": "acs-relay.amazon.com"
+                    }
+                },
+                "Messages": {
+                    "": ""
+                },
+                "Notifications": {
+                    "EPMS": {
+                        "TestField": 1
+                    }
+                },
+                "SIPProxy": {
+                    "Endpoints": {
+                        "Alpha": "alpha.amcs-tachyon.com",
+                        "Beta": "test.amcs-tachyon.com",
+                        "Gamma": "gamma.amcs-tachyon.com",
+                        "Prod": "prod.amcs-tachyon.com"
+                    }
+                },
+                "arcus": {
+                    "ACMS_Endpoint": "https://alexa-comms-mobile-service-na.amazon.com",
+                    "ACMS_Endpoints_Alpha": "alexa-mobile-service-na-alpha.integ.amazon.com",
+                    "ACMS_Endpoints_Beta": "alexa-mobile-service-na-beta.integ.amazon.com",
+                    "ACMS_Endpoints_Gamma": "alexa-comms-mobile-service-na-gamma.amazon.com",
+                    "ACMS_Endpoints_Prod": "alexa-comms-mobile-service-na.amazon.com",
+                    "Arcus_First_Sync_Interval_MilliSeconds": 180000,
+                    "Arcus_Max_Sync_Duration_MilliSeconds": 180000,
+                    "Arcus_Retry_Max_Attempts": 3,
+                    "Arcus_Sync_Interval_MilliSeconds": 86400000,
+                    "Arcus_Sync_Repeat_Interval_MilliSeconds": 3600000,
+                    "Arcus_Sync_Retry_Interval_MilliSeconds": 180000,
+                    "Contacts_MaxConcurrentUpload": 2,
+                    "Contacts_NameMaxLength": 55,
+                    "Contacts_RefreshIntervalSec": 300,
+                    "Contacts_UploadBatchSize": 100,
+                    "MediaStorage_Endpoint_V1": "https://project-wink-mss-na.amazon.com",
+                    "MediaStorage_Endpoints_Alpha_V1": "alexa-mss-na-alpha-ilaw.integ.amazon.com",
+                    "MediaStorage_Endpoints_Beta_V1": "alexa-mss-na-beta-ilaw.integ.amazon.com",
+                    "MediaStorage_Endpoints_Gamma_V1": "project-wink-mss-na-gamma.amazon.com",
+                    "MediaStorage_Endpoints_Prod_V1": "project-wink-mss-na.amazon.com",
+                    "MediaStorage_Timeout": 30,
+                    "Messages_AudioMessageTimeLimitSec": 45000,
+                    "Messages_FetchBatchSize": 100,
+                    "Messages_TranscriptionTimeout": 45000,
+                    "SIPProxy_AOR_Refresh_TimeoutSec": 604800,
+                    "SIPProxy_Endpoint": "sips:prod.amcs-tachyon.com",
+                    "SIPProxy_Endpoints_Alpha": "alpha.amcs-tachyon.com",
+                    "SIPProxy_Endpoints_Beta": "test.amcs-tachyon.com",
+                    "SIPProxy_Endpoints_Gamma": "gamma.amcs-tachyon.com",
+                    "SIPProxy_Endpoints_Prod": "prod.amcs-tachyon.com",
+                    "SIPProxy_Registration_PortNumber": 443,
+                    "SIPProxy_Registration_TimeoutSec": 3600
+                }
+            }
+        },
+        {
+            "_desc": "Alpha",
+            "_rules": {
+                "environment": "alpha"
+            },
+            "segment": {
+                "ACMS": {
+                    "Endpoint": "https://alexa-mobile-service-na-alpha.integ.amazon.com",
+                    "Endpoints": {
+                        "PFM": {
+                            "AE": "https://alexa-mobile-service-na-alpha.integ.amazon.com",
+                            "AU": "https://alexa-mobile-service-na-alpha.integ.amazon.com",
+                            "BR": "https://alexa-mobile-service-na-alpha.integ.amazon.com",
+                            "CA": "https://alexa-mobile-service-na-alpha.integ.amazon.com",
+                            "CN": "https://alexa-mobile-service-na-alpha.integ.amazon.com",
+                            "DE": "https://alexa-mobile-service-na-alpha.integ.amazon.com",
+                            "Default": "https://alexa-mobile-service-na-alpha.integ.amazon.com",
+                            "ES": "https://alexa-mobile-service-na-alpha.integ.amazon.com",
+                            "FR": "https://alexa-mobile-service-na-alpha.integ.amazon.com",
+                            "GB": "https://alexa-mobile-service-na-alpha.integ.amazon.com",
+                            "ID": "https://alexa-mobile-service-na-alpha.integ.amazon.com",
+                            "IN": "https://alexa-mobile-service-na-alpha.integ.amazon.com",
+                            "IT": "https://alexa-mobile-service-na-alpha.integ.amazon.com",
+                            "JP": "https://alexa-mobile-service-na-alpha.integ.amazon.com",
+                            "MX": "https://alexa-mobile-service-na-alpha.integ.amazon.com",
+                            "NL": "https://alexa-mobile-service-na-alpha.integ.amazon.com",
+                            "RU": "https://alexa-mobile-service-na-alpha.integ.amazon.com",
+                            "SA": "https://alexa-mobile-service-na-alpha.integ.amazon.com",
+                            "TR": "https://alexa-mobile-service-na-alpha.integ.amazon.com",
+                            "US": "https://alexa-mobile-service-na-alpha.integ.amazon.com"
+                        }
+                    }
+                },
+                "MediaStorage": {
+                    "Endpoint": "https://alexa-mss-na-alpha-ilaw.integ.amazon.com",
+                    "Endpoints": {
+                        "PFM": {
+                            "AE": "https://alexa-mss-na-alpha-ilaw.integ.amazon.com",
+                            "AU": "https://alexa-mss-na-alpha-ilaw.integ.amazon.com",
+                            "BR": "https://alexa-mss-na-alpha-ilaw.integ.amazon.com",
+                            "CA": "https://alexa-mss-na-alpha-ilaw.integ.amazon.com",
+                            "CN": "https://alexa-mss-na-alpha-ilaw.integ.amazon.com",
+                            "DE": "https://alexa-mss-na-alpha-ilaw.integ.amazon.com",
+                            "Default": "https://alexa-mss-na-alpha-ilaw.integ.amazon.com",
+                            "ES": "https://alexa-mss-na-alpha-ilaw.integ.amazon.com",
+                            "FR": "https://alexa-mss-na-alpha-ilaw.integ.amazon.com",
+                            "GB": "https://alexa-mss-na-alpha-ilaw.integ.amazon.com",
+                            "ID": "https://alexa-mss-na-alpha-ilaw.integ.amazon.com",
+                            "IN": "https://alexa-mss-na-alpha-ilaw.integ.amazon.com",
+                            "IT": "https://alexa-mss-na-alpha-ilaw.integ.amazon.com",
+                            "JP": "https://alexa-mss-na-alpha-ilaw.integ.amazon.com",
+                            "MX": "https://alexa-mss-na-alpha-ilaw.integ.amazon.com",
+                            "NL": "https://alexa-mss-na-alpha-ilaw.integ.amazon.com",
+                            "RU": "https://alexa-mss-na-alpha-ilaw.integ.amazon.com",
+                            "SA": "https://alexa-mss-na-alpha-ilaw.integ.amazon.com",
+                            "TR": "https://alexa-mss-na-alpha-ilaw.integ.amazon.com",
+                            "US": "https://alexa-mss-na-alpha-ilaw.integ.amazon.com"
+                        }
+                    }
+                },
+                "SIPProxy": {
+                    "Endpoint": "sips:alpha.amcs-tachyon.com:443",
+                    "Endpoints": {
+                        "PFM": {
+                            "AE": "sips:alpha.amcs-tachyon.com:443",
+                            "AU": "sips:alpha.amcs-tachyon.com:443",
+                            "BR": "sips:alpha.amcs-tachyon.com:443",
+                            "CA": "sips:alpha.amcs-tachyon.com:443",
+                            "CN": "sips:alpha.amcs-tachyon.com:443",
+                            "DE": "sips:alpha.amcs-tachyon.com:443",
+                            "Default": "sips:alpha.amcs-tachyon.com:443",
+                            "ES": "sips:alpha.amcs-tachyon.com:443",
+                            "FR": "sips:alpha.amcs-tachyon.com:443",
+                            "GB": "sips:alpha.amcs-tachyon.com:443",
+                            "ID": "sips:alpha.amcs-tachyon.com:443",
+                            "IN": "sips:alpha.amcs-tachyon.com:443",
+                            "IT": "sips:alpha.amcs-tachyon.com:443",
+                            "JP": "sips:alpha.amcs-tachyon.com:443",
+                            "MX": "sips:alpha.amcs-tachyon.com:443",
+                            "NL": "sips:alpha.amcs-tachyon.com:443",
+                            "RU": "sips:alpha.amcs-tachyon.com:443",
+                            "SA": "sips:alpha.amcs-tachyon.com:443",
+                            "TR": "sips:alpha.amcs-tachyon.com:443",
+                            "US": "sips:alpha.amcs-tachyon.com:443"
+                        }
+                    },
+                    "PstnUriFormats": {
+                        "PFM": {
+                            "AE": "sips:PHONE_NUMBER@alpha.amcs-tachyon.com;user=phone",
+                            "AU": "sips:PHONE_NUMBER@alpha.amcs-tachyon.com;user=phone",
+                            "BR": "sips:PHONE_NUMBER@alpha.amcs-tachyon.com;user=phone",
+                            "CA": "sips:PHONE_NUMBER@alpha.amcs-tachyon.com;user=phone",
+                            "CN": "sips:PHONE_NUMBER@alpha.amcs-tachyon.com;user=phone",
+                            "DE": "sips:PHONE_NUMBER@alpha.amcs-tachyon.com;user=phone",
+                            "Default": "sips:PHONE_NUMBER@alpha.amcs-tachyon.com;user=phone",
+                            "ES": "sips:PHONE_NUMBER@alpha.amcs-tachyon.com;user=phone",
+                            "FR": "sips:PHONE_NUMBER@alpha.amcs-tachyon.com;user=phone",
+                            "GB": "sips:PHONE_NUMBER@alpha.amcs-tachyon.com;user=phone",
+                            "ID": "sips:PHONE_NUMBER@alpha.amcs-tachyon.com;user=phone",
+                            "IN": "sips:PHONE_NUMBER@alpha.amcs-tachyon.com;user=phone",
+                            "IT": "sips:PHONE_NUMBER@alpha.amcs-tachyon.com;user=phone",
+                            "JP": "sips:PHONE_NUMBER@alpha.amcs-tachyon.com;user=phone",
+                            "MX": "sips:PHONE_NUMBER@alpha.amcs-tachyon.com;user=phone",
+                            "NL": "sips:PHONE_NUMBER@alpha.amcs-tachyon.com;user=phone",
+                            "RU": "sips:PHONE_NUMBER@alpha.amcs-tachyon.com;user=phone",
+                            "SA": "sips:PHONE_NUMBER@alpha.amcs-tachyon.com;user=phone",
+                            "TR": "sips:PHONE_NUMBER@alpha.amcs-tachyon.com;user=phone",
+                            "US": "sips:PHONE_NUMBER@alpha.amcs-tachyon.com;user=phone"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "_desc": "Beta",
+            "_rules": {
+                "environment": "beta"
+            },
+            "segment": {
+                "ACMS": {
+                    "Endpoint": "https://alexa-mobile-service-na-beta.integ.amazon.com",
+                    "Endpoints": {
+                        "PFM": {
+                            "AE": "https://alexa-mobile-service-na-beta.integ.amazon.com",
+                            "AU": "https://alexa-mobile-service-na-beta.integ.amazon.com",
+                            "BR": "https://alexa-mobile-service-na-beta.integ.amazon.com",
+                            "CA": "https://alexa-mobile-service-na-beta.integ.amazon.com",
+                            "CN": "https://alexa-mobile-service-na-beta.integ.amazon.com",
+                            "DE": "https://alexa-mobile-service-na-beta.integ.amazon.com",
+                            "Default": "https://alexa-mobile-service-na-beta.integ.amazon.com",
+                            "ES": "https://alexa-mobile-service-na-beta.integ.amazon.com",
+                            "FR": "https://alexa-mobile-service-na-beta.integ.amazon.com",
+                            "GB": "https://alexa-mobile-service-na-beta.integ.amazon.com",
+                            "ID": "https://alexa-mobile-service-na-beta.integ.amazon.com",
+                            "IN": "https://alexa-mobile-service-na-beta.integ.amazon.com",
+                            "IT": "https://alexa-mobile-service-na-beta.integ.amazon.com",
+                            "JP": "https://alexa-mobile-service-na-beta.integ.amazon.com",
+                            "MX": "https://alexa-mobile-service-na-beta.integ.amazon.com",
+                            "NL": "https://alexa-mobile-service-na-beta.integ.amazon.com",
+                            "RU": "https://alexa-mobile-service-na-beta.integ.amazon.com",
+                            "SA": "https://alexa-mobile-service-na-beta.integ.amazon.com",
+                            "TR": "https://alexa-mobile-service-na-beta.integ.amazon.com",
+                            "US": "https://alexa-mobile-service-na-beta.integ.amazon.com"
+                        }
+                    }
+                },
+                "DUI": {
+                    "Endpoints": {
+                        "PFM": {
+                            "AE": "https://duis-qyo-na-pdx-d-tcp.integ.amazon.com",
+                            "AU": "https://duis-qyo-jp-pdx-d-tcp.integ.amazon.com",
+                            "BR": "https://duis-qyo-na-pdx-d-tcp.integ.amazon.com",
+                            "CA": "https://duis-qyo-na-pdx-d-tcp.integ.amazon.com",
+                            "CN": "https://duis-qyo-na-pdx-d-tcp.integ.amazon.com",
+                            "DE": "https://duis-qyo-eu-pdx-d-tcp.integ.amazon.com",
+                            "Default": "https://duis-qyo-na-pdx-d-tcp.integ.amazon.com",
+                            "ES": "https://duis-qyo-eu-pdx-d-tcp.integ.amazon.com",
+                            "FR": "https://duis-qyo-eu-pdx-d-tcp.integ.amazon.com",
+                            "GB": "https://duis-qyo-eu-pdx-d-tcp.integ.amazon.com",
+                            "ID": "https://duis-qyo-na-pdx-d-tcp.integ.amazon.com",
+                            "IN": "https://duis-qyo-eu-pdx-d-tcp.integ.amazon.com",
+                            "IT": "https://duis-qyo-eu-pdx-d-tcp.integ.amazon.com",
+                            "JP": "https://duis-qyo-jp-pdx-d-tcp.integ.amazon.com",
+                            "MX": "https://duis-qyo-na-pdx-d-tcp.integ.amazon.com",
+                            "NL": "https://duis-qyo-eu-pdx-d-tcp.integ.amazon.com",
+                            "RU": "https://duis-qyo-na-pdx-d-tcp.integ.amazon.com",
+                            "SA": "https://duis-qyo-na-pdx-d-tcp.integ.amazon.com",
+                            "TR": "https://duis-qyo-na-pdx-d-tcp.integ.amazon.com",
+                            "US": "https://duis-qyo-na-pdx-d-tcp.integ.amazon.com"
+                        }
+                    }
+                },
+                "MediaStorage": {
+                    "Endpoint": "https://alexa-mss-na-beta-ilaw.integ.amazon.com",
+                    "Endpoints": {
+                        "PFM": {
+                            "AE": "https://alexa-mss-na-beta-ilaw.integ.amazon.com",
+                            "AU": "https://alexa-mss-na-beta-ilaw.integ.amazon.com",
+                            "BR": "https://alexa-mss-na-beta-ilaw.integ.amazon.com",
+                            "CA": "https://alexa-mss-na-beta-ilaw.integ.amazon.com",
+                            "CN": "https://alexa-mss-na-beta-ilaw.integ.amazon.com",
+                            "DE": "https://alexa-mss-na-beta-ilaw.integ.amazon.com",
+                            "Default": "https://alexa-mss-na-beta-ilaw.integ.amazon.com",
+                            "ES": "https://alexa-mss-na-beta-ilaw.integ.amazon.com",
+                            "FR": "https://alexa-mss-na-beta-ilaw.integ.amazon.com",
+                            "GB": "https://alexa-mss-na-beta-ilaw.integ.amazon.com",
+                            "ID": "https://alexa-mss-na-beta-ilaw.integ.amazon.com",
+                            "IN": "https://alexa-mss-na-beta-ilaw.integ.amazon.com",
+                            "IT": "https://alexa-mss-na-beta-ilaw.integ.amazon.com",
+                            "JP": "https://alexa-mss-na-beta-ilaw.integ.amazon.com",
+                            "MX": "https://alexa-mss-na-beta-ilaw.integ.amazon.com",
+                            "NL": "https://alexa-mss-na-beta-ilaw.integ.amazon.com",
+                            "RU": "https://alexa-mss-na-beta-ilaw.integ.amazon.com",
+                            "SA": "https://alexa-mss-na-beta-ilaw.integ.amazon.com",
+                            "TR": "https://alexa-mss-na-beta-ilaw.integ.amazon.com",
+                            "US": "https://alexa-mss-na-beta-ilaw.integ.amazon.com"
+                        }
+                    }
+                },
+                "SIPProxy": {
+                    "Endpoint": "sips:test.amcs-tachyon.com:443",
+                    "Endpoints": {
+                        "PFM": {
+                            "AE": "sips:test.amcs-tachyon.com:443",
+                            "AU": "sips:test.amcs-tachyon.com:443",
+                            "BR": "sips:test.amcs-tachyon.com:443",
+                            "CA": "sips:test.amcs-tachyon.com:443",
+                            "CN": "sips:test.amcs-tachyon.com:443",
+                            "DE": "sips:test.amcs-tachyon.com:443",
+                            "Default": "sips:test.amcs-tachyon.com:443",
+                            "ES": "sips:test.amcs-tachyon.com:443",
+                            "FR": "sips:test.amcs-tachyon.com:443",
+                            "GB": "sips:test.amcs-tachyon.com:443",
+                            "ID": "sips:test.amcs-tachyon.com:443",
+                            "IN": "sips:test.amcs-tachyon.com:443",
+                            "IT": "sips:test.amcs-tachyon.com:443",
+                            "JP": "sips:test.amcs-tachyon.com:443",
+                            "MX": "sips:test.amcs-tachyon.com:443",
+                            "NL": "sips:test.amcs-tachyon.com:443",
+                            "RU": "sips:test.amcs-tachyon.com:443",
+                            "SA": "sips:test.amcs-tachyon.com:443",
+                            "TR": "sips:test.amcs-tachyon.com:443",
+                            "US": "sips:test.amcs-tachyon.com:443"
+                        }
+                    },
+                    "PstnUriFormats": {
+                        "PFM": {
+                            "AE": "sips:PHONE_NUMBER@test.amcs-tachyon.com;user=phone",
+                            "AU": "sips:PHONE_NUMBER@test.amcs-tachyon.com;user=phone",
+                            "BR": "sips:PHONE_NUMBER@test.amcs-tachyon.com;user=phone",
+                            "CA": "sips:PHONE_NUMBER@test.amcs-tachyon.com;user=phone",
+                            "CN": "sips:PHONE_NUMBER@test.amcs-tachyon.com;user=phone",
+                            "DE": "sips:PHONE_NUMBER@test.amcs-tachyon.com;user=phone",
+                            "Default": "sips:PHONE_NUMBER@test.amcs-tachyon.com;user=phone",
+                            "ES": "sips:PHONE_NUMBER@test.amcs-tachyon.com;user=phone",
+                            "FR": "sips:PHONE_NUMBER@test.amcs-tachyon.com;user=phone",
+                            "GB": "sips:PHONE_NUMBER@test.amcs-tachyon.com;user=phone",
+                            "ID": "sips:PHONE_NUMBER@test.amcs-tachyon.com;user=phone",
+                            "IN": "sips:PHONE_NUMBER@test.amcs-tachyon.com;user=phone",
+                            "IT": "sips:PHONE_NUMBER@test.amcs-tachyon.com;user=phone",
+                            "JP": "sips:PHONE_NUMBER@test.amcs-tachyon.com;user=phone",
+                            "MX": "sips:PHONE_NUMBER@test.amcs-tachyon.com;user=phone",
+                            "NL": "sips:PHONE_NUMBER@test.amcs-tachyon.com;user=phone",
+                            "RU": "sips:PHONE_NUMBER@test.amcs-tachyon.com;user=phone",
+                            "SA": "sips:PHONE_NUMBER@test.amcs-tachyon.com;user=phone",
+                            "TR": "sips:PHONE_NUMBER@test.amcs-tachyon.com;user=phone",
+                            "US": "sips:PHONE_NUMBER@test.amcs-tachyon.com;user=phone"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "_desc": "Gamma",
+            "_rules": {
+                "environment": "gamma"
+            },
+            "segment": {
+                "ACMS": {
+                    "Endpoint": "https://alexa-comms-mobile-service-na-gamma.amazon.com",
+                    "Endpoints": {
+                        "PFM": {
+                            "AE": "https://alexa-comms-mobile-service-na-gamma.amazon.com",
+                            "AU": "https://alexa-comms-mobile-service-na-gamma.amazon.com",
+                            "BR": "https://alexa-comms-mobile-service-na-gamma.amazon.com",
+                            "CA": "https://alexa-comms-mobile-service-na-gamma.amazon.com",
+                            "CN": "https://alexa-comms-mobile-service-na-gamma.amazon.com",
+                            "DE": "https://alexa-comms-mobile-service-na-gamma.amazon.com",
+                            "Default": "https://alexa-comms-mobile-service-na-gamma.amazon.com",
+                            "ES": "https://alexa-comms-mobile-service-na-gamma.amazon.com",
+                            "FR": "https://alexa-comms-mobile-service-na-gamma.amazon.com",
+                            "GB": "https://alexa-comms-mobile-service-na-gamma.amazon.com",
+                            "ID": "https://alexa-comms-mobile-service-na-gamma.amazon.com",
+                            "IN": "https://alexa-comms-mobile-service-na-gamma.amazon.com",
+                            "IT": "https://alexa-comms-mobile-service-na-gamma.amazon.com",
+                            "JP": "https://alexa-comms-mobile-service-na-gamma.amazon.com",
+                            "MX": "https://alexa-comms-mobile-service-na-gamma.amazon.com",
+                            "NL": "https://alexa-comms-mobile-service-na-gamma.amazon.com",
+                            "RU": "https://alexa-comms-mobile-service-na-gamma.amazon.com",
+                            "SA": "https://alexa-comms-mobile-service-na-gamma.amazon.com",
+                            "TR": "https://alexa-comms-mobile-service-na-gamma.amazon.com",
+                            "US": "https://alexa-comms-mobile-service-na-gamma.amazon.com"
+                        }
+                    }
+                },
+                "DUI": {
+                    "Endpoints": {
+                        "PFM": {
+                            "AE": "https://dynamic-ui-service-na-gamma.amazon.com",
+                            "AU": "https://dynamic-ui-service-fe-gamma.amazon.com",
+                            "BR": "https://dynamic-ui-service-na-gamma.amazon.com",
+                            "CA": "https://dynamic-ui-service-na-gamma.amazon.com",
+                            "CN": "https://dynamic-ui-service-na-gamma.amazon.com",
+                            "DE": "https://dynamic-ui-service-eu-gamma.amazon.com",
+                            "Default": "https://dynamic-ui-service-na-gamma.amazon.com",
+                            "ES": "https://dynamic-ui-service-eu-gamma.amazon.com",
+                            "FR": "https://dynamic-ui-service-eu-gamma.amazon.com",
+                            "GB": "https://dynamic-ui-service-eu-gamma.amazon.com",
+                            "ID": "https://dynamic-ui-service-na-gamma.amazon.com",
+                            "IN": "https://dynamic-ui-service-eu-gamma.amazon.com",
+                            "IT": "https://dynamic-ui-service-eu-gamma.amazon.com",
+                            "JP": "https://dynamic-ui-service-fe-gamma.amazon.com",
+                            "MX": "https://dynamic-ui-service-na-gamma.amazon.com",
+                            "NL": "https://dynamic-ui-service-eu-gamma.amazon.com",
+                            "RU": "https://dynamic-ui-service-na-gamma.amazon.com",
+                            "SA": "https://dynamic-ui-service-na-gamma.amazon.com",
+                            "TR": "https://dynamic-ui-service-na-gamma.amazon.com",
+                            "US": "https://dynamic-ui-service-na-gamma.amazon.com"
+                        }
+                    }
+                },
+                "MediaStorage": {
+                    "Endpoint": "https://project-wink-mss-na-gamma.amazon.com",
+                    "Endpoints": {
+                        "PFM": {
+                            "AE": "https://project-wink-mss-na-gamma.amazon.com",
+                            "AU": "https://project-wink-mss-na-gamma.amazon.com",
+                            "BR": "https://project-wink-mss-na-gamma.amazon.com",
+                            "CA": "https://project-wink-mss-na-gamma.amazon.com",
+                            "CN": "https://project-wink-mss-na-gamma.amazon.com",
+                            "DE": "https://project-wink-mss-na-gamma.amazon.com",
+                            "Default": "https://project-wink-mss-na-gamma.amazon.com",
+                            "ES": "https://project-wink-mss-na-gamma.amazon.com",
+                            "FR": "https://project-wink-mss-na-gamma.amazon.com",
+                            "GB": "https://project-wink-mss-na-gamma.amazon.com",
+                            "ID": "https://project-wink-mss-na-gamma.amazon.com",
+                            "IN": "https://project-wink-mss-na-gamma.amazon.com",
+                            "IT": "https://project-wink-mss-na-gamma.amazon.com",
+                            "JP": "https://project-wink-mss-na-gamma.amazon.com",
+                            "MX": "https://project-wink-mss-na-gamma.amazon.com",
+                            "NL": "https://project-wink-mss-na-gamma.amazon.com",
+                            "RU": "https://project-wink-mss-na-gamma.amazon.com",
+                            "SA": "https://project-wink-mss-na-gamma.amazon.com",
+                            "TR": "https://project-wink-mss-na-gamma.amazon.com",
+                            "US": "https://project-wink-mss-na-gamma.amazon.com"
+                        }
+                    }
+                },
+                "SIPProxy": {
+                    "Endpoint": "sips:gamma.amcs-tachyon.com:443",
+                    "Endpoints": {
+                        "PFM": {
+                            "AE": "sips:gamma.amcs-tachyon.com:443",
+                            "AU": "sips:gamma.amcs-tachyon.com:443",
+                            "BR": "sips:gamma.amcs-tachyon.com:443",
+                            "CA": "sips:gamma.amcs-tachyon.com:443",
+                            "CN": "sips:gamma.amcs-tachyon.com:443",
+                            "DE": "sips:gamma.amcs-tachyon.com:443",
+                            "Default": "sips:gamma.amcs-tachyon.com:443",
+                            "ES": "sips:gamma.amcs-tachyon.com:443",
+                            "FR": "sips:gamma.amcs-tachyon.com:443",
+                            "GB": "sips:gamma.amcs-tachyon.com:443",
+                            "ID": "sips:gamma.amcs-tachyon.com:443",
+                            "IN": "sips:gamma.amcs-tachyon.com:443",
+                            "IT": "sips:gamma.amcs-tachyon.com:443",
+                            "JP": "sips:gamma.amcs-tachyon.com:443",
+                            "MX": "sips:gamma.amcs-tachyon.com:443",
+                            "NL": "sips:gamma.amcs-tachyon.com:443",
+                            "RU": "sips:gamma.amcs-tachyon.com:443",
+                            "SA": "sips:gamma.amcs-tachyon.com:443",
+                            "TR": "sips:gamma.amcs-tachyon.com:443",
+                            "US": "sips:gamma.amcs-tachyon.com:443"
+                        }
+                    },
+                    "PstnUriFormats": {
+                        "PFM": {
+                            "AE": "sips:PHONE_NUMBER@gamma.amcs-tachyon.com;user=phone",
+                            "AU": "sips:PHONE_NUMBER@gamma.amcs-tachyon.com;user=phone",
+                            "BR": "sips:PHONE_NUMBER@gamma.amcs-tachyon.com;user=phone",
+                            "CA": "sips:PHONE_NUMBER@gamma.amcs-tachyon.com;user=phone",
+                            "CN": "sips:PHONE_NUMBER@gamma.amcs-tachyon.com;user=phone",
+                            "DE": "sips:PHONE_NUMBER@gamma.amcs-tachyon.com;user=phone",
+                            "Default": "sips:PHONE_NUMBER@gamma.amcs-tachyon.com;user=phone",
+                            "ES": "sips:PHONE_NUMBER@gamma.amcs-tachyon.com;user=phone",
+                            "FR": "sips:PHONE_NUMBER@gamma.amcs-tachyon.com;user=phone",
+                            "GB": "sips:PHONE_NUMBER@gamma.amcs-tachyon.com;user=phone",
+                            "ID": "sips:PHONE_NUMBER@gamma.amcs-tachyon.com;user=phone",
+                            "IN": "sips:PHONE_NUMBER@gamma.amcs-tachyon.com;user=phone",
+                            "IT": "sips:PHONE_NUMBER@gamma.amcs-tachyon.com;user=phone",
+                            "JP": "sips:PHONE_NUMBER@gamma.amcs-tachyon.com;user=phone",
+                            "MX": "sips:PHONE_NUMBER@gamma.amcs-tachyon.com;user=phone",
+                            "NL": "sips:PHONE_NUMBER@gamma.amcs-tachyon.com;user=phone",
+                            "RU": "sips:PHONE_NUMBER@gamma.amcs-tachyon.com;user=phone",
+                            "SA": "sips:PHONE_NUMBER@gamma.amcs-tachyon.com;user=phone",
+                            "TR": "sips:PHONE_NUMBER@gamma.amcs-tachyon.com;user=phone",
+                            "US": "sips:PHONE_NUMBER@gamma.amcs-tachyon.com;user=phone"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

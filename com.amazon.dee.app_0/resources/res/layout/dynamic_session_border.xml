@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:tag="layout/dynamic_session_border_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:tag="binding_1" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/border_touchable" android:importantForAccessibility="no"/>
+</RelativeLayout>

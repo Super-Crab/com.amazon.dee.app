@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="amazon_avs_alarm_icon_height">64dp</dimen>
+    <dimen name="amazon_avs_alarm_icon_width">64dp</dimen>
+    <dimen name="quick_action_circle_height">48dp</dimen>
+    <dimen name="quick_action_circle_width">48dp</dimen>
+    <dimen name="quick_action_item_icon_margin">10dp</dimen>
+    <dimen name="quick_action_item_label_text_size">10sp</dimen>
+    <dimen name="quick_action_item_padding">3dp</dimen>
+    <dimen name="widget_background_radius">20dp</dimen>
+    <dimen name="widget_height">22dp</dimen>
+    <dimen name="widget_width">260dp</dimen>
+</resources>

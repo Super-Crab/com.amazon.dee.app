@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/traffic_error_container" android:background="@color/media_error_dialog_bg" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_gravity="top" android:id="@+id/close_traffic_error" android:layout_width="@dimen/nps_close_now_playing_screen_image_view_height" android:layout_height="@dimen/nps_close_now_playing_screen_image_view_height" android:layout_marginTop="@dimen/nps_msp_logo_view_mt" android:src="@drawable/dm_ic_cancel" android:contentDescription="@string/content_desc_media_close_button" android:layout_marginStart="@dimen/nps_close_now_playing_screen_view_ms"/>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="200dp">
+        <ImageView android:layout_gravity="top|center_horizontal" android:id="@+id/warning_logo" android:layout_width="@dimen/dm_warning_logo_height" android:layout_height="@dimen/dm_warning_logo_width" android:src="@drawable/ic_nav_error"/>
+        <com.amazon.alexa.font.FontTextView android:textSize="@dimen/close_media_error_title_size" android:textColor="@color/DriveMode_TextPrimary" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dm_warning_title_margin_top" android:text="@string/dm_traffic_error" app:fontName="6"/>
+    </LinearLayout>
+</LinearLayout>

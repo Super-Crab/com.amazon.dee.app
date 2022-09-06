@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:tag="layout/alexa_device_background_image_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:background="#1d232b" android:layout_width="match_parent" android:layout_height="56dp" app:contentInsetLeft="6dp" app:contentInsetStart="6dp">
+        <ImageView android:id="@+id/back" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_back_24dp" android:contentDescription="@string/main_back" android:paddingStart="6dp"/>
+        <TextView android:textSize="20sp" android:textColor="@android:color/white" android:ellipsize="end" android:id="@+id/title" android:tag="binding_1" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/alexa_device_background_image_nav_bar_title" android:maxLines="1" android:paddingStart="10dp"/>
+    </androidx.appcompat.widget.Toolbar>
+    <FrameLayout android:id="@+id/fragment_container" android:background="#f0f1ef" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

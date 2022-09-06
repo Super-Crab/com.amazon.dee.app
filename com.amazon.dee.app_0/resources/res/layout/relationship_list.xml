@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ListView android:id="@+id/relationship_list_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@color/divider_line_color" android:dividerHeight="@dimen/divider_height" android:footerDividersEnabled="false" android:paddingStart="@dimen/contact_block_item_padding_start" android:paddingEnd="@dimen/contact_block_item_padding_end"/>
+</LinearLayout>

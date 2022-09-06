@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/alert_button" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/button_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/medium_margin" android:src="@drawable/ic_mosaic_call_emergency" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
+    <com.amazon.alexa.font.FontTextView android:textSize="@dimen/extra_small_text" android:textColor="?attr/mosaicNeutral10" android:id="@+id/button_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/small_margin" android:text="@string/emergency_contacts" android:layout_below="@+id/button_icon" android:layout_centerHorizontal="true" android:lineHeight="@dimen/small_lineheight"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/alert_banner" android:background="@drawable/red_notice_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+        <ImageView android:id="@+id/alert_icon" android:layout_width="@dimen/button_alert_icon_size" android:layout_height="@dimen/button_alert_icon_size" android:src="@drawable/ic_error_inline" android:layout_marginEnd="@dimen/small_margin"/>
+        <com.amazon.alexa.mosaic.view.AdjustedWidthTextView android:textSize="@dimen/extra_small_text" android:textColor="?attr/mosaicNeutral10" android:id="@+id/alert_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="@integer/max_lines_mosaic_card_button_alert_banner" android:lineHeight="@dimen/small_lineheight"/>
+    </LinearLayout>
+</RelativeLayout>

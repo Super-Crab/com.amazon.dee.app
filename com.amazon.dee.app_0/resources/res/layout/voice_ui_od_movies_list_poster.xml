@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:tag="poster" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/image" android:layout_width="0dp" android:layout_height="0dp" android:scaleType="centerCrop" android:contentDescription="@string/voice_ui_od_empty" app:layout_constraintDimensionRatio="27:40" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView android:textSize="@dimen/voice_ui_od_movie_title" android:textColor="?android:attr/textColorPrimary" android:ellipsize="end" android:id="@+id/posterTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:maxLines="1"/>
+    <TextView android:textSize="@dimen/voice_ui_od_font_caption_size" android:textColor="?android:attr/textColorSecondary" android:ellipsize="end" android:id="@+id/details" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:maxLines="1"/>
+    <TextView android:textSize="@dimen/voice_ui_od_font_caption_size" android:textColor="?android:attr/textColorSecondary" android:ellipsize="end" android:id="@+id/description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:maxLines="1"/>
+</LinearLayout>

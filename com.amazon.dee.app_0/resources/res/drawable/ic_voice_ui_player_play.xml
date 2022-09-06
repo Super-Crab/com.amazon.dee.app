@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="24dp" android:width="24dp" android:autoMirrored="true" android:viewportWidth="24" android:viewportHeight="24">
+    <path android:fillColor="?attr/actionButtonColor" android:pathData="M6.091,2.687l14.877,8.444c0.675,0.383,0.675,1.356,0,1.739L6.091,21.313C5.158,21.843,4,21.169,4,20.096V3.904 C4,2.831,5.158,2.157,6.091,2.687z"/>
+</vector>

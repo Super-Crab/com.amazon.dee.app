@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include android:id="@+id/layout_today" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/voice_ui_od_weather_today"/>
+    <include android:id="@+id/layout_detail" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/voice_ui_od_weather_hourly_forecast_container"/>
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/voice_ui_od_weather_daily_forecast_container"/>
+    <include android:id="@+id/vi_padding" layout="@layout/voice_ui_od_padding_to_handle_vi_overlay"/>
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="@dimen/text_ui_od_close_button_size" android:width="@dimen/text_ui_od_close_button_size" android:viewportWidth="24" android:viewportHeight="24">
+    <path android:fillColor="?attr/textUiCloseButtonColor" android:pathData="M13.414,12 L19.707,5.707 C20.098,5.316,20.098,4.684,19.707,4.293 S18.684,3.902,18.293,4.293 L12,10.586 L5.707,4.293 C5.316,3.902,4.684,3.902,4.293,4.293 S3.902,5.316,4.293,5.707 L10.586,12 L4.293,18.293 C3.902,18.684,3.902,19.316,4.293,19.707 C4.488,19.902,4.744,20,5,20 S5.512,19.902,5.707,19.707 L12,13.414 L18.293,19.707 C18.488,19.902,18.744,20,19,20 S19.512,19.902,19.707,19.707 C20.098,19.316,20.098,18.684,19.707,18.293 L13.414,12 Z"/>
+</vector>

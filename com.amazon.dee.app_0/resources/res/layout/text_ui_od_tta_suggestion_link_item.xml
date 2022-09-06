@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/suggestion_link_item" android:background="@drawable/text_ui_od_alexa_suggestion_item_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/text_ui_od_suggestion_item_min_height">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/text_ui_od_suggestion_item_common_margin" android:layout_centerVertical="true" android:layout_toStartOf="@+id/chevron_image_view">
+        <com.amazon.alexa.font.FontTextView android:textSize="@dimen/text_ui_od_suggestion_item_primary_text_size" android:textColor="@color/text_ui_od_suggestions_primary_text_color" android:id="@+id/suggestion_link_title" android:layout_width="match_parent" android:layout_height="wrap_content" app:fontName="16"/>
+        <Space android:layout_width="0dp" android:layout_height="@dimen/text_ui_od_suggestion_item_line_divider_height"/>
+        <com.amazon.alexa.font.FontTextView android:textSize="@dimen/text_ui_od_suggestion_item_secondary_text_size" android:textColor="@color/text_ui_od_suggestions_secondary_text_color" android:id="@+id/suggestion_link_description" android:layout_width="match_parent" android:layout_height="wrap_content" app:fontName="16"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/chevron_image_view" android:layout_width="@dimen/text_ui_od_suggestion_item_icon_size" android:layout_height="@dimen/text_ui_od_suggestion_item_icon_size" android:src="@drawable/ic_od_chevron_right" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/text_ui_od_suggestion_item_common_margin" android:layout_alignParentEnd="true"/>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+package com.amazon.alexa.fitness.configuration;
+
+import kotlin.Metadata;
+/* compiled from: ConfigurationProvider.kt */
+@Metadata(bv = {1, 0, 3}, d1 = {"\u0000&\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\bf\u0018\u00002\u00020\u00012\u00020\u00022\u00020\u00032\u00020\u00042\u00020\u00052\u00020\u00062\u00020\u00072\u00020\b¨\u0006\t"}, d2 = {"Lcom/amazon/alexa/fitness/configuration/ConfigurationProvider;", "Lcom/amazon/alexa/fitness/configuration/AlexaFitnessCapabilityAgentServiceConfigurationProvider;", "Lcom/amazon/alexa/fitness/configuration/CacheProviderConfigurationProvider;", "Lcom/amazon/alexa/fitness/configuration/FitnessAccessorySessionMonitorConfigurationProvider;", "Lcom/amazon/alexa/fitness/configuration/FitnessDataHandlerConfigurationProvider;", "Lcom/amazon/alexa/fitness/configuration/FitnessSessionCommandReceiverConfigurationProvider;", "Lcom/amazon/alexa/fitness/configuration/RecoveryConfigurationProvider;", "Lcom/amazon/alexa/fitness/configuration/SpeechletEventEmitterConfigurationProvider;", "Lcom/amazon/alexa/fitness/configuration/UserProfileServiceConfigurationProvider;", "AlexaMobileAndroidFitnessExtension_release"}, k = 1, mv = {1, 1, 16})
+/* loaded from: classes8.dex */
+public interface ConfigurationProvider extends AlexaFitnessCapabilityAgentServiceConfigurationProvider, CacheProviderConfigurationProvider, FitnessAccessorySessionMonitorConfigurationProvider, FitnessDataHandlerConfigurationProvider, FitnessSessionCommandReceiverConfigurationProvider, RecoveryConfigurationProvider, SpeechletEventEmitterConfigurationProvider, UserProfileServiceConfigurationProvider {
+}

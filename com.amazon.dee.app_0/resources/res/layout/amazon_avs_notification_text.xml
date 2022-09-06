@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="@dimen/amazon_avs_notification_max_height">
+    <include layout="@layout/amazon_avs_notification_tap_to_talk_button"/>
+    <TextView android:id="@+id/amazon_avs_notification_alexa_state_description" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toStartOf="@+id/amazon_avs_notification_tap_to_talk_button" android:layout_alignParentStart="true" style="@style/AlexaTheme.Notification.Body"/>
+</RelativeLayout>

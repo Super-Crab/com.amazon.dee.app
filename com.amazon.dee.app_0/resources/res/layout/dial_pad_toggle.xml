@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" style="@style/FloatingActionButtonWrapper">
+    <ImageButton android:id="@+id/dialPadToggleButton" android:background="@drawable/selector_call_toggle_button_background" android:layout_width="@dimen/call_buttons_width" android:layout_height="@dimen/call_buttons_width" android:src="@drawable/selector_toggle_dial_pad" android:layout_centerHorizontal="true" android:contentDescription="@string/dialpad_button"/>
+</RelativeLayout>

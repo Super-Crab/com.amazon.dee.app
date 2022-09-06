@@ -1,0 +1,455 @@
+{
+  "xhdpi": {
+    "amazon-contacts": {
+      "img_contact_access_learn_more": {
+        "url": "amazon-contacts/img_contact_access_learn_more/xhdpi/img_contact_access_learn_more.d06c5f197fb0f9c84742.webp"
+      },
+      "img_home_emergency_contact_calling": {
+        "url": "amazon-contacts/img_home_emergency_contact_calling/xhdpi/img_home_emergency_contact_calling.1dbc264235f2da10ff2b.webp"
+      }
+    },
+    "calling": {
+      "echo_show_comms_drop_in_pop_up": {
+        "url": "calling/echo_show_comms_drop_in_pop_up/xhdpi/echo_show_comms_drop_in_pop_up.50e5f2c6087fbd498105.webp"
+      }
+    },
+    "home-channel": {
+      "ic_main_menu_help_feedback": {
+        "url": "home-channel/ic_main_menu_help_feedback/xhdpi/ic_main_menu_help_feedback.03c94fab347a7f6fe494.webp"
+      }
+    },
+    "otg-growth": {
+      "img_echoauto_oobe_3": {
+        "url": "otg-growth/img_echoauto_oobe_3/xhdpi/img_echoauto_oobe_3.40a7711172bc21f06a0b.webp"
+      },
+      "img_echoauto_oobe_4": {
+        "url": "otg-growth/img_echoauto_oobe_4/xhdpi/img_echoauto_oobe_4.77801113df80ec3e5e54.webp"
+      },
+      "img_echoauto_oobe_6": {
+        "url": "otg-growth/img_echoauto_oobe_6/xhdpi/img_echoauto_oobe_6.9c91afdb370a9cbe1256.webp"
+      },
+      "img_echoauto_oobe_attach_vent": {
+        "url": "otg-growth/img_echoauto_oobe_attach_vent/xhdpi/img_echoauto_oobe_attach_vent.142d1b40285a3dfeb408.webp"
+      },
+      "img_echoauto_oobe_attach_vent_reversed": {
+        "url": "otg-growth/img_echoauto_oobe_attach_vent_reversed/xhdpi/img_echoauto_oobe_attach_vent_reversed.3128135e0c15d3b8e05f.webp"
+      },
+      "img_echoauto_oobe_disconnect_aux": {
+        "url": "otg-growth/img_echoauto_oobe_disconnect_aux/xhdpi/img_echoauto_oobe_disconnect_aux.8a5603d372ae42b81f7b.webp"
+      },
+      "img_echoauto_oobe_disconnect_aux_reversed": {
+        "url": "otg-growth/img_echoauto_oobe_disconnect_aux_reversed/xhdpi/img_echoauto_oobe_disconnect_aux_reversed.9b30c59b6fded59f18bd.webp"
+      },
+      "img_echoauto_oobe_place_dash": {
+        "url": "otg-growth/img_echoauto_oobe_place_dash/xhdpi/img_echoauto_oobe_place_dash.e3ae9f5fae9d5a8ebb0b.webp"
+      },
+      "img_echoauto_oobe_place_dash_reversed": {
+        "url": "otg-growth/img_echoauto_oobe_place_dash_reversed/xhdpi/img_echoauto_oobe_place_dash_reversed.4374b07d27308e70a8fd.webp"
+      },
+      "img_ellington_fit_test_start_test": {
+        "url": "otg-growth/img_ellington_fit_test_start_test/xhdpi/img_ellington_fit_test_start_test.3e400a5b7b540cb29617.webp"
+      },
+      "img_muffin_oobe_alexa_app_sync": {
+        "url": "otg-growth/img_muffin_oobe_alexa_app_sync/xhdpi/img_muffin_oobe_alexa_app_sync.b74ff95d251a735086d8.webp"
+      },
+      "img_muffin_oobe_aux_plug_in": {
+        "url": "otg-growth/img_muffin_oobe_aux_plug_in/xhdpi/img_muffin_oobe_aux_plug_in.d0fdae7402cc2fac6362.webp"
+      },
+      "img_muffin_oobe_aux_select": {
+        "url": "otg-growth/img_muffin_oobe_aux_select/xhdpi/img_muffin_oobe_aux_select.bbdd8215697f7f5837c9.webp"
+      },
+      "img_muffin_oobe_bluetooth_select": {
+        "url": "otg-growth/img_muffin_oobe_bluetooth_select/xhdpi/img_muffin_oobe_bluetooth_select.3c3a11444da114ee557e.webp"
+      },
+      "img_muffin_oobe_volume_max": {
+        "url": "otg-growth/img_muffin_oobe_volume_max/xhdpi/img_muffin_oobe_volume_max.ce76ed22b80cb2c42c62.webp"
+      },
+      "img_puget_eartip_fit_audio_quality_test": {
+        "url": "otg-growth/img_puget_eartip_fit_audio_quality_test/xhdpi/img_puget_eartip_fit_audio_quality_test.8edecea8fac5017ca28e.webp"
+      }
+    },
+    "test": {
+      "communityFinding": {
+        "url": "test/communityFinding/xhdpi/communityFinding.6fe1accbbb4cea5ab689.png"
+      },
+      "testing123": {
+        "url": "test/testing123/xhdpi/test_img.6fe1accbbb4cea5ab689.png"
+      }
+    }
+  },
+  "xxhdpi": {
+    "amazon-contacts": {
+      "img_contact_access_learn_more": {
+        "url": "amazon-contacts/img_contact_access_learn_more/xxhdpi/img_contact_access_learn_more.7334285f17721b39c202.webp"
+      },
+      "img_home_emergency_contact_calling": {
+        "url": "amazon-contacts/img_home_emergency_contact_calling/xxhdpi/img_home_emergency_contact_calling.c4566480d5f8415936ea.webp"
+      }
+    },
+    "calling": {
+      "echo_show_comms_drop_in_pop_up": {
+        "url": "calling/echo_show_comms_drop_in_pop_up/xxhdpi/echo_show_comms_drop_in_pop_up.5fa7fc78a1ba25061f9c.webp"
+      }
+    },
+    "home-channel": {
+      "ic_main_menu_help_feedback": {
+        "url": "home-channel/ic_main_menu_help_feedback/xxhdpi/ic_main_menu_help_feedback.1db9891f4493caf8d42b.webp"
+      }
+    },
+    "otg-growth": {
+      "img_echoauto_oobe_3": {
+        "url": "otg-growth/img_echoauto_oobe_3/xxhdpi/img_echoauto_oobe_3.329f891e2ec78344d935.webp"
+      },
+      "img_echoauto_oobe_4": {
+        "url": "otg-growth/img_echoauto_oobe_4/xxhdpi/img_echoauto_oobe_4.1654570ea49060901351.webp"
+      },
+      "img_echoauto_oobe_6": {
+        "url": "otg-growth/img_echoauto_oobe_6/xxhdpi/img_echoauto_oobe_6.b9fcb77e10a0386c4627.webp"
+      },
+      "img_echoauto_oobe_attach_vent": {
+        "url": "otg-growth/img_echoauto_oobe_attach_vent/xxhdpi/img_echoauto_oobe_attach_vent.2501f2767fa89d6096e9.webp"
+      },
+      "img_echoauto_oobe_attach_vent_reversed": {
+        "url": "otg-growth/img_echoauto_oobe_attach_vent_reversed/xxhdpi/img_echoauto_oobe_attach_vent_reversed.bdcab53689fdae41acfc.webp"
+      },
+      "img_echoauto_oobe_disconnect_aux": {
+        "url": "otg-growth/img_echoauto_oobe_disconnect_aux/xxhdpi/img_echoauto_oobe_disconnect_aux.3547c38e1ee63ed45443.webp"
+      },
+      "img_echoauto_oobe_disconnect_aux_reversed": {
+        "url": "otg-growth/img_echoauto_oobe_disconnect_aux_reversed/xxhdpi/img_echoauto_oobe_disconnect_aux_reversed.e51923e7ec829655fadb.webp"
+      },
+      "img_echoauto_oobe_place_dash": {
+        "url": "otg-growth/img_echoauto_oobe_place_dash/xxhdpi/img_echoauto_oobe_place_dash.0191f27effff78fa22f8.webp"
+      },
+      "img_echoauto_oobe_place_dash_reversed": {
+        "url": "otg-growth/img_echoauto_oobe_place_dash_reversed/xxhdpi/img_echoauto_oobe_place_dash_reversed.2ec867b87258932e28fb.webp"
+      },
+      "img_ellington_fit_test_start_test": {
+        "url": "otg-growth/img_ellington_fit_test_start_test/xxhdpi/img_ellington_fit_test_start_test.c9a8236a4cc05ba151f4.webp"
+      },
+      "img_muffin_oobe_alexa_app_sync": {
+        "url": "otg-growth/img_muffin_oobe_alexa_app_sync/xxhdpi/img_muffin_oobe_alexa_app_sync.3004e7836a0a355ddb8a.webp"
+      },
+      "img_muffin_oobe_aux_plug_in": {
+        "url": "otg-growth/img_muffin_oobe_aux_plug_in/xxhdpi/img_muffin_oobe_aux_plug_in.2d77a235245ce20108cf.webp"
+      },
+      "img_muffin_oobe_aux_select": {
+        "url": "otg-growth/img_muffin_oobe_aux_select/xxhdpi/img_muffin_oobe_aux_select.c5ba7fab3f55f6566352.webp"
+      },
+      "img_muffin_oobe_bluetooth_select": {
+        "url": "otg-growth/img_muffin_oobe_bluetooth_select/xxhdpi/img_muffin_oobe_bluetooth_select.af5fac6b56e343d3ae99.webp"
+      },
+      "img_muffin_oobe_volume_max": {
+        "url": "otg-growth/img_muffin_oobe_volume_max/xxhdpi/img_muffin_oobe_volume_max.1252ad0ab17fb7646cf6.webp"
+      },
+      "img_puget_eartip_fit_audio_quality_test": {
+        "url": "otg-growth/img_puget_eartip_fit_audio_quality_test/xxhdpi/img_puget_eartip_fit_audio_quality_test.2f87316252f2dbbfb5f6.webp"
+      }
+    },
+    "test": {
+      "communityFinding": {
+        "url": "test/communityFinding/default/communityFinding.6fe1accbbb4cea5ab689.png"
+      }
+    }
+  },
+  "default": {
+    "amazon-contacts": {
+      "img_contact_access_learn_more": {
+        "url": "amazon-contacts/img_contact_access_learn_more/default/img_contact_access_learn_more.38da4e796450179e084c.webp"
+      },
+      "img_home_emergency_contact_calling": {
+        "url": "amazon-contacts/img_home_emergency_contact_calling/default/img_home_emergency_contact_calling.4cc11701592d477738d1.webp"
+      }
+    },
+    "calling": {
+      "echo_show_comms_drop_in_pop_up": {
+        "url": "calling/echo_show_comms_drop_in_pop_up/default/echo_show_comms_drop_in_pop_up.da90f4e506858be03a05.webp"
+      }
+    },
+    "home-channel": {
+      "ic_main_menu_help_feedback": {
+        "url": "home-channel/ic_main_menu_help_feedback/default/ic_main_menu_help_feedback.1c3b8f940963c2b936e5.webp"
+      }
+    },
+    "otg-growth": {
+      "img_echoauto_oobe_3": {
+        "url": "otg-growth/img_echoauto_oobe_3/default/img_echoauto_oobe_3.29e0ea8ab82002c35e10.webp"
+      },
+      "img_echoauto_oobe_4": {
+        "url": "otg-growth/img_echoauto_oobe_4/default/img_echoauto_oobe_4.7f8c31ad6ad9ea081409.webp"
+      },
+      "img_echoauto_oobe_6": {
+        "url": "otg-growth/img_echoauto_oobe_6/default/img_echoauto_oobe_6.4da3aa31dc341f21925e.webp"
+      },
+      "img_echoauto_oobe_attach_vent": {
+        "url": "otg-growth/img_echoauto_oobe_attach_vent/default/img_echoauto_oobe_attach_vent.cf320e846f3c3d442523.webp"
+      },
+      "img_echoauto_oobe_attach_vent_reversed": {
+        "url": "otg-growth/img_echoauto_oobe_attach_vent_reversed/default/img_echoauto_oobe_attach_vent_reversed.3270c1bb507a85770df6.webp"
+      },
+      "img_echoauto_oobe_disconnect_aux": {
+        "url": "otg-growth/img_echoauto_oobe_disconnect_aux/default/img_echoauto_oobe_disconnect_aux.fba5692f3da7ab63615e.webp"
+      },
+      "img_echoauto_oobe_disconnect_aux_reversed": {
+        "url": "otg-growth/img_echoauto_oobe_disconnect_aux_reversed/default/img_echoauto_oobe_disconnect_aux_reversed.970e4d653d44e1d15a68.webp"
+      },
+      "img_echoauto_oobe_place_dash": {
+        "url": "otg-growth/img_echoauto_oobe_place_dash/default/img_echoauto_oobe_place_dash.4b677527e985d6788769.webp"
+      },
+      "img_echoauto_oobe_place_dash_reversed": {
+        "url": "otg-growth/img_echoauto_oobe_place_dash_reversed/default/img_echoauto_oobe_place_dash_reversed.d0f1e3d2cd85c6b74546.webp"
+      },
+      "img_ellington_fit_test_start_test": {
+        "url": "otg-growth/img_ellington_fit_test_start_test/default/img_ellington_fit_test_start_test.fbbca61b0cfae54f41d2.webp"
+      },
+      "img_muffin_oobe_alexa_app_sync": {
+        "url": "otg-growth/img_muffin_oobe_alexa_app_sync/default/img_muffin_oobe_alexa_app_sync.f493d209f6ed6168a8c4.webp"
+      },
+      "img_muffin_oobe_aux_plug_in": {
+        "url": "otg-growth/img_muffin_oobe_aux_plug_in/default/img_muffin_oobe_aux_plug_in.e4806af7b858682fa3b4.webp"
+      },
+      "img_muffin_oobe_aux_select": {
+        "url": "otg-growth/img_muffin_oobe_aux_select/default/img_muffin_oobe_aux_select.f5fa4fb76f2d44e33d1e.webp"
+      },
+      "img_muffin_oobe_bluetooth_select": {
+        "url": "otg-growth/img_muffin_oobe_bluetooth_select/default/img_muffin_oobe_bluetooth_select.1b0d2c2452ade562c385.webp"
+      },
+      "img_muffin_oobe_volume_max": {
+        "url": "otg-growth/img_muffin_oobe_volume_max/default/img_muffin_oobe_volume_max.d74aac44a14c353f1766.webp"
+      },
+      "img_puget_eartip_fit_audio_quality_test": {
+        "url": "otg-growth/img_puget_eartip_fit_audio_quality_test/default/img_puget_eartip_fit_audio_quality_test.ddd3b25f9c46ee78b9be.webp"
+      }
+    },
+    "test": {
+      "communityFinding": {
+        "url": "test/communityFinding/default/communityFinding.6fe1accbbb4cea5ab689.png"
+      }
+    }
+  },
+  "hdpi": {
+    "amazon-contacts": {
+      "img_contact_access_learn_more": {
+        "url": "amazon-contacts/img_contact_access_learn_more/hdpi/img_contact_access_learn_more.38da4e796450179e084c.webp"
+      },
+      "img_home_emergency_contact_calling": {
+        "url": "amazon-contacts/img_home_emergency_contact_calling/hdpi/img_home_emergency_contact_calling.4cc11701592d477738d1.webp"
+      }
+    },
+    "calling": {
+      "echo_show_comms_drop_in_pop_up": {
+        "url": "calling/echo_show_comms_drop_in_pop_up/hdpi/echo_show_comms_drop_in_pop_up.da90f4e506858be03a05.webp"
+      }
+    },
+    "home-channel": {
+      "ic_main_menu_help_feedback": {
+        "url": "home-channel/ic_main_menu_help_feedback/hdpi/ic_main_menu_help_feedback.1c3b8f940963c2b936e5.webp"
+      }
+    },
+    "otg-growth": {
+      "img_echoauto_oobe_3": {
+        "url": "otg-growth/img_echoauto_oobe_3/hdpi/img_echoauto_oobe_3.3ec3ce615cec1cc556c4.webp"
+      },
+      "img_echoauto_oobe_4": {
+        "url": "otg-growth/img_echoauto_oobe_4/hdpi/img_echoauto_oobe_4.8714fce7e501f1e24258.webp"
+      },
+      "img_echoauto_oobe_6": {
+        "url": "otg-growth/img_echoauto_oobe_6/hdpi/img_echoauto_oobe_6.003a13c2c8a29b7ffc28.webp"
+      },
+      "img_echoauto_oobe_attach_vent": {
+        "url": "otg-growth/img_echoauto_oobe_attach_vent/hdpi/img_echoauto_oobe_attach_vent.e5debe6d55ab42493b4c.webp"
+      },
+      "img_echoauto_oobe_attach_vent_reversed": {
+        "url": "otg-growth/img_echoauto_oobe_attach_vent_reversed/hdpi/img_echoauto_oobe_attach_vent_reversed.8392a3b778de21d9c6c1.webp"
+      },
+      "img_echoauto_oobe_disconnect_aux": {
+        "url": "otg-growth/img_echoauto_oobe_disconnect_aux/hdpi/img_echoauto_oobe_disconnect_aux.bdbe407ec8d450c40969.webp"
+      },
+      "img_echoauto_oobe_disconnect_aux_reversed": {
+        "url": "otg-growth/img_echoauto_oobe_disconnect_aux_reversed/hdpi/img_echoauto_oobe_disconnect_aux_reversed.edfef58c62942a66eec6.webp"
+      },
+      "img_echoauto_oobe_place_dash": {
+        "url": "otg-growth/img_echoauto_oobe_place_dash/hdpi/img_echoauto_oobe_place_dash.0cf05863c7df2f728bcf.webp"
+      },
+      "img_echoauto_oobe_place_dash_reversed": {
+        "url": "otg-growth/img_echoauto_oobe_place_dash_reversed/hdpi/img_echoauto_oobe_place_dash_reversed.ee37c70e10a1cc183b8f.webp"
+      },
+      "img_ellington_fit_test_start_test": {
+        "url": "otg-growth/img_ellington_fit_test_start_test/hdpi/img_ellington_fit_test_start_test.2bdf21b56d653e0761dc.webp"
+      },
+      "img_muffin_oobe_alexa_app_sync": {
+        "url": "otg-growth/img_muffin_oobe_alexa_app_sync/hdpi/img_muffin_oobe_alexa_app_sync.cd78505e3d1864738ff3.webp"
+      },
+      "img_muffin_oobe_aux_plug_in": {
+        "url": "otg-growth/img_muffin_oobe_aux_plug_in/hdpi/img_muffin_oobe_aux_plug_in.e63ee1c7aa9542cbb0ce.webp"
+      },
+      "img_muffin_oobe_aux_select": {
+        "url": "otg-growth/img_muffin_oobe_aux_select/hdpi/img_muffin_oobe_aux_select.abad3341e1cb4f98312d.webp"
+      },
+      "img_muffin_oobe_bluetooth_select": {
+        "url": "otg-growth/img_muffin_oobe_bluetooth_select/hdpi/img_muffin_oobe_bluetooth_select.c7a6b1fe5880a339f55c.webp"
+      },
+      "img_muffin_oobe_volume_max": {
+        "url": "otg-growth/img_muffin_oobe_volume_max/hdpi/img_muffin_oobe_volume_max.5cc7f9299baba0c399f7.webp"
+      },
+      "img_puget_eartip_fit_audio_quality_test": {
+        "url": "otg-growth/img_puget_eartip_fit_audio_quality_test/hdpi/img_puget_eartip_fit_audio_quality_test.de9bd93dea58533535e6.webp"
+      }
+    },
+    "test": {
+      "communityFinding": {
+        "url": "test/communityFinding/default/communityFinding.6fe1accbbb4cea5ab689.png"
+      }
+    }
+  },
+  "mdpi": {
+    "amazon-contacts": {
+      "img_contact_access_learn_more": {
+        "url": "amazon-contacts/img_contact_access_learn_more/mdpi/img_contact_access_learn_more.47ee113bd59b58a88c52.webp"
+      },
+      "img_home_emergency_contact_calling": {
+        "url": "amazon-contacts/img_home_emergency_contact_calling/mdpi/img_home_emergency_contact_calling.9b60cc87ae5cc87fc659.webp"
+      }
+    },
+    "calling": {
+      "echo_show_comms_drop_in_pop_up": {
+        "url": "calling/echo_show_comms_drop_in_pop_up/mdpi/echo_show_comms_drop_in_pop_up.da90f4e506858be03a05.webp"
+      }
+    },
+    "home-channel": {
+      "ic_main_menu_help_feedback": {
+        "url": "home-channel/ic_main_menu_help_feedback/mdpi/ic_main_menu_help_feedback.f8bc27eab9125337b163.webp"
+      }
+    },
+    "otg-growth": {
+      "img_echoauto_oobe_3": {
+        "url": "otg-growth/img_echoauto_oobe_3/mdpi/img_echoauto_oobe_3.8d6250f75e90833cfe53.webp"
+      },
+      "img_echoauto_oobe_4": {
+        "url": "otg-growth/img_echoauto_oobe_4/mdpi/img_echoauto_oobe_4.e0b70470c160152b274c.webp"
+      },
+      "img_echoauto_oobe_6": {
+        "url": "otg-growth/img_echoauto_oobe_6/mdpi/img_echoauto_oobe_6.43853e7378bdaaf452b1.webp"
+      },
+      "img_echoauto_oobe_attach_vent": {
+        "url": "otg-growth/img_echoauto_oobe_attach_vent/mdpi/img_echoauto_oobe_attach_vent.e5debe6d55ab42493b4c.webp"
+      },
+      "img_echoauto_oobe_attach_vent_reversed": {
+        "url": "otg-growth/img_echoauto_oobe_attach_vent_reversed/mdpi/img_echoauto_oobe_attach_vent_reversed.457a2d51714d52d0194f.webp"
+      },
+      "img_echoauto_oobe_disconnect_aux": {
+        "url": "otg-growth/img_echoauto_oobe_disconnect_aux/mdpi/img_echoauto_oobe_disconnect_aux.bdbe407ec8d450c40969.webp"
+      },
+      "img_echoauto_oobe_disconnect_aux_reversed": {
+        "url": "otg-growth/img_echoauto_oobe_disconnect_aux_reversed/mdpi/img_echoauto_oobe_disconnect_aux_reversed.2433017ccd7658f35431.webp"
+      },
+      "img_echoauto_oobe_place_dash": {
+        "url": "otg-growth/img_echoauto_oobe_place_dash/mdpi/img_echoauto_oobe_place_dash.0cf05863c7df2f728bcf.webp"
+      },
+      "img_echoauto_oobe_place_dash_reversed": {
+        "url": "otg-growth/img_echoauto_oobe_place_dash_reversed/mdpi/img_echoauto_oobe_place_dash_reversed.3c4b14ec6472327451c0.webp"
+      },
+      "img_ellington_fit_test_start_test": {
+        "url": "otg-growth/img_ellington_fit_test_start_test/mdpi/img_ellington_fit_test_start_test.2bdf21b56d653e0761dc.webp"
+      },
+      "img_muffin_oobe_alexa_app_sync": {
+        "url": "otg-growth/img_muffin_oobe_alexa_app_sync/mdpi/img_muffin_oobe_alexa_app_sync.adf283479ea973930504.webp"
+      },
+      "img_muffin_oobe_aux_plug_in": {
+        "url": "otg-growth/img_muffin_oobe_aux_plug_in/mdpi/img_muffin_oobe_aux_plug_in.17a82d616b73dc49020f.webp"
+      },
+      "img_muffin_oobe_aux_select": {
+        "url": "otg-growth/img_muffin_oobe_aux_select/mdpi/img_muffin_oobe_aux_select.86dc30b6776c5374210b.webp"
+      },
+      "img_muffin_oobe_bluetooth_select": {
+        "url": "otg-growth/img_muffin_oobe_bluetooth_select/mdpi/img_muffin_oobe_bluetooth_select.1075939ece5201928a97.webp"
+      },
+      "img_muffin_oobe_volume_max": {
+        "url": "otg-growth/img_muffin_oobe_volume_max/mdpi/img_muffin_oobe_volume_max.c6002be4d23266bd06a7.webp"
+      },
+      "img_puget_eartip_fit_audio_quality_test": {
+        "url": "otg-growth/img_puget_eartip_fit_audio_quality_test/mdpi/img_puget_eartip_fit_audio_quality_test.44ae193f6459c53eb169.webp"
+      }
+    },
+    "test": {
+      "communityFinding": {
+        "url": "test/communityFinding/default/communityFinding.6fe1accbbb4cea5ab689.png"
+      }
+    }
+  },
+  "xxxhdpi": {
+    "amazon-contacts": {
+      "img_contact_access_learn_more": {
+        "url": "amazon-contacts/img_contact_access_learn_more/xxxhdpi/img_contact_access_learn_more.14ca2c63052f53defb92.webp"
+      },
+      "img_home_emergency_contact_calling": {
+        "url": "amazon-contacts/img_home_emergency_contact_calling/xxxhdpi/img_home_emergency_contact_calling.94ddab58682dd8a5322b.webp"
+      }
+    },
+    "calling": {
+      "echo_show_comms_drop_in_pop_up": {
+        "url": "calling/echo_show_comms_drop_in_pop_up/xxxhdpi/echo_show_comms_drop_in_pop_up.5fa7fc78a1ba25061f9c.webp"
+      }
+    },
+    "home-channel": {
+      "ic_main_menu_help_feedback": {
+        "url": "home-channel/ic_main_menu_help_feedback/xxxhdpi/ic_main_menu_help_feedback.d8739874e7626861d741.png"
+      }
+    },
+    "otg-growth": {
+      "img_echoauto_oobe_3": {
+        "url": "otg-growth/img_echoauto_oobe_3/xxxhdpi/img_echoauto_oobe_3.29e0ea8ab82002c35e10.webp"
+      },
+      "img_echoauto_oobe_4": {
+        "url": "otg-growth/img_echoauto_oobe_4/xxxhdpi/img_echoauto_oobe_4.7f8c31ad6ad9ea081409.webp"
+      },
+      "img_echoauto_oobe_6": {
+        "url": "otg-growth/img_echoauto_oobe_6/xxxhdpi/img_echoauto_oobe_6.4da3aa31dc341f21925e.webp"
+      },
+      "img_echoauto_oobe_attach_vent": {
+        "url": "otg-growth/img_echoauto_oobe_attach_vent/xxxhdpi/img_echoauto_oobe_attach_vent.cf320e846f3c3d442523.webp"
+      },
+      "img_echoauto_oobe_attach_vent_reversed": {
+        "url": "otg-growth/img_echoauto_oobe_attach_vent_reversed/xxxhdpi/img_echoauto_oobe_attach_vent_reversed.3270c1bb507a85770df6.webp"
+      },
+      "img_echoauto_oobe_disconnect_aux": {
+        "url": "otg-growth/img_echoauto_oobe_disconnect_aux/xxxhdpi/img_echoauto_oobe_disconnect_aux.fba5692f3da7ab63615e.webp"
+      },
+      "img_echoauto_oobe_disconnect_aux_reversed": {
+        "url": "otg-growth/img_echoauto_oobe_disconnect_aux_reversed/xxxhdpi/img_echoauto_oobe_disconnect_aux_reversed.970e4d653d44e1d15a68.webp"
+      },
+      "img_echoauto_oobe_place_dash": {
+        "url": "otg-growth/img_echoauto_oobe_place_dash/xxxhdpi/img_echoauto_oobe_place_dash.4b677527e985d6788769.webp"
+      },
+      "img_echoauto_oobe_place_dash_reversed": {
+        "url": "otg-growth/img_echoauto_oobe_place_dash_reversed/xxxhdpi/img_echoauto_oobe_place_dash_reversed.d0f1e3d2cd85c6b74546.webp"
+      },
+      "img_ellington_fit_test_start_test": {
+        "url": "otg-growth/img_ellington_fit_test_start_test/xxxhdpi/img_ellington_fit_test_start_test.fbbca61b0cfae54f41d2.webp"
+      },
+      "img_muffin_oobe_alexa_app_sync": {
+        "url": "otg-growth/img_muffin_oobe_alexa_app_sync/xxxhdpi/img_muffin_oobe_alexa_app_sync.f493d209f6ed6168a8c4.webp"
+      },
+      "img_muffin_oobe_aux_plug_in": {
+        "url": "otg-growth/img_muffin_oobe_aux_plug_in/xxxhdpi/img_muffin_oobe_aux_plug_in.e4806af7b858682fa3b4.webp"
+      },
+      "img_muffin_oobe_aux_select": {
+        "url": "otg-growth/img_muffin_oobe_aux_select/xxxhdpi/img_muffin_oobe_aux_select.f5fa4fb76f2d44e33d1e.webp"
+      },
+      "img_muffin_oobe_bluetooth_select": {
+        "url": "otg-growth/img_muffin_oobe_bluetooth_select/xxxhdpi/img_muffin_oobe_bluetooth_select.1b0d2c2452ade562c385.webp"
+      },
+      "img_muffin_oobe_volume_max": {
+        "url": "otg-growth/img_muffin_oobe_volume_max/xxxhdpi/img_muffin_oobe_volume_max.d74aac44a14c353f1766.webp"
+      },
+      "img_puget_eartip_fit_audio_quality_test": {
+        "url": "otg-growth/img_puget_eartip_fit_audio_quality_test/xxxhdpi/img_puget_eartip_fit_audio_quality_test.ddd3b25f9c46ee78b9be.webp"
+      }
+    },
+    "test": {
+      "communityFinding": {
+        "url": "test/communityFinding/default/communityFinding.6fe1accbbb4cea5ab689.png"
+      }
+    }
+  }
+}

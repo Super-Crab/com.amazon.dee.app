@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.amazon.alexa.font.FontTextView android:textSize="@dimen/text_size_caption" android:textColor="?attr/mosaicNeutral10" android:gravity="center" android:id="@+id/banner" android:background="?attr/mosaicNeutral50" android:paddingTop="@dimen/table_rows_margin" android:paddingBottom="@dimen/table_rows_margin" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:elevation="2dp" android:paddingHorizontal="@dimen/padding_default" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+</LinearLayout>

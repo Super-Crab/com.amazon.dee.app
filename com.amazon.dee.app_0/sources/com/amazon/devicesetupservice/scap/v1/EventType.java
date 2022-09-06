@@ -1,0 +1,35 @@
+package com.amazon.devicesetupservice.scap.v1;
+/* loaded from: classes12.dex */
+public class EventType {
+    public static final String ERROR = "ERROR";
+    public static final String SESSION_ENDED = "SESSION_ENDED";
+    public static final String TIMEOUT = "TIMEOUT";
+    public static final String SESSION_STARTED = "SESSION_STARTED";
+    public static final String SCANNING_STARTED = "SCANNING_STARTED";
+    public static final String SCANNING_STOPPED = "SCANNING_STOPPED";
+    public static final String RECEIVED_SCAN_RESULT = "RECEIVED_SCAN_RESULT";
+    public static final String PERIPHERAL_CONNECTED = "PERIPHERAL_CONNECTED";
+    public static final String PERIPHERAL_DISCONNECTED = "PERIPHERAL_DISCONNECTED";
+    public static final String CONNECTION_PARAMETERS_UPDATED = "CONNECTION_PARAMETERS_UPDATED";
+    public static final String SERVICE_DISCOVERED = "SERVICE_DISCOVERED";
+    public static final String SERVICE_DISCOVERY_DONE = "SERVICE_DISCOVERY_DONE";
+    public static final String CHARACTERISTIC_DISCOVERED = "CHARACTERISTIC_DISCOVERED";
+    public static final String CHARACTERISTIC_DISCOVERY_DONE = "CHARACTERISTIC_DISCOVERY_DONE";
+    public static final String CHARACTERISTIC_SUBSCRIBED = "CHARACTERISTIC_SUBSCRIBED";
+    public static final String CHARACTERISTIC_UNSUBSCRIBED = "CHARACTERISTIC_UNSUBSCRIBED";
+    public static final String CHARACTERISTIC_READ = "CHARACTERISTIC_READ";
+    public static final String CHARACTERISTIC_WRITTEN = "CHARACTERISTIC_WRITTEN";
+    public static final String CHARACTERISTIC_UPDATED = "CHARACTERISTIC_UPDATED";
+    public static final String CBL_TOKEN_GENERATED = "CBL_TOKEN_GENERATED";
+    public static final String SMART_HOME_CREDENTIALS_SET = "SMART_HOME_CREDENTIALS_SET";
+    public static final String HTTP_BACK_OFF_RECOVERY = "HTTP_BACK_OFF_RECOVERY";
+    private static final String[] values = {SESSION_STARTED, "SESSION_ENDED", SCANNING_STARTED, SCANNING_STOPPED, RECEIVED_SCAN_RESULT, PERIPHERAL_CONNECTED, PERIPHERAL_DISCONNECTED, CONNECTION_PARAMETERS_UPDATED, SERVICE_DISCOVERED, SERVICE_DISCOVERY_DONE, CHARACTERISTIC_DISCOVERED, CHARACTERISTIC_DISCOVERY_DONE, CHARACTERISTIC_SUBSCRIBED, CHARACTERISTIC_UNSUBSCRIBED, CHARACTERISTIC_READ, CHARACTERISTIC_WRITTEN, CHARACTERISTIC_UPDATED, CBL_TOKEN_GENERATED, SMART_HOME_CREDENTIALS_SET, "TIMEOUT", HTTP_BACK_OFF_RECOVERY, "ERROR"};
+
+    private EventType() {
+        throw new UnsupportedOperationException();
+    }
+
+    public static String[] values() {
+        return values;
+    }
+}

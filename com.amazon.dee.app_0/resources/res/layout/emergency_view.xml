@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:tag="layout/emergency_view_0" android:background="?attr/mosaicBackground" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout android:tag="binding_1" android:background="?attr/mosaicBackground" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintBottom_toTopOf="@+id/buttonPanel" app:layout_constraintTop_toTopOf="0">
+            <LinearLayout android:orientation="vertical" android:background="?attr/mosaicBackground" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@+id/emergency_contact_notice_panel_cg" android:tag="binding_2" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.amazon.alexa.mosaic.view.NoticeBannerView android:id="@+id/emergency_contact_notice_comms_not_setup_by_care_giver" android:tag="binding_3" android:layout_width="match_parent" android:layout_height="wrap_content" app:iconSrc="@drawable/ic_error_inline" app:iconTint="?attr/mosaicStatus20" app:linkText="@string/emergency_contact_comms_setup_goto"/>
+                    <com.amazon.alexa.mosaic.view.NoticeBannerView android:id="@+id/emergency_contact_notice_comms_not_setup_by_care_recipient" android:tag="binding_4" android:layout_width="match_parent" android:layout_height="wrap_content" app:iconSrc="@drawable/ic_error_inline" app:iconTint="?attr/mosaicStatus20" app:linkText="@string/emergency_contact_comms_help_them_setup"/>
+                    <com.amazon.alexa.mosaic.view.NoticeBannerView android:id="@+id/emergency_contact_notice_not_set_as_emergency_contact_with_notification" android:tag="binding_5" android:layout_width="match_parent" android:layout_height="wrap_content" app:iconSrc="@drawable/ic_warning" app:iconTint="?attr/mosaicStatus30" app:primaryText="@string/emergency_contact_not_set_as_emergency_contact_with_notification"/>
+                    <com.amazon.alexa.mosaic.view.NoticeBannerView android:id="@+id/emergency_contact_notice_not_set_as_emergency_contact_without_notification" android:tag="binding_6" android:layout_width="match_parent" android:layout_height="wrap_content" app:iconSrc="@drawable/ic_warning" app:iconTint="?attr/mosaicStatus30" app:linkText="@string/emergency_contact_enable_notifications"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/emergency_contact_notice__panel_cr" android:tag="binding_7" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.amazon.alexa.mosaic.view.NoticeBannerView android:id="@+id/emergency_contact_notice_comms_not_setup_by_care_recipient_cr" android:tag="binding_8" android:layout_width="match_parent" android:layout_height="wrap_content" app:iconSrc="@drawable/ic_error_inline" app:iconTint="?attr/mosaicStatus20" app:linkText="@string/emergency_contact_comms_setup_goto" app:primaryText="@string/emergency_helpline_comms_not_setup_by_care_recipient_cr"/>
+                </LinearLayout>
+                <com.amazon.alexa.font.FontTextView android:id="@+id/emergency_contact_care_recipient_header" android:text="@string/emergency_contact_list_header" style="@style/mosaic_list_divider"/>
+                <com.amazon.alexa.mosaic.view.ListItemLink android:id="@+id/emergency_contact_care_giver" android:tag="binding_9" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/urgent_response_section" android:tag="binding_10" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.amazon.alexa.font.FontTextView android:id="@+id/emergency_helpline_header" android:text="@string/emergency_helpline_list_header" style="@style/mosaic_list_divider"/>
+                    <com.amazon.alexa.mosaic.view.ListItemLink android:id="@+id/emergency_helpline_status" android:tag="binding_11" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <View style="@style/mosaic_list_item_divider"/>
+                    <com.amazon.alexa.mosaic.view.ListItemLink android:id="@+id/emergency_helpline_address" android:tag="binding_12" android:layout_width="match_parent" android:layout_height="wrap_content" app:secondaryText="@string/emergency_helpline_address"/>
+                    <View style="@style/mosaic_list_item_divider"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.amazon.alexa.mosaic.view.ErrorView android:id="@+id/error_view" android:tag="binding_13" android:layout_width="match_parent" android:layout_height="match_parent" app:bodyText="@string/error_emergency_contact_body" app:headlineText="@string/error_emergency_contact_heading" app:iconSrc="@drawable/ic_alexa" app:iconTint="?attr/mosaicNeutral10" app:linkText="@string/error_tap_to_retry"/>
+</FrameLayout>

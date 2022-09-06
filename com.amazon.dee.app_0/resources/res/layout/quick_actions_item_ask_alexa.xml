@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="@dimen/quick_action_item_padding" android:layout_weight="0.75">
+        <ImageView android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/background_quick_action_ask_alexa_circle" android:layout_centerInParent="true"/>
+        <ImageView android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/quick_action_item_icon_margin" android:src="@drawable/ic_alexa_48dp" android:tint="@color/quick_actions_ask_alexa_tint" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/quick_action_item_label_text_size" android:textColor="@color/quick_actions_label_color" android:ellipsize="end" android:gravity="center" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginBottom="@dimen/quick_action_item_padding" android:text="@string/quick_action_ask_alexa" android:maxLines="1" android:layout_weight="0.25"/>
+</LinearLayout>

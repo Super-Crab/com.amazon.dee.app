@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:textSize="@dimen/voice_ui_od_font_body_size" android:textColor="?android:attr/textColorPrimary" android:gravity="center_vertical" android:id="@+id/theaterTitle" android:background="?android:attr/selectableItemBackground" android:focusable="true" android:layout_width="match_parent" android:layout_height="@dimen/voice_ui_od_single_line_list_item_3_height"/>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/paleGray" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <SearchView android:id="@+id/whitelist_contact_search_view" android:background="@layout/search_view_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:iconifiedByDefault="false" android:queryHint="@string/search" android:closeIcon="@drawable/ic_clear" android:searchIcon="@drawable/ic_search_glass"/>
+    <ListView android:id="@android:id/list" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@null" android:dividerHeight="@dimen/empty_divider_height" android:choiceMode="multipleChoice" android:footerDividersEnabled="false"/>
+</LinearLayout>

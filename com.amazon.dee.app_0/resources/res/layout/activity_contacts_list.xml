@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/paleGray" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/swipeToRefresh" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:clickable="true" android:descendantFocusability="afterDescendants" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.amazon.deecomms.common.ui.CommsTextView android:textColor="@color/contact_list_name" android:gravity="center" android:id="@+id/loading_contacts" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/loading_contacts_text" custom:typeface="@string/amazon_ember_light"/>
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/previewImage" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside"/>
+            <SearchView android:id="@+id/searchView" android:background="@layout/search_view_bg" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:iconifiedByDefault="false" android:queryHint="@string/search" android:closeIcon="@drawable/ic_clear" android:searchIcon="@drawable/ic_search_glass"/>
+            <ListView android:id="@android:id/list" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@null" android:dividerHeight="@dimen/empty_divider_height" android:footerDividersEnabled="false"/>
+        </LinearLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

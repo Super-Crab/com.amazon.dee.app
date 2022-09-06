@@ -1,0 +1,7 @@
+[
+  {
+    "type": "AlexaInterface",
+    "interface": "Alexa.AudioSignal.ActiveNoiseControl",
+    "version": "1.0"
+  }
+]

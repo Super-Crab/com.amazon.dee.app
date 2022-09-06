@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:paddingTop="@dimen/contact_block_header_padding_top" android:paddingBottom="@dimen/contact_block_header_padding_bottom" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/contact_block_header_padding_start" android:paddingEnd="@dimen/contact_block_header_padding_end">
+    <com.amazon.deecomms.common.ui.CommsTextView android:textColor="@color/contact_list_name" android:gravity="center" android:id="@+id/loading_contacts" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/loading_contacts_text" custom:typeface="@string/amazon_ember_light"/>
+</LinearLayout>

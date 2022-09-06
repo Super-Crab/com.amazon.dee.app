@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="?android:attr/selectableItemBackground" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/voice_ui_od_shopping_item_padding" android:paddingEnd="@dimen/voice_ui_od_shopping_item_padding">
+    <include layout="@layout/voice_ui_od_shopping_item_image"/>
+    <Space android:layout_width="match_parent" android:layout_height="@dimen/voice_ui_od_shopping_item_space_between_image_and_content"/>
+    <include layout="@layout/voice_ui_od_shopping_item_content"/>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:tag="layout/alert_form_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:background="?attr/mosaicBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/status_banner"/>
+            <com.amazon.alexa.mosaic.view.ListItemLink android:id="@+id/device_type_wrapper" android:tag="binding_2" android:layout_width="match_parent" android:layout_height="wrap_content" app:linkText="@string/not_set" app:primaryText="@string/alert_device_label"/>
+            <View style="@style/mosaic_list_item_divider"/>
+            <com.amazon.alexa.mosaic.view.ListItemLink android:id="@+id/alert_condition_list_item" android:tag="binding_3" android:layout_width="match_parent" android:layout_height="wrap_content" app:linkText="@string/not_set" app:primaryText="@string/alert_condition_label"/>
+            <com.amazon.alexa.mosaic.view.SectionHeader android:id="@+id/times_heading" android:layout_width="match_parent" android:layout_height="wrap_content" app:text="@string/daily_active_times"/>
+            <com.amazon.alexa.mosaic.view.ListItemLink android:id="@+id/start_time_wrapper" android:tag="binding_4" android:layout_width="match_parent" android:layout_height="wrap_content" app:linkText="@string/not_set" app:primaryText="@string/start_time_label"/>
+            <TimePicker android:theme="@style/mosaic_timepicker_theme" android:id="@+id/start_time_input_picker" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:timePickerMode="spinner" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/start_time_wrapper"/>
+            <View style="@style/mosaic_list_item_divider"/>
+            <com.amazon.alexa.mosaic.view.ListItemLink android:id="@+id/end_time_wrapper" android:tag="binding_5" android:layout_width="match_parent" android:layout_height="wrap_content" app:linkText="@string/not_set" app:primaryText="@string/end_time_label"/>
+            <TimePicker android:theme="@style/mosaic_timepicker_theme" android:id="@+id/end_time_input_picker" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:timePickerMode="spinner" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/end_time_wrapper"/>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@+id/button_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0">
+        <androidx.appcompat.widget.AppCompatButton android:id="@+id/delete_button" android:tag="binding_6" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/delete" style="@style/mosaic_button_borderless"/>
+        <androidx.appcompat.widget.AppCompatButton android:id="@+id/save_button" android:tag="binding_7" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/save_changes" style="@style/mosaic_button"/>
+    </LinearLayout>
+</LinearLayout>

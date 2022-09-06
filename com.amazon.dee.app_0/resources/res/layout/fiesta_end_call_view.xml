@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/fiesta_background" android:baselineAligned="false" style="@style/viewLayout">
+    <include android:id="@+id/call_screen_header" layout="@layout/fiesta_audio_call_header_layout"/>
+    <RelativeLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="@integer/call_participant_information_weight">
+        <include android:layout_gravity="center" android:id="@+id/call_participant_information" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/fiesta_call_participant_information"/>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:id="@+id/call_rating_layout" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/end_call_rating_bottom_margin" android:layout_weight="0">
+        <Button android:id="@+id/rate_call_button" android:visibility="gone" android:text="@string/rate_call" style="@style/fiestaButton"/>
+        <include android:layout_gravity="center" android:id="@+id/call_rating_sheet" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/fiesta_call_rating_sheet"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="?attr/mosaicBackground" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/smart_device_header" android:layout_width="match_parent" android:layout_height="@dimen/nps_header_height" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <TextView android:gravity="center" android:id="@+id/smart_device_title" android:layout_width="@dimen/nps_msp_logo_view_width" android:layout_height="@dimen/nps_msp_logo_view_height" android:layout_marginTop="@dimen/nps_msp_logo_view_mt" android:text="@string/dm_smart_home_locks_title" android:singleLine="true" android:layout_marginStart="@dimen/nav_title_horizontal_margin" android:layout_marginEnd="@dimen/nav_title_horizontal_margin" app:fontName="6" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:layout_constraintVertical_bias="0" style="@style/TextHeadline2"/>
+        <FrameLayout android:id="@+id/smart_device_close_view" android:layout_width="@dimen/nps_close_now_playing_screen_view_height" android:layout_height="@dimen/nps_close_now_playing_screen_view_height" android:layout_marginTop="@dimen/nps_msp_logo_view_mt" android:contentDescription="@string/content_desc_media_close_button" android:layout_marginStart="@dimen/nps_close_now_playing_screen_view_ms" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintHorizontal_bias="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:layout_constraintVertical_bias="0">
+            <ImageView android:layout_gravity="start|top" android:layout_width="@dimen/nps_close_now_playing_screen_image_view_height" android:layout_height="@dimen/nps_close_now_playing_screen_image_view_height" android:src="@drawable/dm_ic_close"/>
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/smart_device_all_on_off" android:background="@drawable/smart_device_background_all_on_off" android:layout_width="wrap_content" android:layout_height="@dimen/dm_smart_home_all_on_off_height" android:layout_marginStart="@dimen/dm_smart_home_all_on_off_margin" android:layout_marginEnd="@dimen/dm_smart_home_all_on_off_margin">
+            <TextView android:gravity="center_horizontal" android:id="@+id/dm_smart_device_all_on" android:layout_width="@dimen/dm_smart_home_all_on_off_width" android:layout_height="wrap_content" android:text="@string/dm_smart_home_all_on" app:fontName="6" style="@style/TextLabel"/>
+            <ImageView android:background="@color/neutral30" android:layout_width="@dimen/dm_smart_home_all_on_off_splitter_width" android:layout_height="@dimen/dm_smart_home_all_on_off_splitter_height"/>
+            <TextView android:gravity="center_horizontal" android:id="@+id/dm_smart_device_all_off" android:layout_width="@dimen/dm_smart_home_all_on_off_width" android:layout_height="wrap_content" android:text="@string/dm_smart_home_all_off" app:fontName="6" style="@style/TextLabel"/>
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.core.widget.NestedScrollView android:background="?attr/mosaicBackground" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dm_feed_layout_margin" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/smart_devices" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

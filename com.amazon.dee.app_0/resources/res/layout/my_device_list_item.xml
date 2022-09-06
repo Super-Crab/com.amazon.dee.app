@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="@dimen/contact_list_item_width" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="@dimen/contact_list_item_height" android:layout_marginStart="@dimen/contact_list_item_padding_start" android:layout_marginEnd="@dimen/contact_list_item_padding_end">
+        <com.amazon.deecomms.common.ui.CommsTextView android:ellipsize="end" android:id="@+id/device_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" custom:typeface="@string/amazon_ember_regular" style="@style/contactNameStyle"/>
+    </LinearLayout>
+    <View android:id="@+id/device_list_divider" android:background="@drawable/divider" android:layout_width="match_parent" android:layout_height="@dimen/divider_height"/>
+</LinearLayout>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android" android:textColor="@color/voice_ui_od_dark_content_text_primary" android:id="@+id/manage" android:background="@drawable/voice_ui_od_list_manage_button_background" android:layout_width="wrap_content" android:layout_height="@dimen/voice_ui_od_list_manage_button_height" android:layout_marginTop="@dimen/voice_ui_od_list_manage_button_margin_top" android:text="@string/voice_ui_od_list_manage"/>

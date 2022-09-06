@@ -1,0 +1,182 @@
+[
+  {
+    "regularExpression": "Audi(?:_|\\s)(?:MMI|UHV)(?:_|\\s)\\d+",
+    "headunitType": "Audi"
+  },
+  {
+    "regularExpression": "BMW\\s?\\d+",
+    "headunitType": "BMW"
+  },
+  {
+    "regularExpression": "(?:my)?Buick*",
+    "headunitType": "Buick"
+  },
+  {
+    "regularExpression": "Cadillac*|myCadillac",
+    "headunitType": "Cadillac"
+  },
+  {
+    "regularExpression": "Chevrolet\\sMyLink",
+    "headunitType": "Chevrolet"
+  },
+  {
+    "regularExpression": "^DMH+",
+    "headunitType": "DMH"
+  },
+  {
+    "regularExpression": "FORD(?:\\sAUDIO)?|Sync",
+    "headunitType": "Ford"
+  },
+  {
+    "regularExpression": "Genesis*",
+    "headunitType": "Genesis"
+  },
+  {
+    "regularExpression": "General\\sMotors|GMC\\sIntelliLink",
+    "headunitType": "GM"
+  },
+  {
+    "regularExpression": "Honda\\sCar\\sKit|HandsFree\\s?Link",
+    "headunitType": "Honda"
+  },
+  {
+    "regularExpression": "ACCENT\\sD-AUDIO|IONIQ|KONA|Santa\\sFe+|Sonata",
+    "headunitType": "Hyundai"
+  },
+  {
+    "regularExpression": "My(?:-|\\s)?(?:CAR|ROGUE)|Murano|NISSAN*",
+    "headunitType": "InfinitiNissan"
+  },
+  {
+    "regularExpression": "Uconnect",
+    "headunitType": "Jeep_Dodge_Chrysler_RAM"
+  },
+  {
+    "regularExpression": "Jaguar*",
+    "headunitType": "Jaguar"
+  },
+  {
+    "regularExpression": "Land\\sRover|Discovery",
+    "headunitType": "LandRover"
+  },
+  {
+    "regularExpression": "Kia\\sMotors",
+    "headunitType": "Kia"
+  },
+  {
+    "regularExpression": "CAR\\sM(?:ULTI-?|_)MEDIA",
+    "headunitType": "Lexus"
+  },
+  {
+    "regularExpression": "Mazda",
+    "headunitType": "Mazda"
+  },
+  {
+    "regularExpression": "MB\\sBLUETOOTH|C220\\sEXE",
+    "headunitType": "MercedesBenz"
+  },
+  {
+    "regularExpression": "MINI\\s?\\d",
+    "headunitType": "Mini"
+  },
+  {
+    "regularExpression": "^PCM",
+    "headunitType": "Porsche"
+  },
+  {
+    "regularExpression": "Range\\sRover",
+    "headunitType": "RangeRover"
+  },
+  {
+    "regularExpression": "Subaru(?:\\sBT)?",
+    "headunitType": "Subaru"
+  },
+  {
+    "regularExpression": "Tesla*",
+    "headunitType": "Tesla"
+  },
+  {
+    "regularExpression": "Toyota",
+    "headunitType": "Toyota"
+  },
+  {
+    "regularExpression": "MY\\sVOLVO\\sCAR",
+    "headunitType": "Volvo"
+  },
+  {
+    "regularExpression": "^VW(?:\\sBT\\s?\\d+|\\sPhone)?|Passat|Jetta",
+    "headunitType": "Volkswagen"
+  },
+  {
+    "regularExpression": "CAR-KIT*",
+    "headunitType": "Seicane"
+  },
+  {
+    "regularExpression": "AOSP\\son\\sCoral",
+    "headunitType": "AAOSDev"
+  },
+  {
+    "regularExpression": "Holden\\sMyLink",
+    "headunitType": "GM-Holden"
+  },
+  {
+    "regularExpression": "Handsfree|NX\\d+",
+    "headunitType": "Mitsubishi"
+  },
+  {
+    "regularExpression": "BT_CAR_SYSTEM|Peugeot",
+    "headunitType": "Peugeot"
+  },
+  {
+    "regularExpression": "^DPX+",
+    "headunitType": "Troller"
+  },
+  {
+    "regularExpression": "Media\\sNav\\sEvolution|sandero",
+    "headunitType": "Renault"
+  },
+  {
+    "regularExpression": "Citroen",
+    "headunitType": "Citroen"
+  },
+  {
+    "regularExpression": "Ferrari",
+    "headunitType": "Ferrari"
+  },
+  {
+    "regularExpression": "Blue&Me",
+    "headunitType": "Abarth_Fiat"
+  },
+  {
+    "regularExpression": "Alfa+",
+    "headunitType": "AlfaRomeo"
+  },
+  {
+    "regularExpression": "^MTC+",
+    "headunitType": "Maserati"
+  },
+  {
+    "regularExpression": "UPH\\s\\d+",
+    "headunitType": "Vauxhall"
+  },
+  {
+    "regularExpression": "CAR\\sAUDIO",
+    "headunitType": "Suzuki_Scion"
+  },
+  {
+    "regularExpression": "ConnectNext",
+    "headunitType": "Tata"
+  },
+  {
+    "regularExpression": "SEAT\\sBT\\s\\d+",
+    "headunitType": "SEAT"
+  },
+  {
+    "regularExpression": "Skoda\\sBT\\s\\d+",
+    "headunitType": "Skoda"
+  },
+  {
+    "regularExpression": "Bentley",
+    "headunitType": "Bentley"
+  }
+]

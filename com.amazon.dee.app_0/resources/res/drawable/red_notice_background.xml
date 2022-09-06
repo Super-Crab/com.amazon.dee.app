@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/mosaic_bordered_button_radius"/>
+    <solid android:color="?attr/mosaicStatus20"/>
+    <padding android:left="@dimen/card_button_alert_horizontal_padding" android:top="@dimen/card_button_alert_vertical_padding" android:right="@dimen/card_button_alert_horizontal_padding" android:bottom="@dimen/card_button_alert_vertical_padding"/>
+</shape>

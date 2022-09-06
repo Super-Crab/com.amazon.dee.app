@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:paddingLeft="24dp" android:paddingRight="24dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="32dp">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/solid_circle" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginTop="8dp" android:layout_marginRight="24dp" android:backgroundTint="?attr/mosaicNeutral50">
+        <com.amazon.alexa.font.FontTextView android:textColor="?attr/mosaicNeutral10" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/numberText" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" style="@style/TextAppearance.Mosaic.Body"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.amazon.alexa.font.FontTextView android:textColor="?attr/mosaicNeutral10" android:textColorLink="?attr/mosaicNeutral30" android:layout_gravity="center" android:id="@+id/primaryText" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginBottom="4dp" style="@style/TextAppearance.Mosaic.Body"/>
+</LinearLayout>

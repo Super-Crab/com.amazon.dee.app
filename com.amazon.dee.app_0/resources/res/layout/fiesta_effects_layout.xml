@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="bottom|center_horizontal" android:orientation="vertical" android:id="@+id/effects_layout" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/active_effects_imageview" android:background="@drawable/f_btn_effects_panel_focused" style="@style/EffectsMenuEffectLayout">
+        <ImageView android:layout_gravity="top|center_horizontal" android:id="@+id/effects_imageview" android:focusable="true" android:clickable="true" android:contentDescription="@string/effect" style="@style/FloatingActionButton.effects"/>
+    </RelativeLayout>
+    <com.amazon.alexa.font.FontTextView android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/effects_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:importantForAccessibility="no" android:textAlignment="gravity"/>
+</LinearLayout>

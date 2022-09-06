@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AlexaComms.ButtonLayout" parent="@style/AlexaComms">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+    <style name="AlexaCommsButton.Primary.Variable" parent="@style/AlexaCommsButton.Primary">
+        <item name="android:layout_width">@dimen/oobe_button_width</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginStart">@dimen/oobe_padding_small</item>
+    </style>
+    <style name="AlexaCommsButton.Tertiary.Variable" parent="@style/AlexaCommsButton.Tertiary">
+        <item name="android:layout_width">@dimen/oobe_button_width</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginEnd">@dimen/oobe_padding_small</item>
+    </style>
+    <style name="AlexaCommsTextInputContainer">
+        <item name="android:layout_width">600dp</item>
+    </style>
+</resources>

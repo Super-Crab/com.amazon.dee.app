@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="default_pill_hints">
+        <item>Riproduci suoni per conciliare il sonno</item>
+        <item>Fare un annuncio</item>
+        <item>Quali notifiche ho?</item>
+        <item>Spegni la musica</item>
+        <item>Racconta una barzelletta</item>
+        <item>Qual è la domanda del giorno?</item>
+        <item>Buonanotte</item>
+        <item>Tappa</item>
+        <item>Riproduci musica</item>
+        <item>Buongiorno</item>
+        <item>Prossima canzone</item>
+        <item>Riproduci</item>
+        <item>Dov&apos;è il mio pacco?</item>
+        <item>Metti in pausa la musica</item>
+        <item>Riproduci jazz</item>
+        <item>Proteggi la casa</item>
+        <item>Come stai?</item>
+        <item>Imposta una sveglia per domani alle 7 di mattina</item>
+        <item>Che cosa significa la luce gialla?</item>
+        <item>Che tempo fa oggi?</item>
+        <item>Annulla il timer</item>
+        <item>Inizia la mia giornata</item>
+        <item>Aggiungi le mele alla mia Lista della spesa</item>
+        <item>Qual è la temperatura esterna?</item>
+        <item>Che notizie ci sono?</item>
+    </array>
+    <array name="new_user_messages">
+        <item>Ciao! Indovina chi ha appena imparato a scrivere? Mandami un messaggio per chiedermi di raccontare una barzelletta o accendere le luci, oppure cerca nell&apos;app cose come i tuoi elenchi o le impostazioni.</item>
+        <item>Ad ogni modo, comunicare con me per iscritto fa parte di un&apos;anteprima pubblica, quindi sto ancora imparando!</item>
+    </array>
+    <array name="voice_ui_od_permissions_primer_rationale_list_items">
+        <item>Consentire ad Alexa di ascoltare le tue richieste</item>
+        <item>Chiamare e inviare messaggi ad amici e familiari</item>
+        <item>Controllare i dispositivi per Casa Intelligente compatibili</item>
+        <item>Ottenere risultati di ricerca e informazioni sul traffico e sul meteo in base alla tua posizione</item>
+    </array>
+    <array name="voice_ui_od_scrim_hints">
+        <item>“Che tempo fa?”</item>
+        <item>“Com&apos;è il traffico?”</item>
+        <item>“A quante miglia corrispondono 10 chilometri?”</item>
+        <item>“Qual è il tasso di cambio del dollaro con l&apos;euro?”</item>
+        <item>“Quali film sono in programmazione qui vicino?”</item>
+        <item>“Quali film ci sono al cinema domani?”</item>
+        <item>“Quali film di fantascienza sono in programmazione?”</item>
+        <item>“Quante calorie ha un uovo?”</item>
+        <item>“Quanto dista la luna?”</item>
+        <item>“Che ore sono a Tokyo?”</item>
+        <item>“Chiedi a Wikipedia qualcosa su Star Trek”</item>
+        <item>“Aggiungi il latte alla mia Lista della spesa”</item>
+        <item>“Cosa c&apos;è sulla mia Lista di cose da fare?”</item>
+        <item>“Trova il supermercato più vicino”</item>
+        <item>“Dov&apos;è la piscina più vicina?”</item>
+        <item>“Mostrami dove sono le caffetterie più vicine”</item>
+        <item>“Qual è la pizzeria più vicina?”</item>
+        <item>“Mostrami la farmacia più vicina”</item>
+        <item>“Mostrami il meteo di oggi”</item>
+        <item>“Domani pioverà?”</item>
+        <item>“Oggi mi servirà un ombrello?”</item>
+        <item>“Che tempo fa a Milano?”</item>
+    </array>
+</resources>

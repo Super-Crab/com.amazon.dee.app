@@ -1,0 +1,6 @@
+// Specific settings to switch to PROD stage.
+{
+  "ir-master.domain":"prod",
+  "ir-master.realm":"USAmazon",
+  "Setting.InternalTestTrustSslHosts": false
+}

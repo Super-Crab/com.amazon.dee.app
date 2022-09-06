@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/voice_ui_od_sports_scores_placard_margin_top" layout="@layout/voice_ui_od_sports_scores_placard"/>
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/voice_ui_od_sports_scores_score_card_margin_top" layout="@layout/voice_ui_od_sports_scores_score_card"/>
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/voice_ui_od_sports_scores_next_game_margin_top" android:layout_marginBottom="@dimen/voice_ui_od_sports_scores_next_game_margin_bottom" layout="@layout/voice_ui_od_sports_next_game"/>
+</LinearLayout>

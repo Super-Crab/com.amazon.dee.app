@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/oobe_header" android:background="@color/statusBar" android:layout_width="match_parent" android:layout_height="@dimen/oobe_header_height" android:layout_marginBottom="@dimen/oobe_header_margin_bottom">
+    <Space android:layout_width="@dimen/oobe_header_padding" android:layout_height="match_parent"/>
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/oobe_back_button" android:background="@color/transparent" android:visibility="gone" android:layout_width="24dp" android:layout_height="wrap_content" android:src="@drawable/ic_back_alpha_24dp_bitmap" android:cropToPadding="true" android:contentDescription="@string/back" android:layout_marginEnd="@dimen/oobe_padding_medium"/>
+    <com.amazon.deecomms.common.ui.CommsTextView android:layout_gravity="center_vertical" android:id="@+id/oobe_header_title" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="@style/AlexaHeader"/>
+    <Button android:textColor="@color/offwhite" android:layout_gravity="center_vertical" android:id="@+id/oobe_skip_button" android:background="@color/transparent" android:padding="0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="0dp" android:text="@string/skip_text"/>
+</LinearLayout>

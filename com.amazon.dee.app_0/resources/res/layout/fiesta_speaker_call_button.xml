@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" style="@style/FloatingActionButtonWrapper">
+    <ImageButton android:layout_gravity="center" android:id="@+id/speakerButton" android:background="@drawable/fiesta_selector_call_toggle_btn_bg" android:layout_width="@dimen/call_buttons_width" android:layout_height="@dimen/call_buttons_width" android:src="@drawable/fiesta_ic_volume_on" android:contentDescription="@string/toggle_speaker_content_description" style="@style/FloatingActionButton"/>
+    <com.amazon.deecomms.common.ui.CommsTextView android:textSize="@dimen/call_button_text_size" android:textColor="@color/fiesta_text_primary" android:ellipsize="end" android:layout_gravity="center" android:id="@+id/speakerButtonText" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/call_button_text_top_margin" android:text="@string/calling_speaker" android:maxLines="1" android:includeFontPadding="false" app:typeface="@string/amazon_ember_bold"/>
+</LinearLayout>

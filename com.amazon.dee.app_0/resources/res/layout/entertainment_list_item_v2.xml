@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/single_icon_row" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="104dp" android:foreground="?android:attr/selectableItemBackground" app:cardBackgroundColor="@android:color/transparent" app:cardElevation="0dp">
+    <RelativeLayout android:id="@+id/entertainment_metadata" android:padding="@dimen/dm_feed_layout_margin" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/entertainment_list_item_album_art" android:layout_width="72dp" android:layout_height="72dp"/>
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/dm_feed_layout_margin" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dm_feed_layout_margin" android:layout_centerVertical="true" android:layout_toEndOf="@+id/entertainment_list_item_album_art">
+            <com.amazon.alexa.font.FontTextView android:textSize="@dimen/dm_card_title_text_size" android:textColor="?attr/mosaicNeutral10" android:ellipsize="end" android:id="@+id/entertainment_list_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp" android:maxLines="1" app:fontName="16"/>
+            <com.amazon.alexa.font.FontTextView android:textSize="18sp" android:textColor="?attr/mosaicNeutral20" android:id="@+id/entertainment_list_item_sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontName="16"/>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

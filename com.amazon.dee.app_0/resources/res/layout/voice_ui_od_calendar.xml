@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.alexa.voice.ui.onedesign.widget.ContentLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/layout" android:layout_width="match_parent" android:layout_height="match_parent" android:importantForAccessibility="no" style="?attr/voiceOdContentWindowStyle">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.amazon.alexa.voice.ui.onedesign.widget.background.CardLayout android:id="@+id/cardLayout" app:backgroundColor="@color/voice_ui_od_bg_calendar" app:src="@drawable/ic_od_bg_calendar" style="?attr/voiceOdCardStyle">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <include layout="@layout/voice_ui_od_header"/>
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/content" android:paddingBottom="@dimen/voice_ui_od_content_speech_control_height" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:importantForAccessibility="no" app:layoutManager="LinearLayoutManager"/>
+            </LinearLayout>
+        </com.amazon.alexa.voice.ui.onedesign.widget.background.CardLayout>
+        <com.amazon.alexa.voice.ui.onedesign.speech.SpeechControlView android:layout_gravity="bottom" android:id="@+id/control" android:layout_width="match_parent" android:layout_height="?attr/voiceOdSpeechControlHeight"/>
+    </FrameLayout>
+</com.amazon.alexa.voice.ui.onedesign.widget.ContentLayout>

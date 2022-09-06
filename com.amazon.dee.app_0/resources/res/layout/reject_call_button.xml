@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/lib/com.amazon.deecomms.common.ui.CommsTextView" style="@style/FloatingActionButtonWrapper">
+    <ImageButton android:id="@+id/rejectCallButton" android:background="@drawable/selector_call_end" android:src="@drawable/ic_call_end_default_dark_48dp" android:contentDescription="@string/call_reject_description" style="@style/FloatingActionButton"/>
+</RelativeLayout>

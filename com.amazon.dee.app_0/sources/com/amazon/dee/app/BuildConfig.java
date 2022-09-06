@@ -1,0 +1,153 @@
+package com.amazon.dee.app;
+
+import com.amazon.alexa.blueprints.BlueprintsEndpointConstants;
+/* loaded from: classes12.dex */
+public final class BuildConfig {
+    public static final String API_GATEWAY_HOST = "api.amazonalexa.com";
+    public static final String API_GATEWAY_HOST_AU = "api.fe.amazonalexa.com";
+    public static final String API_GATEWAY_HOST_BR = "api.amazonalexa.com";
+    public static final String API_GATEWAY_HOST_CA = "api.amazonalexa.com";
+    public static final String API_GATEWAY_HOST_CN = "";
+    public static final String API_GATEWAY_HOST_DE = "api.eu.amazonalexa.com";
+    public static final String API_GATEWAY_HOST_ES = "api.eu.amazonalexa.com";
+    public static final String API_GATEWAY_HOST_FR = "api.eu.amazonalexa.com";
+    public static final String API_GATEWAY_HOST_ID = "api.fe.amazonalexa.com";
+    public static final String API_GATEWAY_HOST_IN = "api.eu.amazonalexa.com";
+    public static final String API_GATEWAY_HOST_IT = "api.eu.amazonalexa.com";
+    public static final String API_GATEWAY_HOST_JP = "api.fe.amazonalexa.com";
+    public static final String API_GATEWAY_HOST_MX = "api.amazonalexa.com";
+    public static final String API_GATEWAY_HOST_NL = "api.eu.amazonalexa.com";
+    public static final String API_GATEWAY_HOST_RU = "api.fe.amazonalexa.com";
+    public static final String API_GATEWAY_HOST_UK = "api.eu.amazonalexa.com";
+    public static final String APPLICATION_ID = "com.amazon.dee.app";
+    public static final String APP_ID_HEADER = "amzn1.application.d8248c711e884e7baf99e6b37c7c28b0";
+    public static final String AUTH_ASSOCIATION_HANDLE = "amzn_dp_project_dee_android";
+    public static final String AUTH_ASSOCIATION_HANDLE_AU = "amzn_dp_project_dee_android_au";
+    public static final String AUTH_ASSOCIATION_HANDLE_BR = "amzn_dp_project_dee_android_br";
+    public static final String AUTH_ASSOCIATION_HANDLE_CA = "amzn_dp_project_dee_android_ca";
+    public static final String AUTH_ASSOCIATION_HANDLE_CN = "amzn_dp_project_dee_android_cn";
+    public static final String AUTH_ASSOCIATION_HANDLE_DE = "amzn_dp_project_dee_android_de";
+    public static final String AUTH_ASSOCIATION_HANDLE_ES = "amzn_dp_project_dee_android_es";
+    public static final String AUTH_ASSOCIATION_HANDLE_FR = "amzn_dp_project_dee_android_fr";
+    public static final String AUTH_ASSOCIATION_HANDLE_ID = "amzn_dp_project_dee_android_id";
+    public static final String AUTH_ASSOCIATION_HANDLE_IN = "amzn_dp_project_dee_android_in";
+    public static final String AUTH_ASSOCIATION_HANDLE_IT = "amzn_dp_project_dee_android_it";
+    public static final String AUTH_ASSOCIATION_HANDLE_JP = "amzn_dp_project_dee_android_jp";
+    public static final String AUTH_ASSOCIATION_HANDLE_MX = "amzn_dp_project_dee_android_mx";
+    public static final String AUTH_ASSOCIATION_HANDLE_NL = "amzn_dp_project_dee_android_nl";
+    public static final String AUTH_ASSOCIATION_HANDLE_RU = "amzn_dp_project_dee_android_ru";
+    public static final String AUTH_ASSOCIATION_HANDLE_UK = "amzn_dp_project_dee_android_uk";
+    public static final String AUTH_HOST = "www.amazon.com";
+    public static final String AUTH_HOST_AU = "www.amazon.com.au";
+    public static final String AUTH_HOST_BR = "www.amazon.com.br";
+    public static final String AUTH_HOST_CA = "www.amazon.ca";
+    public static final String AUTH_HOST_CN = "www.amazon.cn";
+    public static final String AUTH_HOST_DE = "www.amazon.de";
+    public static final String AUTH_HOST_ES = "www.amazon.es";
+    public static final String AUTH_HOST_FR = "www.amazon.fr";
+    public static final String AUTH_HOST_ID = "www.amazon.co.id";
+    public static final String AUTH_HOST_IN = "www.amazon.in";
+    public static final String AUTH_HOST_IT = "www.amazon.it";
+    public static final String AUTH_HOST_JP = "www.amazon.co.jp";
+    public static final String AUTH_HOST_MX = "www.amazon.com.mx";
+    public static final String AUTH_HOST_NL = "www.amazon.nl";
+    public static final String AUTH_HOST_RU = "www.amazon.ru";
+    public static final String AUTH_HOST_UK = "www.amazon.co.uk";
+    public static final String BUGSNAG_API_KEY = "23453493ba50cc7c9aaedc9800c180da";
+    public static final String BUILD_TYPE = "release";
+    public static final String CLOUD_DRIVE_SERVICE_CONTENT_ENDPOINT = "";
+    public static final String CLOUD_DRIVE_SERVICE_GROUP_ENDPOINT = "";
+    public static final String CLOUD_DRIVE_SERVICE_METADATA_ENDPOINT = "";
+    public static final boolean COMMS_FEATURE_FRIENDS_AND_FAMILY = false;
+    public static final boolean DEBUG = false;
+    public static final String DEVICE_TYPE = "A2TF17PFR55MTB";
+    public static final String FCM_SENDER_ID = "509341400245";
+    public static final String FLAVOR = "prod";
+    public static final String HOST = "alexa.amazon.com";
+    public static final String HOST_AU = "alexa.amazon.com.au";
+    public static final String HOST_BR = "alexa.amazon.com.br";
+    public static final String HOST_CA = "alexa.amazon.ca";
+    public static final String HOST_CN = "alexa.amazon.cn";
+    public static final String HOST_DE = "alexa.amazon.de";
+    public static final String HOST_ES = "alexa.amazon.es";
+    public static final String HOST_FR = "alexa.amazon.fr";
+    public static final String HOST_ID = "alexa.amazon.id";
+    public static final String HOST_IN = "alexa.amazon.in";
+    public static final String HOST_IT = "alexa.amazon.it";
+    public static final String HOST_JP = "alexa.amazon.co.jp";
+    public static final String HOST_MX = "alexa.amazon.com.mx";
+    public static final String HOST_NL = "alexa.amazon.nl";
+    public static final String HOST_RU = "alexa.amazon.ru";
+    public static final String HOST_UK = "alexa.amazon.co.uk";
+    public static final boolean IS_ALPHA_ENVIRONMENT = false;
+    public static final boolean IS_BETAQA_ENVIRONMENT = false;
+    public static final boolean IS_BETA_ENVIRONMENT = false;
+    public static final boolean IS_GAMMA_ENVIRONMENT = false;
+    public static final boolean IS_LOCAL_ENVIRONMENT = false;
+    public static final boolean IS_PRE_PROD_ENVIRONMENT = false;
+    public static final boolean IS_PRODQA_ENVIRONMENT = false;
+    public static final boolean IS_PROD_ENVIRONMENT = true;
+    public static final String METRICS_AWS_APP_ID = "901ad8be11e4424f875dc792db51f34d";
+    public static final String METRICS_AWS_IDENTITY_POOL_ID = "us-east-1:dbcce1fd-ea8a-4a85-a2ee-80a7b04ff098";
+    public static final String METRICS_AWS_KINESIS_COGNITO_IDENTITY_POOL_ID = "us-east-1:5de045a1-113d-437d-be67-68496504240c";
+    public static final String METRICS_AWS_KINESIS_REGION = "us-east-1";
+    public static final String METRICS_AWS_KINESIS_STREAM_NAME = "alexa-mobile-analytics";
+    public static final String METRICS_MOBILYTICS_COGNITO_IDENTITY_POOL_ID = "us-east-1:5de045a1-113d-437d-be67-68496504240c";
+    public static final String METRICS_MOBILYTICS_COGNITO_IDENTITY_POOL_ID_EU_WEST_1 = "eu-west-1:4addaeae-ff16-4dca-b9e6-901034a37aa9";
+    public static final String METRICS_MOBILYTICS_COGNITO_IDENTITY_POOL_ID_US_EAST_1 = "us-east-1:a66fa265-6aba-402a-b891-8a8da83089ed";
+    public static final String METRICS_MOBILYTICS_COGNITO_IDENTITY_POOL_ID_US_WEST_2 = "us-west-2:d370c009-6f35-4dac-9d76-e1f3d8d33e4b";
+    public static final String METRICS_MOBILYTICS_DEFAULT_REGION = "us-east-1";
+    public static final String METRICS_MOBILYTICS_STREAM_NAME = "alexa-mobilytics";
+    public static final String RETAIL_HOST = "amazon.com";
+    public static final String RETAIL_HOST_AU = "amazon.com.au";
+    public static final String RETAIL_HOST_BR = "amazon.com.br";
+    public static final String RETAIL_HOST_CA = "amazon.ca";
+    public static final String RETAIL_HOST_CN = "amazon.cn";
+    public static final String RETAIL_HOST_DE = "amazon.de";
+    public static final String RETAIL_HOST_ES = "amazon.es";
+    public static final String RETAIL_HOST_FR = "amazon.fr";
+    public static final String RETAIL_HOST_ID = "amazon.id";
+    public static final String RETAIL_HOST_IN = "amazon.in";
+    public static final String RETAIL_HOST_IT = "amazon.it";
+    public static final String RETAIL_HOST_JP = "amazon.co.jp";
+    public static final String RETAIL_HOST_MX = "amazon.com.mx";
+    public static final String RETAIL_HOST_NL = "amazon.nl";
+    public static final String RETAIL_HOST_RU = "amazon.ru";
+    public static final String RETAIL_HOST_UK = "amazon.co.uk";
+    public static final String SKILLS_STORE_ENDPOINT = "https://skills-store.amazon.com";
+    public static final String SKILLS_STORE_ENDPOINT_AU = "https://skills-store.amazon.com.au";
+    public static final String SKILLS_STORE_ENDPOINT_BR = "https://skills-store.amazon.com.br";
+    public static final String SKILLS_STORE_ENDPOINT_CA = "https://skills-store.amazon.ca";
+    public static final String SKILLS_STORE_ENDPOINT_CN = "";
+    public static final String SKILLS_STORE_ENDPOINT_DE = "https://skills-store.amazon.de";
+    public static final String SKILLS_STORE_ENDPOINT_ES = "https://skills-store.amazon.es";
+    public static final String SKILLS_STORE_ENDPOINT_FR = "https://skills-store.amazon.fr";
+    public static final String SKILLS_STORE_ENDPOINT_IN = "https://skills-store.amazon.in";
+    public static final String SKILLS_STORE_ENDPOINT_IT = "https://skills-store.amazon.it";
+    public static final String SKILLS_STORE_ENDPOINT_JP = "https://skills-store.amazon.co.jp";
+    public static final String SKILLS_STORE_ENDPOINT_MX = "https://skills-store.amazon.com.mx";
+    public static final String SKILLS_STORE_ENDPOINT_NL = "https://skills-store.amazon.nl";
+    public static final String SKILLS_STORE_ENDPOINT_UK = "https://skills-store.amazon.co.uk";
+    public static final String STAGE;
+    public static final int VERSION_CODE = -1;
+    public static final String VERSION_NAME = "2.2.466191.0";
+    public static final String VOICE_HOST = "avs-alexa-13-na.amazon.com";
+
+    static {
+        String str = "prod";
+        if (IS_ALPHA_ENVIRONMENT) {
+            str = "alpha";
+        } else if (IS_BETA_ENVIRONMENT) {
+            str = "beta";
+        } else if (IS_GAMMA_ENVIRONMENT) {
+            str = "gamma";
+        } else if (IS_LOCAL_ENVIRONMENT) {
+            str = "local";
+        } else if (IS_PRE_PROD_ENVIRONMENT) {
+            str = BlueprintsEndpointConstants.PREPROD;
+        } else {
+            boolean z = IS_PROD_ENVIRONMENT;
+        }
+        STAGE = str;
+    }
+}

@@ -1,0 +1,78 @@
+package com.amazon.comms.calling.sipclient;
+
+import amazon.communication.connection.Channels;
+import com.amazon.comms.config.util.DeviceConfigConstants;
+import com.drew.metadata.iptc.IptcDirectory;
+import javax.servlet.http.HttpServletResponse;
+/* loaded from: classes11.dex */
+public enum SipStatusCode {
+    TRYING(100),
+    RINGING(180),
+    CALL_BEING_FORWARDED(181),
+    QUEUED(182),
+    PROGRESS(183),
+    OK(200),
+    ACCEPTED(202),
+    MULTIPLE_CHOICES(300),
+    MOVED_PERMANENTLY(301),
+    MOVED_TEMPORARILY(302),
+    USE_PROXY(305),
+    ALTERNATIVE_SERVICE(380),
+    BAD_REQUEST(400),
+    UNAUTHORIZED(HttpServletResponse.SC_UNAUTHORIZED),
+    PAYMENT_REQUIRED(HttpServletResponse.SC_PAYMENT_REQUIRED),
+    FORBIDDEN(403),
+    NOT_FOUND(404),
+    METHOD_NOT_ALLOWED(HttpServletResponse.SC_METHOD_NOT_ALLOWED),
+    NOT_ACCEPTABLE(HttpServletResponse.SC_NOT_ACCEPTABLE),
+    PROXY_AUTHENTICATION_REQUIRED(HttpServletResponse.SC_PROXY_AUTHENTICATION_REQUIRED),
+    REQUEST_TIMEOUT(408),
+    GONE(HttpServletResponse.SC_GONE),
+    REQUEST_ENTITY_TOO_LARGE(HttpServletResponse.SC_REQUEST_ENTITY_TOO_LARGE),
+    REQUEST_URI_TOO_LONG(HttpServletResponse.SC_REQUEST_URI_TOO_LONG),
+    UNSUPPORTED_MEDIA_TYPE(HttpServletResponse.SC_UNSUPPORTED_MEDIA_TYPE),
+    UNSUPPORTED_URI_SCHEME(HttpServletResponse.SC_REQUESTED_RANGE_NOT_SATISFIABLE),
+    BAD_EXTENSION(420),
+    EXTENSION_REQUIRED(421),
+    SESSION_TIMER_TOO_SMALL(422),
+    INTERVAL_TOO_BRIEF(423),
+    CSMS_TOKEN_REFRESH_ERROR(446),
+    TEMPORARILY_UNAVAILABLE(480),
+    CALL_TSX_DOES_NOT_EXIST(Channels.CHANNEL_FOR_S2DM_ACK),
+    LOOP_DETECTED(482),
+    TOO_MANY_HOPS(483),
+    ADDRESS_INCOMPLETE(Channels.SYNC_DOWNSTREAM),
+    AMBIGUOUS(Channels.SYNC_DOWNSTREAM_RESP),
+    BUSY_HERE(486),
+    REQUEST_TERMINATED(Channels.ODOT),
+    NOT_ACCEPTABLE_HERE(Channels.ODOT_RESP),
+    BAD_EVENT(489),
+    REQUEST_UPDATED(490),
+    REQUEST_PENDING(491),
+    UNDECIPHERABLE(493),
+    INTERNAL_SERVER_ERROR(500),
+    NOT_IMPLEMENTED(501),
+    BAD_GATEWAY(502),
+    SERVICE_UNAVAILABLE(503),
+    SERVER_TIMEOUT(504),
+    VERSION_NOT_SUPPORTED(HttpServletResponse.SC_HTTP_VERSION_NOT_SUPPORTED),
+    MESSAGE_TOO_LARGE(513),
+    PRECONDITION_FAILURE(580),
+    BUSY_EVERYWHERE(DeviceConfigConstants.VIDEO_BITRATE_600_KBPS),
+    DECLINE(603),
+    DOES_NOT_EXIST_ANYWHERE(IptcDirectory.TAG_SUB_LOCATION),
+    NOT_ACCEPTABLE_ANYWHERE(606),
+    TSX_TIMEOUT(REQUEST_TIMEOUT.getCode()),
+    TSX_TRANSPORT_ERROR(SERVICE_UNAVAILABLE.getCode()),
+    _force_32bit(Integer.MAX_VALUE);
+    
+    private int mCode;
+
+    SipStatusCode(int i) {
+        this.mCode = i;
+    }
+
+    public int getCode() {
+        return this.mCode;
+    }
+}

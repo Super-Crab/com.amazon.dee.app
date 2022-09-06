@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:fitsSystemWindows="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/fiesta_background" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/device_list_portion" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.amazon.deecomms.common.ui.CommsTextView android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/eight_spacing" android:text="@string/device_targeting_header" android:textAllCaps="true" style="@style/fiestaDeviceTargetingHeader"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/device_targeting_list" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/device_targeting_list_padding" android:paddingStart="@dimen/device_targeting_list_padding" android:paddingEnd="@dimen/device_targeting_list_padding"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/contacts_list_portion" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.amazon.deecomms.common.ui.CommsTextView android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/eight_spacing" android:text="@string/contacts_targeting_header" android:textAllCaps="true" style="@style/fiestaDeviceTargetingHeader"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/contacts_targeting_list" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/device_targeting_list_header_bottom_margin" android:paddingStart="@dimen/device_targeting_list_padding" android:paddingEnd="@dimen/device_targeting_list_padding"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

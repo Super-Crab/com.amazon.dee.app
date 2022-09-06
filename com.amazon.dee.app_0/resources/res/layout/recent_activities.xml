@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:tag="layout/recent_activities_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/refresh_container" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/recent_activities" android:layout_width="match_parent" android:layout_height="match_parent" android:importantForAccessibility="yes">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/recent_activities_list_view" android:background="?attr/mosaicBackground" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+        </LinearLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <com.amazon.alexa.mosaic.view.ErrorView android:id="@+id/error_view" android:tag="binding_2" android:layout_width="match_parent" android:layout_height="match_parent" app:bodyText="@string/error_all_activity_body" app:headlineText="@string/error_all_activity_headline" app:iconSrc="@drawable/ic_alexa" app:iconTint="?attr/mosaicNeutral10" app:linkText="@string/error_tap_to_retry"/>
+    <include android:id="@+id/loading_view" layout="@layout/loading_view"/>
+    <include layout="@layout/status_banner"/>
+</FrameLayout>

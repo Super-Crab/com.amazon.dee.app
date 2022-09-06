@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:orientation="vertical" android:tag="layout/loading_list_item_0" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/mosaic_list_item_wrapper">
+    <com.amazon.alexa.biloba.view.common.LoadingView android:id="@+id/image" android:layout_width="match_parent" android:layout_height="40dp" android:layout_centerInParent="true" app:animDuration="35" app:dotPadding="10dp" app:fillColor="?attr/mosaicAction10" app:maxRadius="8dp" app:minRadius="2dp"/>
+</LinearLayout>

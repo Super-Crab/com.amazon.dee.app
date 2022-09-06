@@ -1,0 +1,821 @@
+{
+  "ir-master.domain":"prod",
+  "ir-master.realm":"USAmazon",
+
+  "configSyncFirstIntervalMillis": 60000,
+  "configSyncRepeatIntervalMillis": 86400000,
+  "configSyncRetryIntervalMillis": 300000,
+  "configSyncRetryAttemptLimit": 3,
+  "syncMaxDurationMillis": 60000,
+
+  "AdaptiveHeartbeat.MinIntervalMillis.WiFi": 300000,
+  "AdaptiveHeartbeat.MaxIntervalMillis.WAN.310070.310070": 1740000,
+  "AdaptiveHeartbeat.MaxIntervalMillis.WAN.310031.310031": 1740000,
+  "AdaptiveHeartbeat.MaxIntervalMillis.WAN.310380.310380": 1740000,
+  "AdaptiveHeartbeat.MaxIntervalMillis.WAN.310410.310410": 1740000,
+  "AdaptiveHeartbeat.MaxIntervalMillis.WAN.310490.310490": 1740000,
+  "AdaptiveHeartbeat.MaxIntervalMillis.WAN.310530.310530": 1740000,
+  "AdaptiveHeartbeat.MaxIntervalMillis.WAN.310560.310560": 1740000,
+  "AdaptiveHeartbeat.MaxIntervalMillis.WAN.310680.310680": 1740000,
+  "AdaptiveHeartbeat.MaxIntervalMillis.WAN.310890.310890": 1740000,
+  "AdaptiveHeartbeat.MaxIntervalMillis.WAN.310990.310990": 1740000,
+  "AdaptiveHeartbeat.MaxIntervalMillis.WAN.311070.311070": 1740000,
+  "AdaptiveHeartbeat.MaxIntervalMillis.WAN.310012.310012": 1740000,
+  "AdaptiveHeartbeat.MaxIntervalMillis.WAN.311480.311480": 1740000,
+  "AdaptiveHeartbeat.MaxIntervalMillis.WAN.311481.311481": 1740000,
+  "AdaptiveHeartbeat.MaxIntervalMillis.WAN.311482.311482": 1740000,
+  "AdaptiveHeartbeat.MaxIntervalMillis.WAN.311483.311483": 1740000,
+  "AdaptiveHeartbeat.MaxIntervalMillis.WAN.311484.311484": 1740000,
+  "AdaptiveHeartbeat.MaxIntervalMillis.WAN.311485.311485": 1740000,
+  "AdaptiveHeartbeat.MaxIntervalMillis.WAN.311486.311486": 1740000,
+  "AdaptiveHeartbeat.MaxIntervalMillis.WAN.311487.311487": 1740000,
+  "AdaptiveHeartbeat.MaxIntervalMillis.WAN.311488.311488": 1740000,
+  "AdaptiveHeartbeat.MaxIntervalMillis.WAN.311489.311489": 1740000,
+  "AdaptiveHeartbeat.MaxIntervalMillis.WAN.311480.310012": 1740000,
+  "Setting.InternalTestTrustSslHosts": false,
+  "AdaptiveHeartbeat.IntervalRangeMillis": 15000,
+  "AdaptiveHeartbeat.MaxLearningAttemptCount": 5,
+  "Heartbeat.TrivialIntervalDiffMillis": 30000,
+  "AdaptiveHeartbeat.MaxIntervalMillis.WAN": 1740000,
+  "Watchdog.ScreenOffDelay": 6000,
+  "Heartbeat.CheckHeartbeatResponseDelayMillis": 5000,
+  "Heartbeat.IntervalHikeMillis": 30000,
+  "Watchdog.MaxBackoffInterval": 1800000,
+  "Watchdog.AccountChangeConsolidationPeriod": 2000,
+  "AdaptiveHeartbeat.MinIntervalMillis.WAN.310070.310070": 1680000,
+  "AdaptiveHeartbeat.MinIntervalMillis.WAN.310031.310031": 1680000,
+  "AdaptiveHeartbeat.MinIntervalMillis.WAN.310380.310380": 1680000,
+  "AdaptiveHeartbeat.MinIntervalMillis.WAN.310410.310410": 1680000,
+  "AdaptiveHeartbeat.MinIntervalMillis.WAN.310490.310490": 1680000,
+  "AdaptiveHeartbeat.MinIntervalMillis.WAN.310530.310530": 1680000,
+  "AdaptiveHeartbeat.MinIntervalMillis.WAN.310560.310560": 1680000,
+  "AdaptiveHeartbeat.MinIntervalMillis.WAN.310680.310680": 1680000,
+  "AdaptiveHeartbeat.MinIntervalMillis.WAN.310890.310890": 1680000,
+  "AdaptiveHeartbeat.MinIntervalMillis.WAN.310990.310990": 1680000,
+  "AdaptiveHeartbeat.MinIntervalMillis.WAN.311070.311070": 1680000,
+  "AdaptiveHeartbeat.MinIntervalMillis.WAN.310012.310012": 1680000,
+  "AdaptiveHeartbeat.MinIntervalMillis.WAN.311480.311480": 1680000,
+  "AdaptiveHeartbeat.MinIntervalMillis.WAN.311481.311481": 1680000,
+  "AdaptiveHeartbeat.MinIntervalMillis.WAN.311482.311482": 1680000,
+  "AdaptiveHeartbeat.MinIntervalMillis.WAN.311483.311483": 1680000,
+  "AdaptiveHeartbeat.MinIntervalMillis.WAN.311484.311484": 1680000,
+  "AdaptiveHeartbeat.MinIntervalMillis.WAN.311485.311485": 1680000,
+  "AdaptiveHeartbeat.MinIntervalMillis.WAN.311486.311486": 1680000,
+  "AdaptiveHeartbeat.MinIntervalMillis.WAN.311487.311487": 1680000,
+  "AdaptiveHeartbeat.MinIntervalMillis.WAN.311488.311488": 1680000,
+  "AdaptiveHeartbeat.MinIntervalMillis.WAN.311489.311489": 1680000,
+  "AdaptiveHeartbeat.MinIntervalMillis.WAN.311480.310012": 1680000,
+  "Setting.ShutdownD2DMsgGwSocketScreenOff": true,
+  "AdaptiveHeartbeat.MinIntervalMillis.WAN": 480000,
+  "AdaptiveHeartbeat.IntervalValidityPeriodMillis": 1814400000,
+  "Watchdog.BackoffCoefficient": 60000,
+  "Heartbeat.ProbingConnectionMaxInitialDelayMillis": 300000,
+  "Heartbeat.StabilizedIntervalBoundsDiffMillis": 30000,
+  "Setting.BroadcastReceiver.DispatchWakelockTimeoutMillis": 30000,
+  "AdaptiveHeartbeat.MinIntervalMillis.WiFi.<obfuscatedBssid>": -1,
+  "Watchdog.ThrottleDelay": 60000,
+  "Watchdog.Jitter": 30,
+  "Heartbeat.MaxallowedConsecutiveFailureNearLowerBound": 2,
+  "Watchdog.EnableSmartSuspend": true,
+  "Setting.EnableGateway": true,
+  "Setting.AndroidTCommService.UseCSMImplementation": false,
+  "AdaptiveHeartbeat.MaxAllowedConsecutiveFailureCount": 2,
+  "Setting.SelectedMetricsEnabled": true,
+  "AdaptiveHeartbeat.MaxIntervalMillis.WiFi": 1740000,
+  "AdaptiveHeartbeat.MaxIntervalMillis.WiFi.<obfuscatedBssid>": -1,
+  "Heartbeat.MaxHeartbeatTries": 2,
+  "Heartbeat.IsProbingConnectionEnabled": true,
+  "Setting.EnableByteAccountant": false,
+  "Setting.EnableAlwaysOnD2D": false,
+  "Watchdog.MinConnectionDuration": 180000,
+  "Heartbeat.PoorConnectivityIntervalValidityPeriodMillis": 86400000,
+  "Watchdog.MinBackoffInterval": 10000,
+  "AdaptiveHeartbeat.StalenessBufferMillis": 120000,
+  "Heartbeat.ConservativeIntervalMillis": 65000,
+  "Setting.NetworkStabilityThresholdMillis": 300000,
+  "Setting.EnableStabilityOverWan": false,
+  "IdentityResolver.DPGatewayProbingService.test.USAmazon": {
+    "hostname": "dp-gw.integ.amazon.com",
+    "port": 80,
+    "secure-port": 443,
+    "direct-connection": "required",
+    "data-compression": "not-needed",
+    "clear-text-connection": "allowed",
+    "timeout": 60000
+  },
+  "IdentityResolver.DPDiscoveryServiceHTTPS.prod.USAmazon": {
+    "hostname": "dp-discovery-na-ext.amazon.com",
+    "secure-port": 443,
+    "direct-connection": "required",
+    "data-compression": "not-needed",
+    "clear-text-connection": "not-allowed",
+    "timeout": 10000
+  },
+  "IdentityResolver.DPGuaranteedMessageDeliveryService.prod.USAmazon": {
+    "hostname": "dp-gmd-na-backend.amazon.com",
+    "port": 80,
+    "secure-port": 443,
+    "direct-connection": "not-allowed",
+    "data-compression": "not-needed",
+    "clear-text-connection": "allowed",
+    "timeout": 60000
+  },
+  "IdentityResolver.AIVRelayService.test.USAmazon": {
+    "hostname": "dp-gw.integ.amazon.com",
+    "port": 80,
+    "secure-port": 443,
+    "direct-connection": "required",
+    "data-compression": "not-needed",
+    "clear-text-connection": "allowed",
+    "timeout": 60000
+  },
+  "IdentityResolver.DPDiscoveryService.prod.USAmazon": {
+    "hostname": "dp-discovery-na.amazon.com",
+    "port": 80,
+    "direct-connection": "not-allowed",
+    "data-compression": "not-needed",
+    "clear-text-connection": "not-allowed",
+    "timeout": 10000
+  },
+  "IdentityResolver.TytoDigitalEntityGenerationService.master.USAmazon": {
+    "hostname": "dp-deg-preprod.amazon.com",
+    "port": 80,
+    "secure-port": 443,
+    "direct-connection": "required",
+    "data-compression": "not-needed",
+    "clear-text-connection": "not-allowed",
+    "timeout": 5000
+  },
+  "IdentityResolver.DPDiscoveryService.master.USAmazon": {
+    "hostname": "dp-discovery-preprod.amazon.com",
+    "port": 80,
+    "direct-connection": "not-allowed",
+    "data-compression": "not-needed",
+    "clear-text-connection": "not-allowed",
+    "timeout": 10000
+  },
+  "IdentityResolver.TytoDigitalEntityGenerationService.prod.EUAmazon": {
+    "hostname": "dp-deg-prod-eu.amazon.com",
+    "port": 80,
+    "secure-port": 443,
+    "direct-connection": "required",
+    "data-compression": "not-needed",
+    "clear-text-connection": "not-allowed",
+    "timeout": 5000
+  },
+  "IdentityResolver.D2DNotificationService.test.USAmazon": {
+    "hostname": "dp-d2d-notif.integ.amazon.com",
+    "port": 8308,
+    "secure-port": 443,
+    "direct-connection": "not-allowed",
+    "data-compression": "not-needed",
+    "clear-text-connection": "not-allowed",
+    "timeout": 60000
+  },
+  "IdentityResolver.MessagingDirectorService.prod.USAmazon": {
+    "hostname": "messaging-director-us-east-1.amazon.com",
+    "secure-port": 443,
+    "direct-connection": "required",
+    "data-compression": "not-needed",
+    "clear-text-connection": "not-allowed",
+    "timeout": 10000
+  },
+  "IdentityResolver.DPGatewayMonitoringService.*.USAmazon": {
+    "hostname": "dp-gw-mont.integ.amazon.com",
+    "port": 80,
+    "direct-connection": "not-allowed",
+    "data-compression": "not-needed",
+    "clear-text-connection": "allowed",
+    "timeout": 60000
+  },
+  "IdentityResolver.AIVRelayService.prod.USAmazon": {
+    "hostname": "dp-gw-na.amazon.com",
+    "secure-port": 443,
+    "direct-connection": "required",
+    "data-compression": "not-needed",
+    "clear-text-connection": "not-allowed",
+    "timeout": 60000
+  },
+  "IdentityResolver.DPGatewayProbingService.prod.USAmazon": {
+    "hostname": "dp-gw-na.amazon.com",
+    "secure-port": 443,
+    "direct-connection": "required",
+    "data-compression": "not-needed",
+    "clear-text-connection": "not-allowed",
+    "timeout": 60000
+  },
+  "IdentityResolver.DPGatewayService.test.USAmazon": {
+    "hostname": "dp-gw.integ.amazon.com",
+    "port": 80,
+    "secure-port": 443,
+    "direct-connection": "required",
+    "data-compression": "not-needed",
+    "clear-text-connection": "allowed",
+    "timeout": 60000
+  },
+  "IdentityResolver.DeviceMetricsService.master.USAmazon": {
+    "hostname": "device-metrics-us.amazon.com",
+    "port": 80,
+    "secure-port": 443,
+    "direct-connection": "allowed",
+    "data-compression": "needed",
+    "clear-text-connection": "not-allowed",
+    "timeout": 60000
+  },
+  "IdentityResolver.DPBackupAndRestoreService.master.USAmazon": {
+    "hostname": "devicebackupandrestore-preprod.amazon.com",
+    "secure-port": 443,
+    "direct-connection": "required",
+    "data-compression": "not-needed",
+    "clear-text-connection": "not-allowed",
+    "timeout": 300000
+  },
+  "IdentityResolver.DPMapsLocalSearchService.prod.*": {
+    "hostname": "dp-mls-preprod.integ.amazon.com",
+    "port": 80,
+    "secure-port": 443,
+    "direct-connection": "required",
+    "data-compression": "not-needed",
+    "timeout": 60000
+  },
+  "IdentityResolver.D2DRelayService.test.USAmazon": {
+    "hostname": "dp-gw.integ.amazon.com",
+    "port": 80,
+    "secure-port": 443,
+    "direct-connection": "required",
+    "data-compression": "not-needed",
+    "clear-text-connection": "allowed",
+    "timeout": 60000
+  },
+  "IdentityResolver.TytoDigitalEntityGenerationService.test.USAmazon": {
+    "hostname": "dp-deg.integ.amazon.com",
+    "port": 80,
+    "secure-port": 443,
+    "direct-connection": "required",
+    "data-compression": "not-needed",
+    "clear-text-connection": "not-allowed",
+    "timeout": 5000
+  },
+  "IdentityResolver.DPMapsKeyManagementService.test.USAmazon": {
+    "hostname": "dp-mkm.integ.amazon.com",
+    "port": 80,
+    "secure-port": 443,
+    "direct-connection": "allowed",
+    "data-compression": "not-needed",
+    "clear-text-connection": "allowed",
+    "timeout": 60000
+  },
+  "IdentityResolver.D2DNotificationService.prod.USAmazon": {
+    "hostname": "dp-d2d-notif-backend.amazon.com",
+    "port": 80,
+    "secure-port": 443,
+    "direct-connection": "not-allowed",
+    "data-compression": "not-needed",
+    "clear-text-connection": "not-allowed",
+    "timeout": 60000
+  },
+  "IdentityResolver.DPGatewayService.prod.USAmazon": {
+    "hostname": "dp-gw-na.amazon.com",
+    "secure-port": 443,
+    "direct-connection": "required",
+    "data-compression": "not-needed",
+    "clear-text-connection": "not-allowed",
+    "timeout": 60000
+  },
+  "IdentityResolver.DPGatewayService.alpha.USAmazon": {
+    "hostname": "dp-gw-alpha.integ.amazon.com",
+    "port": 80,
+    "secure-port": 443,
+    "direct-connection": "required",
+    "data-compression": "not-needed",
+    "clear-text-connection": "allowed",
+    "timeout": 60000
+  },
+  "IdentityResolver.TytoDigitalEntityGenerationService.prod.USAmazon": {
+    "hostname": "dp-deg-prod.amazon.com",
+    "port": 80,
+    "secure-port": 443,
+    "direct-connection": "required",
+    "data-compression": "not-needed",
+    "clear-text-connection": "not-allowed",
+    "timeout": 5000
+  },
+  "IdentityResolver.D2DRelayService.prod.USAmazon": {
+    "hostname": "dp-gw-na.amazon.com",
+    "secure-port": 443,
+    "direct-connection": "required",
+    "data-compression": "not-needed",
+    "clear-text-connection": "not-allowed",
+    "timeout": 60000
+  },
+  "IdentityResolver.DPBackupAndRestoreService.*.USAmazon": {
+    "hostname": "devicebackupandrestore.integ.amazon.com",
+    "secure-port": 443,
+    "direct-connection": "required",
+    "data-compression": "not-needed",
+    "clear-text-connection": "not-allowed",
+    "timeout": 300000
+  },
+  "IdentityResolver.DPRemoteDeviceManagementService.master.USAmazon": {
+    "hostname": "dp-rdm-na-preprod.amazon.com",
+    "port": 81,
+    "secure-port": 443,
+    "direct-connection": "required",
+    "data-compression": "not-needed",
+    "clear-text-connection": "not-allowed",
+    "timeout": 60000
+  },
+  "IdentityResolver.DPMapsKeyManagementService.prod.USAmazon": {
+    "hostname": "dp-mkm-preprod.integ.amazon.com",
+    "port": 80,
+    "secure-port": 443,
+    "direct-connection": "allowed",
+    "data-compression": "not-needed",
+    "clear-text-connection": "allowed",
+    "timeout": 60000
+  },
+  "IdentityResolver.TytoDigitalEntityGenerationService.*.EUAmazon": {
+    "hostname": "dp-deg-eu.integ.amazon.com",
+    "port": 80,
+    "secure-port": 443,
+    "direct-connection": "required",
+    "data-compression": "not-needed",
+    "clear-text-connection": "not-allowed",
+    "timeout": 5000
+  },
+  "IdentityResolver.AmazonSRServiceProd.prod.EUAmazon": {
+    "hostname": "dp-sr-prod-eu.amazon.com",
+    "secure-port": 443,
+    "direct-connection": "required",
+    "data-compression": "not-needed",
+    "clear-text-connection": "not-allowed",
+    "timeout": 300000
+  },
+  "IdentityResolver.DPGuaranteedMessageDeliveryService.alpha.USAmazon": {
+    "hostname": "dp-gmd-alpha.integ.amazon.com",
+    "port": 80,
+    "secure-port": 443,
+    "direct-connection": "not-allowed",
+    "data-compression": "not-needed",
+    "clear-text-connection": "allowed",
+    "timeout": 60000
+  },
+  "IdentityResolver.SocialNetworkingDataService.prod.*": {
+    "hostname": "identity-snds.amazon.com",
+    "port": 80,
+    "secure-port": 443,
+    "direct-connection": "allowed",
+    "data-compression": "not-needed",
+    "clear-text-connection": "allowed",
+    "timeout": 60000
+  },
+  "IdentityResolver.DPDemoService.test.USAmazon": {
+    "hostname": "dp-demo.integ.amazon.com",
+    "port": 80,
+    "secure-port": 443,
+    "direct-connection": "allowed",
+    "data-compression": "not-needed",
+    "clear-text-connection": "allowed",
+    "timeout": 60000
+  },
+  "IdentityResolver.DPGatewayService.master.USAmazon": {
+    "hostname": "dp-gw-preprod.amazon.com",
+    "secure-port": 443,
+    "direct-connection": "required",
+    "data-compression": "not-needed",
+    "clear-text-connection": "not-allowed",
+    "timeout": 60000
+  },
+  "IdentityResolver.AmazonSRService.test.EUAmazon": {
+    "hostname": "sr.integ.amazon.com",
+    "secure-port": 8700,
+    "direct-connection": "required",
+    "data-compression": "not-needed",
+    "clear-text-connection": "allowed",
+    "timeout": 300000
+  },
+  "IdentityResolver.DPGatewayProbingService.master.USAmazon": {
+    "hostname": "dp-gw-preprod.amazon.com",
+    "secure-port": 443,
+    "direct-connection": "required",
+    "data-compression": "not-needed",
+    "clear-text-connection": "not-allowed",
+    "timeout": 60000
+  },
+  "IdentityResolver.DPMapsLocalSearchService.test.*": {
+    "hostname": "dp-mls.integ.amazon.com",
+    "port": 80,
+    "secure-port": 443,
+    "direct-connection": "required",
+    "data-compression": "not-needed",
+    "timeout": 60000
+  },
+  "IdentityResolver.DPDemoService.prod.USAmazon": {
+    "hostname": "dp-demo.amazon.com",
+    "secure-port": 443,
+    "direct-connection": "allowed",
+    "data-compression": "not-needed",
+    "clear-text-connection": "not-allowed",
+    "timeout": 60000
+  },
+  "IdentityResolver.AIVRelayService.master.USAmazon": {
+    "hostname": "dp-gw-preprod.amazon.com",
+    "secure-port": 443,
+    "direct-connection": "required",
+    "data-compression": "not-needed",
+    "clear-text-connection": "not-allowed",
+    "timeout": 60000
+  },
+  "IdentityResolver.DPGatewayProbingService.alpha.USAmazon": {
+    "hostname": "dp-gw-alpha.integ.amazon.com",
+    "port": 80,
+    "secure-port": 443,
+    "direct-connection": "required",
+    "data-compression": "not-needed",
+    "clear-text-connection": "allowed",
+    "timeout": 60000
+  },
+  "IdentityResolver.AmazonSRService.prod.EUAmazon": {
+    "hostname": "dp-sr-preprod.amazon.com",
+    "secure-port": 443,
+    "direct-connection": "required",
+    "data-compression": "not-needed",
+    "clear-text-connection": "not-allowed",
+    "timeout": 300000
+  },
+  "IdentityResolver.D2DRelayService.master.USAmazon": {
+    "hostname": "dp-gw-preprod.amazon.com",
+    "secure-port": 443,
+    "direct-connection": "required",
+    "data-compression": "not-needed",
+    "clear-text-connection": "not-allowed",
+    "timeout": 60000
+  },
+  "IdentityResolver.TytoDigitalEntityGenerationService.*.USAmazon": {
+    "hostname": "dp-deg.integ.amazon.com",
+    "port": 80,
+    "secure-port": 443,
+    "direct-connection": "required",
+    "data-compression": "not-needed",
+    "clear-text-connection": "not-allowed",
+    "timeout": 5000
+  },
+  "IdentityResolver.AmazonSRServiceProd.prod.USAmazon": {
+    "hostname": "dp-sr-prod.amazon.com",
+    "secure-port": 443,
+    "direct-connection": "required",
+    "data-compression": "not-needed",
+    "clear-text-connection": "not-allowed",
+    "timeout": 300000
+  },
+  "IdentityResolver.DPRemoteDeviceManagementService.test.USAmazon": {
+    "hostname": "dp-rdm-na.integ.amazon.com",
+    "port": 81,
+    "secure-port": 443,
+    "direct-connection": "required",
+    "data-compression": "not-needed",
+    "clear-text-connection": "not-allowed",
+    "timeout": 60000
+  },
+  "IdentityResolver.Gateway.alpha.USAmazon": {
+    "hostname": "dp-gw-alpha.integ.amazon.com",
+    "port": 80,
+    "secure-port": 443,
+    "direct-connection": "required",
+    "data-compression": "not-needed",
+    "clear-text-connection": "allowed",
+    "timeout": 60000
+  },
+  "IdentityResolver.Gateway.test.USAmazon": {
+    "hostname": "dp-gw.integ.amazon.com",
+    "port": 80,
+    "secure-port": 443,
+    "direct-connection": "required",
+    "data-compression": "not-needed",
+    "clear-text-connection": "allowed",
+    "timeout": 60000
+  },
+  "IdentityResolver.Gateway.master.USAmazon": {
+    "hostname": "dp-gw-preprod.amazon.com",
+    "secure-port": 443,
+    "direct-connection": "required",
+    "data-compression": "not-needed",
+    "clear-text-connection": "not-allowed",
+    "timeout": 60000
+  },
+  "IdentityResolver.Gateway.prod.USAmazon": {
+    "hostname": "dp-gw-na.amazon.com",
+    "secure-port": 443,
+    "direct-connection": "required",
+    "data-compression": "not-needed",
+    "clear-text-connection": "not-allowed",
+    "timeout": 60000
+  },
+  "IdentityResolver.DPGuaranteedMessageDeliveryService.master.USAmazon": {
+    "hostname": "dp-gmd-preprod.integ.amazon.com",
+    "port": 80,
+    "secure-port": 443,
+    "direct-connection": "not-allowed",
+    "data-compression": "not-needed",
+    "clear-text-connection": "allowed",
+    "timeout": 60000
+  },
+  "IdentityResolver.DPDemoService.alpha.USAmazon": {
+    "hostname": "dp-demo-alpha.integ.amazon.com",
+    "port": 80,
+    "secure-port": 443,
+    "direct-connection": "allowed",
+    "data-compression": "not-needed",
+    "clear-text-connection": "allowed",
+    "timeout": 60000
+  },
+  "IdentityResolver.DPBackupAndRestoreService.test.USAmazon": {
+    "hostname": "devicebackupandrestore.integ.amazon.com",
+    "secure-port": 443,
+    "direct-connection": "required",
+    "data-compression": "not-needed",
+    "clear-text-connection": "not-allowed",
+    "timeout": 300000
+  },
+  "IdentityResolver.AmazonSRService.test.USAmazon": {
+    "hostname": "sr.integ.amazon.com",
+    "secure-port": 8700,
+    "direct-connection": "required",
+    "data-compression": "not-needed",
+    "clear-text-connection": "allowed",
+    "timeout": 300000
+  },
+  "IdentityResolver.DPGatewayMonitoringService.master.USAmazon": {
+    "hostname": "dp-gw-mont-preprod.integ.amazon.com",
+    "port": 80,
+    "direct-connection": "not-allowed",
+    "data-compression": "not-needed",
+    "clear-text-connection": "allowed",
+    "timeout": 60000
+  },
+  "IdentityResolver.DeviceMetricsService.*.USAmazon": {
+    "hostname": "dp-mont.integ.amazon.com",
+    "port": 80,
+    "secure-port": 443,
+    "direct-connection": "allowed",
+    "data-compression": "needed",
+    "clear-text-connection": "allowed",
+    "timeout": 60000
+  },
+  "IdentityResolver.DPRemoteDeviceManagementService.prod.USAmazon": {
+    "hostname": "dp-rdm-na.amazon.com",
+    "port": 81,
+    "secure-port": 443,
+    "direct-connection": "required",
+    "data-compression": "not-needed",
+    "clear-text-connection": "not-allowed",
+    "timeout": 60000
+  },
+  "IdentityResolver.DPGatewayMonitoringService.prod.USAmazon": {
+    "hostname": "dp-gw-mont-preprod.integ.amazon.com",
+    "port": 80,
+    "direct-connection": "not-allowed",
+    "data-compression": "not-needed",
+    "clear-text-connection": "allowed",
+    "timeout": 60000
+  },
+  "IdentityResolver.DPDemoService.master.USAmazon": {
+    "hostname": "dp-demo-preprod.integ.amazon.com",
+    "port": 80,
+    "secure-port": 443,
+    "direct-connection": "allowed",
+    "data-compression": "not-needed",
+    "clear-text-connection": "allowed",
+    "timeout": 60000
+  },
+  "IdentityResolver.TytoDigitalEntityGenerationService.master.EUAmazon": {
+    "hostname": "dp-deg-preprod-eu.amazon.com",
+    "port": 80,
+    "secure-port": 443,
+    "direct-connection": "required",
+    "data-compression": "not-needed",
+    "clear-text-connection": "not-allowed",
+    "timeout": 5000
+  },
+  "IdentityResolver.DPBackupAndRestoreService.prod.USAmazon": {
+    "hostname": "devicebackupandrestore.amazon.com",
+    "secure-port": 443,
+    "direct-connection": "required",
+    "data-compression": "not-needed",
+    "clear-text-connection": "not-allowed",
+    "timeout": 300000
+  },
+  "IdentityResolver.AmazonSRService.prod.USAmazon": {
+    "hostname": "dp-sr-preprod.amazon.com",
+    "secure-port": 443,
+    "direct-connection": "required",
+    "data-compression": "not-needed",
+    "clear-text-connection": "not-allowed",
+    "timeout": 300000
+  },
+  "IdentityResolver.SocialNetworkingDataService.test.*": {
+    "hostname": "identity-snds.integ.amazon.com",
+    "port": 80,
+    "secure-port": 443,
+    "direct-connection": "allowed",
+    "data-compression": "not-needed",
+    "clear-text-connection": "allowed",
+    "timeout": 60000
+  },
+  "IdentityResolver.AIVRelayService.alpha.USAmazon": {
+    "hostname": "dp-gw-alpha.integ.amazon.com",
+    "port": 80,
+    "secure-port": 443,
+    "direct-connection": "required",
+    "data-compression": "not-needed",
+    "clear-text-connection": "allowed",
+    "timeout": 60000
+  },
+  "IdentityResolver.DPDiscoveryServiceHTTPS.test.USAmazon": {
+    "hostname": "dp-discovery.integ.amazon.com",
+    "secure-port": 443,
+    "direct-connection": "required",
+    "data-compression": "not-needed",
+    "clear-text-connection": "not-allowed",
+    "timeout": 10000
+  },
+  "IdentityResolver.DPGuaranteedMessageDeliveryService.test.USAmazon": {
+    "hostname": "dp-gmd.integ.amazon.com",
+    "port": 80,
+    "secure-port": 443,
+    "direct-connection": "not-allowed",
+    "data-compression": "not-needed",
+    "clear-text-connection": "allowed",
+    "timeout": 60000
+  },
+  "IdentityResolver.DPDiscoveryServiceHTTPS.master.USAmazon": {
+    "hostname": "dp-discovery-preprod-ext.amazonpmi.com",
+    "secure-port": 443,
+    "direct-connection": "required",
+    "data-compression": "not-needed",
+    "clear-text-connection": "not-allowed",
+    "timeout": 10000
+  },
+  "IdentityResolver.DPDiscoveryService.test.USAmazon": {
+    "hostname": "dp-discovery.integ.amazon.com",
+    "port": 80,
+    "direct-connection": "not-allowed",
+    "data-compression": "not-needed",
+    "clear-text-connection": "not-allowed",
+    "timeout": 10000
+  },
+  "IdentityResolver.D2DNotificationService.master.USAmazon": {
+    "hostname": "dp-d2d-notif-preprod.amazon.com",
+    "port": 8308,
+    "secure-port": 443,
+    "direct-connection": "not-allowed",
+    "data-compression": "not-needed",
+    "clear-text-connection": "not-allowed",
+    "timeout": 60000
+  },
+  "IdentityResolver.TytoDigitalEntityGenerationService.test.EUAmazon": {
+    "hostname": "dp-deg-eu.integ.amazon.com",
+    "port": 80,
+    "secure-port": 443,
+    "direct-connection": "required",
+    "data-compression": "not-needed",
+    "clear-text-connection": "not-allowed",
+    "timeout": 5000
+  },
+  "IdentityResolver.DeviceMetricsService.prod.USAmazon": {
+    "hostname": "device-metrics-us.amazon.com",
+    "port": 80,
+    "secure-port": 443,
+    "direct-connection": "allowed",
+    "data-compression": "needed",
+    "clear-text-connection": "not-allowed",
+    "timeout": 60000
+  },
+  "IdentityResolver.DeeVKickService.master.USAmazon": {
+    "hostname": "n/a",
+    "port": 4180,
+    "secure-port": 4143,
+    "direct-connection": "not-allowed",
+    "data-compression": "not-needed",
+    "clear-text-connection": "allowed",
+    "timeout": 10000
+  },
+  "IdentityResolver.DeeVKickService.prod.USAmazon": {
+    "hostname": "n/a",
+    "port": 4180,
+    "secure-port": 4143,
+    "direct-connection": "not-allowed",
+    "data-compression": "not-needed",
+    "clear-text-connection": "allowed",
+    "timeout": 10000
+  },
+  "IdentityResolver.DeeVKickService.test.USAmazon": {
+    "hostname": "n/a",
+    "port": 4180,
+    "secure-port": 4143,
+    "direct-connection": "not-allowed",
+    "data-compression": "not-needed",
+    "clear-text-connection": "allowed",
+    "timeout": 10000
+  },
+  "IdentityResolver.SynchronousDeviceCallingService.alpha.USAmazon": {
+    "hostname": "n/a",
+    "port": 80,
+    "secure-port": 443,
+    "direct-connection": "not-allowed",
+    "data-compression": "not-needed",
+    "clear-text-connection": "allowed",
+    "timeout": 10000
+  },
+  "IdentityResolver.SynchronousDeviceCallingService.test.USAmazon": {
+    "hostname": "n/a",
+    "port": 80,
+    "secure-port": 443,
+    "direct-connection": "not-allowed",
+    "data-compression": "not-needed",
+    "clear-text-connection": "allowed",
+    "timeout": 10000
+  },
+  "IdentityResolver.SynchronousDeviceCallingService.master.USAmazon": {
+    "hostname": "n/a",
+    "port": 80,
+    "secure-port": 443,
+    "direct-connection": "not-allowed",
+    "data-compression": "not-needed",
+    "clear-text-connection": "allowed",
+    "timeout": 10000
+  },
+  "IdentityResolver.SynchronousDeviceCallingService.prod.USAmazon": {
+    "hostname": "n/a",
+    "port": 80,
+    "secure-port": 443,
+    "direct-connection": "not-allowed",
+    "data-compression": "not-needed",
+    "clear-text-connection": "allowed",
+    "timeout": 10000
+  },
+  "IdentityResolver.DeeWebsiteMessagingService.master.USAmazon": {
+  	"hostname": "n/a",
+    "port": 4180,
+    "secure-port": 4143,
+    "direct-connection": "not-allowed",
+    "data-compression": "not-needed",
+    "clear-text-connection": "allowed",
+    "timeout": 10000
+  },
+  "IdentityResolver.DeeWebsiteMessagingService.test.USAmazon": {
+  	"hostname": "n/a",
+    "port": 4180,
+    "secure-port": 4143,
+    "direct-connection": "not-allowed",
+    "data-compression": "not-needed",
+    "clear-text-connection": "allowed",
+    "timeout": 10000
+  },
+  "IdentityResolver.DeeWebsiteMessagingService.prod.USAmazon": {
+  	"hostname": "n/a",
+    "port": 4180,
+    "secure-port": 4143,
+    "direct-connection": "not-allowed",
+    "data-compression": "not-needed",
+    "clear-text-connection": "allowed",
+    "timeout": 10000
+  },
+  "IdentityResolver.BobDispatchService.alpha.USAmazon": {
+    "hostname": "bob-dispatch-alpha.integ.amazon.com",
+    "port": 80,
+    "secure-port": 443,
+    "direct-connection": "required",
+    "data-compression": "not-needed",
+    "clear-text-connection": "allowed",
+    "timeout": 60000
+  },
+  "IdentityResolver.BobDispatchService.test.USAmazon": {
+    "hostname": "bob-dispatch-beta-na.integ.amazon.com",
+    "port": 80,
+    "secure-port": 443,
+    "direct-connection": "required",
+    "data-compression": "not-needed",
+    "clear-text-connection": "allowed",
+    "timeout": 60000
+  },
+  "IdentityResolver.BobDispatchService.master.USAmazon": {
+    "hostname": "bob-dispatch-gamma-na.amazon.com",
+    "port": 80,
+    "secure-port": 443,
+    "direct-connection": "required",
+    "data-compression": "not-needed",
+    "clear-text-connection": "not-allowed",
+    "timeout": 60000
+  },
+  "IdentityResolver.BobDispatchService.prod.USAmazon": {
+    "hostname": "bob-dispatch-prod-na.amazon.com",
+    "port": 80,
+    "secure-port": 443,
+    "direct-connection": "required",
+    "data-compression": "not-needed",
+    "clear-text-connection": "not-allowed",
+    "timeout": 60000
+  }
+}
+

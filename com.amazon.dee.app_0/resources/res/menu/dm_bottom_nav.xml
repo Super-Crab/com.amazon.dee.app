@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/dm_home_inactive" android:id="@+id/dm_menu_home" android:title="@string/content_desc_tab_item_home" android:contentDescription="@string/content_desc_tab_item_home"/>
+    <item android:icon="@drawable/dm_navigation_inactive" android:id="@+id/dm_menu_navigation" android:title="@string/content_desc_tab_item_navigation" android:contentDescription="@string/content_desc_tab_item_navigation"/>
+    <item android:icon="@drawable/dm_comm_inactive" android:id="@+id/dm_menu_comm" android:title="@string/content_desc_tab_item_comms" android:contentDescription="@string/content_desc_tab_item_comms"/>
+    <item android:icon="@drawable/dm_entertainment_inactive" android:id="@+id/dm_menu_entertainment" android:title="@string/content_desc_tab_item_play" android:contentDescription="@string/content_desc_tab_item_play"/>
+</menu>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/drive_mode_home_card" android:background="?attr/mosaicBackground" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="@dimen/drive_mode_new_card_height">
+        <ImageView android:id="@+id/drive_mode_card_icon" android:layout_width="@dimen/mini_card_image_size" android:layout_height="@dimen/mini_card_image_size" android:src="@drawable/dm_ic_by_car" android:layout_marginStart="@dimen/large_margin" android:layout_marginEnd="@dimen/large_margin"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/large_margin" android:layout_toEndOf="@+id/drive_mode_card_icon">
+            <TextView android:textSize="@dimen/small_text" android:textStyle="bold" android:textColor="?attr/mosaicNeutral10" android:id="@+id/drive_mode_card_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/drive_mode_new_card_title" android:textAlignment="viewStart"/>
+            <TextView android:textSize="@dimen/extra_small_text" android:textColor="?attr/mosaicNeutral20" android:id="@+id/drive_mode_card_description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/card_description_margin" android:text="@string/drive_mode_new_card_description" android:maxLines="2" android:textAlignment="viewStart"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

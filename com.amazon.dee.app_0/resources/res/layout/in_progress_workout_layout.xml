@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/in_progress_layout" android:background="?attr/mosaicBackground" android:fitsSystemWindows="true" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/header" layout="@layout/header"/>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/content" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/header">
+        <View android:id="@+id/mapView" android:background="?attr/mosaicNeutral20" android:visibility="visible" android:layout_width="0dp" android:layout_height="match_parent" app:layout_constraintDimensionRatio="W,9:11" app:layout_constraintLeft_toLeftOf="0"/>
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="0dp" android:layout_height="match_parent" app:layout_constraintLeft_toRightOf="@+id/mapView" app:layout_constraintRight_toRightOf="0">
+            <include android:id="@+id/stats" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toTopOf="@+id/lbl_utterance" app:layout_constraintTop_toTopOf="0" layout="@layout/stats"/>
+            <com.amazon.alexa.font.FontTextView android:textSize="@dimen/text_size_hintSecondary" android:textColor="?attr/mosaicNeutral30" android:gravity="center" android:id="@+id/lbl_utterance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/fitness_data_top_margin" android:text="@string/alexa_hint_suggestion5" app:layout_constraintBottom_toTopOf="@+id/footer" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0"/>
+            <include android:id="@+id/footer" layout="@layout/footer_in_progress"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

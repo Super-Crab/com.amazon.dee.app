@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="default_pill_hints">
+        <item>スリープサウンドを再生</item>
+        <item>アナウンスを送信</item>
+        <item>どんな通知がある？</item>
+        <item>音楽を止めて</item>
+        <item>ジョークを言って</item>
+        <item>今日の質問は何？</item>
+        <item>おやすみ</item>
+        <item>止めて</item>
+        <item>音楽をかけて</item>
+        <item>おはよう</item>
+        <item>次の曲をお願い</item>
+        <item>再生して</item>
+        <item>注文の配送状況を教えて</item>
+        <item>音楽を一時停止して</item>
+        <item>ジャズをかけて</item>
+        <item>ガードをオンにして</item>
+        <item>元気?</item>
+        <item>明日の午前7時にアラームを設定して</item>
+        <item>黄色のライトはどういう意味?</item>
+        <item>今日の天気は?</item>
+        <item>タイマーをキャンセルして</item>
+        <item>朝の支度</item>
+        <item>買い物リストにリンゴを追加して</item>
+        <item>外の気温は？</item>
+        <item>ニュースを教えて</item>
+    </array>
+    <array name="new_user_messages">
+        <item>こんにちは！タイプ入力で私と会話できるようになりました。メッセージの入力によってジョークをリクエストしたり、照明を操作したりすることができます。リストや設定などを検索することもできます。</item>
+        <item>なお、タイプ入力はパブリックプレビュー期間なので、まだ練習中です！</item>
+    </array>
+    <array name="voice_ui_od_permissions_primer_rationale_list_items">
+        <item>Alexaに音声リクエストの聞き取りを許可する</item>
+        <item>友達や家族への通話またはメッセージ</item>
+        <item>スマートホームデバイスの制御</item>
+        <item>位置情報に基づいて検索</item>
+    </array>
+    <array name="voice_ui_od_scrim_hints">
+        <item>「天気はどう?」</item>
+        <item>「交通状況を教えて」</item>
+        <item>「10キロメートルは何マイル?」</item>
+        <item>「1ドルは何ユーロ?」</item>
+        <item>「近くで上映している映画は何?」</item>
+        <item>「明日はどんな映画を上映している?」</item>
+        <item>「どんなSF映画を上映している?」</item>
+        <item>「卵1つのカロリーは?」</item>
+        <item>「月までの距離は?」</item>
+        <item>「東京は今何時?」</item>
+        <item>「スター・トレックをウィキペディアで調べて」</item>
+        <item>「買い物リストに牛乳を追加して」</item>
+        <item>「やることリストには何がある?」</item>
+        <item>「一番近いスーパーを探して」</item>
+        <item>「一番近いプールはどこ?」</item>
+        <item>「近くにあるカフェを教えて」</item>
+        <item>「一番近いピザ屋はどこ?」</item>
+        <item>「一番近くの薬局を見せて」</item>
+        <item>「今日の天気は?」</item>
+        <item>「明日は雨降る?」</item>
+        <item>「今日は傘いる?」</item>
+        <item>「ロンドンの天気を教えて」</item>
+    </array>
+</resources>

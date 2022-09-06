@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/oobe_user_selection" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.amazon.deecomms.common.ui.CommsTextView android:id="@+id/oobe_user_selection_title" android:paddingTop="@dimen/oobe_title_padding_top" android:paddingBottom="@dimen/oobe_title_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/oobe_user_selection_title" style="@style/AlexaComms.large"/>
+    <com.amazon.deecomms.common.ui.CommsTextView android:id="@+id/oobe_user_selection_subtitle" android:paddingBottom="@dimen/oobe_surround_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/oobe_user_selection_subtitle" style="@style/AlexaComms.medium"/>
+    <ProgressBar android:id="@+id/us_progress_bar" style="@style/oobeUserSelectionProgressBar"/>
+    <ListView android:id="@+id/oobe_user_selection_list" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" style="@style/FloatingActionButtonWrapper">
+    <ImageButton android:id="@+id/videoToggleButton" android:background="@drawable/fiesta_selector_call_toggle_btn_bg" android:src="@drawable/fiesta_ic_video_off" android:contentDescription="@string/toggle_video_content_description" style="@style/FloatingActionButton"/>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+    <Space android:id="@+id/hero_space" android:layout_width="match_parent" android:layout_height="@dimen/amahc_padding_medium"/>
+    <RelativeLayout android:id="@+id/slot0wrapper" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/slot0" android:paddingBottom="@dimen/amahc_margin_extra_large" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAlignment="textStart" android:paddingStart="@dimen/amahc_margin_large" android:paddingEnd="0dp"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/slot1" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/amahc_margin_large" android:paddingEnd="@dimen/amahc_margin_large"/>
+    <Space android:id="@+id/slot1_slot2_space" android:layout_width="match_parent" android:layout_height="@dimen/amahc_margin_large"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/slot2" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/amahc_margin_large" android:paddingEnd="@dimen/amahc_margin_large"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/slot3" android:paddingTop="@dimen/amahc_margin_large" android:paddingBottom="@dimen/amahc_margin_large" android:focusable="true" android:clickable="true" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:paddingStart="@dimen/amahc_margin_large" android:paddingEnd="@dimen/amahc_margin_large"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/slot4" android:paddingTop="@dimen/amahc_margin_large" android:paddingBottom="@dimen/amahc_margin_large" android:focusable="true" android:clickable="true" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:paddingStart="@dimen/amahc_margin_large" android:paddingEnd="@dimen/amahc_margin_large"/>
+    </LinearLayout>
+</LinearLayout>

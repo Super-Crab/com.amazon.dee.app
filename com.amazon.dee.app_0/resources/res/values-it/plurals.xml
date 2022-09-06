@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accessory_service_notification_content_active_sessions">
+        <item quantity="one">%1$d connesso</item>
+        <item quantity="other">%1$d connessi</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">Avanti di %d secondo</item>
+        <item quantity="other">Avanti di %d secondi</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">Indietro di %d secondo</item>
+        <item quantity="other">Indietro di %d secondi</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_days">
+        <item quantity="one">domani</item>
+        <item quantity="other">tra %d giorni</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_hours">
+        <item quantity="one">tra 1 ora</item>
+        <item quantity="other">tra %d ore</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_minutes">
+        <item quantity="one">tra 1 min</item>
+        <item quantity="other">tra %d min</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_seconds">
+        <item quantity="one">tra 1 sec</item>
+        <item quantity="other">tra %d sec</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_days_ago">
+        <item quantity="one">ieri</item>
+        <item quantity="other">%d giorni fa</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_hours_ago">
+        <item quantity="one">1 ora fa</item>
+        <item quantity="other">%d ore fa</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_minutes_ago">
+        <item quantity="one">1 min fa</item>
+        <item quantity="other">%d min fa</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_seconds_ago">
+        <item quantity="one">1 sec fa</item>
+        <item quantity="other">%d sec fa</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_hours">
+        <item quantity="one">1 ora</item>
+        <item quantity="other">%d ore</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_minutes">
+        <item quantity="one">1 minuto</item>
+        <item quantity="other">%d minuti</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_seconds">
+        <item quantity="one">1 secondo</item>
+        <item quantity="other">%d secondi</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_days">
+        <item quantity="one">domani</item>
+        <item quantity="other">tra %d giorni</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_hours">
+        <item quantity="one">tra 1 ora</item>
+        <item quantity="other">tra %d ore</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_minutes">
+        <item quantity="one">tra 1 minuto</item>
+        <item quantity="other">tra %d minuti</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_seconds">
+        <item quantity="one">tra 1 secondo</item>
+        <item quantity="other">tra %d secondi</item>
+    </plurals>
+    <plurals name="joda_time_android_num_days_ago">
+        <item quantity="one">ieri</item>
+        <item quantity="other">%d giorni fa</item>
+    </plurals>
+    <plurals name="joda_time_android_num_hours_ago">
+        <item quantity="one">1 ora fa</item>
+        <item quantity="other">%d ore fa</item>
+    </plurals>
+    <plurals name="joda_time_android_num_minutes_ago">
+        <item quantity="one">1 minuto fa</item>
+        <item quantity="other">%d minuti fa</item>
+    </plurals>
+    <plurals name="joda_time_android_num_seconds_ago">
+        <item quantity="one">1 secondo fa</item>
+        <item quantity="other">%d secondi fa</item>
+    </plurals>
+    <plurals name="notifications_new_announcements">
+        <item quantity="one">%d nuovo annuncio</item>
+        <item quantity="other">%d nuovi annunci</item>
+    </plurals>
+    <plurals name="notifications_new_messages">
+        <item quantity="one">%d nuovo messaggio</item>
+        <item quantity="other">%d nuovi messaggi</item>
+    </plurals>
+    <plurals name="unread_message_count">
+        <item quantity="one">%d messaggio non letto.</item>
+        <item quantity="other">%d messaggi non letti.</item>
+    </plurals>
+    <plurals name="voice_ui_od_traffic_route">
+        <item quantity="one">Via %1$s (%2$s)</item>
+        <item quantity="other">Via %1$s e %2$s (%3$s)</item>
+    </plurals>
+    <plurals name="voice_ui_od_travel_time_distance_route">
+        <item quantity="one">Via %1$s</item>
+        <item quantity="other">Via %1$s e %2$s</item>
+    </plurals>
+    <plurals name="workout_history_list_secondary_text_cal">
+        <item quantity="one">%d caloria</item>
+        <item quantity="other">%d calorie</item>
+    </plurals>
+    <plurals name="workout_history_list_secondary_text_step">
+        <item quantity="one">%d passo</item>
+        <item quantity="other">%d passi</item>
+    </plurals>
+</resources>

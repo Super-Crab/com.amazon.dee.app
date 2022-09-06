@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layoutDirection="locale">
+    <com.amazon.deecomms.common.ui.CommsTextView android:textSize="16sp" android:id="@+id/far_side_text_box" android:background="@drawable/rtt_text_background" android:visibility="invisible" android:maxLines="2" style="@style/RTTText"/>
+    <com.amazon.deecomms.calling.ui.RTTEditTExt android:textSize="16sp" android:textColorHint="@color/midGray" android:id="@+id/near_side_edit_text" android:background="@drawable/rtt_text_background" android:paddingBottom="15dp" android:visibility="invisible" android:hint="@string/hint_rtt" android:cursorVisible="true" android:maxLines="2" android:inputType="textMultiLine" android:imeOptions="flagNoExtractUi" android:textCursorDrawable="@drawable/rtt_text_cursor" android:layoutDirection="locale" android:importantForAutofill="no" style="@style/RTTText"/>
+</LinearLayout>

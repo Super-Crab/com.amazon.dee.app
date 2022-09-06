@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/oobe_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/oobe_header"/>
+    <FrameLayout android:id="@+id/oobe_fragment_container" android:paddingBottom="@dimen/oobe_surround_padding_bottom" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/oobe_surround_padding" android:paddingEnd="@dimen/oobe_surround_padding"/>
+</LinearLayout>

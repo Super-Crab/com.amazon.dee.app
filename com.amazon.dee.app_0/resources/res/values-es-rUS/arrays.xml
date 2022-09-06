@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="alert_types_list">
+        <item>@string/alert_no_activity_detected</item>
+        <item>@string/alert_first_activity_of_the_day</item>
+        <item>@string/alert_any_activity_detected</item>
+        <item>@string/alert_smart_home_activity_detected</item>
+    </array>
+    <array name="default_pill_hints">
+        <item>Reproducir sonidos para dormir</item>
+        <item>Envía un comunicado</item>
+        <item>¿Qué notificaciones tengo?</item>
+        <item>Detén la música</item>
+        <item>Cuéntame un chiste</item>
+        <item>¿Cuál es la pregunta del día?</item>
+        <item>Buenas noches</item>
+        <item>Detener</item>
+        <item>Pon música</item>
+        <item>Buenos días</item>
+        <item>Siguiente canción</item>
+        <item>Reproducir</item>
+        <item>¿Dónde está mi paquete?</item>
+        <item>Pausa la música</item>
+        <item>Pon jazz</item>
+        <item>Monitorea mi casa</item>
+        <item>¿Cómo estás?</item>
+        <item>Pon una alarma para mañana a las 7 de la mañana</item>
+        <item>¿Qué significa la luz amarilla?</item>
+        <item>¿Cuál es el clima de hoy?</item>
+        <item>Cancela mi timer</item>
+        <item>Empieza mi día</item>
+        <item>Agrega ‘Manzanas’ a mi lista de compras</item>
+        <item>¿Cuál es la temperatura afuera?</item>
+        <item>¿Qué hay en las noticias?</item>
+    </array>
+    <array name="new_user_messages">
+        <item>¡Hola! Adivina quién acaba de aprender a escribir... Envíame un mensaje para que te cuente un chiste o para que encienda las luces. También puedes buscar cosas en la app como tus listas y opciones de configuración.</item>
+        <item>Por cierto, la función para escribir conmigo forma parte de una versión preliminar pública, por lo que todavía estoy practicando.</item>
+    </array>
+    <array name="voice_ui_od_permissions_primer_rationale_list_items">
+        <item>Permite que Alexa escuche tus solicitudes</item>
+        <item>Llama y envía mensajes a familiares y amigos</item>
+        <item>Controla dispositivos de Casa Inteligente</item>
+        <item>Obtén resultados e información del tráfico y del tiempo en función de la ubicación</item>
+    </array>
+    <array name="voice_ui_od_scrim_hints">
+        <item>“¿Cómo está el clima?”</item>
+        <item>“¿Cómo está el tráfico?”</item>
+        <item>“¿Cuántas millas son 10 kilómetros?”</item>
+        <item>“¿Cuál es el tipo de cambio de dólar a euro?”</item>
+        <item>“¿Qué películas están disponibles en cines cercanos?”</item>
+        <item>“¿Qué películas habrá disponibles mañana?”</item>
+        <item>“¿Qué películas de ciencia ficción están disponibles?”</item>
+        <item>“¿Cuántas calorías tiene un huevo?”</item>
+        <item>“¿A qué distancia está la Luna?”</item>
+        <item>“¿Qué hora es en Tokio?”</item>
+        <item>“Busca Star Trek en Wikipedia”</item>
+        <item>“Agrega ‘leche’ a la lista de compras”</item>
+        <item>“¿Qué tengo en mi lista de tareas?”</item>
+        <item>“Busca el supermercado más cercano”</item>
+        <item>“¿Dónde está la alberca más cercana?”</item>
+        <item>“Muéstrame cafeterías cercanas”</item>
+        <item>“¿Dónde está la pizzería más cercana?”</item>
+        <item>“Muéstrame la farmacia más cercana”</item>
+        <item>“Muéstrame el clima de hoy”</item>
+        <item>“¿Lloverá mañana?”</item>
+        <item>“¿Necesitaré un paraguas hoy?”</item>
+        <item>“¿Cómo está el clima en Londres?”</item>
+    </array>
+</resources>

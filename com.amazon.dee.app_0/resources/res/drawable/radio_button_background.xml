@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true" android:state_pressed="false" android:color="@color/alexa_setup_switch_background"/>
+    <item android:state_checked="false" android:state_pressed="false" android:color="@color/alexa_setup_borderless_button_text_pressed"/>
+    <item android:state_checked="true" android:state_pressed="true" android:color="@color/alexa_setup_primary_button_background_normal"/>
+    <item android:state_checked="false" android:state_pressed="true" android:color="@color/respond_while_locked_text_disabled"/>
+    <item android:state_enabled="false" android:state_checked="true" android:color="@color/respond_while_locked_text_disabled"/>
+    <item android:state_enabled="false" android:state_checked="false" android:color="@color/respond_while_locked_text_disabled"/>
+</selector>

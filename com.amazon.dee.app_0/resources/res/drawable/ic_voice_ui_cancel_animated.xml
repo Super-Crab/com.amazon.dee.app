@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/voice_cancel" android:oneshot="false">
+    <item android:duration="33" android:drawable="@drawable/fb_x_reveal_24dp_00000"/>
+    <item android:duration="33" android:drawable="@drawable/fb_x_reveal_24dp_00001"/>
+    <item android:duration="33" android:drawable="@drawable/fb_x_reveal_24dp_00002"/>
+    <item android:duration="33" android:drawable="@drawable/fb_x_reveal_24dp_00003"/>
+    <item android:duration="33" android:drawable="@drawable/fb_x_reveal_24dp_00004"/>
+    <item android:duration="33" android:drawable="@drawable/fb_x_reveal_24dp_00005"/>
+    <item android:duration="33" android:drawable="@drawable/fb_x_reveal_24dp_00006"/>
+    <item android:duration="33" android:drawable="@drawable/fb_x_reveal_24dp_00007"/>
+    <item android:duration="33" android:drawable="@drawable/fb_x_reveal_24dp_00008"/>
+    <item android:duration="33" android:drawable="@drawable/fb_x_reveal_24dp_00009"/>
+</animation-list>

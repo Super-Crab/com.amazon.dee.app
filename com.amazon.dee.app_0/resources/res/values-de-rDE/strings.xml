@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="amazon_customer_service">Amazon-Kundenservice</string>
+    <string name="dialog_close">Schließen</string>
+    <string name="dialog_confirm_end">Wollen Sie Ihren Bildschirm nicht mehr teilen?</string>
+    <string name="dialog_confirm_end_accept">Freigabe beenden</string>
+    <string name="dialog_confirm_end_decline">Abbrechen</string>
+    <string name="dialog_ended_agent">Der Kundenservice hat die Bildschirmfreigabe beendet. Sie teilen Ihren Bildschirm nicht mehr.</string>
+    <string name="dialog_ended_customer">Sie teilen Ihren Bildschirm nicht mehr mit dem Amazon-Kundenservice.</string>
+    <string name="dialog_ended_error">Etwas ist schief gelaufen und die Bildschirmfreigabe wurde beendet. Sie teilen Ihren Bildschirm nicht mehr.</string>
+    <string name="dialog_ended_inactivity">Die Bildschirmfreigabe wurde aufgrund von Inaktivität beendet. Sie teilen Ihren Bildschirm nicht mehr.</string>
+    <string name="dialog_request_resume">Der Kundenservice möchte die Bildschirmfreigabe mit Ihnen fortsetzen.</string>
+    <string name="dialog_request_resume_accept">Akzeptieren</string>
+    <string name="dialog_request_resume_decline">Ablehnen</string>
+    <string name="menu_end">Bildschirmfreigabe beenden</string>
+    <string name="message_agent_paused">Kundendienst hat Bildschirmfreigabe angehalten.</string>
+    <string name="notification_auto_ended">Bildschirmfreigabe wurde aufgrund von Inaktivität beendet.</string>
+    <string name="overflow_menu">Menü</string>
+    <string name="pause_button">Pause</string>
+    <string name="permission_request_3p_notification">Der Amazon-Kundenservice möchte die Bildschirmfreigabe nutzen. Öffnen Sie die App, um eine Verbindung herzustellen.</string>
+    <string name="primer_continue">Weiter</string>
+    <string name="primer_header">Teilen Sie Ihren Bildschirm mit dem Amazon-Kundenservice, damit wir Ihnen besser helfen können.</string>
+    <string name="primer_subheader">Durch die Freigabe Ihres Bildschirms ermöglichen Sie unseren Kundendienstmitarbeiter, Ihre Informationen einzusehen. Seien Sie versichert, dass,</string>
+    <string name="resume_button">Fortsetzen</string>
+    <string name="status_connected">AKTIV</string>
+    <string name="status_connecting">BEGINNT…</string>
+    <string name="status_ending">ENDET…</string>
+    <string name="status_header">Bildschirmfreigabe</string>
+    <string name="status_paused">ANGEHALTEN</string>
+</resources>

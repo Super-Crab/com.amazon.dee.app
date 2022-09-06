@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/dm_ic_browse_inactive" android:id="@+id/dm_menu_home" android:title="@string/content_desc_tab_item_home_v2" android:contentDescription="@string/content_desc_tab_item_home_v2"/>
+    <item android:icon="@drawable/dm_entertainment_inactive" android:id="@+id/dm_menu_entertainment" android:title="@string/content_desc_tab_item_play_v2" android:contentDescription="@string/content_desc_tab_item_play_v2"/>
+    <item android:icon="@drawable/dm_ic_smart_home_preferences_inactive" android:id="@+id/dm_menu_devices" android:title="@string/content_desc_tab_item_devices_v2" android:contentDescription="@string/content_desc_tab_item_devices_v2"/>
+    <item android:icon="@drawable/dm_navigation_inactive" android:id="@+id/dm_menu_navigation" android:title="@string/content_desc_tab_item_navigation_v2" android:contentDescription="@string/content_desc_tab_item_navigation_v2"/>
+    <item android:icon="@drawable/dm_comm_inactive" android:id="@+id/dm_menu_comm" android:title="@string/content_desc_tab_item_comms_v2" android:contentDescription="@string/content_desc_tab_item_comms_v2"/>
+</menu>

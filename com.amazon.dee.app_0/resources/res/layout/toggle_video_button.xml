@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/lib/com.amazon.deecomms.common.ui.CommsTextView" style="@style/FloatingActionButtonWrapper">
+    <ImageButton android:id="@+id/videoToggleButton" android:background="@drawable/selector_call_toggle_button_background" android:src="@drawable/selector_toggle_video_source" android:contentDescription="@string/toggle_video_content_description" style="@style/FloatingActionButton"/>
+</RelativeLayout>

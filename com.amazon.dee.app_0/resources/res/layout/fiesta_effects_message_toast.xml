@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="horizontal" android:id="@+id/effects_message_toast" android:background="@color/alexaBlue" android:layout_width="match_parent" android:layout_height="@dimen/caption_message_height">
+    <com.amazon.alexa.font.FontTextView android:textSize="20sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/message_text" android:layout_width="@dimen/caption_message_width" android:layout_height="wrap_content" android:layout_marginTop="@dimen/caption_message_padding_top" android:layout_marginBottom="@dimen/caption_message_margin" android:textAlignment="center" android:paddingStart="60dp" android:paddingEnd="60dp" android:layout_marginStart="@dimen/caption_message_padding" android:layout_marginEnd="@dimen/caption_message_padding" style="@style/TextAppearance.AppCompat.Caption"/>
+</LinearLayout>

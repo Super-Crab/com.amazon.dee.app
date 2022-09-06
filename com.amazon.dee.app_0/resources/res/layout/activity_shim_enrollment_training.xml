@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/training_background" android:paddingTop="64dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/shim_progress_bar" android:paddingBottom="30dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="40dp" android:layout_marginTop="86dp" android:layout_marginRight="40dp">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.amazon.alexa.font.FontTextView android:gravity="center" android:id="@+id/shim_first_utterence_status" android:background="@drawable/shim_enrollment_progress_view" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.amazon.alexa.font.FontTextView android:gravity="center" android:id="@+id/shim_second_utterence_status" android:background="@drawable/shim_enrollment_progress_view" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.amazon.alexa.font.FontTextView android:gravity="center" android:id="@+id/shim_third_utterence_status" android:background="@drawable/shim_enrollment_progress_view" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.amazon.alexa.font.FontTextView android:gravity="center" android:layout_gravity="center" android:id="@+id/shim_fourth_utterence_status" android:background="@drawable/shim_enrollment_progress_view" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <com.amazon.alexa.font.FontTextView android:textSize="18sp" android:textColor="@color/txt_primary_shim" android:gravity="center" android:id="@+id/shim_say" android:background="@drawable/shim_text" android:paddingLeft="60dp" android:paddingRight="40dp" android:layout_width="80dp" android:layout_height="wrap_content" android:layout_marginTop="80dp" android:layout_below="@+id/shim_progress_bar" android:layout_centerHorizontal="true"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/training_phrase_shim_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/shim_say">
+        <com.amazon.alexa.font.FontTextView android:textSize="24sp" android:textColor="@color/txt_primary_shim" android:gravity="center" android:id="@+id/shim_training_phrase" android:background="@drawable/shim_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="40dp" android:layout_marginTop="24dp" android:layout_marginRight="40dp" android:singleLine="false" android:layout_below="@+id/shim_say" app:fontName="3"/>
+        <com.amazon.alexa.font.FontTextView android:textSize="24sp" android:textColor="@color/txt_primary_shim" android:gravity="center" android:id="@+id/shim_training_phrase1" android:background="@drawable/shim_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="40dp" android:layout_marginTop="24dp" android:layout_marginRight="40dp" android:singleLine="false" android:layout_below="@+id/shim_training_phrase" app:fontName="3"/>
+    </LinearLayout>
+</RelativeLayout>

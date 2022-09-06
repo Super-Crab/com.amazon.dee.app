@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:layout_width="@dimen/thread_mic_button_size" android:layout_height="@dimen/thread_mic_button_size" android:shape="oval" android:innerRadius="@dimen/thread_mic_button_size">
+            <solid android:color="@color/thread_activity_mic_layer_background_color"/>
+            <stroke android:width="@dimen/thread_audio_messaging_button_outer_circle" android:color="@color/thread_audio_button_outer_grey"/>
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:tag="layout/startup_view_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.amazon.alexa.mosaic.view.ErrorView android:id="@+id/error_view" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="match_parent" app:bodyText="@string/error_care_hub_body" app:headlineText="@string/error_care_hub_headline" app:iconSrc="@drawable/ic_alexa" app:iconTint="?attr/mosaicNeutral10" app:linkText="@string/error_tap_to_retry"/>
+    <include android:id="@+id/loading_view" layout="@layout/loading_view"/>
+    <include layout="@layout/status_banner"/>
+</FrameLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accessory_service_notification_content_active_sessions">
+        <item quantity="zero">कोई कनेक्शन नहीं</item>
+        <item quantity="one">1 कनेक्ट है</item>
+        <item quantity="other">%1$d कनेक्ट हैं</item>
+    </plurals>
+    <plurals name="voice_ui_od_traffic_route">
+        <item quantity="one">%1$s (%2$s) से</item>
+        <item quantity="other">%1$s और %2$s (%3$s) से</item>
+    </plurals>
+    <plurals name="voice_ui_od_travel_time_distance_route">
+        <item quantity="one">%1$s से होकर</item>
+        <item quantity="other">%1$s और %2$s से होकर</item>
+    </plurals>
+</resources>

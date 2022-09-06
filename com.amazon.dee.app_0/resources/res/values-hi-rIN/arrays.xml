@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="voice_ui_od_permissions_primer_rationale_list_items">
+        <item>Alexa को आपकी रिक्वेस्ट सुनने की अनुमति दें</item>
+        <item>दोस्तों और परिवार को कॉल और मैसेज करें</item>
+        <item>स्मार्ट होम डिवाइसेज़ को कंट्रोल करें</item>
+        <item>लोकेशन के अनुसार सर्च के परिणाम, ट्रैफ़िक और मौसम की जानकारी पाएं</item>
+    </array>
+    <array name="voice_ui_od_scrim_hints">
+        <item>&quot;अभी मौसम कैसा है?&quot;</item>
+        <item>&quot;अभी ट्रैफ़िक का क्या हाल है?&quot;</item>
+        <item>&quot;10 किलोमीटर में कितने मील होते हैं?&quot;</item>
+        <item>&quot;एक डॉलर कितने यूरो के बराबर है?&quot;</item>
+        <item>&quot;मेरे आस-पास के थिएटर में कौन सी फ़िल्में लगीं हैं?&quot;</item>
+        <item>&quot;कल कौन सी फ़िल्में लगीं हैं?&quot;</item>
+        <item>&quot;अभी कौन सी साई-फ़ाई फ़िल्में लगीं हैं?&quot;</item>
+        <item>&quot;एक अंडे में कितनी कैलरी होती है?&quot;</item>
+        <item>&quot;चांद कितनी दूर है?&quot;</item>
+        <item>&quot;अभी टोक्यो में कितने बजे हैं?&quot;</item>
+        <item>&quot;Wikipedia से Star Trek के बारे में बताओ&quot;</item>
+        <item>&quot;मेरी शॉपिंग लिस्ट में दूध ऐड करो&quot;</item>
+        <item>&quot;मेरी टू-डू लिस्ट में क्या-क्या है?&quot;</item>
+        <item>&quot;सबसे पास की किराना दुकान ढूंढो&quot;</item>
+        <item>&quot;सबसे पास का स्विमिंग पूल कहां है?&quot;</item>
+        <item>&quot;मुझे आस-पास की कॉफ़ी शॉप दिखाओ&quot;</item>
+        <item>&quot;यहां, सबसे पास में पिज़्ज़ा कहां मिलेगा?&quot;</item>
+        <item>&quot;मुझे सबसे नज़दीकी दवा की दुकान दिखाओ&quot;</item>
+        <item>&quot;मुझे आज के मौसम के बारे में बताओ&quot;</item>
+        <item>&quot;कल बारिश होगी क्या?&quot;</item>
+        <item>&quot;क्या आज मुझे छाते की ज़रूरत पड़ेगी?&quot;</item>
+        <item>&quot;लंदन में कैसा मौसम है?&quot;</item>
+    </array>
+</resources>

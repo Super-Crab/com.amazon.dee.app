@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:clickable="false" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="@dimen/amahc_image_size_large" android:layout_height="@dimen/amahc_image_size_large">
+        <ImageView android:id="@+id/icon" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/amahc_margin_small" android:paddingEnd="@dimen/amahc_margin_large">
+        <TextView android:textSize="@dimen/amahc_text_size_headline2" android:ellipsize="end" android:orientation="vertical" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="@integer/amahc_its_title_line_limit" android:singleLine="false"/>
+        <Space android:layout_width="match_parent" android:layout_height="@dimen/amahc_margin_extra_small"/>
+        <TextView android:textSize="@dimen/amahc_text_size_body" android:ellipsize="end" android:orientation="vertical" android:id="@+id/subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="@integer/amahc_its_subtitle_line_limit" android:singleLine="false"/>
+        <Space android:layout_width="match_parent" android:layout_height="@dimen/amahc_margin_small"/>
+        <TextView android:textSize="@dimen/amahc_text_size_body" android:ellipsize="end" android:orientation="vertical" android:id="@+id/hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="@integer/amahc_its_subtitle_line_limit" android:singleLine="false"/>
+    </LinearLayout>
+</LinearLayout>

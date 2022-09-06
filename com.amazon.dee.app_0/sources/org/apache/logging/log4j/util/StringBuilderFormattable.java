@@ -1,0 +1,5 @@
+package org.apache.logging.log4j.util;
+/* loaded from: classes4.dex */
+public interface StringBuilderFormattable {
+    void formatTo(StringBuilder sb);
+}

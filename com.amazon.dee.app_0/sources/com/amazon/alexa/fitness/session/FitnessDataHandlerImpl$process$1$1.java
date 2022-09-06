@@ -1,0 +1,30 @@
+package com.amazon.alexa.fitness.session;
+
+import com.amazon.wellness.io.format.abs.Event;
+import kotlin.Metadata;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.Lambda;
+import org.jetbrains.annotations.NotNull;
+/* compiled from: FitnessDataHandlerImpl.kt */
+@Metadata(bv = {1, 0, 3}, d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "event", "Lcom/amazon/wellness/io/format/abs/Event;", "invoke"}, k = 3, mv = {1, 1, 16})
+/* loaded from: classes8.dex */
+final class FitnessDataHandlerImpl$process$1$1 extends Lambda implements Function1<Event, Boolean> {
+    public static final FitnessDataHandlerImpl$process$1$1 INSTANCE = new FitnessDataHandlerImpl$process$1$1();
+
+    FitnessDataHandlerImpl$process$1$1() {
+        super(1);
+    }
+
+    @Override // kotlin.jvm.functions.Function1
+    /* renamed from: invoke */
+    public /* bridge */ /* synthetic */ Boolean mo12165invoke(Event event) {
+        return Boolean.valueOf(invoke2(event));
+    }
+
+    /* renamed from: invoke  reason: avoid collision after fix types in other method */
+    public final boolean invoke2(@NotNull Event event) {
+        Intrinsics.checkParameterIsNotNull(event, "event");
+        return event.hasBiometricDataPoint();
+    }
+}

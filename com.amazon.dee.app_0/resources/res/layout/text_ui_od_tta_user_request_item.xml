@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/message_row" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/text_ui_od_message_user_request_margin_top" android:layout_marginBottom="@dimen/text_ui_od_message_user_request_margin_bottom">
+    <View android:layout_gravity="start" android:visibility="invisible" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="100"/>
+    <FrameLayout android:layout_gravity="start" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="?attr/textUiMessageWidthToEmptySpaceRatio">
+        <com.amazon.alexa.font.FontTextView android:textColor="?attr/textUiUserRequestTextColor" android:layout_gravity="end" android:id="@+id/user_request" android:background="@drawable/text_ui_od_user_message_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="?attr/textUiMessageHorizontalPadding" android:paddingVertical="?attr/textUiMessageVerticalPadding"/>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="true">
+    <item android:duration="@integer/uvr_finish_check_frame_duration" android:drawable="@drawable/fb_anim_check_confirmation_64dp_000"/>
+    <item android:duration="@integer/uvr_finish_check_frame_duration" android:drawable="@drawable/fb_anim_check_confirmation_64dp_001"/>
+    <item android:duration="@integer/uvr_finish_check_frame_duration" android:drawable="@drawable/fb_anim_check_confirmation_64dp_002"/>
+    <item android:duration="@integer/uvr_finish_check_frame_duration" android:drawable="@drawable/fb_anim_check_confirmation_64dp_003"/>
+    <item android:duration="@integer/uvr_finish_check_frame_duration" android:drawable="@drawable/fb_anim_check_confirmation_64dp_004"/>
+    <item android:duration="@integer/uvr_finish_check_frame_duration" android:drawable="@drawable/fb_anim_check_confirmation_64dp_005"/>
+    <item android:duration="@integer/uvr_finish_check_frame_duration" android:drawable="@drawable/fb_anim_check_confirmation_64dp_006"/>
+    <item android:duration="@integer/uvr_finish_check_frame_duration" android:drawable="@drawable/fb_anim_check_confirmation_64dp_007"/>
+    <item android:duration="@integer/uvr_finish_check_frame_duration" android:drawable="@drawable/fb_anim_check_confirmation_64dp_008"/>
+    <item android:duration="@integer/uvr_finish_check_frame_duration" android:drawable="@drawable/fb_anim_check_confirmation_64dp_009"/>
+    <item android:duration="@integer/uvr_finish_check_frame_duration" android:drawable="@drawable/fb_anim_check_confirmation_64dp_010"/>
+    <item android:duration="@integer/uvr_finish_check_frame_duration" android:drawable="@drawable/fb_anim_check_confirmation_64dp_011"/>
+    <item android:duration="@integer/uvr_finish_check_frame_duration" android:drawable="@drawable/fb_anim_check_confirmation_64dp_012"/>
+    <item android:duration="@integer/uvr_finish_check_frame_duration" android:drawable="@drawable/fb_anim_check_confirmation_64dp_013"/>
+    <item android:duration="@integer/uvr_finish_check_frame_duration" android:drawable="@drawable/fb_anim_check_confirmation_64dp_014"/>
+    <item android:duration="@integer/uvr_finish_check_frame_duration" android:drawable="@drawable/fb_anim_check_confirmation_64dp_015"/>
+    <item android:duration="@integer/uvr_finish_check_frame_duration" android:drawable="@drawable/fb_anim_check_confirmation_64dp_016"/>
+    <item android:duration="@integer/uvr_finish_check_frame_duration" android:drawable="@drawable/fb_anim_check_confirmation_64dp_017"/>
+    <item android:duration="@integer/uvr_finish_check_frame_duration" android:drawable="@drawable/fb_anim_check_confirmation_64dp_018"/>
+    <item android:duration="@integer/uvr_finish_check_frame_duration" android:drawable="@drawable/fb_anim_check_confirmation_64dp_019"/>
+    <item android:duration="@integer/uvr_finish_check_frame_duration" android:drawable="@drawable/fb_anim_check_confirmation_64dp_020"/>
+    <item android:duration="@integer/uvr_finish_check_frame_duration" android:drawable="@drawable/fb_anim_check_confirmation_64dp_021"/>
+    <item android:duration="@integer/uvr_finish_check_frame_duration" android:drawable="@drawable/fb_anim_check_confirmation_64dp_022"/>
+    <item android:duration="@integer/uvr_finish_check_frame_duration" android:drawable="@drawable/fb_anim_check_confirmation_64dp_023"/>
+    <item android:duration="@integer/uvr_finish_check_frame_duration" android:drawable="@drawable/fb_anim_check_confirmation_64dp_024"/>
+    <item android:duration="@integer/uvr_finish_check_frame_duration" android:drawable="@drawable/fb_anim_check_confirmation_64dp_025"/>
+</animation-list>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@+id/amazon_avs_notification_tap_to_talk_button" android:layout_width="@dimen/amazon_avs_notification_button_size" android:layout_height="@dimen/amazon_avs_notification_button_size" android:layout_alignParentEnd="true" style="@style/AlexaTheme.Notification.TapToTalkButton"/>
+</merge>

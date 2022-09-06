@@ -1,0 +1,602 @@
+package com.google.protobuf;
+
+import com.android.tools.r8.GeneratedOutlineSupport1;
+import com.google.protobuf.AbstractMessage;
+import com.google.protobuf.Descriptors;
+import com.google.protobuf.GeneratedMessageV3;
+import com.google.protobuf.UnknownFieldSet;
+import com.google.protobuf.WireFormat;
+import java.io.IOException;
+import java.io.InputStream;
+import java.nio.ByteBuffer;
+import java.util.Map;
+/* loaded from: classes3.dex */
+public final class Struct extends GeneratedMessageV3 implements StructOrBuilder {
+    public static final int FIELDS_FIELD_NUMBER = 1;
+    private static final long serialVersionUID = 0;
+    private MapField<String, Value> fields_;
+    private byte memoizedIsInitialized;
+    private static final Struct DEFAULT_INSTANCE = new Struct();
+    private static final Parser<Struct> PARSER = new AbstractParser<Struct>() { // from class: com.google.protobuf.Struct.1
+        @Override // com.google.protobuf.Parser
+        /* renamed from: parsePartialFrom */
+        public Struct mo10082parsePartialFrom(CodedInputStream codedInputStream, ExtensionRegistryLite extensionRegistryLite) throws InvalidProtocolBufferException {
+            return new Struct(codedInputStream, extensionRegistryLite);
+        }
+    };
+
+    /* loaded from: classes3.dex */
+    public static final class Builder extends GeneratedMessageV3.Builder<Builder> implements StructOrBuilder {
+        private int bitField0_;
+        private MapField<String, Value> fields_;
+
+        private Builder() {
+            maybeForceBuilderInitialization();
+        }
+
+        private Builder(GeneratedMessageV3.BuilderParent builderParent) {
+            super(builderParent);
+            maybeForceBuilderInitialization();
+        }
+
+        public static final Descriptors.Descriptor getDescriptor() {
+            return StructProto.internal_static_google_protobuf_Struct_descriptor;
+        }
+
+        private MapField<String, Value> internalGetFields() {
+            MapField<String, Value> mapField = this.fields_;
+            return mapField == null ? MapField.emptyMapField(FieldsDefaultEntryHolder.defaultEntry) : mapField;
+        }
+
+        private MapField<String, Value> internalGetMutableFields() {
+            onChanged();
+            if (this.fields_ == null) {
+                this.fields_ = MapField.newMapField(FieldsDefaultEntryHolder.defaultEntry);
+            }
+            if (!this.fields_.isMutable()) {
+                this.fields_ = this.fields_.copy();
+            }
+            return this.fields_;
+        }
+
+        private void maybeForceBuilderInitialization() {
+        }
+
+        @Override // com.google.protobuf.GeneratedMessageV3.Builder, com.google.protobuf.Message.Builder
+        /* renamed from: addRepeatedField */
+        public Builder mo10083addRepeatedField(Descriptors.FieldDescriptor fieldDescriptor, Object obj) {
+            return (Builder) super.mo10083addRepeatedField(fieldDescriptor, obj);
+        }
+
+        @Override // com.google.protobuf.MessageLite.Builder, com.google.protobuf.Message.Builder
+        /* renamed from: build */
+        public Struct mo10084build() {
+            Struct mo10085buildPartial = mo10085buildPartial();
+            if (mo10085buildPartial.isInitialized()) {
+                return mo10085buildPartial;
+            }
+            throw AbstractMessage.Builder.newUninitializedMessageException((Message) mo10085buildPartial);
+        }
+
+        @Override // com.google.protobuf.MessageLite.Builder, com.google.protobuf.Message.Builder
+        /* renamed from: buildPartial */
+        public Struct mo10085buildPartial() {
+            Struct struct = new Struct(this);
+            struct.fields_ = internalGetFields();
+            struct.fields_.makeImmutable();
+            onBuilt();
+            return struct;
+        }
+
+        @Override // com.google.protobuf.GeneratedMessageV3.Builder, com.google.protobuf.AbstractMessage.Builder, com.google.protobuf.MessageLite.Builder, com.google.protobuf.Message.Builder
+        /* renamed from: clear */
+        public Builder mo10087clear() {
+            super.mo10087clear();
+            internalGetMutableFields().clear();
+            return this;
+        }
+
+        @Override // com.google.protobuf.GeneratedMessageV3.Builder, com.google.protobuf.Message.Builder
+        /* renamed from: clearField */
+        public Builder mo10088clearField(Descriptors.FieldDescriptor fieldDescriptor) {
+            return (Builder) super.mo10088clearField(fieldDescriptor);
+        }
+
+        public Builder clearFields() {
+            internalGetMutableFields().getMutableMap().clear();
+            return this;
+        }
+
+        @Override // com.google.protobuf.GeneratedMessageV3.Builder, com.google.protobuf.AbstractMessage.Builder, com.google.protobuf.Message.Builder
+        /* renamed from: clearOneof  reason: collision with other method in class */
+        public Builder mo10090clearOneof(Descriptors.OneofDescriptor oneofDescriptor) {
+            return (Builder) super.mo10090clearOneof(oneofDescriptor);
+        }
+
+        @Override // com.google.protobuf.GeneratedMessageV3.Builder, com.google.protobuf.AbstractMessage.Builder, com.google.protobuf.AbstractMessageLite.Builder, com.google.protobuf.MessageLite.Builder, com.google.protobuf.Message.Builder
+        /* renamed from: clone  reason: collision with other method in class */
+        public Builder mo10093clone() {
+            return (Builder) super.mo10093clone();
+        }
+
+        @Override // com.google.protobuf.StructOrBuilder
+        public boolean containsFields(String str) {
+            if (str != null) {
+                return internalGetFields().getMap().containsKey(str);
+            }
+            throw new NullPointerException();
+        }
+
+        @Override // com.google.protobuf.MessageLiteOrBuilder, com.google.protobuf.MessageOrBuilder
+        /* renamed from: getDefaultInstanceForType */
+        public Struct mo10094getDefaultInstanceForType() {
+            return Struct.getDefaultInstance();
+        }
+
+        @Override // com.google.protobuf.GeneratedMessageV3.Builder, com.google.protobuf.Message.Builder, com.google.protobuf.MessageOrBuilder
+        public Descriptors.Descriptor getDescriptorForType() {
+            return StructProto.internal_static_google_protobuf_Struct_descriptor;
+        }
+
+        @Override // com.google.protobuf.StructOrBuilder
+        @Deprecated
+        public Map<String, Value> getFields() {
+            return getFieldsMap();
+        }
+
+        @Override // com.google.protobuf.StructOrBuilder
+        public int getFieldsCount() {
+            return internalGetFields().getMap().size();
+        }
+
+        @Override // com.google.protobuf.StructOrBuilder
+        public Map<String, Value> getFieldsMap() {
+            return internalGetFields().getMap();
+        }
+
+        @Override // com.google.protobuf.StructOrBuilder
+        public Value getFieldsOrDefault(String str, Value value) {
+            if (str != null) {
+                Map<String, Value> map = internalGetFields().getMap();
+                return map.containsKey(str) ? map.get(str) : value;
+            }
+            throw new NullPointerException();
+        }
+
+        @Override // com.google.protobuf.StructOrBuilder
+        public Value getFieldsOrThrow(String str) {
+            if (str != null) {
+                Map<String, Value> map = internalGetFields().getMap();
+                if (!map.containsKey(str)) {
+                    throw new IllegalArgumentException();
+                }
+                return map.get(str);
+            }
+            throw new NullPointerException();
+        }
+
+        @Deprecated
+        public Map<String, Value> getMutableFields() {
+            return internalGetMutableFields().getMutableMap();
+        }
+
+        @Override // com.google.protobuf.GeneratedMessageV3.Builder
+        protected GeneratedMessageV3.FieldAccessorTable internalGetFieldAccessorTable() {
+            return StructProto.internal_static_google_protobuf_Struct_fieldAccessorTable.ensureFieldAccessorsInitialized(Struct.class, Builder.class);
+        }
+
+        @Override // com.google.protobuf.GeneratedMessageV3.Builder
+        protected MapField internalGetMapField(int i) {
+            if (i == 1) {
+                return internalGetFields();
+            }
+            throw new RuntimeException(GeneratedOutlineSupport1.outline49("Invalid map field number: ", i));
+        }
+
+        @Override // com.google.protobuf.GeneratedMessageV3.Builder
+        protected MapField internalGetMutableMapField(int i) {
+            if (i == 1) {
+                return internalGetMutableFields();
+            }
+            throw new RuntimeException(GeneratedOutlineSupport1.outline49("Invalid map field number: ", i));
+        }
+
+        @Override // com.google.protobuf.GeneratedMessageV3.Builder, com.google.protobuf.MessageLiteOrBuilder
+        public final boolean isInitialized() {
+            return true;
+        }
+
+        /* JADX WARN: Removed duplicated region for block: B:16:0x0023  */
+        @Override // com.google.protobuf.AbstractMessage.Builder, com.google.protobuf.AbstractMessageLite.Builder, com.google.protobuf.MessageLite.Builder, com.google.protobuf.Message.Builder
+        /* renamed from: mergeFrom */
+        /*
+            Code decompiled incorrectly, please refer to instructions dump.
+            To view partially-correct add '--show-bad-code' argument
+        */
+        public com.google.protobuf.Struct.Builder mo10097mergeFrom(com.google.protobuf.CodedInputStream r3, com.google.protobuf.ExtensionRegistryLite r4) throws java.io.IOException {
+            /*
+                r2 = this;
+                r0 = 0
+                com.google.protobuf.Parser r1 = com.google.protobuf.Struct.access$500()     // Catch: java.lang.Throwable -> L11 com.google.protobuf.InvalidProtocolBufferException -> L13
+                java.lang.Object r3 = r1.mo10082parsePartialFrom(r3, r4)     // Catch: java.lang.Throwable -> L11 com.google.protobuf.InvalidProtocolBufferException -> L13
+                com.google.protobuf.Struct r3 = (com.google.protobuf.Struct) r3     // Catch: java.lang.Throwable -> L11 com.google.protobuf.InvalidProtocolBufferException -> L13
+                if (r3 == 0) goto L10
+                r2.mergeFrom(r3)
+            L10:
+                return r2
+            L11:
+                r3 = move-exception
+                goto L21
+            L13:
+                r3 = move-exception
+                com.google.protobuf.MessageLite r4 = r3.getUnfinishedMessage()     // Catch: java.lang.Throwable -> L11
+                com.google.protobuf.Struct r4 = (com.google.protobuf.Struct) r4     // Catch: java.lang.Throwable -> L11
+                java.io.IOException r3 = r3.unwrapIOException()     // Catch: java.lang.Throwable -> L1f
+                throw r3     // Catch: java.lang.Throwable -> L1f
+            L1f:
+                r3 = move-exception
+                r0 = r4
+            L21:
+                if (r0 == 0) goto L26
+                r2.mergeFrom(r0)
+            L26:
+                throw r3
+            */
+            throw new UnsupportedOperationException("Method not decompiled: com.google.protobuf.Struct.Builder.mo10097mergeFrom(com.google.protobuf.CodedInputStream, com.google.protobuf.ExtensionRegistryLite):com.google.protobuf.Struct$Builder");
+        }
+
+        @Override // com.google.protobuf.AbstractMessage.Builder, com.google.protobuf.Message.Builder
+        /* renamed from: mergeFrom */
+        public Builder mo10096mergeFrom(Message message) {
+            if (message instanceof Struct) {
+                return mergeFrom((Struct) message);
+            }
+            super.mo10096mergeFrom(message);
+            return this;
+        }
+
+        public Builder mergeFrom(Struct struct) {
+            if (struct == Struct.getDefaultInstance()) {
+                return this;
+            }
+            internalGetMutableFields().mergeFrom(struct.internalGetFields());
+            mo10099mergeUnknownFields(struct.unknownFields);
+            onChanged();
+            return this;
+        }
+
+        @Override // com.google.protobuf.GeneratedMessageV3.Builder, com.google.protobuf.AbstractMessage.Builder, com.google.protobuf.Message.Builder
+        /* renamed from: mergeUnknownFields  reason: collision with other method in class */
+        public final Builder mo10099mergeUnknownFields(UnknownFieldSet unknownFieldSet) {
+            return (Builder) super.mo10099mergeUnknownFields(unknownFieldSet);
+        }
+
+        public Builder putAllFields(Map<String, Value> map) {
+            internalGetMutableFields().getMutableMap().putAll(map);
+            return this;
+        }
+
+        public Builder putFields(String str, Value value) {
+            if (str != null) {
+                if (value == null) {
+                    throw new NullPointerException();
+                }
+                internalGetMutableFields().getMutableMap().put(str, value);
+                return this;
+            }
+            throw new NullPointerException();
+        }
+
+        public Builder removeFields(String str) {
+            if (str != null) {
+                internalGetMutableFields().getMutableMap().remove(str);
+                return this;
+            }
+            throw new NullPointerException();
+        }
+
+        @Override // com.google.protobuf.GeneratedMessageV3.Builder, com.google.protobuf.Message.Builder
+        /* renamed from: setField */
+        public Builder mo10100setField(Descriptors.FieldDescriptor fieldDescriptor, Object obj) {
+            return (Builder) super.mo10100setField(fieldDescriptor, obj);
+        }
+
+        @Override // com.google.protobuf.GeneratedMessageV3.Builder, com.google.protobuf.Message.Builder
+        /* renamed from: setRepeatedField */
+        public Builder mo10101setRepeatedField(Descriptors.FieldDescriptor fieldDescriptor, int i, Object obj) {
+            return (Builder) super.mo10101setRepeatedField(fieldDescriptor, i, obj);
+        }
+
+        @Override // com.google.protobuf.GeneratedMessageV3.Builder, com.google.protobuf.Message.Builder
+        /* renamed from: setUnknownFields */
+        public final Builder mo10102setUnknownFields(UnknownFieldSet unknownFieldSet) {
+            return (Builder) super.setUnknownFieldsProto3(unknownFieldSet);
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    /* loaded from: classes3.dex */
+    public static final class FieldsDefaultEntryHolder {
+        static final MapEntry<String, Value> defaultEntry = MapEntry.newDefaultInstance(StructProto.internal_static_google_protobuf_Struct_FieldsEntry_descriptor, WireFormat.FieldType.STRING, "", WireFormat.FieldType.MESSAGE, Value.getDefaultInstance());
+
+        private FieldsDefaultEntryHolder() {
+        }
+    }
+
+    private Struct() {
+        this.memoizedIsInitialized = (byte) -1;
+    }
+
+    /* JADX WARN: Type inference failed for: r3v7, types: [java.lang.Object] */
+    /* JADX WARN: Type inference failed for: r5v1, types: [java.lang.Object] */
+    private Struct(CodedInputStream codedInputStream, ExtensionRegistryLite extensionRegistryLite) throws InvalidProtocolBufferException {
+        this();
+        if (extensionRegistryLite != null) {
+            UnknownFieldSet.Builder newBuilder = UnknownFieldSet.newBuilder();
+            boolean z = false;
+            boolean z2 = false;
+            while (!z) {
+                try {
+                    try {
+                        int readTag = codedInputStream.readTag();
+                        if (readTag != 0) {
+                            if (readTag == 10) {
+                                if (!(z2 & true)) {
+                                    this.fields_ = MapField.newMapField(FieldsDefaultEntryHolder.defaultEntry);
+                                    z2 |= true;
+                                }
+                                MapEntry mapEntry = (MapEntry) codedInputStream.readMessage(FieldsDefaultEntryHolder.defaultEntry.mo9954getParserForType(), extensionRegistryLite);
+                                this.fields_.getMutableMap().put(mapEntry.getKey(), mapEntry.getValue());
+                            } else if (!parseUnknownFieldProto3(codedInputStream, newBuilder, extensionRegistryLite, readTag)) {
+                            }
+                        }
+                        z = true;
+                    } catch (InvalidProtocolBufferException e) {
+                        throw e.setUnfinishedMessage(this);
+                    } catch (IOException e2) {
+                        throw new InvalidProtocolBufferException(e2).setUnfinishedMessage(this);
+                    }
+                } finally {
+                    this.unknownFields = newBuilder.mo10084build();
+                    makeExtensionsImmutable();
+                }
+            }
+            return;
+        }
+        throw new NullPointerException();
+    }
+
+    private Struct(GeneratedMessageV3.Builder<?> builder) {
+        super(builder);
+        this.memoizedIsInitialized = (byte) -1;
+    }
+
+    public static Struct getDefaultInstance() {
+        return DEFAULT_INSTANCE;
+    }
+
+    public static final Descriptors.Descriptor getDescriptor() {
+        return StructProto.internal_static_google_protobuf_Struct_descriptor;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public MapField<String, Value> internalGetFields() {
+        MapField<String, Value> mapField = this.fields_;
+        return mapField == null ? MapField.emptyMapField(FieldsDefaultEntryHolder.defaultEntry) : mapField;
+    }
+
+    public static Builder newBuilder() {
+        return DEFAULT_INSTANCE.mo10081toBuilder();
+    }
+
+    public static Builder newBuilder(Struct struct) {
+        return DEFAULT_INSTANCE.mo10081toBuilder().mergeFrom(struct);
+    }
+
+    public static Struct parseDelimitedFrom(InputStream inputStream) throws IOException {
+        return (Struct) GeneratedMessageV3.parseDelimitedWithIOException(PARSER, inputStream);
+    }
+
+    public static Struct parseDelimitedFrom(InputStream inputStream, ExtensionRegistryLite extensionRegistryLite) throws IOException {
+        return (Struct) GeneratedMessageV3.parseDelimitedWithIOException(PARSER, inputStream, extensionRegistryLite);
+    }
+
+    public static Struct parseFrom(ByteString byteString) throws InvalidProtocolBufferException {
+        return PARSER.mo8396parseFrom(byteString);
+    }
+
+    public static Struct parseFrom(ByteString byteString, ExtensionRegistryLite extensionRegistryLite) throws InvalidProtocolBufferException {
+        return PARSER.mo8397parseFrom(byteString, extensionRegistryLite);
+    }
+
+    public static Struct parseFrom(CodedInputStream codedInputStream) throws IOException {
+        return (Struct) GeneratedMessageV3.parseWithIOException(PARSER, codedInputStream);
+    }
+
+    public static Struct parseFrom(CodedInputStream codedInputStream, ExtensionRegistryLite extensionRegistryLite) throws IOException {
+        return (Struct) GeneratedMessageV3.parseWithIOException(PARSER, codedInputStream, extensionRegistryLite);
+    }
+
+    public static Struct parseFrom(InputStream inputStream) throws IOException {
+        return (Struct) GeneratedMessageV3.parseWithIOException(PARSER, inputStream);
+    }
+
+    public static Struct parseFrom(InputStream inputStream, ExtensionRegistryLite extensionRegistryLite) throws IOException {
+        return (Struct) GeneratedMessageV3.parseWithIOException(PARSER, inputStream, extensionRegistryLite);
+    }
+
+    public static Struct parseFrom(ByteBuffer byteBuffer) throws InvalidProtocolBufferException {
+        return PARSER.mo8402parseFrom(byteBuffer);
+    }
+
+    public static Struct parseFrom(ByteBuffer byteBuffer, ExtensionRegistryLite extensionRegistryLite) throws InvalidProtocolBufferException {
+        return PARSER.mo8403parseFrom(byteBuffer, extensionRegistryLite);
+    }
+
+    public static Struct parseFrom(byte[] bArr) throws InvalidProtocolBufferException {
+        return PARSER.mo8404parseFrom(bArr);
+    }
+
+    public static Struct parseFrom(byte[] bArr, ExtensionRegistryLite extensionRegistryLite) throws InvalidProtocolBufferException {
+        return PARSER.mo8407parseFrom(bArr, extensionRegistryLite);
+    }
+
+    public static Parser<Struct> parser() {
+        return PARSER;
+    }
+
+    @Override // com.google.protobuf.StructOrBuilder
+    public boolean containsFields(String str) {
+        if (str != null) {
+            return internalGetFields().getMap().containsKey(str);
+        }
+        throw new NullPointerException();
+    }
+
+    @Override // com.google.protobuf.AbstractMessage, com.google.protobuf.Message
+    public boolean equals(Object obj) {
+        if (obj == this) {
+            return true;
+        }
+        if (!(obj instanceof Struct)) {
+            return super.equals(obj);
+        }
+        Struct struct = (Struct) obj;
+        return (internalGetFields().equals(struct.internalGetFields())) && this.unknownFields.equals(struct.unknownFields);
+    }
+
+    @Override // com.google.protobuf.MessageLiteOrBuilder, com.google.protobuf.MessageOrBuilder
+    /* renamed from: getDefaultInstanceForType */
+    public Struct mo10094getDefaultInstanceForType() {
+        return DEFAULT_INSTANCE;
+    }
+
+    @Override // com.google.protobuf.StructOrBuilder
+    @Deprecated
+    public Map<String, Value> getFields() {
+        return getFieldsMap();
+    }
+
+    @Override // com.google.protobuf.StructOrBuilder
+    public int getFieldsCount() {
+        return internalGetFields().getMap().size();
+    }
+
+    @Override // com.google.protobuf.StructOrBuilder
+    public Map<String, Value> getFieldsMap() {
+        return internalGetFields().getMap();
+    }
+
+    @Override // com.google.protobuf.StructOrBuilder
+    public Value getFieldsOrDefault(String str, Value value) {
+        if (str != null) {
+            Map<String, Value> map = internalGetFields().getMap();
+            return map.containsKey(str) ? map.get(str) : value;
+        }
+        throw new NullPointerException();
+    }
+
+    @Override // com.google.protobuf.StructOrBuilder
+    public Value getFieldsOrThrow(String str) {
+        if (str != null) {
+            Map<String, Value> map = internalGetFields().getMap();
+            if (!map.containsKey(str)) {
+                throw new IllegalArgumentException();
+            }
+            return map.get(str);
+        }
+        throw new NullPointerException();
+    }
+
+    @Override // com.google.protobuf.GeneratedMessageV3, com.google.protobuf.MessageLite, com.google.protobuf.Message
+    /* renamed from: getParserForType */
+    public Parser<Struct> mo9954getParserForType() {
+        return PARSER;
+    }
+
+    @Override // com.google.protobuf.GeneratedMessageV3, com.google.protobuf.AbstractMessage, com.google.protobuf.MessageLite
+    public int getSerializedSize() {
+        int i = this.memoizedSize;
+        if (i != -1) {
+            return i;
+        }
+        int i2 = 0;
+        for (Map.Entry<String, Value> entry : internalGetFields().getMap().entrySet()) {
+            i2 += CodedOutputStream.computeMessageSize(1, FieldsDefaultEntryHolder.defaultEntry.mo10079newBuilderForType().setKey(entry.getKey()).setValue(entry.getValue()).mo10084build());
+        }
+        int serializedSize = this.unknownFields.getSerializedSize() + i2;
+        this.memoizedSize = serializedSize;
+        return serializedSize;
+    }
+
+    @Override // com.google.protobuf.GeneratedMessageV3, com.google.protobuf.MessageOrBuilder
+    public final UnknownFieldSet getUnknownFields() {
+        return this.unknownFields;
+    }
+
+    @Override // com.google.protobuf.AbstractMessage, com.google.protobuf.Message
+    public int hashCode() {
+        int i = this.memoizedHashCode;
+        if (i != 0) {
+            return i;
+        }
+        int hashCode = getDescriptor().hashCode() + 779;
+        if (!internalGetFields().getMap().isEmpty()) {
+            hashCode = GeneratedOutlineSupport1.outline4(hashCode, 37, 1, 53) + internalGetFields().hashCode();
+        }
+        int hashCode2 = this.unknownFields.hashCode() + (hashCode * 29);
+        this.memoizedHashCode = hashCode2;
+        return hashCode2;
+    }
+
+    @Override // com.google.protobuf.GeneratedMessageV3
+    protected GeneratedMessageV3.FieldAccessorTable internalGetFieldAccessorTable() {
+        return StructProto.internal_static_google_protobuf_Struct_fieldAccessorTable.ensureFieldAccessorsInitialized(Struct.class, Builder.class);
+    }
+
+    @Override // com.google.protobuf.GeneratedMessageV3
+    protected MapField internalGetMapField(int i) {
+        if (i == 1) {
+            return internalGetFields();
+        }
+        throw new RuntimeException(GeneratedOutlineSupport1.outline49("Invalid map field number: ", i));
+    }
+
+    @Override // com.google.protobuf.GeneratedMessageV3, com.google.protobuf.AbstractMessage, com.google.protobuf.MessageLiteOrBuilder
+    public final boolean isInitialized() {
+        byte b = this.memoizedIsInitialized;
+        if (b == 1) {
+            return true;
+        }
+        if (b == 0) {
+            return false;
+        }
+        this.memoizedIsInitialized = (byte) 1;
+        return true;
+    }
+
+    @Override // com.google.protobuf.MessageLite, com.google.protobuf.Message
+    /* renamed from: newBuilderForType */
+    public Builder mo10079newBuilderForType() {
+        return newBuilder();
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    @Override // com.google.protobuf.GeneratedMessageV3
+    /* renamed from: newBuilderForType  reason: collision with other method in class */
+    public Builder mo10080newBuilderForType(GeneratedMessageV3.BuilderParent builderParent) {
+        return new Builder(builderParent);
+    }
+
+    @Override // com.google.protobuf.MessageLite, com.google.protobuf.Message
+    /* renamed from: toBuilder */
+    public Builder mo10081toBuilder() {
+        return this == DEFAULT_INSTANCE ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @Override // com.google.protobuf.GeneratedMessageV3, com.google.protobuf.AbstractMessage, com.google.protobuf.MessageLite
+    public void writeTo(CodedOutputStream codedOutputStream) throws IOException {
+        GeneratedMessageV3.serializeStringMapTo(codedOutputStream, internalGetFields(), FieldsDefaultEntryHolder.defaultEntry, 1);
+        this.unknownFields.writeTo(codedOutputStream);
+    }
+}

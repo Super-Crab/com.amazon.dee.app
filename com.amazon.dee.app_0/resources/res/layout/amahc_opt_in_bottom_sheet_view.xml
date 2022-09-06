@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/neutral50" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/amahc_margin_large" android:paddingEnd="@dimen/amahc_margin_large">
+    <RelativeLayout android:layout_width="@dimen/amahc_image_size_extra_large" android:layout_height="@dimen/amahc_image_size_extra_large">
+        <ImageView android:id="@+id/bottom_sheet_icon" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" android:layout_centerInParent="true" android:paddingStart="@dimen/amahc_margin_large" android:paddingEnd="@dimen/amahc_margin_large"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/amahc_margin_large" android:paddingEnd="@dimen/amahc_margin_large">
+        <TextView android:textSize="@dimen/amahc_text_size_headline1" android:id="@+id/header" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <Space android:layout_width="match_parent" android:layout_height="@dimen/amahc_margin_large"/>
+        <TextView android:textSize="@dimen/amahc_text_size_body" android:id="@+id/sub_header" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <Space android:layout_width="match_parent" android:layout_height="@dimen/amahc_margin_extra_large_68"/>
+        <TextView android:id="@+id/body_text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/button1" android:paddingTop="@dimen/amahc_margin_large" android:paddingBottom="@dimen/amahc_margin_large" android:focusable="true" android:clickable="true" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:paddingStart="@dimen/amahc_margin_large" android:paddingEnd="@dimen/amahc_margin_large"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/button2" android:paddingTop="@dimen/amahc_margin_large" android:paddingBottom="@dimen/amahc_margin_large" android:focusable="true" android:clickable="true" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:paddingStart="@dimen/amahc_margin_large" android:paddingEnd="@dimen/amahc_margin_large"/>
+    </LinearLayout>
+</LinearLayout>

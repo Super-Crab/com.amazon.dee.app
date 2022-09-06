@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/dm_feed_card_height" android:foreground="?android:attr/selectableItemBackground" app:cardBackgroundColor="?attr/mosaicBackground" app:cardCornerRadius="@dimen/entertainment_landing_page_card_view_corner_radius" app:cardElevation="@dimen/entertainment_landing_page_card_view_card_elevation">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</androidx.cardview.widget.CardView>

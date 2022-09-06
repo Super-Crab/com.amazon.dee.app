@@ -1,0 +1,83 @@
+package com.google.i18n.phonenumbers;
+
+import com.amazon.alexa.biloba.membership.MembershipConstants;
+import com.amazon.clouddrive.model.FilterOperator;
+import com.amazon.identity.auth.device.authorization.RegionUtil;
+import com.amazon.whispercloak.KeyUtils;
+import com.android.tools.r8.GeneratedOutlineSupport1;
+import com.drew.metadata.exif.ExifDirectoryBase;
+import com.google.zxing.client.result.ExpandedProductParsedResult;
+import java.util.HashSet;
+import java.util.Set;
+/* loaded from: classes3.dex */
+public class ShortNumbersRegionCodeSet {
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static Set<String> getRegionCodeSet() {
+        HashSet hashSet = new HashSet((int) ExifDirectoryBase.TAG_PREDICTOR);
+        hashSet.add("AC");
+        hashSet.add("AD");
+        hashSet.add("AE");
+        hashSet.add("AF");
+        GeneratedOutlineSupport1.outline187(hashSet, "AG", "AI", "AL", "AM");
+        GeneratedOutlineSupport1.outline187(hashSet, "AO", "AR", "AS", "AT");
+        GeneratedOutlineSupport1.outline187(hashSet, "AU", "AW", "AX", "AZ");
+        GeneratedOutlineSupport1.outline187(hashSet, "BA", "BB", "BD", "BE");
+        GeneratedOutlineSupport1.outline187(hashSet, "BF", "BG", "BH", "BI");
+        GeneratedOutlineSupport1.outline187(hashSet, "BJ", "BL", "BM", "BN");
+        GeneratedOutlineSupport1.outline187(hashSet, "BO", "BQ", "BR", "BS");
+        GeneratedOutlineSupport1.outline187(hashSet, "BT", "BW", "BY", "BZ");
+        GeneratedOutlineSupport1.outline187(hashSet, "CA", "CC", "CD", "CF");
+        GeneratedOutlineSupport1.outline187(hashSet, "CG", "CH", "CI", "CK");
+        GeneratedOutlineSupport1.outline187(hashSet, "CL", "CM", "CN", "CO");
+        GeneratedOutlineSupport1.outline187(hashSet, MembershipConstants.CR, "CU", "CV", "CW");
+        GeneratedOutlineSupport1.outline187(hashSet, "CX", "CY", "CZ", "DE");
+        GeneratedOutlineSupport1.outline187(hashSet, "DJ", "DK", "DM", "DO");
+        GeneratedOutlineSupport1.outline187(hashSet, "DZ", KeyUtils.ALGORITHM_EC, "EE", "EG");
+        GeneratedOutlineSupport1.outline187(hashSet, "EH", "ER", "ES", "ET");
+        GeneratedOutlineSupport1.outline187(hashSet, "FI", "FJ", "FK", "FM");
+        GeneratedOutlineSupport1.outline187(hashSet, "FO", "FR", "GA", "GB");
+        GeneratedOutlineSupport1.outline187(hashSet, "GD", FilterOperator.GREATER_THAN_OR_EQUAL, "GF", "GG");
+        GeneratedOutlineSupport1.outline187(hashSet, "GH", "GI", "GL", "GM");
+        GeneratedOutlineSupport1.outline187(hashSet, "GN", "GP", "GR", FilterOperator.GREATER_THAN);
+        GeneratedOutlineSupport1.outline187(hashSet, "GU", "GW", "GY", "HK");
+        GeneratedOutlineSupport1.outline187(hashSet, "HN", "HR", "HT", "HU");
+        GeneratedOutlineSupport1.outline187(hashSet, "ID", "IE", "IL", "IM");
+        GeneratedOutlineSupport1.outline187(hashSet, "IN", "IQ", "IR", "IS");
+        GeneratedOutlineSupport1.outline187(hashSet, "IT", "JE", "JM", "JO");
+        GeneratedOutlineSupport1.outline187(hashSet, "JP", "KE", ExpandedProductParsedResult.KILOGRAM, "KH");
+        GeneratedOutlineSupport1.outline187(hashSet, "KI", "KM", "KN", "KP");
+        GeneratedOutlineSupport1.outline187(hashSet, "KR", "KW", "KY", "KZ");
+        GeneratedOutlineSupport1.outline187(hashSet, "LA", ExpandedProductParsedResult.POUND, "LC", "LI");
+        GeneratedOutlineSupport1.outline187(hashSet, "LK", "LR", "LS", FilterOperator.LESS_THAN);
+        GeneratedOutlineSupport1.outline187(hashSet, "LU", "LV", "LY", "MA");
+        GeneratedOutlineSupport1.outline187(hashSet, "MC", "MD", "ME", "MF");
+        GeneratedOutlineSupport1.outline187(hashSet, "MG", "MH", "MK", "ML");
+        GeneratedOutlineSupport1.outline187(hashSet, "MM", "MN", "MO", "MP");
+        GeneratedOutlineSupport1.outline187(hashSet, "MQ", "MR", "MS", "MT");
+        GeneratedOutlineSupport1.outline187(hashSet, "MU", "MV", "MW", "MX");
+        GeneratedOutlineSupport1.outline187(hashSet, "MY", "MZ", RegionUtil.REGION_STRING_NA, "NC");
+        GeneratedOutlineSupport1.outline187(hashSet, "NE", "NF", "NG", "NI");
+        GeneratedOutlineSupport1.outline187(hashSet, "NL", "NO", "NP", "NR");
+        GeneratedOutlineSupport1.outline187(hashSet, "NU", "NZ", "OM", "PA");
+        GeneratedOutlineSupport1.outline187(hashSet, "PE", "PF", "PG", "PH");
+        GeneratedOutlineSupport1.outline187(hashSet, "PK", "PL", "PM", "PR");
+        GeneratedOutlineSupport1.outline187(hashSet, "PT", "PW", "PY", "QA");
+        GeneratedOutlineSupport1.outline187(hashSet, "RE", "RO", "RS", "RU");
+        GeneratedOutlineSupport1.outline187(hashSet, "RW", "SA", "SB", "SC");
+        GeneratedOutlineSupport1.outline187(hashSet, "SD", "SE", "SG", "SH");
+        GeneratedOutlineSupport1.outline187(hashSet, "SI", "SJ", "SK", "SL");
+        GeneratedOutlineSupport1.outline187(hashSet, "SM", "SN", "SO", "SR");
+        GeneratedOutlineSupport1.outline187(hashSet, "ST", "SV", "SX", "SY");
+        GeneratedOutlineSupport1.outline187(hashSet, "SZ", "TC", "TD", "TG");
+        GeneratedOutlineSupport1.outline187(hashSet, "TH", "TJ", "TL", "TM");
+        GeneratedOutlineSupport1.outline187(hashSet, "TN", "TO", "TR", "TT");
+        GeneratedOutlineSupport1.outline187(hashSet, "TV", "TW", "TZ", "UA");
+        GeneratedOutlineSupport1.outline187(hashSet, "UG", "US", "UY", "UZ");
+        GeneratedOutlineSupport1.outline187(hashSet, "VA", "VC", "VE", "VG");
+        GeneratedOutlineSupport1.outline187(hashSet, "VI", "VN", "VU", "WF");
+        GeneratedOutlineSupport1.outline187(hashSet, "WS", "YE", "YT", "ZA");
+        hashSet.add("ZM");
+        hashSet.add("ZW");
+        return hashSet;
+    }
+}

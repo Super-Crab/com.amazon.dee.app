@@ -1,0 +1,35 @@
+package com.amazon.alexa;
+
+import com.amazon.alexa.drive.entertainment.EntertainmentConstants;
+import java.util.List;
+/* compiled from: $AutoValue_PhoneCallControllerConfiguration.java */
+/* loaded from: classes.dex */
+public abstract class DBg extends rAH {
+    public final List<HYG> zZm;
+
+    public DBg(List<HYG> list) {
+        if (list != null) {
+            this.zZm = list;
+            return;
+        }
+        throw new NullPointerException("Null callingFeature");
+    }
+
+    public boolean equals(Object obj) {
+        if (obj == this) {
+            return true;
+        }
+        if (!(obj instanceof rAH)) {
+            return false;
+        }
+        return this.zZm.equals(((DBg) obj).zZm);
+    }
+
+    public int hashCode() {
+        return this.zZm.hashCode() ^ 1000003;
+    }
+
+    public String toString() {
+        return C0179Pya.BIo(C0179Pya.zZm("PhoneCallControllerConfiguration{callingFeature="), this.zZm, EntertainmentConstants.TCOMM_PAYLOAD_DESERIALIZED_CLOSE);
+    }
+}

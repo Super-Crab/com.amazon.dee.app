@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" android:state_checked="true">
+        <shape android:dither="true" android:visible="true" android:shape="rectangle" android:useLevel="false">
+            <solid android:color="?attr/mosaicAction20"/>
+            <corners android:radius="@dimen/alert_switch_radius"/>
+            <size android:height="@dimen/alert_switch_track_height" android:width="@dimen/alert_switch_track_width"/>
+        </shape>
+    </item>
+    <item android:state_enabled="true" android:state_checked="false">
+        <shape android:dither="true" android:visible="true" android:shape="rectangle" android:useLevel="false">
+            <solid android:color="?attr/mosaicNeutral30"/>
+            <corners android:radius="@dimen/alert_switch_radius"/>
+            <size android:height="@dimen/alert_switch_track_height" android:width="@dimen/alert_switch_track_width"/>
+        </shape>
+    </item>
+    <item android:state_enabled="false" android:state_checked="true">
+        <shape android:dither="true" android:visible="true" android:shape="rectangle" android:useLevel="false">
+            <solid android:color="@color/track_color"/>
+            <corners android:radius="@dimen/alert_switch_radius"/>
+            <size android:height="@dimen/alert_switch_track_height" android:width="@dimen/alert_switch_track_width"/>
+        </shape>
+    </item>
+    <item android:state_enabled="false" android:state_checked="false">
+        <shape android:dither="true" android:visible="true" android:shape="rectangle" android:useLevel="false">
+            <solid android:color="@color/track_color"/>
+            <corners android:radius="@dimen/alert_switch_radius"/>
+            <size android:height="@dimen/alert_switch_track_height" android:width="@dimen/alert_switch_track_width"/>
+        </shape>
+    </item>
+</selector>

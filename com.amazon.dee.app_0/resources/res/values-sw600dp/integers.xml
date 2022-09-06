@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="design_snackbar_text_max_lines">1</integer>
+    <integer name="size">7</integer>
+    <integer name="text_ui_od_max_message_box_width_to_empty_space_ratio">300</integer>
+    <integer name="voice_ui_od_movie_list_card_number">3</integer>
+</resources>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.recyclerview.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:scrollbarStyle="outsideOverlay" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/voice_ui_od_content_default_double_margin" android:fillViewport="true" android:importantForAccessibility="no" app:layoutManager="LinearLayoutManager"/>

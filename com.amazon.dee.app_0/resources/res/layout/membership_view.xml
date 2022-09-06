@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:tag="layout/membership_view_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:tag="binding_1" android:background="?attr/mosaicBackground" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/status_banner"/>
+        <com.amazon.alexa.mosaic.view.SectionHeader android:id="@+id/membership_title_label" android:layout_width="match_parent" android:layout_height="wrap_content" app:text="@string/membership_account_owner_heading"/>
+        <com.amazon.alexa.font.FontTextView android:id="@+id/membership_care_giver_name" android:tag="binding_2" style="@style/mosaic_list_item_primary_text"/>
+        <com.amazon.alexa.font.FontTextView android:text="@string/membership_care_access_heading" style="@style/mosaic_list_divider"/>
+        <com.amazon.alexa.font.FontTextView android:id="@+id/membership_care_recipient_name" android:tag="binding_3" style="@style/mosaic_list_item_primary_text"/>
+        <com.amazon.alexa.font.FontTextView android:text="@string/membership_delete_heading" style="@style/mosaic_list_divider"/>
+        <com.amazon.alexa.font.FontTextView android:textColor="?attr/mosaicNeutral10" android:id="@+id/delete_connection_hint" android:tag="binding_4" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/mosaic_list_item_textbox_padding" android:layout_marginTop="@dimen/mosaic_list_item_textbox_padding" android:layout_marginRight="@dimen/mosaic_list_item_textbox_padding" style="@style/TextAppearance.Mosaic.Body"/>
+        <com.amazon.alexa.font.FontTextView android:textColor="?attr/mosaicNeutral10" android:textColorLink="?attr/mosaicAction10" android:id="@+id/membership_settings_link" android:tag="binding_5" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/mosaic_list_item_textbox_padding" android:layout_marginRight="@dimen/mosaic_list_item_textbox_padding" style="@style/TextAppearance.Mosaic.Body"/>
+    </LinearLayout>
+</ScrollView>

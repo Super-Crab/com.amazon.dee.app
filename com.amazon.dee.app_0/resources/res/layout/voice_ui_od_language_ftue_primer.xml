@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/languagePickerForQa" android:background="?attr/layout_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/headerContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/voice_ui_od_content_default_double_margin" layout="@layout/voice_ui_od_header"/>
+    <TextView android:textSize="@dimen/voice_ui_od_ftue_title_size" android:textStyle="bold" android:textColor="?android:attr/textColorPrimary" android:id="@+id/headingText" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/voice_ui_od_content_default_double_margin" app:layout_constraintBottom_toTopOf="@+id/listContainer" app:layout_constraintTop_toBottomOf="@+id/headerContainer"/>
+    <androidx.core.widget.NestedScrollView android:scrollbarStyle="outsideOverlay" android:id="@+id/listContainer" android:layout_width="@dimen/voice_ui_od_language_list_match_constraint" android:layout_height="@dimen/voice_ui_od_language_list_match_constraint" android:fillViewport="true" app:layout_constraintBottom_toTopOf="@+id/continueContainer" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/headingText">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/voice_ui_od_list_manage_button_margin_top">
+            <LinearLayout android:orientation="vertical" android:id="@+id/recommendedLocalesContainer" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <include android:id="@+id/recommendedLanguagesHeader" layout="@layout/voice_ui_od_list_section_header"/>
+                <include android:id="@+id/recommendedLanguages" layout="@layout/voice_ui_od_languages_list"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/availableLocalesContainer" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <include android:id="@+id/availableLanguagesHeader" layout="@layout/voice_ui_od_list_section_header"/>
+                <include android:id="@+id/noteNotSupported" layout="@layout/voice_ui_od_list_section_description"/>
+                <include android:id="@+id/availableLanguages" layout="@layout/voice_ui_od_languages_list"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <FrameLayout android:id="@+id/continueContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/voice_ui_od_content_default_double_margin" android:layout_marginEnd="@dimen/voice_ui_od_content_default_double_margin" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0">
+        <Button android:enabled="true" android:textSize="@dimen/voice_ui_od_language_text_size_medium" android:textColor="@color/voice_ui_od_dark_content_text_primary_selector" android:gravity="center" android:id="@+id/continueButton" android:background="@drawable/voice_ui_od_primary_button_background_selector" android:layout_width="match_parent" android:layout_height="@dimen/voice_ui_od_ftue_primer_button_height" android:layout_marginTop="@dimen/voice_ui_od_ftue_primer_button_margin_top" android:layout_marginBottom="@dimen/voice_ui_od_ftue_primer_button_margin_bottom" android:textAllCaps="true" style="?android:attr/borderlessButtonStyle"/>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

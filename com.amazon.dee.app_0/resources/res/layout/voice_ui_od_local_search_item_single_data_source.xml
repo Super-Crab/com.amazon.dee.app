@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:focusable="true" android:layout_width="match_parent" android:layout_height="@dimen/voice_ui_od_local_card_list_item_height">
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/businessImage" android:layout_width="@dimen/voice_ui_od_local_card_business_image_size_small" android:layout_height="@dimen/voice_ui_od_local_card_business_image_size_small" android:scaleType="fitCenter" android:contentDescription="@string/voice_ui_od_empty" android:layout_marginEnd="16dp"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.legacy.widget.Space android:layout_width="match_parent" android:layout_height="19dp"/>
+        <TextView android:textSize="@dimen/voice_ui_od_local_card_search_list_item_title_text_size" android:textColor="?android:attr/textColorPrimary" android:ellipsize="end" android:id="@+id/businessTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+        <androidx.legacy.widget.Space android:layout_width="match_parent" android:layout_height="@dimen/voice_ui_od_local_card_list_item_title_description_spacing"/>
+        <TextView android:textSize="@dimen/voice_ui_od_local_card_search_list_item_description_text_size" android:textColor="?android:attr/textColorSecondary" android:ellipsize="end" android:id="@+id/businessDescription" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="true">
+            <ImageView android:id="@+id/businessRating" android:padding="0dp" android:layout_width="wrap_content" android:layout_height="12dp" android:layout_marginTop="8dp" android:src="@drawable/ic_voice_ui_od_rating_stars_0" android:scaleType="fitStart" android:adjustViewBounds="true" android:contentDescription="@string/voice_ui_od_empty"/>
+            <androidx.legacy.widget.Space android:layout_width="@dimen/voice_ui_od_local_card_list_item_title_rating_star_count_spacing" android:layout_height="wrap_content"/>
+            <TextView android:textSize="@dimen/voice_ui_od_local_card_search_list_item_rating_text_size" android:textColor="?android:attr/textColorSecondary" android:ellipsize="end" android:id="@+id/businessReviewCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:maxLines="1"/>
+            <TextView android:textSize="@dimen/voice_ui_od_local_card_search_list_item_rating_text_size" android:textColor="?android:attr/textColorSecondary" android:id="@+id/dataSource" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

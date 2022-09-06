@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="?attr/mosaicBackground" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/nav_bar_divider" android:background="@color/neutral50" android:visibility="visible" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/nav_bar_divider">
+        <include layout="@layout/dm_hint_and_network_connection_banner"/>
+        <com.amazon.alexa.font.FontTextView android:textSize="16sp" android:textStyle="italic" android:textColor="?attr/mosaicNeutral20" android:id="@+id/recently_played_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dm_feed_layout_margin" android:layout_marginTop="23dp" android:layout_marginRight="@dimen/dm_feed_layout_margin" android:layout_marginBottom="@dimen/dm_feed_layout_margin" android:text="@string/dm_entertainment_recently_played_title" android:layout_below="@+id/hint_and_network_connection_layout" app:fontName="14"/>
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/entertainment_page_swipe_refresh_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/recently_played_title">
+            <com.amazon.alexa.drive.entertainment.view.EntertainmentRecentlyPlayedNestedScrollView android:id="@+id/entertainment_page_nested_scroll_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:background="@drawable/dm_rounded_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <androidx.cardview.widget.CardView android:id="@+id/entertainment_page_card_view" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?android:attr/selectableItemBackground" app:cardBackgroundColor="@android:color/transparent" app:cardElevation="0dp">
+                        <RelativeLayout android:id="@+id/now_playing_card_container" android:padding="@dimen/dm_feed_layout_margin" android:visibility="gone" android:layout_width="match_parent" android:layout_height="104dp">
+                            <ImageView android:id="@+id/now_playing_card_album_art" android:layout_width="72dp" android:layout_height="72dp"/>
+                            <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/dm_feed_layout_margin" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dm_feed_layout_margin" android:layout_centerVertical="true" android:layout_toEndOf="@+id/now_playing_card_album_art">
+                                <com.amazon.alexa.font.FontTextView android:textSize="@dimen/dm_card_title_text_size" android:textColor="?attr/mosaicNeutral10" android:ellipsize="end" android:id="@+id/now_playing_card_track_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp" android:maxLines="1" app:fontName="16"/>
+                                <com.amazon.alexa.font.FontTextView android:textSize="18sp" android:textColor="?attr/mosaicNeutral20" android:id="@+id/now_playing_card_track_sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontName="16"/>
+                            </LinearLayout>
+                            <ToggleButton android:id="@+id/now_playing_card_button" android:background="@drawable/now_playing_card_button_bg" android:layout_width="40dp" android:layout_height="40dp" android:textOn="" android:textOff="" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                    <View android:id="@+id/now_playing_card_container_divider" android:background="@color/neutral40" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1dp"/>
+                    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recently_played_feed" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </com.amazon.alexa.drive.entertainment.view.EntertainmentRecentlyPlayedNestedScrollView>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@+id/dm_voice_ingress_image" android:layout_width="70dp" android:layout_height="70dp" android:layout_marginRight="@dimen/dm_feed_layout_margin" android:layout_marginBottom="@dimen/dm_feed_layout_margin" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" app:backgroundTint="?attr/mosaicAction40" app:srcCompat="@drawable/dm_ic_alexa"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="alert_types_list">
+        <item>@string/alert_no_activity_detected</item>
+        <item>@string/alert_first_activity_of_the_day</item>
+        <item>@string/alert_any_activity_detected</item>
+        <item>@string/alert_smart_home_activity_detected</item>
+    </array>
+    <array name="drive_mode_navigation_hints">
+        <item>@string/drive_mode_navigation_hint_to_work</item>
+        <item>@string/dm_vui_hint_find_gas_station</item>
+        <item>@string/drive_mode_navigation_hint_back_to_app</item>
+    </array>
+    <array name="drive_mode_navigation_hints_stand_alone">
+        <item>@string/drive_mode_navigation_hint_to_work</item>
+        <item>@string/dm_vui_hint_find_gas_station</item>
+        <item>@string/drive_mode_empty_location_try_hint</item>
+    </array>
+    <array name="voice_ui_od_permissions_primer_rationale_list_items">
+        <item>Allow Alexa to hear your requests</item>
+        <item>Call and message friends and family</item>
+        <item>Control smart home devices</item>
+        <item>Get location-relevant results</item>
+    </array>
+    <array name="voice_ui_od_scrim_hints">
+        <item>“What’s the weather?”</item>
+        <item>“How’s the traffic?”</item>
+        <item>“How many miles is a 10k?”</item>
+        <item>“What’s the dollar to euro exchange rate?”</item>
+        <item>“What movies are playing near me?”</item>
+        <item>“What movies are playing tomorrow?”</item>
+        <item>“What sci-fi movies are playing?”</item>
+        <item>“How many calories are in an egg?”</item>
+        <item>“How far is the moon?”</item>
+        <item>“What time is it in Tokyo?”</item>
+        <item>“Ask Wikipedia about Star Trek”</item>
+        <item>“Add milk to my shopping list”</item>
+        <item>“What’s on my to-do list?”</item>
+        <item>“Find the nearest grocery store”</item>
+        <item>“Where’s the nearest swimming pool?”</item>
+        <item>“Show me nearby coffee shops”</item>
+        <item>“What’s the closest pizza place?”</item>
+        <item>“Show me the nearest drugstore”</item>
+        <item>“Show me today’s weather”</item>
+        <item>“Will it rain tomorrow?”</item>
+        <item>“Will I need an umbrella today?”</item>
+        <item>“What’s the weather in London?”</item>
+    </array>
+</resources>

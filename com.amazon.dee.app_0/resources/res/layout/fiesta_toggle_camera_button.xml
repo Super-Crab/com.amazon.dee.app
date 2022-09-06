@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/cameraToggleLayout" style="@style/FloatingActionButtonWrapper">
+    <ImageButton android:id="@+id/cameraToggleButton" android:background="@drawable/selector_call_toggle_button_background" android:src="@drawable/ic_camera_switch_default_dark_36dp" android:contentDescription="@string/toggle_camera_switch" style="@style/FloatingActionButton"/>
+</RelativeLayout>

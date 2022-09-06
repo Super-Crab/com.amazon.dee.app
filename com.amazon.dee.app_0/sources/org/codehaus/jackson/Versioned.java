@@ -1,0 +1,5 @@
+package org.codehaus.jackson;
+/* loaded from: classes5.dex */
+public interface Versioned {
+    Version version();
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_ui_od_in_chat_ltr_outer_corner_radius">@dimen/text_ui_od_message_bubble_corner_radius</dimen>
+    <dimen name="text_ui_od_in_chat_rtl_outer_corner_radius">2dp</dimen>
+    <dimen name="text_ui_od_message_ltr_outer_corner_radius">@dimen/text_ui_od_message_bubble_corner_radius</dimen>
+    <dimen name="text_ui_od_message_ltr_outer_corner_radius_v2">@dimen/text_ui_od_message_bubble_corner_radius</dimen>
+    <dimen name="text_ui_od_message_rtl_outer_corner_radius">0dp</dimen>
+    <dimen name="text_ui_od_message_rtl_outer_corner_radius_v2">2dp</dimen>
+</resources>

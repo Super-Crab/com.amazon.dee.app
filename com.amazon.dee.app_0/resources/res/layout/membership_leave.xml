@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:tag="layout/membership_leave_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:tag="binding_1" android:background="?attr/mosaicBackground" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintTop_toTopOf="0">
+        <include layout="@layout/status_banner"/>
+        <com.amazon.alexa.font.FontTextView android:textColor="?attr/mosaicNeutral10" android:id="@+id/membership_disable_question" android:tag="binding_2" android:padding="@dimen/mosaic_list_item_textbox_padding" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/TextAppearance.Mosaic.Body_04"/>
+        <com.amazon.alexa.mosaic.view.BulletListText android:id="@+id/membership_delete_bullet_1" android:tag="binding_3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/large_margin"/>
+        <com.amazon.alexa.mosaic.view.BulletListText android:id="@+id/membership_delete_bullet_2" android:tag="binding_4" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/large_margin"/>
+        <com.amazon.alexa.mosaic.view.BulletListText android:id="@+id/membership_delete_bullet_3" android:tag="binding_5" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/large_margin"/>
+        <com.amazon.alexa.mosaic.view.BulletListText android:id="@+id/membership_delete_bullet_4" android:tag="binding_6" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/large_margin"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="?attr/mosaicBackground" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0">
+        <LinearLayout android:orientation="horizontal" android:background="?attr/mosaicBackground" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:id="@+id/ok_button" android:tag="binding_7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/delete" android:layout_weight="1" style="@style/mosaic_button"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

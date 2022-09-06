@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_gravity="center_horizontal" android:id="@+id/getting_started_layout" android:tag="layout/getting_started_view_v3_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toTopOf="@+id/getting_started_button_layout" app:layout_constraintTop_toTopOf="0">
+        <LinearLayout android:orientation="vertical" android:background="?attr/mosaicBackground" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/getting_started_image" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitCenter" android:adjustViewBounds="true" android:maxWidth="@dimen/mosaic_template_image_width_max" android:contentDescription="@string/getting_started_screen_image_description_v3"/>
+            <com.amazon.alexa.font.FontTextView android:textColor="?attr/mosaicNeutral10" android:id="@+id/getting_started_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/getting_started_screen_title_v3" app:fontName="6" style="@style/Mosaic.View.InstructionalTemplate.Headline"/>
+            <com.amazon.alexa.mosaic.view.BulletListText android:id="@+id/getting_started_bullet_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/large_margin" app:primaryText="@string/getting_started_screen_bullet_1_v3"/>
+            <com.amazon.alexa.mosaic.view.BulletListText android:id="@+id/getting_started_bullet_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/large_margin" app:primaryText="@string/getting_started_screen_bullet_2_v3"/>
+            <com.amazon.alexa.mosaic.view.BulletListText android:id="@+id/getting_started_bullet_3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/large_margin" app:primaryText="@string/getting_started_screen_bullet_3_v3"/>
+            <com.amazon.alexa.mosaic.view.BulletListText android:id="@+id/getting_started_bullet_4" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/large_margin" app:primaryText="@string/getting_started_screen_bullet_4_v3"/>
+            <View android:layout_marginTop="@dimen/large_margin" style="@style/get_started_item_divider"/>
+            <com.amazon.alexa.font.FontTextView android:textColor="?attr/mosaicNeutral10" android:id="@+id/legacy_customer_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/medium_margin" android:text="@string/getting_started_screen_legacy_customer_title" app:fontName="6" style="@style/GetStarted.Legacy"/>
+            <com.amazon.alexa.font.FontTextView android:textColor="?attr/mosaicNeutral10" android:id="@+id/legacy_customer_body" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/getting_started_screen_legacy_customer_body" app:fontName="16" style="@style/GetStarted.Legacy"/>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/getting_started_button_layout" android:background="?attr/mosaicBackground" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0">
+        <Button android:id="@+id/getting_started_create_relationship" android:tag="binding_1" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/getting_started_screen_button_v3" android:layout_weight="1" style="@style/mosaic_button"/>
+    </LinearLayout>
+    <include layout="@layout/status_banner"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

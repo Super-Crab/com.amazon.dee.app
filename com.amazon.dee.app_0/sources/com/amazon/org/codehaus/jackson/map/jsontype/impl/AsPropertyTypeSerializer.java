@@ -1,0 +1,44 @@
+package com.amazon.org.codehaus.jackson.map.jsontype.impl;
+
+import com.amazon.org.codehaus.jackson.JsonGenerator;
+import com.amazon.org.codehaus.jackson.JsonProcessingException;
+import com.amazon.org.codehaus.jackson.annotate.JsonTypeInfo;
+import com.amazon.org.codehaus.jackson.map.BeanProperty;
+import com.amazon.org.codehaus.jackson.map.jsontype.TypeIdResolver;
+import java.io.IOException;
+/* loaded from: classes13.dex */
+public class AsPropertyTypeSerializer extends AsArrayTypeSerializer {
+    protected final String _typePropertyName;
+
+    public AsPropertyTypeSerializer(TypeIdResolver typeIdResolver, BeanProperty beanProperty, String str) {
+        super(typeIdResolver, beanProperty);
+        this._typePropertyName = str;
+    }
+
+    @Override // com.amazon.org.codehaus.jackson.map.jsontype.impl.TypeSerializerBase, com.amazon.org.codehaus.jackson.map.TypeSerializer
+    public String getPropertyName() {
+        return this._typePropertyName;
+    }
+
+    @Override // com.amazon.org.codehaus.jackson.map.jsontype.impl.AsArrayTypeSerializer, com.amazon.org.codehaus.jackson.map.jsontype.impl.TypeSerializerBase, com.amazon.org.codehaus.jackson.map.TypeSerializer
+    public JsonTypeInfo.As getTypeInclusion() {
+        return JsonTypeInfo.As.PROPERTY;
+    }
+
+    @Override // com.amazon.org.codehaus.jackson.map.jsontype.impl.AsArrayTypeSerializer, com.amazon.org.codehaus.jackson.map.TypeSerializer
+    public void writeTypePrefixForObject(Object obj, JsonGenerator jsonGenerator) throws IOException, JsonProcessingException {
+        jsonGenerator.writeStartObject();
+        jsonGenerator.writeStringField(this._typePropertyName, this._idResolver.idFromValue(obj));
+    }
+
+    @Override // com.amazon.org.codehaus.jackson.map.jsontype.impl.AsArrayTypeSerializer, com.amazon.org.codehaus.jackson.map.TypeSerializer
+    public void writeTypeSuffixForObject(Object obj, JsonGenerator jsonGenerator) throws IOException, JsonProcessingException {
+        jsonGenerator.writeEndObject();
+    }
+
+    @Override // com.amazon.org.codehaus.jackson.map.jsontype.impl.AsArrayTypeSerializer, com.amazon.org.codehaus.jackson.map.TypeSerializer
+    public void writeTypePrefixForObject(Object obj, JsonGenerator jsonGenerator, Class<?> cls) throws IOException, JsonProcessingException {
+        jsonGenerator.writeStartObject();
+        jsonGenerator.writeStringField(this._typePropertyName, this._idResolver.idFromValueAndType(obj, cls));
+    }
+}

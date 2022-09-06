@@ -1,0 +1,18 @@
+package com.amazon.alexa.device.setup.echo.bouncycastle.asn1.x500;
+
+import com.amazon.alexa.device.setup.echo.bouncycastle.asn1.ASN1Encodable;
+import com.amazon.alexa.device.setup.echo.bouncycastle.asn1.ASN1ObjectIdentifier;
+/* loaded from: classes.dex */
+public interface X500NameStyle {
+    boolean areEqual(X500Name x500Name, X500Name x500Name2);
+
+    ASN1ObjectIdentifier attrNameToOID(String str);
+
+    int calculateHashCode(X500Name x500Name);
+
+    RDN[] fromString(String str);
+
+    ASN1Encodable stringToValue(ASN1ObjectIdentifier aSN1ObjectIdentifier, String str);
+
+    String toString(X500Name x500Name);
+}

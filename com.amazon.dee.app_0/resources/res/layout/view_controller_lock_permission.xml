@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="?attr/mosaicBackground" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/smart_device_header" android:layout_width="match_parent" android:layout_height="@dimen/nps_header_height" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <FrameLayout android:id="@+id/smart_device_close_view" android:layout_width="@dimen/nps_close_now_playing_screen_view_height" android:layout_height="@dimen/nps_close_now_playing_screen_view_height" android:layout_marginTop="@dimen/nps_msp_logo_view_mt" android:contentDescription="@string/content_desc_media_close_button" android:layout_marginStart="@dimen/nps_close_now_playing_screen_view_ms" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintHorizontal_bias="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:layout_constraintVertical_bias="0">
+            <ImageView android:layout_gravity="start|top" android:layout_width="@dimen/nps_close_now_playing_screen_image_view_height" android:layout_height="@dimen/nps_close_now_playing_screen_image_view_height" android:src="@drawable/dm_ic_close"/>
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_width="@dimen/dm_warning_logo_width" android:layout_height="@dimen/dm_warning_logo_height" android:layout_margin="@dimen/dm_warning_button_margin" android:src="@drawable/ic_smart_lock"/>
+        <TextView android:textSize="@dimen/dm_smart_home_unlock_permission_font_size" android:textColor="?attr/mosaicNeutral10" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dm_warning_button_margin" android:text="@string/dm_smart_home_lock_permission" app:fontName="6"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</LinearLayout>

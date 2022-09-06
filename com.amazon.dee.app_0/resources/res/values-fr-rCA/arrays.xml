@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="default_pill_hints">
+        <item>Joue des sons pour dormir</item>
+        <item>Fais une annonce</item>
+        <item>Quelles sont mes notifications?</item>
+        <item>Arrête la musique</item>
+        <item>Raconte-moi une blague</item>
+        <item>Quelle est la question du jour?</item>
+        <item>Bonne nuit</item>
+        <item>Arrête</item>
+        <item>Joue de la musique</item>
+        <item>Bonjour</item>
+        <item>Prochaine chanson, s&apos;il te plait</item>
+        <item>Lecture</item>
+        <item>Où est mon colis?</item>
+        <item>Suspends la musique</item>
+        <item>Joue du jazz</item>
+        <item>Garde mon domicile, s&apos;il te plaît</item>
+        <item>Comment ça va?</item>
+        <item>Règle une alarme pour demain à 7 h</item>
+        <item>C&apos;est quoi la lumière jaune?</item>
+        <item>Quelle est la météo aujourd&apos;hui?</item>
+        <item>Annule ma minuterie</item>
+        <item>Commence ma journée</item>
+        <item>Ajoute des pommes à ma liste d&apos;achats</item>
+        <item>Quelle est la température extérieure?</item>
+        <item>Quelles sont les nouvelles?</item>
+    </array>
+    <array name="new_user_messages">
+        <item>Bonjour! Devinez qui vient d&apos;apprendre à écrire? Envoyez-moi un message pour raconter une blague ou allumer la lumière. Vous pouvez également effectuer des recherches (par exemple, rechercher vos listes et paramètres) dans l&apos;application.</item>
+        <item>En passant, la fonctionnalité Écrire à Alexa fait partie d&apos;une version d&apos;évaluation. Ne vous étonnez pas si je tâtonne encore un peu.</item>
+    </array>
+    <array name="voice_ui_od_permissions_primer_rationale_list_items">
+        <item>Autoriser Alexa à entendre vos requêtes</item>
+        <item>Appeler et envoyer des messages à vos amis et votre famille</item>
+        <item>Contrôler des appareils connectés</item>
+        <item>Obtenir des résultats pertinents selon votre localisation</item>
+    </array>
+    <array name="voice_ui_od_scrim_hints">
+        <item>« Quel temps fait-il? »</item>
+        <item>« Quel est l&apos;état de la circulation? »</item>
+        <item>« Combien de milles y a-t-il dans 10 km? »</item>
+        <item>« Quel est le taux de change du dollar en euro? »</item>
+        <item>« Quels films sont à l&apos;affiche près de chez moi? »</item>
+        <item>« Quels films seront à l&apos;affiche demain? »</item>
+        <item>« Quels films de science-fiction sont à l&apos;affiche? »</item>
+        <item>« Combien de calories y a-t-il dans un œuf? »</item>
+        <item>« À quelle distance se trouve la lune? »</item>
+        <item>« Quelle heure est-il à Tokyo? »</item>
+        <item>« Demande à Wikipédia de faire une recherche sur Star Trek »</item>
+        <item>« Ajoute du lait à ma liste d&apos;achats »</item>
+        <item>« Qu&apos;est-ce qu&apos;il y a sur ma liste de choses à faire? »</item>
+        <item>« Trouve l&apos;épicerie la plus proche »</item>
+        <item>« Où est la piscine la plus proche? »</item>
+        <item>« Montre-moi des cafés à proximité »</item>
+        <item>« Quelle est la pizzéria la plus proche? »</item>
+        <item>« Montre-moi la pharmacie le plus proche »</item>
+        <item>« Montre-moi la météo d&apos;aujourd&apos;hui »</item>
+        <item>« Est-ce qu&apos;il va pleuvoir demain? »</item>
+        <item>« Est-ce que je vais avoir besoin d&apos;un parapluie aujourd&apos;hui? »</item>
+        <item>« Quel temps fait-il à Londres? »</item>
+    </array>
+</resources>

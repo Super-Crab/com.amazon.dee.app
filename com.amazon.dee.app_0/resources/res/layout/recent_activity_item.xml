@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:id="@+id/recent_activity_item" android:tag="layout/recent_activity_item_0" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:importantForAccessibility="yes" style="@style/list_item_container_double_line">
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/activity_icon" android:tag="binding_1" android:src="@drawable/ic_smart_sensor_motion" android:tint="?attr/mosaicNeutral10" style="@style/image_24"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/list_item_margin_start">
+        <com.amazon.alexa.font.FontTextView android:id="@+id/activity_title" android:tag="binding_2" style="@style/list_item_text_row_1"/>
+        <com.amazon.alexa.font.FontTextView android:id="@+id/activity_time" android:tag="binding_3" style="@style/list_item_text_row_2"/>
+    </LinearLayout>
+</LinearLayout>

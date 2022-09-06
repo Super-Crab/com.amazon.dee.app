@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/fiesta_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="wrap_content" android:layout_height="0dp" android:layout_marginTop="@dimen/oobe_padding_xsmall" android:layout_marginBottom="@dimen/oobe_terms_padding_bottom" android:layout_weight="1">
+        <include layout="@layout/terms_of_use_list"/>
+    </ScrollView>
+    <com.amazon.deecomms.common.ui.CommsTextView android:textColor="@color/fiesta_text_primary" android:id="@+id/terms_continue_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/oobe_padding_small" android:text="@string/tou_continue_text" style="@style/AlexaComms.xsmall"/>
+    <com.amazon.deecomms.common.ui.CommsButton android:textStyle="bold" android:id="@+id/tou_continue_btn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/oobe_padding_small" android:text="@string/action_continue" android:textAllCaps="true" custom:typeface="@string/amazon_ember_bold" style="@style/AlexaCommsButtonFiesta.Primary"/>
+</LinearLayout>

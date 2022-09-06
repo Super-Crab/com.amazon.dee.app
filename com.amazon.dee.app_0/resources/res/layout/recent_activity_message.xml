@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/recent_activity_message" android:tag="layout/recent_activity_message_0" android:layout_width="match_parent" android:layout_height="wrap_content" android:importantForAccessibility="yes">
+    <com.amazon.alexa.font.FontTextView android:textColor="?attr/mosaicNeutral10" android:id="@+id/recent_message" android:tag="binding_1" android:padding="@dimen/small_margin" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/small_margin" style="@style/TextAppearance.Mosaic.Body"/>
+</LinearLayout>

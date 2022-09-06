@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="voice_ui_od_card_height">412dp</dimen>
+    <dimen name="voice_ui_od_card_width">840dp</dimen>
+    <dimen name="voice_ui_od_detail_info_top_margin">8dp</dimen>
+    <dimen name="voice_ui_od_local_card_business_image_size_large">240dp</dimen>
+    <dimen name="voice_ui_od_local_card_detail_title_text_size">32sp</dimen>
+    <dimen name="voice_ui_od_movie_detail_spacing">24dp</dimen>
+    <dimen name="voice_ui_od_shopping_item_space_between_image_and_content">58dp</dimen>
+    <dimen name="voice_ui_od_sports_scores_next_game_margin_bottom">32dp</dimen>
+    <dimen name="voice_ui_od_sports_scores_next_game_margin_top">44dp</dimen>
+    <dimen name="voice_ui_od_sports_scores_placard_margin_top">18dp</dimen>
+    <dimen name="voice_ui_od_sports_scores_score_card_margin_top">36dp</dimen>
+    <dimen name="voice_ui_od_standard_image_content_spacing">8dp</dimen>
+    <dimen name="voice_ui_od_traffic_container_margin_top">0dp</dimen>
+</resources>

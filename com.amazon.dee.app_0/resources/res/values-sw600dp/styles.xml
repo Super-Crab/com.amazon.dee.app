@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Alexa.Voice.OneDesign.Content" parent="@style/Alexa.Voice.OneDesign">
+        <item name="android:layout_gravity">0x11</item>
+        <item name="android:layout_width">@dimen/voice_ui_od_card_width</item>
+        <item name="android:layout_height">@dimen/voice_ui_od_card_height</item>
+    </style>
+    <style name="Alexa.Voice.OneDesign.Content.Card" parent="@style/Alexa.Voice.OneDesign.Content">
+        <item name="roundedCornerRadius">@dimen/voice_ui_od_image_rounded_corner_radius</item>
+    </style>
+    <style name="Alexa.Voice.OneDesign.Content.Light.Shopping" parent="@style/Alexa.Voice.OneDesign.Content.Light">
+        <item name="backgroundColor">@color/voice_ui_od_light_content_background</item>
+        <item name="roundedCornerRadius">@dimen/voice_ui_od_image_rounded_corner_radius</item>
+    </style>
+    <style name="Alexa.Voice.OneDesign.Content.Window" parent="@style/Alexa.Voice.OneDesign.Content">
+        <item name="android:background">@color/voice_ui_od_tablet_window_background</item>
+    </style>
+    <style name="AlexaComms.ButtonLayout" parent="@style/AlexaComms">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+    <style name="AlexaComms.Right" parent="@style/AlexaComms">
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+    <style name="AlexaComms.intro_subtext" parent="@style/AlexaComms">
+        <item name="android:textSize">@dimen/oobe_text_size_intro_subtext</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+    <style name="AlexaComms.title_with_width" parent="@style/AlexaComms.title">
+        <item name="android:layout_width">match_parent</item>
+    </style>
+    <style name="AlexaComms.xsmall.limitedWidth" parent="@style/AlexaComms.xsmall">
+        <item name="android:layout_width">450dp</item>
+    </style>
+    <style name="AlexaCommsButton.Primary.Right" parent="@style/AlexaCommsButton.Primary">
+        <item name="android:layout_width">@dimen/oobe_button_width</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+    <style name="AlexaCommsButton.Primary.Variable" parent="@style/AlexaCommsButton.Primary.Right">
+        <item name="android:layout_marginBottom">@dimen/oobe_padding_xsmall</item>
+    </style>
+    <style name="AlexaCommsButton.Secondary.Right" parent="@style/AlexaCommsButton.Secondary">
+        <item name="android:layout_width">@dimen/oobe_button_width</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+    <style name="AlexaCommsButton.Tertiary.Right" parent="@style/AlexaCommsButton.Tertiary">
+        <item name="android:layout_width">@dimen/oobe_button_width</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+    <style name="AlexaCommsButton.Tertiary.Variable" parent="@style/AlexaCommsButton.Tertiary.Right">
+    </style>
+    <style name="AlexaCommsIntroVideo">
+        <item name="android:colorBackground">@color/transparent</item>
+        <item name="android:layout_gravity">0x3</item>
+    </style>
+    <style name="Widget.Design.TabLayout" parent="@style/Base.Widget.Design.TabLayout">
+        <item name="tabGravity">1</item>
+        <item name="tabMode">1</item>
+    </style>
+    <style name="icon_margins">
+        <item name="android:layout_marginStart">32dp</item>
+    </style>
+    <style name="item_divider_margins">
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:layout_marginBottom">12dp</item>
+        <item name="android:layout_marginStart">24dp</item>
+        <item name="android:layout_marginEnd">24dp</item>
+    </style>
+    <style name="recycler_view_resources">
+        <item name="android:layout_height">72dp</item>
+    </style>
+    <style name="text_margins">
+        <item name="android:textSize">24sp</item>
+        <item name="android:layout_marginStart">24dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+    </style>
+</resources>

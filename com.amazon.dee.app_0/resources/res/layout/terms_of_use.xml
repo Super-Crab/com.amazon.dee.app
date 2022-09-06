@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/oobe_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="wrap_content" android:layout_height="0dp" android:layout_marginTop="@dimen/oobe_padding_xsmall" android:layout_marginBottom="@dimen/oobe_terms_padding_bottom" android:layout_weight="1">
+        <include layout="@layout/terms_of_use_list"/>
+    </ScrollView>
+    <com.amazon.deecomms.common.ui.CommsTextView android:id="@+id/terms_continue_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/oobe_padding_small" android:text="@string/tou_continue_text" style="@style/AlexaComms.xsmall"/>
+    <Button android:id="@+id/tou_continue_btn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/oobe_padding_small" android:text="@string/action_continue" android:textAllCaps="true" style="@style/AlexaCommsButton.Primary"/>
+</LinearLayout>

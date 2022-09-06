@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ErrorDialogTheme" parent="@style/Theme.AppCompat.Light.Dialog">
+        <item name="android:windowBackground">@color/media_error_dialog_bg</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="TextBody" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">0x0</item>
+        <item name="android:textColor">?attr/mosaicNeutral20</item>
+    </style>
+    <style name="TextHeadline2" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">0x1</item>
+        <item name="android:textColor">?attr/mosaicNeutral10</item>
+    </style>
+    <style name="TextLabel" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">0x1</item>
+        <item name="android:textColor">?attr/mosaicNeutral20</item>
+    </style>
+    <style name="TextSecondary1" parent="@style/TextBody">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">?attr/mosaicNeutral10</item>
+    </style>
+    <style name="Theme.Alexa.dm" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:editTextBackground">@android:color/transparent</item>
+        <item name="windowActionModeOverlay">true</item>
+    </style>
+    <style name="Theme.Mosaic.Dark" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="mosaicAction10">@color/darkThemeAction10</item>
+        <item name="mosaicAction20">@color/darkThemeAction20</item>
+        <item name="mosaicAction30">@color/darkThemeAction30</item>
+        <item name="mosaicAction40">@color/darkThemeAction40</item>
+        <item name="mosaicBackground">@color/darkThemeBackground</item>
+        <item name="mosaicFill10">@color/darkThemeFill10</item>
+        <item name="mosaicFill20">@color/darkThemeFill20</item>
+        <item name="mosaicFill30">@color/darkThemeFill30</item>
+        <item name="mosaicFill40">@color/darkThemeFill40</item>
+        <item name="mosaicFill50">@color/darkThemeFill50</item>
+        <item name="mosaicFill60">@color/darkThemeFill60</item>
+        <item name="mosaicIcon10">@color/darkThemeIcon10</item>
+        <item name="mosaicIcon100">@color/darkThemeIcon100</item>
+        <item name="mosaicIcon110">@color/darkThemeIcon110</item>
+        <item name="mosaicIcon20">@color/darkThemeIcon20</item>
+        <item name="mosaicIcon30">@color/darkThemeIcon30</item>
+        <item name="mosaicIcon40">@color/darkThemeIcon40</item>
+        <item name="mosaicIcon50">@color/darkThemeIcon50</item>
+        <item name="mosaicIcon60">@color/darkThemeIcon60</item>
+        <item name="mosaicIcon70">@color/darkThemeIcon70</item>
+        <item name="mosaicIcon80">@color/darkThemeIcon80</item>
+        <item name="mosaicIcon90">@color/darkThemeIcon90</item>
+        <item name="mosaicNeutral10">@color/darkThemeNeutral10</item>
+        <item name="mosaicNeutral20">@color/darkThemeNeutral20</item>
+        <item name="mosaicNeutral30">@color/darkThemeNeutral30</item>
+        <item name="mosaicNeutral40">@color/darkThemeNeutral40</item>
+        <item name="mosaicNeutral50">@color/darkThemeNeutral50</item>
+        <item name="mosaicNeutral60">@color/darkThemeNeutral60</item>
+        <item name="mosaicStatus10">@color/darkThemeStatus10</item>
+        <item name="mosaicStatus20">@color/darkThemeStatus20</item>
+        <item name="mosaicStatus30">@color/darkThemeStatus30</item>
+        <item name="mosaicStatus40">@color/darkThemeStatus40</item>
+        <item name="mosaicStatus50">@color/darkThemeStatus50</item>
+        <item name="mosaicStatus60">@color/darkThemeStatus60</item>
+    </style>
+    <style name="Theme.Mosaic.Light" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="mosaicAction10">@color/lightThemeAction10</item>
+        <item name="mosaicAction20">@color/lightThemeAction20</item>
+        <item name="mosaicAction30">@color/lightThemeAction30</item>
+        <item name="mosaicAction40">@color/lightThemeAction40</item>
+        <item name="mosaicBackground">@color/lightThemeBackground</item>
+        <item name="mosaicFill10">@color/lightThemeFill10</item>
+        <item name="mosaicFill20">@color/lightThemeFill20</item>
+        <item name="mosaicFill30">@color/lightThemeFill30</item>
+        <item name="mosaicFill40">@color/lightThemeFill40</item>
+        <item name="mosaicFill50">@color/lightThemeFill50</item>
+        <item name="mosaicFill60">@color/lightThemeFill60</item>
+        <item name="mosaicIcon10">@color/lightThemeIcon10</item>
+        <item name="mosaicIcon100">@color/lightThemeIcon100</item>
+        <item name="mosaicIcon110">@color/lightThemeIcon110</item>
+        <item name="mosaicIcon20">@color/lightThemeIcon20</item>
+        <item name="mosaicIcon30">@color/lightThemeIcon30</item>
+        <item name="mosaicIcon40">@color/lightThemeIcon40</item>
+        <item name="mosaicIcon50">@color/lightThemeIcon50</item>
+        <item name="mosaicIcon60">@color/lightThemeIcon60</item>
+        <item name="mosaicIcon70">@color/lightThemeIcon70</item>
+        <item name="mosaicIcon80">@color/lightThemeIcon80</item>
+        <item name="mosaicIcon90">@color/lightThemeIcon90</item>
+        <item name="mosaicNeutral10">@color/lightThemeNeutral10</item>
+        <item name="mosaicNeutral20">@color/lightThemeNeutral20</item>
+        <item name="mosaicNeutral30">@color/lightThemeNeutral30</item>
+        <item name="mosaicNeutral40">@color/lightThemeNeutral40</item>
+        <item name="mosaicNeutral50">@color/lightThemeNeutral50</item>
+        <item name="mosaicNeutral60">@color/lightThemeNeutral60</item>
+        <item name="mosaicStatus10">@color/lightThemeStatus10</item>
+        <item name="mosaicStatus20">@color/lightThemeStatus20</item>
+        <item name="mosaicStatus30">@color/lightThemeStatus30</item>
+        <item name="mosaicStatus40">@color/lightThemeStatus40</item>
+        <item name="mosaicStatus50">@color/lightThemeStatus50</item>
+        <item name="mosaicStatus60">@color/lightThemeStatus60</item>
+    </style>
+</resources>

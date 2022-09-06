@@ -1,0 +1,31 @@
+package com.amazon.alexa.accessory.utils.feature;
+
+import com.amazon.alexa.featureservice.data.registry.NativeFeatureRegistry;
+import com.amazon.alexa.mode.ModeConstants;
+/* loaded from: classes6.dex */
+public enum AccessoryFeature {
+    ACCESSORY_MULTI_SOURCE_SUPPORT(NativeFeatureRegistry.ALEXA_ACCESSORY_ANDROID_MULTI_SOURCE),
+    ALEXA_ACCESSORY_ANDROID_EXPECT_SPEECH(NativeFeatureRegistry.ALEXA_ACCESSORY_ANDROID_EXPECT_SPEECH),
+    ALEXA_ACCESSORY_ANDROID_FOLLOWME(NativeFeatureRegistry.ALEXA_ACCESSORY_ANDROID_FOLLOWME),
+    ALEXA_VOX_ANDROID_LOCALE_SETTING(NativeFeatureRegistry.ALEXA_VOX_ANDROID_LOCALE_SETTING),
+    AUTOMOTIVE_LOGIN(NativeFeatureRegistry.ALEXA_AUTO_ANDROID_AUTOMOTIVE_LOGIN_ENABLED),
+    DRIVE_MODE(ModeConstants.ALEXA_AUTO_ANDROID_DRIVE_MODE_ENABLED),
+    FIND_MY_NON_CLUSTERED(NativeFeatureRegistry.ALEXA_ACCESSORY_ANDROID_FINDMYX_NON_CLUSTERED),
+    INVERSION_OF_CONTROL(NativeFeatureRegistry.ALEXA_ACCESSORY_ANDROID_VOICE_IOC_MOBILE),
+    VERSION_NOTIFICATION_RESPONSE(NativeFeatureRegistry.ALEXA_ACCESSORIES_ANDROID_VERSION_NOTIFICATION_RESPONSE),
+    ALEXA_ACCESSORY_DAVS_ANDROID(NativeFeatureRegistry.ALEXA_ACCESSORY_DAVS_ANDROID),
+    ALEXA_ACCESSORY_ANDROID_SESSION_RETRY(NativeFeatureRegistry.ALEXA_ACCESSORY_ANDROID_SESSION_RETRY),
+    ALEXA_ACCESSORY_ANDROID_AUDIO_TUNING(NativeFeatureRegistry.ALEXA_ACCESSORY_ANDROID_AUDIO_TUNING),
+    ALEXA_ACCESSORY_ANDROID_ACCESSORY_STATE_REPORT(NativeFeatureRegistry.ALEXA_ACCESSORY_ANDROID_ACCESSORY_STATE_REPORT),
+    ACCESSORY_SERVICE_DEPRECATION(NativeFeatureRegistry.ALEXA_ACCESSORY_SERVICE_ANDROID_DEPRECATION);
+    
+    private final String featureName;
+
+    AccessoryFeature(String str) {
+        this.featureName = str;
+    }
+
+    public String getName() {
+        return this.featureName;
+    }
+}

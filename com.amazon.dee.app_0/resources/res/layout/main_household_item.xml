@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:textSize="16sp" android:textColor="#989c9c" android:ellipsize="end" android:gravity="center_vertical" android:tag="layout/main_household_item_0" android:layout_width="match_parent" android:layout_height="48dp" android:maxLines="1" android:paddingStart="24dp" android:paddingEnd="10dp"/>

@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+
+<scxml xmlns="http://www.w3.org/2005/07/scxml"
+       version="1.0"
+       initial="MACHINE">
+
+    <parallel id="MACHINE">
+        <state id="RENDER_CARD">
+            <transition event="gotRenderCardDirective">
+                <invoke type="native" src="storeNewRenderCardDir" />
+                <invoke type="native" src="tryRenderCardDirective" />
+            </transition>
+        </state>
+
+        <state id="IN_APP_SEARCH" initial="IDLE">
+            <state id="IDLE">
+                <transition event="gotAvsTextResponse" cond="NOT(isMultiturnFlagSet)" target="WAITING_FOR_EXPECT_SPEECH">
+                    <invoke type="native" src="storeNewAvsTextResponse"/>
+                </transition>
+
+                <transition event="gotAvsTextResponse" cond="isMultiturnFlagSet" target="WAITING_FOR_EXPECT_SPEECH_IN_MULTITURN">
+                    <invoke type="native" src="clearIsMultiturnFlag"/>
+                    <invoke type="native" src="storeNewAvsTextResponse"/>
+                </transition>
+
+                <transition event="willSendText" target="WILL_SEND_TEXT">
+                    <invoke type="native" src="storeUserUtterance" />
+                    <invoke type="native" src="clearIsMultiturnFlag"/>
+                </transition>
+            </state>
+
+            <state id="WAITING_FOR_EXPECT_SPEECH">
+                <onentry>
+                    <invoke type="native" src="showExistingAvsResponse" />
+                    <!-- start a timer -->
+                    <send event="WAITING_FOR_EXPECT_SPEECH_timeout" id="WAITING_FOR_EXPECT_SPEECH_timeout" delay="0.2" />
+                </onentry>
+
+                <onexit>
+                    <!-- cancel timer -->
+                    <cancel sendid="WAITING_FOR_EXPECT_SPEECH_timeout" />
+                </onexit>
+
+                <!-- execute timer action-->
+                <transition event="WAITING_FOR_EXPECT_SPEECH_timeout" target="WAITING_FOR_SIMBA">
+                    <invoke type="native" src="callSIMBA" />
+                </transition>
+
+                <transition event="gotAvsTextResponse" target="WAITING_FOR_EXPECT_SPEECH">
+                    <invoke type="native" src="showExistingAvsResponse" />
+                    <invoke type="native" src="storeNewAvsTextResponse" />
+                </transition>
+
+                <transition event="gotExpectTextDir" target="MULTI_TURN">
+                    <invoke type="native" src="showExistingAvsResponse" />
+                </transition>
+
+                <transition event="willSendText" target="WILL_SEND_TEXT">
+                    <invoke type="native" src="storeUserUtterance" />
+                </transition>
+            </state>
+
+            <state id="WAITING_FOR_EXPECT_SPEECH_IN_MULTITURN">
+                <onentry>
+                    <invoke type="native" src="showExistingAvsResponse" />
+                    <!-- start a timer -->
+                    <send event="WAITING_FOR_EXPECT_SPEECH_IN_MULTITURN_timeout" id="WAITING_FOR_EXPECT_SPEECH_IN_MULTITURN_timeout" delay="1.0" />
+                </onentry>
+
+                <onexit>
+                    <!-- cancel timer -->
+                    <cancel sendid="WAITING_FOR_EXPECT_SPEECH_IN_MULTITURN_timeout" />
+                </onexit>
+
+                <!-- execute timer action-->
+                <transition event="WAITING_FOR_EXPECT_SPEECH_IN_MULTITURN_timeout" target="IDLE" />
+
+                <transition event="gotAvsTextResponse" target="WAITING_FOR_EXPECT_SPEECH_IN_MULTITURN">
+                    <invoke type="native" src="showExistingAvsResponse" />
+                    <invoke type="native" src="storeNewAvsTextResponse" />
+                </transition>
+
+                <transition event="gotExpectTextDir" target="MULTI_TURN">
+                    <invoke type="native" src="showExistingAvsResponse" />
+                </transition>
+
+                <transition event="willSendText" target="WILL_SEND_TEXT">
+                    <invoke type="native" src="storeUserUtterance" />
+                </transition>
+            </state>
+
+            <state id="MULTI_TURN">
+                <transition event="gotAvsTextResponse" target="WAITING_FOR_EXPECT_SPEECH">
+                    <invoke type="native" src="clearIsMultiturnFlag" />
+                    <invoke type="native" src="storeNewAvsTextResponse" />
+                </transition>
+
+                <transition event="willSendText" target="WILL_SEND_TEXT">
+                    <invoke type="native" src="storeUserUtterance" />
+                    <invoke type="native" src="setIsMultiturnFlag" />
+                </transition>
+            </state>
+
+            <state id="WAITING_FOR_SIMBA">
+                <transition event="gotAvsTextResponse" target="WAITING_FOR_EXPECT_SPEECH">
+                    <invoke type="native" src="cancelExistingSIMBACall" />
+                    <invoke type="native" src="showExistingAvsResponse" />
+                    <invoke type="native" src="storeNewAvsTextResponse" />
+                </transition>
+
+                <transition event="onSIMBAError onSIMBATimeout onEmptySIMBAResults"
+                            cond="simbaCallContextsMatch"
+                            target="IDLE">
+                    <invoke type="native" src="notifyNoSimbaResults" />
+                    <invoke type="native" src="showExistingAvsResponse" />
+                </transition>
+
+                <transition event="gotSIMBAResults"
+                            cond="simbaCallContextsMatch"
+                            target="IDLE">
+                    <invoke type="native" src="showSIMBAResults" />
+                    <invoke type="native" src="removeExistingAvsResponse" />
+                </transition>
+
+                <transition event="willSendText" target="WILL_SEND_TEXT">
+                    <invoke type="native" src="storeUserUtterance" />
+                    <invoke type="native" src="cancelExistingSIMBACall" />
+                </transition>
+            </state>
+
+            <state id="WILL_SEND_TEXT">
+                <onentry>
+                    <invoke type="native" src="showExistingAvsResponse" />
+                    <invoke type="native" src="sendTextToAVS" />
+                    <raise event="WILL_SEND_TEXT_exit" />
+                </onentry>
+
+                <transition event="WILL_SEND_TEXT_exit" target="IDLE" />
+            </state>
+        </state>
+    </parallel>
+</scxml>

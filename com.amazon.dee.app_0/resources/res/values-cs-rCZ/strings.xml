@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="accept">[021858Àćčëpť]</string>
+    <string name="accept_capital">[006378ÀĆČËPŤ]</string>
+    <string name="amazon_customer_service">[始035985Amazon Ćûşťòmēř Šëřvîçéり]</string>
+    <string name="cancel">[013020Çáňçęł]</string>
+    <string name="close_capital">[045400ÇŁÕŚĘ]</string>
+    <string name="confirm_end_session">[始始始始始044715Àřê ýôù šüřę ÿöü wàńť ťō §ťòp §hãřīňğ ýōůř ščřęěñ?りりりりり]</string>
+    <string name="csa_resume_customer_paused_session_message">[始始始始始始始始始始始始始始始始始始始始始始始始始始始002364Amazon Ćûşťòmēř Šëřvîçé wœûłď łíkě ťó řę§ūmé §ćřēèň śhàřîñğ wíťh ÿõúř ďévíčě. Öńčę čóńňëćťēď, wę\'łł bě åbłë ťō šêë ÿöūř śçřēèń äńď íňťëřäćť wıťh ťhı§ ďēvıçë. Ýœù čäń èńď ťhē ßêšşìôň æť ąňÿ ťìmě.りりりりりりりりりりりりりりりりりりりりりりりりりりり]</string>
+    <string name="decline">[056912Ďéčłīňē]</string>
+    <string name="decline_capital">[045926ĎÉČŁĪŇĒ]</string>
+    <string name="end_screen_sharing">[030157Èńď şčřèéñ ßhæřïńğ]</string>
+    <string name="hold_back_for_options">[始始034272Hœłď [BĄČK BÙŤŤŌŃ] fóř ōpťîòńşりり]</string>
+    <string name="hold_back_for_options_post">[013158fœř ópťíøñ§]</string>
+    <string name="hold_back_for_options_pre">[048492Hœłď]</string>
+    <string name="live_assist_session_ended_message">[始始始始始始始始021233Ýœû æřē ňœ łóńğéř šhâřīňğ ýòůř ßčřēèñ wïťh Amazon Čüśťömèř Şęřvïćê.りりりりりりりり]</string>
+    <string name="mayday_screen_sharing_menu">[始050450Máýďæÿ Ščřëęñ Şhąřìńğ mêñúり]</string>
+    <string name="pause_screen_sharing">[059498Páûšę ßćřêëň šhåřıñğ]</string>
+    <string name="permission_request">[始始始始始始始始始始始始始始始始始始始始始始始始始017930Amazon Ćûşťòmēř Šëřvîçé wœûłď łíkě ťó šçřēèń §hâřè wīťh ýœůř ďēvīčë. Ôńčê čòńňéćťęď, wê\'łł bë åbłé ťö şèé ýôûř šçřęěń äńď īňťéřäćť wîťh ťhîß ďęvîçé. Ÿøü čäń ěńď ťhę śèş§ïóň æť ąňý ťïmë.りりりりりりりりりりりりりりりりりりりりりりりりり]</string>
+    <string name="resume_screen_sharing">[始061131Řéśümě śčřëęñ şhąřìńğり]</string>
+    <string name="screen_sharing_active">[始043672Śćřëęň śhàřıñğ ïß àćťïvêり]</string>
+    <string name="screen_sharing_connecting">[始始048970Śćřëęň śhàřıñğ ïß çòňñéčťíňğ…りり]</string>
+    <string name="screen_sharing_ended">[始016945Śćřëęň śhàřıñğ hąś ěňďéďり]</string>
+    <string name="screen_sharing_paused">[始061046Śćřëęň śhàřıñğ ïß páûßéďり]</string>
+    <string name="screen_sharing_resumed">[始011568Śćřëęň śhàřıñğ řêśùmēďり]</string>
+</resources>

@@ -1,0 +1,1481 @@
+{
+  "content": [
+    {
+      "@c": ".ContentItem",
+      "contentId": "send-to-app-card-content-id",
+      "contentProvider": "SendToApp",
+      "contentType": "SendToApp",
+      "contentSource": "HOME",
+      "templateType": "CustomTemplate",
+      "clickToDismiss": true,
+      "slots": null,
+      "contentMetadata": null,
+      "segmentMap": null,
+      "customData": {
+        "version": "1.0",
+        "token": "sample token",
+        "iconUrl": "https://images-na.ssl-images-amazon.com/images/I/41WWWP87X6L.jpg",
+        "title": "Link from Instagram Skill",
+        "subtitle": "Sent from My Dot. Tap to open Instagram.",
+        "actions": {
+          "primary": {
+            "catalogId": "com.instagram.android",
+            "catalogType": "GOOGLE_PLAY_STORE",
+            "identifier": "com.instagram.android",
+            "identifierType": "URI_APP_IDENTIFIER_SCHEME"
+          },
+          "fallback": {
+            "catalogId": "com.instagram.android",
+            "catalogType": "GOOGLE_PLAY_STORE",
+            "identifier": "https://play.google.com/store/apps/details?id=com.instagram.android",
+            "identifierType": "URI_HTTP_SCHEME"
+          }
+        }
+      },
+      "contentActions": [
+        {
+          "@type": "DismissCardAction",
+          "id": "RemindersFeatureEducationDomainContent1",
+          "text": "Remove"
+        }
+      ],
+      "alertMessage": null,
+      "customTemplateRoute": "sendToApp",
+      "p13nMetadata": {
+        "section": "ACTIVITY"
+      }
+    },
+    {
+      "@c": ".ContentItem",
+      "contentProvider": "APD",
+      "contentType": "human_review_card",
+      "contentId": "HumanReviewCard",
+      "templateType": "MiniTemplate",
+      "contentSource": "HOME",
+      "slots": [
+        {
+          "position": 0,
+          "viewType": "IconTitleSubtitleView",
+          "resources": {
+            "@c": ".IconTitleSubtitleViewResources",
+            "title": "Enable human review of voice recordings BOTTOM SHEET",
+            "subtitle": "This helps Alexa understand you better",
+            "imageUrl": "https://m.media-amazon.com/images/G/01/AlexaHomePrototype/Device_Setup._CB1581534517_.png",
+            "imageType": "Icon",
+            "tint": "maroon",
+            "imageTheme":"icon30",
+            "italicized": false
+          },
+          "action": {
+            "@type": "BottomSheetAction",
+            "view": {
+              "position": 0,
+              "viewType": "OptInBottomSheetView",
+              "resources": {
+                "imageUrl": "https://m.media-amazon.com/images/G/01/AlexaHomePrototype/Device_Setup._CB1581534517_.png",
+                "header": "Confirm Human Review of Voice Recordings",
+                "subHeader": "This helps Alexa work better for everyone, no matter where they live or how they speak.",
+                "bodyText": "By confirming, our trained employees will continue to review your voice recordings to develop new features or improve our services. Unless you confirm, on XX/XX, you will by default be opted out of human review of voice recordings.",
+                "bottomSheetId": "HumanReviewBottomSheet",
+                "buttons": [
+                  {
+                    "position": 0,
+                    "viewType": "SingleButtonView",
+                    "resources": {
+                      "type": "TextButtonView",
+                      "text": "OPT OUT",
+                      "buttonId": "HumanReviewOptOut"
+                    },
+                    "action": {
+                      "@type": "ApiRequestAction",
+                      "method": "POST",
+                      "endpoint": "api/settings/human-review",
+                      "body": {
+                        "keyName": "Alexa.Privacy.VoiceRecording.humanReviewEnablement",
+                        "subKeys": "DISABLED"
+                      }
+                    }
+                  },
+                  {
+                    "position": 1,
+                    "viewType": "SingleButtonView",
+                    "resources": {
+                      "type": "BorderedTextButtonView",
+                      "text": "CONFIRM",
+                      "buttonId": "HumanReviewConfirm"
+                    },
+                    "action": {
+                      "@type": "ApiRequestAction",
+                      "method": "POST",
+                      "endpoint": "api/settings/human-review",
+                      "body": {
+                        "keyName": "Alexa.Privacy.VoiceRecording.humanReviewEnablement",
+                        "subKeys": "ENABLED"
+                      }
+                    }
+                  }
+                ]
+              },
+              "action": null
+            }
+          }
+        },
+        {
+          "position": "1",
+          "viewType": "EmptyView",
+          "action": {
+            "@type": "BottomSheetAction",
+            "view": {
+              "position": 0,
+              "viewType": "OptInBottomSheetView",
+              "resources": {
+                "imageUrl": "https://m.media-amazon.com/images/G/01/AlexaHomePrototype/Device_Setup._CB1581534517_.png",
+                "header": "Confirm Human Review of Voice Recordings",
+                "subHeader": "This helps Alexa work better for everyone, no matter where they live or how they speak.",
+                "bodyText": "By confirming, our trained employees will continue to review your voice recordings to develop new features or improve our services. Unless you confirm, on XX/XX, you will by default be opted out of human review of voice recordings.",
+                "bottomSheetId": "HumanReviewBottomSheet",
+                "buttons": [
+                  {
+                    "position": 0,
+                    "viewType": "SingleButtonView",
+                    "resources": {
+                      "type": "TextButtonView",
+                      "text": "OPT OUT",
+                      "buttonId": "HumanReviewOptOut"
+                    },
+                    "action": {
+                      "@type": "ApiRequestAction",
+                      "method": "POST",
+                      "endpoint": "api/settings/human-review",
+                      "body": {
+                        "keyName": "Alexa.Privacy.VoiceRecording.humanReviewEnablement",
+                        "subKeys": "DISABLED"
+                      }
+                    }
+                  },
+                  {
+                    "position": 1,
+                    "viewType": "SingleButtonView",
+                    "resources": {
+                      "type": "BorderedTextButtonView",
+                      "text": "CONFIRM",
+                      "buttonId": "HumanReviewConfirm"
+                    },
+                    "action": {
+                      "@type": "ApiRequestAction",
+                      "method": "POST",
+                      "endpoint": "api/settings/human-review",
+                      "body": {
+                        "keyName": "Alexa.Privacy.VoiceRecording.humanReviewEnablement",
+                        "subKeys": "ENABLED"
+                      }
+                    }
+                  }
+                ]
+              },
+              "action": null
+            }
+          },
+          "resources": {
+            "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/61kEgqL6u6L.png",
+            "type": "ImageButtonView"
+          }
+        }
+      ],
+      "p13nMetadata": {
+        "modelVersion": "modelVersion1",
+        "index": 1,
+        "totalNumberOfItems": 13,
+        "section": "GettingStarted"
+      }
+    },
+    {
+      "@c": ".ContentItem",
+      "contentId": "RemindersFeatureEducationDomainContent1",
+      "contentProvider": "Education",
+      "contentType": "reminders_feature_education_card",
+      "contentSource": "HOME",
+      "templateType": "HeroTemplate",
+      "contentActions": [
+        {
+          "@type": "DismissCardAction",
+          "id": "RemindersFeatureEducationDomainContent1",
+          "text": "Remove"
+        }
+      ],
+      "slots": [
+        {
+          "position": 0,
+          "viewType": "TitleSubtitleView",
+          "resources": {
+            "@c": ".TitleSubtitleViewResources",
+            "title": "\"Alexa, remind me to do laundry\"",
+            "subtitle": "Never forget a thing-set a reminder in the app with help from Alexa.",
+            "italicized": false
+          },
+          "action": {
+            "@type": "NavigateAction",
+            "route": "v2/elements-whats-new/wn-home",
+            "text": "CREATE REMINDER"
+          }
+        },
+        {
+          "position": 1,
+          "viewType": "ImageView",
+          "resources": {
+            "@c": ".ImageViewResources",
+            "imageUrl": "https://m.media-amazon.com/images/G/01/alexa-mxbr24v8/mobile-v8ah3v/home-kaixn/shopping-24443/HomeReminder._CB453484011_.png",
+            "imageType": "Icon"
+          },
+          "action": {
+            "@type": "NavigateAction",
+            "route": "timersAndAlarms/reminders",
+            "text": "CREATE REMINDER"
+          }
+        },
+        {
+          "position": 2,
+          "viewType": "SingleButtonView",
+          "resources": {
+            "@c": ".SingleButtonViewResources",
+            "type": "BorderedTextButtonView",
+            "text": "CREATE REMINDER"
+          },
+          "action": {
+            "@type": "NavigateAction",
+            "route": "timersAndAlarms/reminders",
+            "text": "CREATE REMINDER"
+          }
+        }
+      ],
+      "contentMetadata": null,
+      "segmentMap": null,
+      "customData": null,
+      "alertMessage": null,
+      "customTemplateRoute": null,
+      "p13nMetadata": {
+        "timeOfEvent": null,
+        "timeRangeOfEvent": null,
+        "section": "DiscoverMore",
+        "subSection": null,
+        "features": null,
+        "predictions": null,
+        "timeOfPublish": null,
+        "modelVersion": "gettingStarted_discoverMore:Vv0/20200403144613",
+        "realTime": null,
+        "index": 2,
+        "totalNumberOfItems": 9
+      }
+    },
+    {
+      "@c": ".ContentItem",
+      "contentId": "amzn1.alexa.recocontent.HomeChannelIntraHomegroupDropinUtilityCard",
+      "contentProvider": "COMMS",
+      "contentType": "StartDropIn",
+      "contentSource": "HOME",
+      "templateType": "CustomTemplate",
+      "slots": null,
+      "contentMetadata": null,
+      "segmentMap": null,
+      "customData": {
+        "actionType": "NavigateAction",
+        "metaActionType": "DeviceDropInAction",
+        "cardTemplateName": "TWO_IMAGE_UTILITY_CARD_TEMPLATE",
+        "cardAction": "DEVICE_DROP_IN",
+        "primaryText": "Drop In",
+        "secondaryText": "Someone's Echo Plus",
+        "leftIconUrl": "https://m.media-amazon.com/images/G/01/comms/home-channel/ic_echo_show_v1_48dp._CB419482009_.png",
+        "rightIconUrl": "https://m.media-amazon.com/images/G/01/comms/home-channel//ic_drop_in_request_inline_48dp._CB1585175166_.png",
+        "commsId": "amzn1.comms.id.person.amzn1~amzn1.account.AERJOQSNZQFTZR3AAWCZRSX45T2A",
+        "deviceGruu": "sips:id.hg.amzn1~HH1LXJPC53J09C1@amcs-tachyon.com;gr=urn%g1tag%g1amazon.com%2c2016%g1DEVICE_ACCOUNT_ID%g1A00254781BKCRKRGI230I",
+        "deviceName": "Happy Living Room",
+        "isVideoCapable": true
+    },
+    "alertMessage": null,
+    "customTemplateRoute": "rn/CommsUtilityCard",
+    "p13nMetadata": {
+      "timeOfEvent": null,
+      "timeRangeOfEvent": null,
+      "section": "Activity",
+      "subSection": null,
+      "features": null,
+      "predictions": null,
+      "timeOfPublish": null,
+      "modelVersion": "amml_activity:Vv0/20200403221037",
+      "realTime": null,
+      "index": 1,
+      "totalNumberOfItems": 1
+    }
+    },
+    {
+      "@c": ".ContentItem",
+      "contentId": "outage-alerts",
+      "contentProvider": "OutageAlerts",
+      "contentType": "outage_alerts_card",
+      "contentSource": "HOME",
+      "templateType": "AlertBanner",
+      "contentMetadata": null,
+      "segmentMap": null,
+      "customData": null,
+      "alertMessage": "This should support very very very very long messages and it should have a max of two lines",
+      "customTemplateRoute": null,
+      "p13nMetadata": {
+        "timeOfEvent": null,
+        "timeRangeOfEvent": null,
+        "section": "Override",
+        "subSection": null,
+        "features": null,
+        "predictions": null,
+        "timeOfPublish": null,
+        "modelVersion": "gettingStarted_discoverMore:Vv0/20200403144613",
+        "realTime": null,
+        "index": 1,
+        "totalNumberOfItems": 3
+      }
+    },
+    {
+      "@c": ".ContentItem",
+      "contentId": "ttt-hint-amzn1.alexa.hint.cab9cf71-cbfa-4a15-a3f3-65a60703e73d",
+      "contentProvider": "ThingsToTry",
+      "contentType": "TTTrecommendation_card",
+      "contentSource": "HOME",
+      "templateType": "ListTemplate",
+      "contentActions": [
+        {
+          "@type": "DismissCardAction",
+          "id": "ttt-hint-amzn1.alexa.hint.cab9cf71-cbfa-4a15-a3f3-65a60703e73d",
+          "text": "Remove"
+        }
+      ],
+      "slots": [
+        {
+          "position": 0,
+          "viewType": "TitleSubtitleView",
+          "resources": {
+            "@c": ".TitleSubtitleViewResources",
+            "title": "Browse Things to Try",
+            "subtitle": "Try Saying",
+            "italicized": false
+          },
+          "action": {
+            "@type": "SettingsAction",
+            "iosSettingsUrl": "",
+            "androidSettingsUrl": "android.settings.SETTINGS"
+          }
+        },
+        {
+          "position": 1,
+          "viewType": "IconTitleView",
+          "resources": {
+            "@c": ".IconTitleViewResources",
+            "title": "Alexa, add lemons to my shopping list",
+            "imageUrl": "https://m.media-amazon.com/images/G/01/Alexa/ThingsToTry/timersandalarms._CB513072534_.png",
+            "imageType": "Icon",
+            "tint": "#FFECB4",
+            "italicized": true,
+            "bold": false
+          },
+          "action": {
+            "@type": "NavigateAction",
+            "route": "v2/things-to-try/features/c5393940-a0d8-411c-96eb-4fedff50cb13"
+          }
+        },
+        {
+          "position": 2,
+          "viewType": "IconTitleView",
+          "resources": {
+            "@c": ".IconTitleViewResources",
+            "title": "Alexa, what's on my shopping list?",
+            "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/61kEgqL6u6L.png",
+            "imageType": "Logo",
+            "italicized": false,
+            "bold": false
+          },
+          "action": {
+            "@type": "NavigateAction",
+            "route": "v2/things-to-try/features/2f312370-467d-48ae-9233-b37374c56d0f"
+          }
+        },
+        {
+          "position": 3,
+          "viewType": "IconTitleView",
+          "resources": {
+            "@c": ".IconTitleViewResources",
+            "title": "Alexa, what are the current mortgage rates?",
+            "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/61kEgqL6u6L.png",
+            "imageType": "Media",
+            "italicized": false
+          },
+          "action": {
+            "@type": "NavigateAction",
+            "route": "v2/things-to-try/features/498d7de4-2865-44cd-86f5-b6100188ff7c"
+          }
+        },
+        {
+          "position": 4,
+          "viewType": "SingleButtonView",
+          "resources": {
+            "@c": ".SingleButtonViewResources",
+            "type": "BorderedTextButtonView",
+            "text": "Explore what Alexa can do"
+          },
+          "action": {
+            "@type": "NavigateAction",
+            "route": "v2/things-to-try",
+            "text": "Explore what Alexa can do"
+          }
+        }
+      ],
+      "cardAction": null,
+      "contentMetadata": {
+        "messageBundle": "messages.HintsCard",
+        "localizationArgs": null,
+        "targetDeviceTypes": null
+      },
+      "segmentMap": null,
+      "customData": null,
+      "alertMessage": null,
+      "p13nMetadata": {}
+    },
+    {
+      "contentId": "Card1",
+      "contentProvider": "MockProvider1",
+      "contentType": "MockContentType1",
+      "contentSource": "HOME",
+      "templateType": "MiniTemplate",
+      "contentActions": [
+        {
+          "@type": "DismissCardAction",
+          "id": "Card1",
+          "text": "Remove"
+        }
+      ],
+      "slots": [
+        {
+          "position": "0",
+          "viewType": "IconTitleSubtitleView",
+          "resources": {
+            "title": "“1. Alexa, start my day” tint is gibberish",
+            "subtitle": "Routines make life easier",
+            "imageUrl": "https://m.media-amazon.com/images/G/01/AlexaHomePrototype/Routines._CB422976811_.png",
+            "imageType": "Icon",
+            "tint": "icon10",
+            "italicized": false
+          },
+          "action": {
+            "@type": "LinkAccountAction",
+            "text": "Link Account",
+            "stage": "live",
+            "applicationId": "amzn1.ask.skill.428d9e59-13db-4028-8659-b2defac6a1af"
+          }
+        },
+        {
+          "position": "1",
+          "viewType": "SingleButtonView",
+          "action": {
+            "@type": "NavigateAction",
+            "route": "v2/behaviors",
+            "metaActionType": "sampleMetaActionType",
+            "accessibilityLabel": "Card1AccLabel"
+          },
+          "resources": {
+            "imageUrl": "https://m.media-amazon.com/images/G/01/AlexaHomePrototype/Routines._CB422976811_.png",
+            "type": "ImageButtonView"
+          }
+        }
+      ],
+      "p13nMetadata": {
+        "modelVersion": "modelVersion1",
+        "index": 1,
+        "totalNumberOfItems": 13,
+        "section": "GettingStarted"
+      }
+    },
+    {
+      "contentId": "Card2",
+      "contentProvider": "MockProvider2",
+      "contentType": "MockContentType2",
+      "section": "GettingStarted",
+      "contentSource": "HOME",
+      "templateType": "MiniTemplate",
+      "slots": [
+        {
+          "position": "0",
+          "viewType": "IconTitleSubtitleView",
+          "resources": {
+            "title": "2. Echo Dot Connected, tint is a word",
+            "subtitle": "Your device is ready to use",
+            "imageUrl": "https://m.media-amazon.com/images/G/01/AlexaHomePrototype/Device_Setup._CB1581534517_.png",
+            "imageType": "Icon",
+            "tint": "maroon",
+            "imageTheme":"icon30",
+            "italicized": false
+          },
+          "action": {
+            "@type": "NavigateAction",
+            "route": "v2/device-settings",
+            "metaActionType": "sampleMetaActionType"
+          }
+        },
+        {
+          "position": "1",
+          "viewType": "SingleButtonView",
+          "action": {
+            "@type": "NavigateAction",
+            "route": "v2/things-to-try",
+            "metaActionType": "sampleMetaActionType"
+          },
+          "resources": {
+            "text": "Explore",
+            "type": "TextButtonView"
+          }
+        }
+      ],
+      "p13nMetadata": {
+        "modelVersion": "modelVersion2",
+        "index": 2,
+        "totalNumberOfItems": 13,
+        "section": "GettingStarted"
+      }
+    },
+    {
+      "contentId": "Card3",
+      "contentProvider": "MockProvider3",
+      "contentType": "MockContentType3",
+      "section": "GettingStarted",
+      "contentSource": "HOME",
+      "templateType": "MiniTemplate",
+      "slots": [
+        {
+          "position": "0",
+          "viewType": "IconTitleSubtitleView",
+          "resources": {
+            "title": "3. Talk to Friends or Family",
+            "subtitle": "Reach your contacts",
+            "imageUrl": "https://m.media-amazon.com/images/G/01/AlexaHomePrototype/Contacts._CB422973971_.png",
+            "imageType": "Icon",
+            "imageTheme":"icon40",
+            "italicized": false
+          },
+          "action": {
+            "@type": "NavigateAction",
+            "route": "voice",
+            "metaActionType": "sampleMetaActionType"
+          }
+        },
+        {
+          "position": "1",
+          "viewType": "SingleButtonView",
+          "action": {
+            "@type": "NavigateAction",
+            "route": "v2/behaviors",
+            "metaActionType": "sampleMetaActionType"
+          },
+          "resources": {
+            "text": "Add",
+            "type": "TextButtonView"
+          }
+        }
+      ],
+      "p13nMetadata": {
+        "modelVersion": "modelVersion3",
+        "index": 3,
+        "totalNumberOfItems": 13,
+        "section": "GettingStarted"
+      }
+    },
+    {
+      "contentId": "Card4",
+      "contentProvider": "MockProvider4",
+      "contentType": "MockContentType4",
+      "section": "GettingStarted",
+      "contentSource": "HOME",
+      "templateType": "MiniTemplate",
+      "slots": [
+        {
+          "position": "0",
+          "viewType": "IconTitleSubtitleView",
+          "resources": {
+            "title": "4. Link Music Services",
+            "subtitle": "Stream your favorite tunes",
+            "imageUrl": "https://m.media-amazon.com/images/G/01/AlexaHomePrototype/Link_Music._CB422976811_.png",
+            "imageType": "Icon",
+            "imageTheme":"icon100",
+            "italicized": false
+          },
+          "action": {
+            "@type": "NavigateAction",
+            "route": "v2/behaviors",
+            "metaActionType": "sampleMetaActionType"
+          }
+        },
+        {
+          "position": "1",
+          "viewType": "SingleButtonView",
+          "action": {
+            "@type": "NavigateAction",
+            "route": "v2/behaviors",
+            "metaActionType": "sampleMetaActionType"
+          },
+          "resources": {
+            "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/61kEgqL6u6L.png",
+            "type": "ImageButtonView"
+          }
+        }
+      ],
+      "p13nMetadata": {
+        "modelVersion": "modelVersion4",
+        "index": 4,
+        "totalNumberOfItems": 13,
+        "section": "GettingStarted4"
+      }
+    },
+    {
+      "contentId": "Card5",
+      "contentProvider": "MockProvider5",
+      "contentType": "MockContentType5",
+      "section": "GettingStarted",
+      "contentSource": "HOME",
+      "templateType": "MiniTemplate",
+      "slots": [
+        {
+          "position": "0",
+          "viewType": "IconTitleSubtitleView",
+          "resources": {
+            "title": "“5. Alexa, start my day”",
+            "subtitle": "Routines make life easier",
+            "imageUrl": "https://m.media-amazon.com/images/G/01/AlexaHomePrototype/Routines._CB422976811_.png",
+            "imageType": "Icon",
+            "italicized": false
+          },
+          "action": {
+            "@type": "NavigateAction",
+            "route": "v2/behaviors",
+            "metaActionType": "sampleMetaActionType"
+          }
+        },
+        {
+          "position": "1",
+          "viewType": "SingleButtonView",
+          "action": {
+            "@type": "NavigateAction",
+            "route": "v2/behaviors",
+            "metaActionType": "sampleMetaActionType"
+          },
+          "resources": {
+            "text": "Create",
+            "type": "TextButtonView"
+          }
+        }
+      ],
+      "p13nMetadata": {
+        "modelVersion": "modelVersion5",
+        "index": 5,
+        "totalNumberOfItems": 13,
+        "section": "GettingStarted5"
+      }
+    },
+    {
+      "contentId": "Card6",
+      "contentProvider": "MockProvider6",
+      "contentType": "MockContentType6",
+      "section": "GettingStarted",
+      "contentSource": "HOME",
+      "templateType": "MiniTemplate",
+      "slots": [
+        {
+          "position": "0",
+          "viewType": "IconTitleSubtitleView",
+          "resources": {
+            "title": "6. Echo Dot Connected",
+            "subtitle": "Your device is ready to use",
+            "imageUrl": "https://m.media-amazon.com/images/G/01/AlexaHomePrototype/Device_Setup._CB1581534517_.png",
+            "imageType": "Icon",
+            "italicized": false
+          },
+          "action": {
+            "@type": "NavigateAction",
+            "route": "v2/things-to-try",
+            "metaActionType": "sampleMetaActionType"
+          }
+        },
+        {
+          "position": "1",
+          "viewType": "SingleButtonView",
+          "action": {
+            "@type": "NavigateAction",
+            "route": "v2/device-settings",
+            "metaActionType": "sampleMetaActionType"
+          },
+          "resources": {
+            "text": "Explore",
+            "type": "TextButtonView"
+          }
+        }
+      ],
+      "p13nMetadata": {
+        "modelVersion": "modelVersion6",
+        "index": 6,
+        "totalNumberOfItems": 13,
+        "section": "GettingStarted6"
+      }
+    },
+    {
+      "contentId": "Card7",
+      "contentProvider": "MockProvider7",
+      "contentType": "MockContentType7",
+      "section": "GettingStarted",
+      "contentSource": "HOME",
+      "templateType": "MiniTemplate",
+      "slots": [
+        {
+          "position": "0",
+          "viewType": "IconTitleSubtitleView",
+          "resources": {
+            "title": "7. Talk to Friends or Family",
+            "subtitle": "Reach your contacts",
+            "imageUrl": "https://m.media-amazon.com/images/G/01/AlexaHomePrototype/Contacts._CB422973971_.png",
+            "imageType": "Icon",
+            "italicized": false
+          },
+          "action": {
+            "@type": "NavigateAction",
+            "route": "voice",
+            "metaActionType": "sampleMetaActionType"
+          }
+        },
+        {
+          "position": "1",
+          "viewType": "SingleButtonView",
+          "action": {
+            "@type": "NavigateAction",
+            "route": "v2/behaviors",
+            "metaActionType": "sampleMetaActionType"
+          },
+          "resources": {
+            "text": "Add",
+            "type": "TextButtonView"
+          }
+        }
+      ],
+      "p13nMetadata": {
+        "modelVersion": "modelVersion7",
+        "index": 7,
+        "totalNumberOfItems": 13,
+        "section": "GettingStarted7"
+      }
+    },
+    {
+      "contentId": "Card8",
+      "contentProvider": "MockProvider8",
+      "contentType": "MockContentType8",
+      "section": "GettingStarted",
+      "contentSource": "HOME",
+      "templateType": "MiniTemplate",
+      "slots": [
+        {
+          "position": "0",
+          "viewType": "IconTitleSubtitleView",
+          "resources": {
+            "title": "8.Link Music Services",
+            "subtitle": "Stream your favorite tunes",
+            "imageUrl": "https://m.media-amazon.com/images/G/01/AlexaHomePrototype/Link_Music._CB422976811_.png",
+            "imageType": "Icon",
+            "italicized": false
+          },
+          "action": {
+            "@type": "DevicePickerAction",
+            "queueId": "b58b1f67-6d2e-491a-88ab-3c6f5a5c55c2",
+            "mediaOwnerCustomerId": "A2UYKSV5UTYSA3",
+            "audible": false,
+            "trackSource": "STATION",
+            "metaActionType": "sampleMetaActionType",
+            "text": "This is title in the Universal Device Picker payload",
+            "subtext": "This is subtitle in the Universal Device Picker payload",
+            "imageUrl": "https://m.media-amazon.com/images/G/01/alexa-mxbr24v8/mobile-v8ah3v/home-kaixn/shopping-24443//ic_play_inline_36dp._CB1581119771_.png",
+            "albumArtUrl": "https://i.iheart.com/v3/re/assets/images/305.png",
+            "providerId": "ROBIN",
+            "route": ""
+          }
+        },
+        {
+          "position": "1",
+          "viewType": "SingleButtonView",
+          "action": {
+            "@type": "NavigateAction",
+            "route": "v2/behaviors",
+            "metaActionType": "sampleMetaActionType"
+          },
+          "resources": {
+            "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/61kEgqL6u6L.png",
+            "type": "ImageButtonView"
+          }
+        }
+      ],
+      "p13nMetadata": {
+        "modelVersion": "modelVersion8",
+        "index": 8,
+        "totalNumberOfItems": 13,
+        "section": "GettingStarted8"
+      }
+    },
+    {
+      "contentId": "Card9",
+      "contentProvider": "MockProvider9",
+      "contentType": "MockContentType9",
+      "section": "GettingStarted",
+      "contentSource": "HOME",
+      "templateType": "MiniTemplate",
+      "slots": [
+        {
+          "position": "0",
+          "viewType": "IconTitleSubtitleView",
+          "resources": {
+            "title": "9.Music and podcasts card",
+            "subtitle": "Should go to music and podcasts",
+            "imageUrl": "https://m.media-amazon.com/images/G/01/alexa-mxbr24v8/mobile-v8ah3v/home-kaixn/shopping-24443/vox-logo._CB480628977_.png"
+          },
+          "action": {
+            "@type": "NavigateAction",
+            "route": "v2/settings/legacy/settings/music-settings",
+            "metaActionType": "sampleMetaActionType"
+          }
+        },
+        {
+          "position": "1",
+          "viewType": "SingleButtonView",
+          "action": {
+            "@type": "NavigateAction",
+            "route": "v2/settings/legacy/settings/music-settings",
+            "metaActionType": "sampleMetaActionType"
+          },
+          "resources": {
+            "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/61kEgqL6u6L.png",
+            "type": "ImageButtonView"
+          }
+        }
+      ],
+      "p13nMetadata": {
+        "modelVersion": "modelVersion9",
+        "index": 9,
+        "totalNumberOfItems": 13,
+        "section": "GettingStarted9"
+      }
+    },
+    {
+      "contentId": "Card10",
+      "contentProvider": "MockProvider10",
+      "contentType": "MockContentType10",
+      "section": "GettingStarted",
+      "contentSource": "HOME",
+      "templateType": "MiniTemplate",
+      "slots": [
+        {
+          "position": "0",
+          "viewType": "IconTitleSubtitleView",
+          "resources": {
+            "title": "10. Calendar and email card",
+            "subtitle": "Should go to calendar and email",
+            "imageUrl": "https://m.media-amazon.com/images/G/01/alexa-mxbr24v8/mobile-v8ah3v/home-kaixn/shopping-24443/vox-logo._CB480628977_.png"
+          },
+          "action": {
+            "@type": "NavigateAction",
+            "route": "v2/elements-settings-3paccount/index",
+            "metaActionType": "sampleMetaActionType"
+          }
+        },
+        {
+          "position": "1",
+          "viewType": "SingleButtonView",
+          "action": {
+            "@type": "NavigateAction",
+            "route": "v2/elements-settings-3paccount/index",
+            "metaActionType": "sampleMetaActionType"
+          },
+          "resources": {
+            "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/61kEgqL6u6L.png",
+            "type": "ImageButtonView"
+          }
+        }
+      ],
+      "p13nMetadata": {
+        "modelVersion": "modelVersion10",
+        "index": 10,
+        "totalNumberOfItems": 13,
+        "section": "GettingStarted10"
+      }
+    },
+    {
+      "contentId": "Card11",
+      "contentProvider": "MockProvider11",
+      "contentType": "MockContentType11",
+      "section": "GettingStarted",
+      "contentSource": "HOME",
+      "templateType": "MiniTemplate",
+      "slots": [
+        {
+          "position": "0",
+          "viewType": "IconTitleSubtitleView",
+          "resources": {
+            "title": "11. Lists card",
+            "subtitle": "Should go to lists",
+            "imageUrl": "https://m.media-amazon.com/images/G/01/alexa-mxbr24v8/mobile-v8ah3v/home-kaixn/shopping-24443/vox-logo._CB480628977_.png"
+          },
+          "action": {
+            "@type": "NavigateAction",
+            "route": "v2/lists/namedlists/8a5a8db7-2448-4f07-86ba-1c89131a0e54",
+            "metaActionType": "sampleMetaActionType"
+          }
+        },
+        {
+          "position": "1",
+          "viewType": "SingleButtonView",
+          "action": {
+            "@type": "NavigateAction",
+            "route": "v2/lists/namedlists/8a5a8db7-2448-4f07-86ba-1c89131a0e54",
+            "metaActionType": "sampleMetaActionType"
+          },
+          "resources": {
+            "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/61kEgqL6u6L.png",
+            "type": "ImageButtonView"
+          }
+        }
+      ],
+      "p13nMetadata": {
+        "modelVersion": "modelVersion11",
+        "index": 11,
+        "totalNumberOfItems": 13,
+        "section": "GettingStarted11"
+      }
+    },
+    {
+      "contentId": "Card12",
+      "contentProvider": "MockProvider12",
+      "contentType": "MockContentType12",
+      "section": "GettingStarted",
+      "contentSource": "HOME",
+      "templateType": "MiniTemplate",
+      "slots": [
+        {
+          "position": "0",
+          "viewType": "IconTitleSubtitleView",
+          "resources": {
+            "title": "12. Lists card",
+            "subtitle": "Should go to lists",
+            "imageUrl": "https://m.media-amazon.com/images/G/01/alexa-mxbr24v8/mobile-v8ah3v/home-kaixn/shopping-24443/vox-logo._CB480628977_.png",
+            "imageType": "Icon",
+            "italicized": false
+          },
+          "action": {
+            "@type": "NavigateAction",
+            "route": "v2/lists",
+            "metaActionType": "sampleMetaActionType"
+          }
+        },
+        {
+          "position": "1",
+          "viewType": "SingleButtonView",
+          "action": {
+            "@type": "NavigateAction",
+            "route": "v2/lists"
+          },
+          "resources": {
+            "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/61kEgqL6u6L.png",
+            "type": "ImageButtonView"
+          }
+        }
+      ],
+      "p13nMetadata": {
+        "modelVersion": "modelVersion12",
+        "index": 12,
+        "totalNumberOfItems": 13,
+        "section": "GettingStarted12"
+      }
+    },
+    {
+      "contentId": "Mock1234",
+      "contentProvider": "MockProvider",
+      "contentType": "MockContentType",
+      "section": "GettingStarted",
+      "contentSource": "HOME",
+      "templateType": "MiniTemplate",
+      "slots": [
+        {
+          "position": "0",
+          "viewType": "IconTitleSubtitleView",
+          "resources": {
+            "title": "Lists card, action type is misspelled",
+            "subtitle": "Should go to lists",
+            "imageUrl": "https://m.media-amazon.com/images/G/01/alexa-mxbr24v8/mobile-v8ah3v/home-kaixn/shopping-24443/vox-logo._CB480628977_.png",
+            "imageType": "Icon",
+            "italicized": false
+          },
+          "action": {
+            "@type": "NavigateActionzone",
+            "route": "v2/lists"
+          }
+        },
+        {
+          "position": "1",
+          "viewType": "SingleButtonView",
+          "action": {
+            "@type": "NavigateAction",
+            "route": "v2/lists"
+          },
+          "resources": {
+            "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/61kEgqL6u6L.png",
+            "type": "ImageButtonView"
+          }
+        }
+      ],
+      "p13nMetadata": {
+        "modelVersion": "modelVersion13",
+        "index": 13,
+        "totalNumberOfItems": 13,
+        "section": "GettingStarted13"
+      }
+    },
+    {
+      "contentId": "Mock1234",
+      "contentProvider": "MockProvider",
+      "contentType": "MockContentType",
+      "section": "GettingStarted",
+      "contentSource": "HOME",
+      "templateType": "MiniTemplate",
+      "slots": [
+        {
+          "position": "0",
+          "viewType": "IconTitleSubtitleView",
+          "resources": {
+            "title": "Lists card, slot 0 is missing action object",
+            "subtitle": "Should go to lists",
+            "imageUrl": "https://m.media-amazon.com/images/G/01/alexa-mxbr24v8/mobile-v8ah3v/home-kaixn/shopping-24443/vox-logo._CB480628977_.png",
+            "imageType": "Icon",
+            "italicized": false
+          }
+        },
+        {
+          "position": "1",
+          "viewType": "SingleButtonView",
+          "action": {
+            "@type": "NavigateAction",
+            "route": "v2/lists"
+          },
+          "resources": {
+            "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/61kEgqL6u6L.png",
+            "type": "ImageButtonView"
+          }
+        }
+      ],
+      "p13nMetadata": {
+        "modelVersion": "modelVersion14",
+        "index": 14,
+        "totalNumberOfItems": 133,
+        "section": "GettingStarted1344"
+      }
+    },
+    {
+      "contentId": "Mock1234",
+      "contentProvider": "MockProvider",
+      "contentType": "MockContentType",
+      "section": "GettingStarted",
+      "contentSource": "HOME",
+      "templateType": "MiniTemplate",
+      "slots": [
+        {
+          "position": "0",
+          "viewType": "IconTitleSubtitleView",
+          "action": {
+            "@type": "NavigateAction",
+            "route": "v2/lists"
+          },
+          "resources": {
+            "subtitle": "Should go to lists, missing title in slot 0",
+            "imageUrl": "https://m.media-amazon.com/images/G/01/alexa-mxbr24v8/mobile-v8ah3v/home-kaixn/shopping-24443/vox-logo._CB480628977_.png",
+            "imageType": "Icon",
+            "italicized": false
+          }
+        },
+        {
+          "position": "1",
+          "viewType": "SingleButtonView",
+          "action": {
+            "@type": "NavigateAction",
+            "route": "v2/lists"
+          },
+          "resources": {
+            "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/61kEgqL6u6L.png",
+            "type": "ImageButtonView"
+          }
+        }
+      ],
+      "p13nMetadata": {
+        "modelVersion": "modelVersion15",
+        "index": 15,
+        "totalNumberOfItems": 133,
+        "section": "GettingStarted1222"
+      }
+    },
+    {
+      "contentId": "Mock1234",
+      "contentProvider": "MockProvider",
+      "contentType": "MockContentType",
+      "section": "GettingStarted",
+      "contentSource": "HOME",
+      "templateType": "MiniTemplatejljl",
+      "slots": [
+        {
+          "position": "0",
+          "viewType": "IconTitleSubtitleView",
+          "action": {
+            "@type": "NavigateAction",
+            "route": "v2/lists"
+          },
+          "resources": {
+            "title": "template type is misspelled",
+            "subtitle": "Should go to lists",
+            "imageUrl": "https://m.media-amazon.com/images/G/01/alexa-mxbr24v8/mobile-v8ah3v/home-kaixn/shopping-24443/vox-logo._CB480628977_.png",
+            "imageType": "Icon",
+            "italicized": false
+          }
+        },
+        {
+          "position": "1",
+          "viewType": "SingleButtonView",
+          "action": {
+            "@type": "NavigateAction",
+            "route": "v2/lists"
+          },
+          "resources": {
+            "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/61kEgqL6u6L.png",
+            "type": "ImageButtonView"
+          }
+        }
+      ]
+    },
+    {
+      "contentId": "Mock1234",
+      "contentProvider": "MockProvider",
+      "contentType": "MockContentType",
+      "section": "GettingStarted",
+      "contentSource": "HOME",
+      "templateType": "MiniTemplate",
+      "slots": [
+        {
+          "position": "0",
+          "viewType": "IconTitleSubtitleView",
+          "action": {
+            "@type": "NavigateAction",
+            "route": "v2/lists"
+          },
+          "resources": {
+            "title": "Lists card no entry for slot 1",
+            "subtitle": "Should go to lists",
+            "imageUrl": "https://m.media-amazon.com/images/G/01/alexa-mxbr24v8/mobile-v8ah3v/home-kaixn/shopping-24443/vox-logo._CB480628977_.png",
+            "imageType": "Icon",
+            "italicized": false
+          }
+        }
+      ]
+    },
+
+
+    {
+      "contentId": "Mock1234",
+      "contentProvider": "MockProvider",
+      "contentType": "MockContentType",
+      "section": "GettingStarted",
+      "contentSource": "HOME",
+      "slots": [
+        {
+          "position": "0",
+          "viewType": "IconTitleSubtitleView",
+          "action": {
+            "@type": "NavigateAction",
+            "route": "v2/lists"
+          },
+          "resources": {
+            "title": "Lists card, no template type",
+            "subtitle": "Should go to lists",
+            "imageUrl": "https://m.media-amazon.com/images/G/01/alexa-mxbr24v8/mobile-v8ah3v/home-kaixn/shopping-24443/vox-logo._CB480628977_.png",
+            "imageType": "Icon",
+            "italicized": false
+          }
+        },
+        {
+          "position": "1",
+          "viewType": "SingleButtonView",
+          "action": {
+            "@type": "NavigateAction",
+            "route": "v2/lists"
+          },
+          "resources": {
+            "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/61kEgqL6u6L.png",
+            "type": "ImageButtonView"
+          }
+        }
+      ]
+    },
+
+
+    {
+      "contentId": "Mock1234",
+      "contentProvider": "MockProvider",
+      "contentType": "MockContentType",
+      "section": "GettingStarted",
+      "contentSource": "HOME",
+      "templateType": "MiniTemplate",
+      "slots": [
+        {
+          "position": "7",
+          "viewType": "IconTitleSubtitleView",
+          "action": {
+            "@type": "NavigateAction",
+            "route": "v2/lists"
+          },
+          "resources": {
+            "title": "Lists card, position is too large.",
+            "subtitle": "Should go to lists",
+            "imageUrl": "https://m.media-amazon.com/images/G/01/alexa-mxbr24v8/mobile-v8ah3v/home-kaixn/shopping-24443/vox-logo._CB480628977_.png",
+            "imageType": "Icon",
+            "italicized": false
+          }
+        },
+        {
+          "position": "1",
+          "viewType": "SingleButtonView",
+          "action": {
+            "@type": "NavigateAction",
+            "route": "v2/lists",
+            "metaActionType": "sampleMetaActionType"
+          },
+          "resources": {
+            "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/61kEgqL6u6L.png",
+            "type": "ImageButtonView"
+          }
+        }
+      ]
+    },
+    {
+      "contentId": "Mock1234",
+      "contentProvider": "MockProvider",
+      "contentType": "MockContentType",
+      "section": "GettingStarted",
+      "contentSource": "HOME",
+      "templateType": "MiniTemplate",
+      "slots": [
+        {
+          "position": "foo bar baz",
+          "viewType": "IconTitleSubtitleView",
+          "action": {
+            "@type": "NavigateAction",
+            "route": "v2/lists"
+          },
+          "resources": {
+            "title": "Lists card, position is not a number",
+            "subtitle": "Should go to lists",
+            "imageUrl": "https://m.media-amazon.com/images/G/01/alexa-mxbr24v8/mobile-v8ah3v/home-kaixn/shopping-24443/vox-logo._CB480628977_.png",
+            "imageType": "Icon",
+            "italicized": false
+          }
+        },
+        {
+          "position": "1",
+          "viewType": "SingleButtonView",
+          "action": {
+            "@type": "NavigateAction",
+            "route": "v2/lists"
+          },
+          "resources": {
+            "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/61kEgqL6u6L.png",
+            "type": "ImageButtonView"
+          }
+        }
+      ]
+    },
+
+    {
+      "contentId": "Mock1234",
+      "contentProvider": "MockProvider",
+      "contentType": "MockContentType",
+      "section": "GettingStarted",
+      "contentSource": "HOME",
+      "templateType": "MiniTemplate",
+      "slots": [
+        {
+          "position": "0",
+          "viewType": "IconTitleSubtitleView",
+          "action": {
+            "@type": "NavigateAction",
+            "route": "v2/lists"
+          },
+          "resources": {
+            "title": "Lists card, Resources missing",
+            "subtitle": "Should go to lists",
+            "imageUrl": "https://m.media-amazon.com/images/G/01/alexa-mxbr24v8/mobile-v8ah3v/home-kaixn/shopping-24443/vox-logo._CB480628977_.png",
+            "imageType": "Icon",
+            "italicized": false
+          }
+        },
+        {
+          "position": "1",
+          "viewType": "SingleButtonView",
+          "action": {
+            "@type": "NavigateAction",
+            "route": "v2/lists"
+          }
+        }
+      ]
+    },
+    {
+      "contentId": "Mock1234",
+      "contentProvider": "MockProvider",
+      "contentType": "MockContentType",
+      "section": "GettingStarted",
+      "contentSource": "HOME",
+      "templateType": "MiniTemplate",
+      "slots": [
+        {
+          "position": "0",
+          "viewType": "IconTitleSubtitleView",
+          "action": {
+            "@type": "NavigateAction",
+            "route": "v2/lists"
+          },
+          "resources": {
+            "title": "Working Lists card below all the failing tests, lots of text",
+            "subtitle": "Should go to lists",
+            "imageUrl": "https://m.media-amazon.com/images/G/01/alexa-mxbr24v8/mobile-v8ah3v/home-kaixn/shopping-24443/vox-logo._CB480628977_.png",
+            "imageType": "Icon",
+            "italicized": false
+          }
+        },
+        {
+          "position": "1",
+          "viewType": "SingleButtonView",
+          "action": {
+            "@type": "NavigateAction",
+            "route": "v2/lists"
+          },
+          "resources": {
+            "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/61kEgqL6u6L.png",
+            "type": "ImageButtonView"
+          }
+        }
+      ]
+    },
+    {
+      "contentId": "Mock1234",
+      "contentProvider": "MockProvider",
+      "contentType": "MockContentType",
+      "section": "GettingStarted",
+      "contentSource": "HOME",
+      "templateType": "MiniTemplate",
+      "slots": [
+        {
+          "position": "0",
+          "viewType": "IconTitleSubtitleView",
+          "action": {
+            "@type": "NavigateAction",
+            "route": "v2/lists"
+          },
+          "resources": {
+            "title": "Test for Cancel timer",
+            "subtitle": "Test for Cancel Timer. Image on the right has api action",
+            "imageUrl": "https://m.media-amazon.com/images/G/01/alexa-mxbr24v8/mobile-v8ah3v/home-kaixn/shopping-24443/vox-logo._CB480628977_.png",
+            "imageType": "Icon",
+            "italicized": false
+          }
+        },
+        {
+          "position": "1",
+          "viewType": "SingleButtonView",
+          "action": {
+            "@type": "ApiRequestAction",
+            "method": "DELETE",
+            "endpoint": "/api/notifications/bebebd1a-aa12-36c3-bade-121d2c145283",
+            "imageUrl": "https://m.media-amazon.com/images/G/01/alexa-mxbr24v8/mobile-v8ah3v/home-kaixn/redesign-v2/ic_attend_decline_48dp._CB1198675309_.png",
+            "accessibilityLabel": "Tap to cancel timer"
+          },
+          "resources": {
+            "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/61kEgqL6u6L.png",
+            "type": "ImageButtonView"
+          }
+        }
+      ]
+    },
+    {
+      "contentId": "Mock1234",
+      "contentProvider": "MockProvider",
+      "contentType": "MockContentType",
+      "section": "GettingStarted",
+      "contentSource": "HOME",
+      "templateType": "MiniTemplate",
+      "slots": [
+        {
+          "position": "0",
+          "viewType": "IconTitleSubtitleView",
+          "action": {
+            "@type": "NavigateAction",
+            "route": "v2/lists"
+          },
+          "resources": {
+            "title": "List card with empty view and super long text, this text is so so so long, that it just keeps going and going and going",
+            "subtitle": "Should go to lists empty view and super long text, this text is so so so long, that it just keeps going and going and going",
+            "imageUrl": "https://m.media-amazon.com/images/G/01/alexa-mxbr24v8/mobile-v8ah3v/home-kaixn/shopping-24443/vox-logo._CB480628977_.png",
+            "imageType": "Icon",
+            "italicized": false
+          }
+        },
+        {
+          "position": "1",
+          "viewType": "EmptyView",
+          "action": {
+            "@type": "NavigateAction",
+            "route": "v2/lists"
+          },
+          "resources": {
+            "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/61kEgqL6u6L.png",
+            "type": "ImageButtonView"
+          }
+        }
+      ]
+    },
+    {
+      "contentId": "Mock1234",
+      "contentProvider": "MockProvider",
+      "contentType": "MockContentType",
+      "section": "GettingStarted",
+      "contentSource": "HOME",
+      "templateType": "MiniTemplate",
+      "slots": [
+        {
+          "position": "0",
+          "viewType": "IconTitleSubtitleView",
+          "action": {
+            "@type": "NavigateAction",
+            "route": "v2/lists"
+          },
+          "resources": {
+            "title": "List card with no subtitle",
+            "imageUrl": "https://m.media-amazon.com/images/G/01/alexa-mxbr24v8/mobile-v8ah3v/home-kaixn/shopping-24443/vox-logo._CB480628977_.png",
+            "imageType": "Icon",
+            "italicized": false
+          }
+        },
+        {
+          "position": "1",
+          "viewType": "EmptyView",
+          "action": {
+            "@type": "NavigateAction",
+            "route": "v2/lists"
+          },
+          "resources": {
+            "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/61kEgqL6u6L.png",
+            "type": "ImageButtonView"
+          }
+        }
+      ]
+    }
+  ]
+}

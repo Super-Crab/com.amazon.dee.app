@@ -1,0 +1,70 @@
+package com.amazon.alexa.redesign.view.viewtypes;
+
+import android.content.Context;
+import android.util.AttributeSet;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+import androidx.annotation.VisibleForTesting;
+import com.amazon.alexa.mosaic.components.ThemeUtil;
+import com.amazon.alexa.redesign.R;
+import com.amazon.alexa.redesign.entity.viewtypes.TitleSubtitleModel;
+import com.amazon.alexa.redesign.entity.viewtypes.ViewTypeModel;
+import com.amazon.alexa.redesign.utils.Constants;
+import com.amazon.alexa.redesign.utils.TestIdUtil;
+import com.amazon.alexa.redesign.view.templates.TemplateHelperUtil;
+import com.android.tools.r8.GeneratedOutlineSupport1;
+import java.util.Map;
+/* loaded from: classes10.dex */
+public class TitleSubtitleView extends LinearLayout implements ViewType {
+    @VisibleForTesting
+    TextView subtitleTextView;
+    @VisibleForTesting
+    TextView titleTextView;
+
+    public TitleSubtitleView(Context context) {
+        super(context);
+    }
+
+    private void styleSubtitle() {
+        this.subtitleTextView.setTextColor(ThemeUtil.getColorFromAttribute(getContext(), R.attr.mosaicNeutral20));
+        TemplateHelperUtil.scaleTextViewWithFontFireOS(this.subtitleTextView, getContext(), R.integer.amahc_fireos_font_scaling_small_text);
+    }
+
+    private void styleTitle() {
+        this.titleTextView.setTextColor(ThemeUtil.getColorFromAttribute(getContext(), R.attr.mosaicNeutral10));
+        TemplateHelperUtil.scaleTextViewWithFontFireOS(this.titleTextView, getContext(), R.integer.amahc_fireos_font_scaling_large_text);
+    }
+
+    @Override // com.amazon.alexa.redesign.view.viewtypes.ViewType
+    public void bind(ViewTypeModel viewTypeModel, Map<String, Object> map, String str) {
+        if (viewTypeModel instanceof TitleSubtitleModel) {
+            TitleSubtitleModel titleSubtitleModel = (TitleSubtitleModel) viewTypeModel;
+            this.titleTextView.setText(titleSubtitleModel.getTitle());
+            this.subtitleTextView.setText(titleSubtitleModel.getSubtitle());
+            styleTitle();
+            styleSubtitle();
+        }
+        if (Constants.AutomationConstants.isQABuild) {
+            StringBuilder outline107 = GeneratedOutlineSupport1.outline107("_Title_");
+            outline107.append((Object) this.titleTextView.getText());
+            TestIdUtil.setTestId(this.titleTextView, (String) map.get("contentProvider"), (String) map.get("contentType"), outline107.toString());
+            StringBuilder outline1072 = GeneratedOutlineSupport1.outline107("_subTitle_");
+            outline1072.append((Object) this.subtitleTextView.getText());
+            TestIdUtil.setTestId(this.subtitleTextView, (String) map.get("contentProvider"), (String) map.get("contentType"), outline1072.toString());
+        }
+    }
+
+    public TitleSubtitleView(Context context, AttributeSet attributeSet) {
+        super(context, attributeSet);
+    }
+
+    public TitleSubtitleView(Context context, ViewGroup viewGroup, LayoutInflater layoutInflater) {
+        super(context);
+        View inflate = layoutInflater.inflate(R.layout.amahc_title_subtitle_view, viewGroup, true);
+        this.titleTextView = (TextView) inflate.findViewById(R.id.title);
+        this.subtitleTextView = (TextView) inflate.findViewById(R.id.subtitle);
+    }
+}

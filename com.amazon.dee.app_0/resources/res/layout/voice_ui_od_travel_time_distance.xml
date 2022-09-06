@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.alexa.voice.ui.onedesign.widget.ContentLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/travelTimeDistanceLayout" android:layout_width="match_parent" android:layout_height="match_parent" style="?attr/voiceOdContentWindowStyle">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.amazon.alexa.voice.ui.onedesign.widget.background.CardLayout android:id="@+id/cardLayout" app:backgroundColor="@color/voice_ui_od_bg_traffic" app:src="@drawable/ic_od_bg_traffic" style="?attr/voiceOdCardStyle">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <include layout="@layout/voice_ui_od_header"/>
+                <include layout="@layout/voice_ui_od_travel_time_distance_content"/>
+            </LinearLayout>
+        </com.amazon.alexa.voice.ui.onedesign.widget.background.CardLayout>
+    </FrameLayout>
+</com.amazon.alexa.voice.ui.onedesign.widget.ContentLayout>

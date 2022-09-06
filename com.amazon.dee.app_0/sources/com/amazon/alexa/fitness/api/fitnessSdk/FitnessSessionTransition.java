@@ -1,0 +1,29 @@
+package com.amazon.alexa.fitness.api.fitnessSdk;
+
+import com.amazon.alexa.presence.bleconn.service.PresenceBleService;
+import com.amazon.alexa.voice.tta.metrics.SimbaEventProcessor;
+import kotlin.Metadata;
+/* compiled from: FitnessSessionState.kt */
+@Metadata(bv = {1, 0, 3}, d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\b\u0015\b\u0086\u0001\u0018\u00002\b\u0012\u0004\u0012\u00020\u00000\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002j\u0002\b\u0003j\u0002\b\u0004j\u0002\b\u0005j\u0002\b\u0006j\u0002\b\u0007j\u0002\b\bj\u0002\b\tj\u0002\b\nj\u0002\b\u000bj\u0002\b\fj\u0002\b\rj\u0002\b\u000ej\u0002\b\u000fj\u0002\b\u0010j\u0002\b\u0011j\u0002\b\u0012j\u0002\b\u0013j\u0002\b\u0014j\u0002\b\u0015¨\u0006\u0016"}, d2 = {"Lcom/amazon/alexa/fitness/api/fitnessSdk/FitnessSessionTransition;", "", "(Ljava/lang/String;I)V", "RECOVERY_COMMAND_RECEIVED", "RECOVERED_NOTHING_TO_RECOVER", "RECOVERED_WAS_ACTIVE_SUCCEEDED", "RECOVERED_WAS_ACTIVE_FAILED", "RECOVERED_WAS_PAUSED", "RECOVERING_FAILED_STALE_DATA", "RECOVERING_FAILED_NO_DATA", "RECOVERING_FAILED", "START_COMMAND_RECEIVED", SimbaEventProcessor.SOURCE_STARTED, "STARTING_FAILED", "PAUSE_COMMAND_RECEIVED", "RESUME_COMMAND_RECEIVED", "RESUMED", "RESUMING_FAILED", "STOP_COMMAND_RECEIVED", "AUTOSTOP_NO_DATA_TIMEOUT", "AUTOSTOP_SENSOR_DISCONNECTED", PresenceBleService.ServiceState.STOPPED, "AlexaMobileAndroidFitnessAPI_release"}, k = 1, mv = {1, 1, 16})
+/* loaded from: classes8.dex */
+public enum FitnessSessionTransition {
+    RECOVERY_COMMAND_RECEIVED,
+    RECOVERED_NOTHING_TO_RECOVER,
+    RECOVERED_WAS_ACTIVE_SUCCEEDED,
+    RECOVERED_WAS_ACTIVE_FAILED,
+    RECOVERED_WAS_PAUSED,
+    RECOVERING_FAILED_STALE_DATA,
+    RECOVERING_FAILED_NO_DATA,
+    RECOVERING_FAILED,
+    START_COMMAND_RECEIVED,
+    STARTED,
+    STARTING_FAILED,
+    PAUSE_COMMAND_RECEIVED,
+    RESUME_COMMAND_RECEIVED,
+    RESUMED,
+    RESUMING_FAILED,
+    STOP_COMMAND_RECEIVED,
+    AUTOSTOP_NO_DATA_TIMEOUT,
+    AUTOSTOP_SENSOR_DISCONNECTED,
+    STOPPED
+}

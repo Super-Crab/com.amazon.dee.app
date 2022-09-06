@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/contact_list_header" android:background="@color/paleGray" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include android:id="@+id/my_profile_view" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/contact_list_my_contact"/>
+    <include android:id="@+id/add_contact_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/contact_list_add_contact"/>
+    <com.amazon.deecomms.common.ui.CommsTextView android:textColor="@color/contact_section_header_text" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/device_list_title" android:background="@color/divider_line_color" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/contact_list_section_header_text_size" android:text="@string/my_home" android:textAllCaps="true" android:paddingStart="@dimen/contact_list_item_padding_start" android:paddingEnd="@dimen/contact_list_item_padding_start" custom:typeface="@string/amazon_ember_regular"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/my_devices_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

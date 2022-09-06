@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="?attr/mosaicBackground" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/nav_bar_divider" android:background="@color/neutral50" android:visibility="visible" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <androidx.core.widget.NestedScrollView android:background="?attr/mosaicBackground" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:layout_below="@+id/nav_bar_divider">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <include layout="@layout/dm_hint_and_network_connection_banner"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/home_work_cards_layout" android:padding="8dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="1" android:layout_below="@+id/hint_and_network_connection_layout">
+                <com.amazon.alexa.drive.view.AutoModeSingleIconGridView android:id="@+id/navigation_work" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.5" app:single_icon_grid_icon="@drawable/ic_dm_work" app:single_icon_grid_title="@string/dm_card_nav_work"/>
+                <com.amazon.alexa.drive.view.AutoModeSingleIconGridView android:id="@+id/navigation_home" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.5" app:single_icon_grid_icon="@drawable/ic_dm_home" app:single_icon_grid_title="@string/dm_card_nav_to_home"/>
+            </LinearLayout>
+            <com.amazon.alexa.font.FontTextView android:textSize="16sp" android:textStyle="italic" android:textColor="?attr/mosaicNeutral20" android:id="@+id/saved_locations_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dm_feed_layout_margin" android:layout_marginTop="8dp" android:layout_marginRight="@dimen/dm_feed_layout_margin" android:layout_marginBottom="8dp" android:text="YOUR SAVED LOCATIONS" android:layout_below="@+id/home_work_cards_layout" app:fontName="14"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/saved_locations_recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="8dp" android:layout_below="@+id/saved_locations_title"/>
+            <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@+id/dm_voice_ingress_image" android:layout_width="70dp" android:layout_height="70dp" android:layout_marginRight="@dimen/dm_feed_layout_margin" android:layout_marginBottom="@dimen/dm_feed_layout_margin" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" app:backgroundTint="?attr/mosaicAction40" app:srcCompat="@drawable/dm_ic_alexa"/>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

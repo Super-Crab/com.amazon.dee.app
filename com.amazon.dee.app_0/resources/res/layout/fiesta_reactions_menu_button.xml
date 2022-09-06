@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" style="@style/ReactionMenuButtonWrapper">
+    <LinearLayout style="@style/ReactionsWrapper">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/reactions_layout_menu_button" android:visibility="gone" android:layout_width="match_parent" android:layout_height="56dp">
+            <RelativeLayout android:layout_width="72dp" android:layout_height="56dp">
+                <com.airbnb.lottie.LottieAnimationView android:id="@+id/reaction_icon_out" android:layout_width="match_parent" android:layout_height="match_parent" android:contentDescription="@string/reactions_menu_content_description" app:lottie_autoPlay="true" app:lottie_loop="false" app:lottie_rawRes="@raw/reaction_icon_out"/>
+                <ImageView android:id="@+id/close_background" android:background="@drawable/fiesta_reaction_cross_button" android:visibility="gone" style="@style/CancelBackgroundAnimation"/>
+                <com.airbnb.lottie.LottieAnimationView android:id="@+id/x_btn_in" android:visibility="gone" android:contentDescription="@string/reactions_menu_close" app:lottie_autoPlay="true" app:lottie_loop="false" app:lottie_rawRes="@raw/x_btn_in" style="@style/CancelAnimation"/>
+                <com.airbnb.lottie.LottieAnimationView android:id="@+id/reaction_icon_in" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:contentDescription="@string/reactions_menu_close" app:lottie_autoPlay="true" app:lottie_loop="false" app:lottie_rawRes="@raw/reaction_icon_in"/>
+            </RelativeLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/reactions_recycler_view" android:visibility="gone" style="@style/ReactionsMenuWrapper"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

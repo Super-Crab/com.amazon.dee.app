@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:focusable="true" android:layout_width="@dimen/voice_ui_od_hourly_forecast_weather_item_width" android:layout_height="wrap_content" android:minHeight="@dimen/voice_ui_od_hourly_forecast_weather_item_height">
+    <ImageView android:id="@+id/hourlyForecastImage" android:layout_width="@dimen/voice_ui_od_weather_small_icon_width" android:layout_height="@dimen/voice_ui_od_weather_small_icon_height" android:scaleType="fitCenter"/>
+    <TextView android:textSize="@dimen/voice_ui_od_font_overrided_caption_size" android:textColor="?android:attr/textColorPrimary" android:ellipsize="end" android:id="@+id/hourlyDescription" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/voice_ui_od_content_default_half_margin" android:layout_marginBottom="@dimen/voice_ui_od_content_default_half_margin" android:maxLines="1"/>
+    <TextView android:textSize="@dimen/voice_ui_od_font_title_size" android:textColor="?android:attr/textColorPrimary" android:layout_gravity="center" android:id="@+id/hourlyTempreture" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/landing_page_entertainment_card" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="200dp" android:layout_margin="8dp" android:foreground="?android:attr/selectableItemBackground" android:elevation="0dp" app:cardBackgroundColor="@color/neutral60" app:cardCornerRadius="20dp">
+    <RelativeLayout android:id="@+id/card_linear_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dm_feed_layout_margin" android:layout_marginTop="@dimen/dm_feed_layout_margin" android:layout_marginRight="@dimen/dm_feed_layout_margin">
+        <RelativeLayout android:id="@+id/entertainment_metadata" android:layout_width="match_parent" android:layout_height="88dp">
+            <ImageView android:id="@+id/single_icon" android:background="@drawable/dm_transparent_rounded_background" android:layout_width="72dp" android:layout_height="72dp"/>
+            <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/dm_feed_layout_margin" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dm_feed_layout_margin" android:layout_centerVertical="true" android:layout_toEndOf="@+id/single_icon">
+                <com.amazon.alexa.font.FontTextView android:textSize="@dimen/dm_card_title_text_size" android:textColor="?attr/mosaicNeutral10" android:ellipsize="end" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2dp" android:maxLines="1" app:fontName="16"/>
+                <com.amazon.alexa.font.FontTextView android:textSize="18sp" android:textColor="?attr/mosaicNeutral20" android:id="@+id/subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontName="16"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:id="@+id/divider" android:background="@color/neutral50" android:layout_width="match_parent" android:layout_height="2dp" android:layout_below="@+id/entertainment_metadata"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="96dp" android:layout_below="@+id/divider">
+            <ImageView android:id="@+id/previous_button" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_previous" android:layout_centerVertical="true" android:contentDescription="@string/content_desc_media_play_button"/>
+            <ImageView android:id="@+id/play_pause_button" android:layout_width="64dp" android:layout_height="64dp" android:src="@drawable/ic_play_bg" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:contentDescription="@string/content_desc_media_play_button"/>
+            <ImageView android:id="@+id/next_button" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_next" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/content_desc_media_play_button"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

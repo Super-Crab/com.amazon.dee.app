@@ -1,0 +1,17 @@
+package com.amazon.communication.watchdog;
+/* loaded from: classes12.dex */
+public enum TriggerType {
+    NONE,
+    START_WATCHING,
+    STOP_WATCHING,
+    CONNECTIVITY_CHANGED,
+    NETWORK_STABILITY_STATE_CHANGED,
+    SCREEN_EVENT,
+    SMART_SUSPEND_EVENT,
+    ENTERING_STR_MODE,
+    SETTINGS_CACHE_UPDATED,
+    PROTOCOL_SOCKET_STATE_CHANGED,
+    ACCOUNT_CHANGED,
+    UPDATE_AND_RECONNECT,
+    BACKOFF_TIME_REACHED
+}

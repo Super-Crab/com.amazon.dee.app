@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/amahc_text_size_headline1" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/amahc_margin_large" android:layout_marginBottom="@dimen/amahc_margin_large" android:text="Debug Menu"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/amahc_margin_large">
+        <TextView android:textSize="@dimen/amahc_text_size_body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Enable bypass" android:layout_marginStart="@dimen/amahc_margin_medium"/>
+        <Switch android:id="@+id/bypass_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/amahc_margin_large">
+        <TextView android:textSize="@dimen/amahc_text_size_body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Local JSON" android:layout_marginStart="@dimen/amahc_margin_medium"/>
+        <Switch android:id="@+id/localJSON_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <Button android:id="@+id/exit_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Save and exit"/>
+</LinearLayout>

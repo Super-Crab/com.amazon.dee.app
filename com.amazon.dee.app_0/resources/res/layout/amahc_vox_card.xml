@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content" android:importantForAccessibility="no">
+    <RelativeLayout android:id="@+id/margin_top_wrapper" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <RelativeLayout android:id="@+id/header_and_alert_banner_placeholder" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/header_placeholder_image" android:layout_width="@dimen/amahc_width_medium" android:layout_height="@dimen/amahc_height_medium" android:layout_margin="@dimen/amahc_margin_large" android:src="@drawable/amahc_ic_alexa" android:layout_alignParentTop="true"/>
+            <RelativeLayout android:id="@+id/banner_text_wrapper" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/header_placeholder_image">
+                <TextView android:textSize="@dimen/amahc_text_size_caption" android:gravity="center" android:id="@+id/banner_text_placeholder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/amahc_margin_extra_small" android:layout_marginBottom="@dimen/amahc_margin_extra_small" android:text="@string/amahc_no_connection" android:layout_centerInParent="true" android:importantForAccessibility="yes"/>
+            </RelativeLayout>
+            <Space android:id="@+id/refresh_pill_placeholder" android:visibility="gone" android:layout_width="match_parent" android:layout_height="32dp" android:layout_below="@+id/banner_text_wrapper"/>
+        </RelativeLayout>
+        <Space android:id="@+id/margin_top_if_online" android:layout_width="match_parent" android:layout_height="@dimen/amahc_height_small"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/fire_os_version_wrapper" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/margin_top_wrapper" android:importantForAccessibility="noHideDescendants">
+        <RelativeLayout android:id="@+id/fire_os_space_above" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Space android:id="@+id/online_fireos_space_above" android:layout_width="match_parent" android:layout_height="@dimen/amahc_height_large_40"/>
+            <Space android:id="@+id/offline_fireos_space_above" android:layout_width="match_parent" android:layout_height="@dimen/amahc_height_large_40"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/fire_os_vox_icon_wrapper" android:layout_width="@dimen/amahc_width_large_72" android:layout_height="@dimen/amahc_height_large_72" android:layout_marginBottom="@dimen/amahc_margin_extra_large" android:layout_below="@+id/fire_os_space_above" android:layout_centerHorizontal="true">
+            <ImageView android:id="@+id/fire_os_vox_icon_bg" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <ImageView android:id="@+id/fire_os_vox_icon" android:layout_width="@dimen/amahc_width_large_48" android:layout_height="@dimen/amahc_height_large_48" android:src="@drawable/amahc_ic_alexa" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/vox_wrapper" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/margin_top_wrapper" android:layout_centerHorizontal="true" android:importantForAccessibility="no">
+        <com.airbnb.lottie.LottieAnimationView android:id="@+id/vox_animation" android:layout_width="@dimen/amahc_width_extra_large_136" android:layout_height="@dimen/amahc_height_extra_large_136" android:scaleType="centerCrop" android:layout_centerHorizontal="true" android:importantForAccessibility="no" app:lottie_autoPlay="false" app:lottie_fileName="amahc_lottie_middle.json" app:lottie_loop="false"/>
+        <ImageView android:id="@+id/vox_button" android:visibility="visible" android:layout_width="@dimen/amahc_width_extra_large" android:layout_height="@dimen/amahc_height_extra_large" android:src="@drawable/amahc_vox_ingress" android:layout_centerInParent="true" android:layout_centerHorizontal="true" android:importantForAccessibility="yes"/>
+    </RelativeLayout>
+    <TextView android:id="@+id/vox_hint" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/amahc_margin_medium_negative" android:layout_marginBottom="@dimen/amahc_margin_medium" android:layout_below="@+id/vox_wrapper" android:layout_centerHorizontal="true" android:importantForAccessibility="no"/>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="loading_dots_height">64dp</dimen>
+    <dimen name="loading_dots_margin_top">40dp</dimen>
+    <dimen name="loading_dots_width">64dp</dimen>
+    <dimen name="ptz_tutorial_margin_top">300dp</dimen>
+</resources>

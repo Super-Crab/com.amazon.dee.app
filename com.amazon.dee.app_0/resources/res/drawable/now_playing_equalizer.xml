@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="25" android:drawable="@drawable/now_playing_equalizer_000"/>
+    <item android:duration="25" android:drawable="@drawable/now_playing_equalizer_001"/>
+    <item android:duration="25" android:drawable="@drawable/now_playing_equalizer_002"/>
+    <item android:duration="25" android:drawable="@drawable/now_playing_equalizer_003"/>
+    <item android:duration="25" android:drawable="@drawable/now_playing_equalizer_004"/>
+    <item android:duration="25" android:drawable="@drawable/now_playing_equalizer_005"/>
+    <item android:duration="25" android:drawable="@drawable/now_playing_equalizer_006"/>
+    <item android:duration="25" android:drawable="@drawable/now_playing_equalizer_007"/>
+    <item android:duration="25" android:drawable="@drawable/now_playing_equalizer_008"/>
+    <item android:duration="25" android:drawable="@drawable/now_playing_equalizer_009"/>
+    <item android:duration="25" android:drawable="@drawable/now_playing_equalizer_010"/>
+    <item android:duration="25" android:drawable="@drawable/now_playing_equalizer_011"/>
+    <item android:duration="25" android:drawable="@drawable/now_playing_equalizer_012"/>
+    <item android:duration="25" android:drawable="@drawable/now_playing_equalizer_013"/>
+    <item android:duration="25" android:drawable="@drawable/now_playing_equalizer_014"/>
+    <item android:duration="25" android:drawable="@drawable/now_playing_equalizer_015"/>
+    <item android:duration="25" android:drawable="@drawable/now_playing_equalizer_016"/>
+    <item android:duration="25" android:drawable="@drawable/now_playing_equalizer_017"/>
+    <item android:duration="25" android:drawable="@drawable/now_playing_equalizer_018"/>
+    <item android:duration="25" android:drawable="@drawable/now_playing_equalizer_019"/>
+    <item android:duration="25" android:drawable="@drawable/now_playing_equalizer_020"/>
+    <item android:duration="25" android:drawable="@drawable/now_playing_equalizer_021"/>
+    <item android:duration="25" android:drawable="@drawable/now_playing_equalizer_022"/>
+    <item android:duration="25" android:drawable="@drawable/now_playing_equalizer_023"/>
+    <item android:duration="25" android:drawable="@drawable/now_playing_equalizer_024"/>
+    <item android:duration="25" android:drawable="@drawable/now_playing_equalizer_025"/>
+    <item android:duration="25" android:drawable="@drawable/now_playing_equalizer_026"/>
+    <item android:duration="25" android:drawable="@drawable/now_playing_equalizer_027"/>
+    <item android:duration="25" android:drawable="@drawable/now_playing_equalizer_028"/>
+    <item android:duration="25" android:drawable="@drawable/now_playing_equalizer_029"/>
+    <item android:duration="25" android:drawable="@drawable/now_playing_equalizer_030"/>
+</animation-list>

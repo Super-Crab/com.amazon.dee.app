@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/recent_activity_header" android:tag="layout/recent_activity_header_0" android:background="@color/transparent" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:importantForAccessibility="yes">
+    <com.amazon.alexa.font.FontTextView android:id="@+id/recent_date" android:tag="binding_1" app:fontName="6" style="@style/list_divider"/>
+</LinearLayout>

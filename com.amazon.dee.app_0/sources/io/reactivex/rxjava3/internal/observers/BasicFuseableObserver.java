@@ -1,0 +1,111 @@
+package io.reactivex.rxjava3.internal.observers;
+
+import io.reactivex.rxjava3.core.Observer;
+import io.reactivex.rxjava3.disposables.Disposable;
+import io.reactivex.rxjava3.exceptions.Exceptions;
+import io.reactivex.rxjava3.internal.disposables.DisposableHelper;
+import io.reactivex.rxjava3.internal.fuseable.QueueDisposable;
+import io.reactivex.rxjava3.plugins.RxJavaPlugins;
+/* loaded from: classes3.dex */
+public abstract class BasicFuseableObserver<T, R> implements Observer<T>, QueueDisposable<R> {
+    protected boolean done;
+    protected final Observer<? super R> downstream;
+    protected QueueDisposable<T> qd;
+    protected int sourceMode;
+    protected Disposable upstream;
+
+    public BasicFuseableObserver(Observer<? super R> downstream) {
+        this.downstream = downstream;
+    }
+
+    protected void afterDownstream() {
+    }
+
+    protected boolean beforeDownstream() {
+        return true;
+    }
+
+    @Override // io.reactivex.rxjava3.internal.fuseable.SimpleQueue
+    public void clear() {
+        this.qd.clear();
+    }
+
+    @Override // io.reactivex.rxjava3.disposables.Disposable
+    public void dispose() {
+        this.upstream.dispose();
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    public final void fail(Throwable t) {
+        Exceptions.throwIfFatal(t);
+        this.upstream.dispose();
+        onError(t);
+    }
+
+    @Override // io.reactivex.rxjava3.disposables.Disposable
+    public boolean isDisposed() {
+        return this.upstream.isDisposed();
+    }
+
+    @Override // io.reactivex.rxjava3.internal.fuseable.SimpleQueue
+    public boolean isEmpty() {
+        return this.qd.isEmpty();
+    }
+
+    @Override // io.reactivex.rxjava3.internal.fuseable.SimpleQueue
+    public final boolean offer(R e) {
+        throw new UnsupportedOperationException("Should not be called!");
+    }
+
+    @Override // io.reactivex.rxjava3.core.Observer
+    public void onComplete() {
+        if (this.done) {
+            return;
+        }
+        this.done = true;
+        this.downstream.onComplete();
+    }
+
+    @Override // io.reactivex.rxjava3.core.Observer
+    public void onError(Throwable t) {
+        if (this.done) {
+            RxJavaPlugins.onError(t);
+            return;
+        }
+        this.done = true;
+        this.downstream.onError(t);
+    }
+
+    @Override // io.reactivex.rxjava3.core.Observer
+    public final void onSubscribe(Disposable d) {
+        if (DisposableHelper.validate(this.upstream, d)) {
+            this.upstream = d;
+            if (d instanceof QueueDisposable) {
+                this.qd = (QueueDisposable) d;
+            }
+            if (!beforeDownstream()) {
+                return;
+            }
+            this.downstream.onSubscribe(this);
+            afterDownstream();
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    public final int transitiveBoundaryFusion(int mode) {
+        QueueDisposable<T> queueDisposable = this.qd;
+        if (queueDisposable == null || (mode & 4) != 0) {
+            return 0;
+        }
+        int requestFusion = queueDisposable.requestFusion(mode);
+        if (requestFusion != 0) {
+            this.sourceMode = requestFusion;
+        }
+        return requestFusion;
+    }
+
+    @Override // io.reactivex.rxjava3.internal.fuseable.SimpleQueue
+    public final boolean offer(R v1, R v2) {
+        throw new UnsupportedOperationException("Should not be called!");
+    }
+}

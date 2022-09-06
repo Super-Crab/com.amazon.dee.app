@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:id="@+id/notice_banner_root" android:background="@drawable/notice_banner_background" android:paddingLeft="12dp" android:paddingRight="4dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="8dp" android:layout_marginRight="16dp" android:layout_marginBottom="8dp" android:minWidth="288dp" android:minHeight="40dp" android:radius="20dp">
+    <ImageView android:id="@+id/iconWarning" android:layout_width="18dp" android:layout_height="18dp" android:layout_marginTop="11dp" android:layout_marginRight="4dp" android:tint="?attr/mosaicStatus30"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_marginTop="11dp" android:layout_marginRight="8dp">
+        <com.amazon.alexa.font.FontTextView android:id="@+id/primaryText" style="@style/notice_primary_text"/>
+        <com.amazon.alexa.font.FontTextView android:id="@+id/linkText" style="@style/notice_link_text"/>
+    </LinearLayout>
+</LinearLayout>

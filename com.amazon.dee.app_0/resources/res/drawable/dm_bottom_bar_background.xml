@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <size android:height="@dimen/dm_bottom_navigation_height" android:width="@dimen/dm_bottom_navigation_height"/>
+            <solid android:color="@color/DriveMode_Background"/>
+        </shape>
+    </item>
+    <item android:gravity="top|center_horizontal">
+        <shape android:shape="rectangle">
+            <size android:height="@dimen/dm_bottom_navigation_splitter_height"/>
+            <solid android:color="@color/dm_bottom_bar_splitter_color"/>
+        </shape>
+    </item>
+</layer-list>

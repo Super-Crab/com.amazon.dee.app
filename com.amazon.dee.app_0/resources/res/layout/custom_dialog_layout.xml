@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingBottom="@dimen/custom_dialog_padding" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/custom_dialog_padding" android:paddingEnd="@dimen/custom_dialog_padding">
+    <com.amazon.deecomms.common.ui.CommsTextView android:id="@+id/dialog_title" android:paddingBottom="@dimen/custom_dialog_padding" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/AlexaComms.large"/>
+    <ScrollView android:orientation="vertical" android:id="@+id/dialog_body_scroll" android:layout_width="match_parent" android:layout_height="0dp" android:fillViewport="true" android:layout_weight="1">
+        <com.amazon.deecomms.common.ui.CommsTextView android:id="@+id/dialog_body" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/AlexaComms.xsmall"/>
+    </ScrollView>
+    <com.amazon.deecomms.common.ui.CommsButton android:id="@+id/dialog_positive" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/custom_dialog_first_button_padding" android:text="@string/dialog_ok_button" android:textAllCaps="true" style="@style/AlexaCommsButton.Primary"/>
+    <com.amazon.deecomms.common.ui.CommsButton android:id="@+id/dialog_negative" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/custom_dialog_second_button_padding" android:text="@string/dialog_cancel_button" android:textAllCaps="true" style="@style/AlexaCommsButton.Tertiary"/>
+</LinearLayout>

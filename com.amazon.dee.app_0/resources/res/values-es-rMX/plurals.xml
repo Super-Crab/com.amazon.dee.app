@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accessory_service_notification_content_active_sessions">
+        <item quantity="one">%1$d conectado</item>
+        <item quantity="other">%1$d conectados</item>
+    </plurals>
+    <plurals name="notifications_new_announcements">
+        <item quantity="one">%d nuevo comunicado</item>
+        <item quantity="other">%d nuevos comunicados</item>
+    </plurals>
+    <plurals name="notifications_new_messages">
+        <item quantity="one">%d mensaje nuevo</item>
+        <item quantity="other">%d mensajes nuevos</item>
+    </plurals>
+    <plurals name="unread_message_count">
+        <item quantity="one">%d mensaje no leído.</item>
+        <item quantity="other">%d mensajes no leídos.</item>
+    </plurals>
+    <plurals name="voice_ui_od_traffic_route">
+        <item quantity="one">por %1$s (%2$s)</item>
+        <item quantity="other">por %1$s y %2$s (%3$s)</item>
+    </plurals>
+    <plurals name="voice_ui_od_travel_time_distance_route">
+        <item quantity="one">Por %1$s</item>
+        <item quantity="other">Por %1$s y %2$s</item>
+    </plurals>
+    <plurals name="workout_history_list_secondary_text_cal">
+        <item quantity="one">%d cal</item>
+        <item quantity="other">%d cal</item>
+    </plurals>
+    <plurals name="workout_history_list_secondary_text_step">
+        <item quantity="one">%d paso</item>
+        <item quantity="other">%d pasos</item>
+    </plurals>
+</resources>

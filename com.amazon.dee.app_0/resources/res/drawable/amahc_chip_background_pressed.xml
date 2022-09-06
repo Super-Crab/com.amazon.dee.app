@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="?attr/mosaicAction60"/>
+    <corners android:radius="@dimen/amahc_corner_radius_large"/>
+    <stroke android:width="@dimen/amahc_stroke_width_small" android:color="?attr/mosaicAction50"/>
+</shape>

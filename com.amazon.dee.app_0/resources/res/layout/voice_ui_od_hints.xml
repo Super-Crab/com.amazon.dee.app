@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/voice_ui_od_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:paddingTop="32dp" android:paddingBottom="16dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="16dp" android:paddingEnd="16dp" style="?attr/voiceOdContentStyle">
+        <ScrollView android:scrollbarStyle="outsideOverlay" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="24sp" android:textColor="?android:attr/textColorPrimary" android:gravity="center" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <ImageView android:id="@+id/weatherIcon" android:layout_width="36dp" android:layout_height="36dp" android:layout_marginTop="52dp" android:src="@drawable/ic_voice_ui_od_hints_weather" android:contentDescription="@string/voice_ui_od_empty"/>
+                    <TextView android:textSize="16sp" android:textColor="?android:attr/textColorPrimary" android:gravity="center" android:id="@+id/weatherText" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <View android:id="@+id/shoppingSeparator" android:background="?attr/voiceOdLineSeparatorColor" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="36dp"/>
+                    <ImageView android:id="@+id/shoppingIcon" android:layout_width="36dp" android:layout_height="36dp" android:layout_marginTop="36dp" android:src="@drawable/ic_voice_ui_od_hints_shopping" android:contentDescription="@string/voice_ui_od_empty"/>
+                    <TextView android:textSize="16sp" android:textColor="?android:attr/textColorPrimary" android:gravity="center" android:id="@+id/shoppingText" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <View android:id="@+id/sunsetSeparator" android:background="?attr/voiceOdLineSeparatorColor" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="36dp"/>
+                    <ImageView android:id="@+id/sunsetIcon" android:layout_width="36dp" android:layout_height="36dp" android:layout_marginTop="36dp" android:src="@drawable/ic_voice_ui_od_hints_sunset" android:contentDescription="@string/voice_ui_od_empty"/>
+                    <TextView android:textSize="16sp" android:textColor="?android:attr/textColorPrimary" android:gravity="center" android:id="@+id/sunsetText" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <TextView android:textSize="15sp" android:textColor="@color/voice_ui_od_dark_content_text_primary" android:gravity="center" android:id="@+id/done" android:background="@drawable/voice_ui_od_primary_button_background" android:layout_width="match_parent" android:layout_height="42dp" android:text="@string/voice_ui_od_hints_done_button_text" android:layout_weight="0" android:textAllCaps="true"/>
+    </LinearLayout>
+</LinearLayout>

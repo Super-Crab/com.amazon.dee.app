@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingTop="@dimen/voice_ui_od_content_default_double_margin" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/voice_ui_od_content_default_double_margin" android:paddingEnd="@dimen/voice_ui_od_content_default_double_margin">
+    <TextView android:textSize="@dimen/voice_ui_od_language_text_size_large" android:textColor="?android:attr/textColorPrimary" android:id="@+id/noteText" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</FrameLayout>

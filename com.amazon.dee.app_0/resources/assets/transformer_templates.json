@@ -1,0 +1,370 @@
+{
+  "COMMS": {
+    "normal": [
+      {
+        "announcement": {
+          "format": "%s on %s. ",
+          "parameter": [["alias", "contact"], ["appNameForTts", "appName"]]
+        },
+        "detailedContent": {
+          "format": "%s says %s.",
+          "parameter": [["alias", "contact"], ["message"]],
+          "optional": true
+        },
+        "contentWithoutPrefix": {
+          "format": "%s",
+          "parameter": [["message"]],
+          "optional": true
+        },
+        "contentWithPrefix": {
+          "format": "%s says %s.",
+          "parameter": [["alias", "contact"], ["message"]],
+          "optional": true
+        },
+        "contentPrefix": {
+          "format": "%s says",
+          "parameter": [["alias", "contact"]],
+          "optional": true
+        }
+      }
+    ],
+    "invitation": [
+      {
+        "announcement": {
+          "format": "Swipe to hear from %s on %s. ",
+          "parameter": [["alias", "contact"], ["appNameForTts", "appName"]]
+        },
+        "detailedContent": {
+          "format": "%s says %s.",
+          "parameter": [["alias", "contact"], ["message"]],
+          "optional": true
+        },
+        "contentWithoutPrefix": {
+          "format": "%s",
+          "parameter": [["message"]],
+          "optional": true
+        },
+        "contentWithPrefix": {
+          "format": "%s says %s.",
+          "parameter": [["alias", "contact"], ["message"]],
+          "optional": true
+        },
+        "contentPrefix": {
+          "format": "%s says",
+          "parameter": [["alias", "contact"]],
+          "optional": true
+        }
+      }
+    ],
+    "group_normal": [
+      {
+        "announcement": {
+          "format": "%s to %s on %s. ",
+          "parameter": [["contact"], ["groupRender"], ["appNameForTts", "appName"]]
+        },
+        "detailedContent": {
+          "format": "%s says to the group, %s.",
+          "parameter": [["contact"], ["message"]],
+          "optional": true
+        }
+      }
+    ],
+    "unnamed_group_invitation": [
+      {
+        "announcement": {
+          "format": "%s to unnamed group. Swipe to hear from all unnamed groups on %s. ",
+          "parameter": [["contact"], ["appNameForTts", "appName"]]
+        },
+        "detailedContent": {
+          "format": "%s says to the group, %s.",
+          "parameter": [["contact"], ["message"]],
+          "optional": true
+        }
+      }
+    ],
+    "named_group_invitation": [
+      {
+        "announcement": {
+          "format": "Swipe to hear from %s on %s. ",
+          "parameter": [["groupName"], ["appNameForTts", "appName"]]
+        },
+        "detailedContent": {
+          "format": "%s says to the group, %s.",
+          "parameter": [["contact"], ["message"]],
+          "optional": true
+        }
+      }
+    ],
+    "additionalFormatRules": [
+      {
+        "format": "%s sent you an audio clip.",
+        "replaceRegex": "(?i)(.*) says (to the group, )?((voice message)|((.* sent a )?voice clip)|(audio clip)|(sent a voice message)|(audio)|(\uD83C\uDFA4(\\s)?voice message))(.*)?",
+        "parameter": [["alias", "contact"]],
+        "caseSensitive": false,
+        "id": 0
+      },
+      {
+        "format": "%s sent you a link.",
+        "replaceRegex": "^.* says (https?|ftp|file)://[-a-zA-Z0-9+&@#/%?=~_|!:,.;]*[-a-zA-Z0-9+&@#/%=~_|]\\.?",
+        "parameter": [["alias", "contact"]],
+        "fullyMatch": true,
+        "id": 1
+      },
+      {
+        "format": "%s sent you a link.",
+        "replaceRegex": "(https?|ftp|file)://[-a-zA-Z0-9+&@#/%?=~_|!:,.;]*[-a-zA-Z0-9+&@#/%=~_|]",
+        "parameter": [["alias", "contact"]],
+        "id": 2
+      },
+      {
+        "format": "%s %s",
+        "replaceRegex": "^(?i)(.*) says( \\S*)* sent (a(n)? )?((attachment)|((live )?location)|(sticker)|(([0-9]* )?photo(s)?)|(gif( ((with)|(from)) ((giphy)|(tenor gif keyboard)))?)|(video)|(message)|(payment( request)? for \\$[0-9]+(\\.[0-9]{2})?))\\.(\\.)?",
+        "parameter": [["alias", "contact"], ["message"]],
+        "fullyMatch": true,
+        "caseSensitive": false,
+        "id": 3
+      }
+    ]
+  },
+  "CUSTOM_GENERIC": {
+    "com.google.android.calendar": {
+      "invitation": [
+        {
+          "announcement": {
+            "format": "Calendar Event, %s. Swipe to hear %s Notifications. ",
+            "parameter": [["time"], ["appName"]]
+          },
+          "detailedContent": {
+            "format": "%s for %s. Location is %s.",
+            "parameter": [["time"], ["eventTitle"], ["location"]],
+            "optional": true
+          }
+        },
+        {
+          "announcement": {
+            "format": "Calendar Event, %s. Swipe to hear %s Notifications. ",
+            "parameter": [["time"], ["appName"]]
+          },
+          "detailedContent": {
+            "format": "%s for calendar event. Location is %s.",
+            "parameter": [["time"], ["location"]],
+            "optional": true
+          }
+        },
+        {
+          "announcement": {
+            "format": "Calendar Event, %s. Swipe to hear %s Notifications. ",
+            "parameter": [["time"], ["appName"]]
+          },
+          "detailedContent": {
+            "format": "%s for %s.",
+            "parameter": [["time"], ["eventTitle"]],
+            "optional": true
+          }
+        },
+        {
+          "announcement": {
+            "format": "Calendar Event, %s. Swipe to hear %s Notifications. ",
+            "parameter": [["time"], ["appName"]]
+          },
+          "detailedContent": {
+            "format": "%s for calendar event.",
+            "parameter": [["time"]],
+            "optional": true
+          }
+        }
+      ],
+      "normal": [
+        {
+          "announcement": {
+            "format": "Calendar Event %s.",
+            "parameter": [["time"]]
+          },
+          "detailedContent": {
+            "format": "%s for %s. Location is %s.",
+            "parameter": [["time"], ["eventTitle"], ["location"]],
+            "optional": true
+          }
+        },
+        {
+          "announcement": {
+            "format": "Calendar Event %s.",
+            "parameter": [["time"]]
+          },
+          "detailedContent": {
+            "format": "%s for calendar event. Location is %s.",
+            "parameter": [["time"], ["location"]],
+            "optional": true
+          }
+        },
+        {
+          "announcement": {
+            "format": "Calendar Event %s.",
+            "parameter": [["time"]]
+          },
+          "detailedContent": {
+            "format": "%s for %s.",
+            "parameter": [["time"], ["eventTitle"]],
+            "optional": true
+          }
+        },
+        {
+          "announcement": {
+            "format": "Calendar Event %s.",
+            "parameter": [["time"]]
+          },
+          "detailedContent": {
+            "format": "%s for calendar event.",
+            "parameter": [["time"]],
+            "optional": true
+          }
+        }
+      ]
+    },
+    "com.samsung.android.calendar": {
+      "invitation": [
+        {
+          "announcement": {
+            "format": "Calendar Event, %s. Swipe to hear %s Notifications. ",
+            "parameter": [["time"], ["appName"]]
+          },
+          "detailedContent": {
+            "format": "%s for %s. Location is %s.",
+            "parameter": [["time"], ["eventTitle"], ["location"]],
+            "optional": true
+          }
+        },
+        {
+          "announcement": {
+            "format": "Calendar Event, %s. Swipe to hear %s Notifications. ",
+            "parameter": [["time"], ["appName"]]
+          },
+          "detailedContent": {
+            "format": "%s for %s.",
+            "parameter": [["time"], ["eventTitle"]],
+            "optional": true
+          }
+        },
+        {
+          "announcement": {
+            "format": "Calendar Events. Swipe to hear %s Notifications. ",
+            "parameter": [["appName"]]
+          },
+          "detailedContent": {
+            "format": "There are multiple up coming calendar events. See phone for details.",
+            "parameter": [],
+            "optional": true
+          }
+        }
+      ],
+      "normal": [
+        {
+          "announcement": {
+            "format": "Calendar Event %s.",
+            "parameter": [["time"]]
+          },
+          "detailedContent": {
+            "format": "%s for %s. Location is %s.",
+            "parameter": [["time"], ["eventTitle"], ["location"]],
+            "optional": true
+          }
+        },
+        {
+          "announcement": {
+            "format": "Calendar Event %s.",
+            "parameter": [["time"]]
+          },
+          "detailedContent": {
+            "format": "%s for %s.",
+            "parameter": [["time"], ["eventTitle"]],
+            "optional": true
+          }
+        },
+        {
+          "announcement": {
+            "format": "Calendar Events.",
+            "parameter": []
+          },
+          "detailedContent": {
+            "format": "There are multiple up coming calendar events. See phone for details.",
+            "parameter": [],
+            "optional": true
+          }
+        }
+      ]
+    },
+    "com.google.android.gm": {
+      "invitation": [
+        {
+          "announcement": {
+            "format": "Swipe to hear from %s. ",
+            "parameter": [["appName"]]
+          },
+          "detailedContent": {
+            "format": "%s says %s %s.",
+            "parameter": [["appName"], ["title"], ["mailDetails"]],
+            "optional": true
+          }
+        }
+      ],
+      "normal": [
+        {
+          "announcement": {
+            "format": "%s.",
+            "parameter": [["appNameForTts", "appName"]]
+          },
+          "detailedContent": {
+            "format": "%s says %s %s.",
+            "parameter": [["appName"], ["title"], ["mailDetails"]],
+            "optional": true
+          }
+        }
+      ]
+    },
+    "com.samsung.android.email.provider": {
+      "invitation": [
+        {
+          "announcement": {
+            "format": "Swipe to hear from %s. ",
+            "parameter": [["appName"]]
+          },
+          "detailedContent": {
+            "format": "%s says %s %s.",
+            "parameter": [["appName"], ["title"], ["mailDetails"]],
+            "optional": true
+          }
+        }
+      ],
+      "normal": [
+        {
+          "announcement": {
+            "format": "%s.",
+            "parameter": [["appNameForTts", "appName"]]
+          },
+          "detailedContent": {
+            "format": "%s says %s %s.",
+            "parameter": [["appName"], ["title"], ["mailDetails"]],
+            "optional": true
+          }
+        }
+      ]
+    }
+  },
+  "OTHER": {
+    "additionalFormatRules": [
+      {
+        "format": "%s sent you a link.",
+        "replaceRegex": "^.* says (https?|ftp|file)://[-a-zA-Z0-9+&@#/%?=~_|!:,.;]*[-a-zA-Z0-9+&@#/%=~_|]\\.?",
+        "parameter": [["appName"]],
+        "fullyMatch": true,
+        "id": 0
+      },
+      {
+        "format": "%s sent you a link.",
+        "replaceRegex": "(https?|ftp|file)://[-a-zA-Z0-9+&@#/%?=~_|!:,.;]*[-a-zA-Z0-9+&@#/%=~_|]",
+        "parameter": [["appName"]],
+        "id": 1
+      }
+    ]
+  }
+}
